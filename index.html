@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!--Pinterest claiming TAG. Will be removed after claiming. -->
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+            integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
+            crossorigin="anonymous"
+        />
+        <link rel="stylesheet" href="./assets/css/index.min.css" />
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+            integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        ></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js"
+            integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/"
+            crossorigin="anonymous"
+        ></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+            crossorigin="anonymous"
+        ></script>
+        <link rel="stylesheet" ng-transition="frend" href="main.css" />
+        <!-- <script
+            type="text/javascript"
+            src="https://bam-cell.nr-data.net/1/47cb3689b4?a=143791470&amp;v=1210.e2a3f80&amp;to=NFEEMUVXXhVWAUBfCg0bMQBVcEIHWgdDWRcIYRQMGH1fBxglcWJKTA%3D%3D&amp;rst=4386&amp;ck=1&amp;ref=http://trademe-clone.herokuapp.com/&amp;ap=3.793753&amp;be=3169&amp;fe=4349&amp;dc=4339&amp;tt=b8f2274db2f237cf&amp;af=err,xhr,stn,ins,spa&amp;perf=%7B%22timing%22:%7B%22of%22:1632763710447,%22n%22:0,%22f%22:12,%22dn%22:18,%22dne%22:18,%22c%22:18,%22ce%22:256,%22rq%22:256,%22rp%22:2720,%22rpe%22:4256,%22dl%22:2749,%22di%22:4339,%22ds%22:4340,%22de%22:4340,%22dc%22:4348,%22l%22:4348,%22le%22:4352%7D,%22navigation%22:%7B%7D%7D&amp;fp=4095&amp;fcp=4095&amp;jsonp=NREUM.setToken"
+        ></script>
+        <script src="https://js-agent.newrelic.com/nr-spa-1210.min.js"></script> -->
+    </head>
+
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+                <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav"
+                    aria-controls="navbarNav"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+                >
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="tm-affiliates__sat-nav-list">
+                        <li class="nav-item">
+                            <a
+                                routerlinkactive="tm-affiliates__sat-nav-active-item"
+                                routerlink="/"
+                                rel="nofollow"
+                                class="tm-affiliates__sat-nav-link"
+                                href="/a/"
+                            >
+                                Trade Me
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a
+                                href="http://www.lifedirect.co.nz/?utm_source=trademe_preview&amp;utm_medium=navbar&amp;utm_campaign=homepage"
+                                rel="noopener noreferrer nofollow"
+                                target="_blank"
+                                class="tm-affiliates__sat-nav-link"
+                            >
+                                LifeDirect
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a
+                                href="http://www.trademeinsurance.co.nz/?utm_source=trademe_preview&amp;utm_medium=NavBar&amp;utm_content=TradeMe&amp;utm_campaign=TradeMe_header"
+                                rel="noopener noreferrer nofollow"
+                                target="_blank"
+                                class="tm-affiliates__sat-nav-link"
+                            >
+                                Trade Me Insurance
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a
+                                href="http://www.holidayhouses.co.nz/?utm_source=trademe_preview&amp;utm_medium=navbar&amp;utm_campaign=homepage"
+                                rel="noopener noreferrer nofollow"
+                                target="_blank"
+                                class="tm-affiliates__sat-nav-link"
+                            >
+                                Holiday Houses
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a
+                                href="http://www.findsomeone.co.nz/?utm_source=trademe_preview&amp;utm_medium=navbar&amp;utm_campaign=homepage"
+                                rel="noopener noreferrer nofollow"
+                                target="_blank"
+                                class="tm-affiliates__sat-nav-link"
+                            >
+                                FindSomeone
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a
+                                href="http://www.motorweb.co.nz/?referral=trademe&amp;utm_source=trademe_preview&amp;utm_medium=text-link&amp;utm_content=free-vehicle-reports&amp;utm_campaign=trademe-header"
+                                rel="noopener noreferrer nofollow"
+                                target="_blank"
+                                class="tm-affiliates__sat-nav-link"
+                            >
+                                MotorWeb
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a
+                                href="https://www.harmoney.co.nz/?utm_source=trademe_preview&amp;utm_medium=NavBar&amp;utm_content=TradeMe&amp;utm_campaign=TradeMe_Harmoney_2015"
+                                rel="noopener noreferrer nofollow"
+                                target="_blank"
+                                class="tm-affiliates__sat-nav-link"
+                            >
+                                Harmoney
+                            </a>
+                        </li>
+                    </ul>
+                    <!-- <div  aria-label="Affiliate links" role="group">
+                </div> -->
+                    <div class="logged-out__actions">
+                        <a
+                            rel="nofollow"
+                            classiclink="Members/Register.aspx"
+                            frendlink="/register"
+                            tmfrendclassicredirectlink="static"
+                            class="logged-out__register"
+                            href="https://www.trademe.co.nz/Members/Register.aspx?bof=fjh28YBT"
+                        >
+                            Register </a
+                        ><a
+                            rel="nofollow"
+                            queryparamshandling="preserve"
+                            tmfrendclassicredirectlink=""
+                            class="logged-out__log-in"
+                            href="https://www.trademe.co.nz/Members/Login.aspx?url=%2Fmotors&amp;bof=fjh28YBT"
+                        >
+                            Log in
+                        </a>
+                    </div>
+                </div>
+                <div class="main-nav__global-navigation">
+                    <div class="logo">
+                        <a href=""
+                            >tm-shell-main-nav__global-navigation
+                            <img
+                                src="https://www.trademe.co.nz/images/frend/trademe-logo-no-tagline.png"
+                                alt=""
+                            />
+                        </a>
+                    </div>
+                    <ul class="main-nav__member-options-list">
+                        <li class="nav-item">
+                            <a href="" class="nav-link">
+                                <i class="fa fa-home"></i>
+                                watchlist
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </body>
+</html>

@@ -1,0 +1,194 @@
+@import 'nav';
+@import 'colors';
+@import 'media';
+
+// @charset "UTF-8";
+
+@font-face {
+    font-display: swap;
+    font-family: Story Sans;
+    font-style: normal;
+    font-weight: 700;
+    src: url(//trademe.tmcdn.co.nz/tm/fonts/StorySansWeb-Bold.eot.eot);
+    src: url(//trademe.tmcdn.co.nz/tm/fonts/StorySansWeb-Bold.eot#iefix)
+            format('embedded-opentype'),
+        url(//trademe.tmcdn.co.nz/tm/fonts/StorySansWeb-Bold.woff2)
+            format('woff2'),
+        url(//trademe.tmcdn.co.nz/tm/fonts/StorySansWeb-Bold.woff)
+            format('woff'),
+        url(//trademe.tmcdn.co.nz/tm/fonts/StorySansWeb-Bold.ttf)
+            format('truetype');
+}
+
+@font-face {
+    font-display: swap;
+    font-family: Story Sans;
+    font-style: normal;
+    font-weight: 500;
+    src: url(//trademe.tmcdn.co.nz/tm/fonts/StorySansWeb-Medium.eot);
+    src: url(//trademe.tmcdn.co.nz/tm/fonts/StorySansWeb-Medium.eot#iefix)
+            format('embedded-opentype'),
+        url(//trademe.tmcdn.co.nz/tm/fonts/StorySansWeb-Medium.woff2)
+            format('woff2'),
+        url(//trademe.tmcdn.co.nz/tm/fonts/StorySansWeb-Medium.woff)
+            format('woff'),
+        url(//trademe.tmcdn.co.nz/tm/fonts/StorySansWeb-Medium.ttf)
+            format('truetype');
+}
+
+@font-face {
+    font-display: swap;
+    font-family: Story Sans;
+    font-style: normal;
+    font-weight: 400;
+    src: url(//trademe.tmcdn.co.nz/tm/fonts/StorySansWeb-Regular.eot);
+    src: url(//trademe.tmcdn.co.nz/tm/fonts/StorySansWeb-Regular.eot#iefix)
+            format('embedded-opentype'),
+        url(//trademe.tmcdn.co.nz/tm/fonts/StorySansWeb-Regular.woff2)
+            format('woff2'),
+        url(//trademe.tmcdn.co.nz/tm/fonts/StorySansWeb-Regular.woff)
+            format('woff'),
+        url(//trademe.tmcdn.co.nz/tm/fonts/StorySansWeb-Regular.ttf)
+            format('truetype');
+}
+
+@font-face {
+    font-display: swap;
+    font-family: Story Sans;
+    font-style: normal;
+    font-weight: 300;
+    src: url(//trademe.tmcdn.co.nz/tm/fonts/StorySansWeb-Light.eot);
+    src: url(//trademe.tmcdn.co.nz/tm/fonts/StorySansWeb-Light.eot#iefix)
+            format('embedded-opentype'),
+        url(//trademe.tmcdn.co.nz/tm/fonts/StorySansWeb-Light.woff2)
+            format('woff2'),
+        url(//trademe.tmcdn.co.nz/tm/fonts/StorySansWeb-Light.woff)
+            format('woff'),
+        url(//trademe.tmcdn.co.nz/tm/fonts/StorySansWeb-Light.ttf)
+            format('truetype');
+}
+
+html {
+    font-family: sans-serif;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+* {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+*,
+:after,
+:before {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: $body_col;
+    font-family: Story Sans, Helvetica Neue, Helvetica, Arial, Sans-serif;
+    -webkit-font-smoothing: antialiased;
+    font-size: 14px;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+    display: block;
+}
+
+// html {
+//     font-size: 1em;
+//     line-height: 24px;
+//     -webkit-text-size-adjust: 100%;
+// }
+blockquote,
+body,
+caption,
+dd,
+dl,
+fieldset,
+figure,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+legend,
+ol,
+p,
+pre,
+table,
+td,
+th,
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+.btn,
+button {
+    position: relative;
+    width: 100%;
+    min-width: 2rem;
+    min-height: 2rem;
+    border: none;
+    // margin-bottom: 24px;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    text-align: center;
+    -webkit-transition-duration: 0.1s;
+    transition-duration: 0.1s;
+    -webkit-transition-property: background-color, border-color, box-shadow,
+        padding-top, padding-bottom, color;
+    transition-property: background-color, border-color, box-shadow, padding-top,
+        padding-bottom, color;
+    vertical-align: middle;
+    background-color: transparent;
+    color: #007acd;
+    font-weight: 400;
+    padding: 0.75rem 24px;
+}
+button,
+html input[type='button'],
+input[type='reset'],
+input[type='submit'] {
+    -webkit-appearance: button;
+    cursor: pointer;
+}
+button,
+input,
+optgroup,
+select,
+textarea {
+    color: inherit;
+    font: inherit;
+    margin: 0;
+}
+
+.container {
+    margin: 0;
+    padding: 0;
+    padding-right: 16px;
+    padding-left: 16px;
+    width: 100%;
+    max-width: 1593px;
+    // max-width: 1600px;
+    margin-right: auto;
+    margin-left: auto;
+}

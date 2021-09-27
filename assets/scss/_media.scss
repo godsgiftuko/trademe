@@ -1,0 +1,31 @@
+@media screen and (min-width: 1280px) {
+    .container {
+        padding-right: 8.71%;
+        padding-left: 8.71%;
+    }
+}
+@media screen and (min-width: 480px) {
+    .container {
+        padding-right: 24px;
+        padding-left: 24px;
+    }
+}
+@media screen and (max-width: 425px) {
+    .container {
+        width: 100%;
+    }
+    .navbar .container {
+        padding: 0;
+    }
+
+    .navbar #navbarNav,
+    .navbar .main-nav__browse-dropdown--home {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 375px) {
+    .logo {
+        max-height: 24px;
+    }
+}
