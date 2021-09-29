@@ -1,5 +1,8 @@
 @import 'nav';
-@import './home_search_header';
+@import 'home_search_header';
+@import 'auction';
+@import 'category';
+
 @font-face {
     font-display: swap;
     font-family: Story Sans;
@@ -77,6 +80,8 @@ body {
     min-height: 100%;
     overflow-x: hidden;
     font-size: 14px;
+    color: $body-col;
+    background-color: $body_bg_col;
 }
 
 article,
@@ -95,20 +100,19 @@ summary {
     display: block;
 }
 
-
-a {
+a,
+.nav-link {
     background-color: transparent;
     text-decoration: none;
-    color: $nav-link;
+    color: $nav-link-col;
 }
 
 a:active,
 a:hover {
     outline: 0;
     text-decoration: underline;
-    color: $nav-link;
+    color: $nav-link-col;
 }
-
 
 abbr[title] {
     border-bottom: 1px dotted;
@@ -284,7 +288,6 @@ th {
     box-sizing: border-box;
 }
 
-
 blockquote,
 body,
 caption,
@@ -312,7 +315,6 @@ ul {
     margin: 0;
 }
 
-
 h1,
 h2,
 h3,
@@ -320,7 +322,7 @@ h4,
 h5,
 h6 {
     font-size: 1em;
-    font-weight: 400;
+    font-weight: 500;
 }
 
 ol,
@@ -349,8 +351,7 @@ address {
     outline: none;
 }
 
-[tgFocusEventType='keydown']
-    a:not([class*=' o-']):not([class^='o-']):focus,
+[tgFocusEventType='keydown'] a:not([class*=' o-']):not([class^='o-']):focus,
 [tgFocusEventType='keydown']
     button:not([class*=' o-']):not([class^='o-']):focus {
     box-shadow: 0 0 0 2px #8dcefc;
@@ -373,19 +374,15 @@ p {
     margin-inline-end: 0px;
 }
 
-
-// img,
-// textarea {
-//     max-width: 100%;
-// }
-
-// img {
-//     display: block;
-// }
-
-// @-ms-viewport {
-//     width: device-width;
-// }
+.breadcrumb {
+    margin-bottom: 0;
+}
+.breadcrumb-item + .breadcrumb-item::before {
+    float: left;
+    padding-right: 0.5rem;
+    color: #fff;
+    content: var(--bs-breadcrumb-divider, '/');
+}
 
 .container-fluid {
     padding-right: 16px;
@@ -417,3 +414,9 @@ p {
     }
 }
 
+@media screen and (min-width: 768px) {
+    section {
+        padding-top: 48px;
+        padding-bottom: 48px;
+    }
+}

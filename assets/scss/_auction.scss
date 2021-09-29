@@ -1,0 +1,148 @@
+@import 'colors';
+
+.auction-section {
+    width: 100%;
+    background: transparent;
+    overflow: hidden;
+
+    //! AUCTION HEADER
+    .nav-link {
+        font-size: 18px;
+        display: flex;
+        justify-content: space-between;
+        // &:first-child {
+        //     font-weight: 500;
+        // }
+        &:first-child:hover {
+            color: $nav-link-col;
+            text-decoration: none;
+        }
+        span {
+            font-size: 16px;
+            color: $p-col;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+        // color: $nav-link-col;
+    }
+
+    //! AUCTION CARD
+    .auction_cards-group {
+        position: relative;
+        width: 1981px;
+        padding: 0px;
+
+        &::before {
+            display: block;
+            position: absolute;
+            content: '';
+            border: 30px 30px 30px 0 #ffd972;
+        }
+        .auction_card-border {
+            border: 3px solid #ffd972;
+        }
+
+        button[type='button'] {
+            font-size: 20px;
+            padding: 15px;
+            cursor: pointer;
+            color: $nav-link-col;
+            position: absolute;
+            border: none;
+            z-index: 2;
+            top: 50%;
+            transform: translate(-50%, -50%);
+
+            &:hover {
+                color: inherit;
+            }
+        }
+
+        .auction_card {
+            display: inline-block;
+            border-radius: 8px 10px 8px 8px;
+            transition: box-shadow 0.2s ease-out;
+            position: relative;
+            margin: 0px 5px;
+            // display: flex;
+            width: 100%;
+            max-width: 275.78px;
+            min-height: 2px;
+            flex: 1 1 auto;
+            // flex: 1 1 auto;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            -webkit-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+            margin-bottom: 24px;
+            background: #fff;
+            box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1);
+
+            .auction_card_img img {
+                display: inline-block;
+
+                position: relative;
+                width: 100%;
+            }
+
+            .auction_card_details {
+                display: inline-block;
+
+                padding: 12px;
+                .auction-link {
+                    text-decoration: none;
+                    .auction_bid-price {
+                        color: $body-col;
+                    }
+                    .auction_card_details-body {
+                        padding-bottom: 30px;
+                        // display: flex;
+                        // flex: 1 0 auto;
+                        // flex-flow: column nowrap;
+                        .auction_location-and-time {
+                            font-size: 12px;
+                            display: flex;
+                            justify-content: space-between;
+                        }
+                        .auction-title {
+                            color: #44413d;
+                            font-size: 0.875rem;
+                            font-weight: 500;
+                            line-height: 16px;
+                        }
+                        .auction-subtitle {
+                            color: #76716d;
+                            font-size: 12px;
+                        }
+                    }
+                    .auction_card_details-footer {
+                        .auction_bid-price {
+                            font-size: 16px;
+                        }
+                    }
+                }
+            }
+
+            &:hover {
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+            }
+        }
+    }
+}
+
+/*
+    ? MEDIA SCREENS == 768px;
+*/
+@media screen and (min-width: 768px) {
+    .auction-section {
+        // padding-top: 48px;
+        // padding-bottom: 48px;
+
+        .auction_cards-group {
+            .auction_card {
+                box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+            }
+        }
+    }
+}
