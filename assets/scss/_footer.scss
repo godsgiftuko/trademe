@@ -1,0 +1,157 @@
+.footer {
+    background-color: white;
+    display: block;
+    color: #65605d;
+    --border-height: 7.99px;
+
+    &::before {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: var(calc(--border-height * 2));
+        background-color: $o-col;
+    }
+
+    .footer_top_div {
+        padding: 24px 0;
+        .footer_global {
+            padding-bottom: 24px;
+            border-bottom: 1px solid #d7d5d2;
+            .footer_global_nav {
+                .nav-link {
+                    text-transform: capitalize;
+                    font-size: 14px;
+                    color: inherit;
+                }
+            }
+        }
+        .footer_vertical_link {
+            .row {
+                div {
+                    margin: 20px 0;
+                    ul li a {
+                        text-transform: capitalize;
+                    }
+                }
+                // & > ul > li:first-child > a {
+                //     color: red;
+                // }
+                & div:first-child > ul > li:first-child > a {
+                    color: #d93a3f;
+                }
+                & div:nth-child(2) > ul > li:first-child > a {
+                    color: #f3632d;
+                }
+                & div:nth-child(3) > ul > li:first-child > a {
+                    color: #5f6f88;
+                }
+                & div:nth-child(4) > ul > li:first-child > a {
+                    color: #29a754;
+                }
+                & div:nth-child(5) > ul > li:first-child > a {
+                    color: #555;
+                }
+                & div:last-child > ul > li:first-child > a {
+                    color: #148fe2;
+                }
+            }
+        }
+    }
+    .footer_bottom_div {
+        padding: 24px 0;
+        background-color: $footer_bg_col;
+        div {
+            display: flex;
+            align-items: center;
+            .copy-right {
+                // order: 1;
+                font-size: 12px;
+            }
+            ul {
+                flex: 3;
+                display: inline-block;
+                text-align: center;
+                li {
+                    display: inline-block;
+                    padding: 0px 16px 0px 0px;
+                    a {
+                        font-size: 12px;
+                        text-transform: capitalize;
+                        color: #76716d;
+                    }
+                }
+            }
+
+            .logo-icons {
+                flex: 1;
+                justify-content: space-between;
+                img {
+                    height: 32px;
+                }
+                a {
+                    display: inline-block;
+                    margin: 0 5px;
+                    .fa {
+                        color: #76716d;
+                        font-size: 20px;
+                        &:hover {
+                            color: #76716d;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.welcome-banner {
+    div {
+        display: inline-block;
+    }
+    .welcome-banner-header {
+        display: inline-block;
+        * {
+            display: inherit;
+        }
+        span {
+            padding: 10px;
+            color: white;
+            font-size: 12px;
+            background-color: $btn;
+        }
+    }
+    .welcome-banner-buttons {
+        display: inline-block;
+        * {
+            display: inline-block;
+            font-size: 12px;
+            color: $btn;
+        }
+    }
+}
+/*
+    ? MEDIA SCREENS == 768px;
+*/
+@media screen and (max-width: 768px) {
+    .footer {
+        &::before {
+            height: calc(--border-height / 2);
+        }
+        .footer_top_div {
+            .footer_global {
+                .logo {
+                    img {
+                        height: 15.33px;
+                        // width: ;
+                    }
+                }
+                // .footer_global_nav {
+                //     .nav-link {
+                //     }
+                // }
+            }
+        }
+        // .footer_bottom_div {
+        // }
+    }
+}

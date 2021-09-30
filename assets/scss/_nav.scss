@@ -1,4 +1,9 @@
 @import 'colors';
+.logo img {
+    max-height: 24px;
+    display: flex;
+    align-items: center;
+}
 .navbar {
     background-color: $navbar_bg_col;
     padding: 15px 0px 0px;

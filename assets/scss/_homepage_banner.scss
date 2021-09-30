@@ -1,0 +1,85 @@
+.banner-section {
+    padding-left: 20px;
+    .banner {
+        position: relative;
+        // display: block;
+        padding: 24px 24px 0;
+        margin-bottom: 24px;
+        background: #fff;
+        background: linear-gradient(180deg, #fff, #fff 48%, #007acd 0, #007acd);
+        padding: 24px;
+        .banner_details {
+            display: inline-block;
+            .banner_title {
+                h1 {
+                    font-size: 32px;
+                }
+            }
+            .banner_subtitle {
+                width: 100%;
+                display: block;
+                font-size: 18px;
+                margin-bottom: 16px;
+                h5 {
+                    width: 100%;
+                }
+            }
+            .nav-link {
+                text-transform: capitalize;
+                text-decoration: none;
+                margin-bottom: 24px;
+            }
+        }
+
+        .banner_svg {
+            display: inline-block;
+            div {
+                // width: 50%;
+                overflow: hidden;
+
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                svg {
+                    fill: $p-col;
+                    // position: absolute;
+                }
+                .banner_logo,
+                .logo {
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    // display: none;
+                }
+            }
+        }
+    }
+}
+
+/*
+    ? MEDIA SCREENS == 768px;
+*/
+
+@media screen and (min-width: 768px) {
+    .banner-section {
+        .banner {
+            background: linear-gradient(
+                90deg,
+                #fff,
+                #fff 47%,
+                #007acd 0,
+                #007acd
+            );
+            .banner_subtitle {
+                max-width: 35%;
+            }
+        }
+    }
+}
+@media screen and (max-width: 768px) {
+    .banner-section {
+        .banner {
+            padding-left: 0px;
+        }
+    }
+}

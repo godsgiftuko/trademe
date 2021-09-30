@@ -565,10 +565,15 @@
                     <span> View all </span>
                 </a>
                 <div class="auction_cards-group">
-                    <button type="button" disabled>
+                    <button id="chevron-left" type="button" disabled>
                         <i class="fa fa-chevron-left"></i>
                     </button>
                     <div class="auction_card auction_card-border">
+                        <!-- <div class="auction_card_icon">
+                            <span>
+                                <i class="fa fa-binoculars"></i>
+                            </span>
+                        </div> -->
                         <div class="auction_card_img">
                             <img
                                 src="https://trademe.tmcdn.co.nz/photoserver/352x264p/1615017066.jpg"
@@ -661,22 +666,18 @@
                                 alt=""
                                 srcset=""
                             />
+                            <span class="">Private seller</span>
                         </div>
                         <div class="auction_card_details">
                             <a href="" class="auction-link">
                                 <div class="auction_card_details-body">
-                                    <div class="auction_location-and-time">
-                                        <span
-                                            class="text-capitalize auction_loc"
-                                            >Auckland</span
-                                        >
-                                        <span
-                                            class="
-                                                text-capitalize
-                                                auction_date-and-time
-                                            "
-                                            >closes: mon, 4 oct</span
-                                        >
+                                    <div
+                                        class="
+                                            auction_location-and-time_private_seller
+                                        "
+                                    >
+                                        <span class="">Auckland</span>
+                                        <span class="">listed recently</span>
                                     </div>
                                     <div class="auction-title">
                                         Ashley Bloomfield, Ballpoint Pen
@@ -783,7 +784,7 @@
                             </a>
                         </div>
                     </div>
-                    <button type="button" disabled>
+                    <button id="chevron-right" type="button" disabled>
                         <i class="fa fa-chevron-right"></i>
                     </button>
                 </div>
@@ -799,59 +800,367 @@
                         <span>Trending</span>Categories
                     </h3>
                 </a>
-                <div class="trending-category-list">
-                    <div class="trending-category-card">
-                        <a href="" class="trending-category-card-link">
-                            <h1>8,314+ To Rent</h1>
-                            <nav aria-label="breadcrumb">
-                                <ol class="breadcrumb">
-                                    <li class="breadcrumb-item">property</li>
-                                    <li class="breadcrumb-item">residential</li>
-                                    <li class="breadcrumb-item">rent</li>
-                                </ol>
-                            </nav>
-                        </a>
+                <div class="row trending-category-list">
+                    <div class="col-12 col-lg-4 col-xs-4 col-md-12">
+                        <div
+                            class="trending-category-card"
+                            style="background-color: #29a754"
+                        >
+                            <a href="" class="trending-category-card-link">
+                                <h1>8,314+ To Rent</h1>
+                                <nav aria-label="breadcrumb">
+                                    <ol class="breadcrumb">
+                                        <li class="breadcrumb-item">
+                                            property
+                                        </li>
+                                        <li class="breadcrumb-item">
+                                            residential
+                                        </li>
+                                        <li class="breadcrumb-item">rent</li>
+                                    </ol>
+                                </nav>
+                            </a>
+                        </div>
                     </div>
-                    <div class="trending-category-card">
-                        <a href="" class="trending-category-card-link">
-                            <h1>1,406+ Gates</h1>
-                            <nav aria-label="breadcrumb">
-                                <ol class="breadcrumb">
-                                    <li class="breadcrumb-item">marketplace</li>
-                                    <li class="breadcrumb-item">
-                                        home & living
-                                    </li>
-                                    <li class="breadcrumb-item">
-                                        outdoor, garden & conservatory
-                                    </li>
-                                    <li class="breadcrumb-item">
-                                        gate & fences
-                                    </li>
-                                    <li class="breadcrumb-item">gates</li>
-                                </ol>
-                            </nav>
-                        </a>
+                    <div class="col-12 col-lg-4 col-xs-4 col-md-12">
+                        <div class="trending-category-card">
+                            <a href="" class="trending-category-card-link">
+                                <h1>1,406+ Gates</h1>
+                                <nav aria-label="breadcrumb">
+                                    <ol class="breadcrumb">
+                                        <li class="breadcrumb-item">
+                                            marketplace
+                                        </li>
+                                        <li class="breadcrumb-item">
+                                            home & living
+                                        </li>
+                                        <li class="breadcrumb-item">
+                                            outdoor, garden & conservatory
+                                        </li>
+                                        <li class="breadcrumb-item">
+                                            gate & fences
+                                        </li>
+                                        <li class="breadcrumb-item">gates</li>
+                                    </ol>
+                                </nav>
+                            </a>
+                        </div>
                     </div>
-                    <div class="trending-category-card">
-                        <a href="" class="trending-category-card-link">
-                            <h1>579+ Desks</h1>
-                            <nav aria-label="breadcrumb">
-                                <ol class="breadcrumb">
-                                    <li class="breadcrumb-item">marketplace</li>
-                                    <li class="breadcrumb-item">
-                                        home & living
-                                    </li>
-                                    <li class="breadcrumb-item">
-                                        lounge, dinning & hall
-                                    </li>
-                                    <li class="breadcrumb-item">desks</li>
-                                </ol>
-                            </nav>
-                        </a>
+
+                    <div class="col-12 col-lg-4 col-xs-4 col-md-12">
+                        <div class="trending-category-card">
+                            <a href="" class="trending-category-card-link">
+                                <h1>579+ Desks</h1>
+                                <nav aria-label="breadcrumb">
+                                    <ol class="breadcrumb">
+                                        <li class="breadcrumb-item">
+                                            marketplace
+                                        </li>
+                                        <li class="breadcrumb-item">
+                                            home & living
+                                        </li>
+                                        <li class="breadcrumb-item">
+                                            lounge, dinning & hall
+                                        </li>
+                                        <li class="breadcrumb-item">desks</li>
+                                    </ol>
+                                </nav>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
         <!--* END TRENDING CATEGORY-->
+
+        <!--* HOMEPAGE BANNER  -->
+        <section class="banner-section">
+            <div class="container-fluid">
+                <div class="banner">
+                    <div class="banner_details">
+                        <div class="banner_title">
+                            <h1 class="fw-bold">What's trending?</h1>
+                        </div>
+                        <div class="banner_subtitle fw-bold">
+                            <h5>
+                                Popular categories, essential items, deals &
+                                more!
+                            </h5>
+                        </div>
+                        <a href="" class="nav-link btn-2">explore now</a>
+                    </div>
+                    <div class="banner_svg">
+                        <div>
+                            <svg
+                                _ngcontent-frend-c415=""
+                                viewBox="0 0 142 180"
+                                width="142"
+                                height="180"
+                                xmlns="http://www.w3.org/2000/svg"
+                                preserveAspectRatio="xMinYMid meet"
+                                focusable="false"
+                                role="img"
+                                aria-labelledby="tg-82a516c6-ec19-46ed-f650-9a950b51b7a1"
+                            >
+                                <path
+                                    _ngcontent-frend-c415=""
+                                    d="M108.3902-23.4162a38.6735 38.6735 0 00-5.315 1.7427C87.6829-15.356 78.6176-2.1307 77.7726 17.0098c-2.1241 47.6725-21.9165 68.0605-39.7763 92.797-13.9427 19.3152-18.6927 44.5431-11.1093 67.9413 11.9648 36.9672 50.6679 55.0274 86.4267 40.3543 20.4886-8.4058 35.043-25.9144 42.4527-45.9575C173.5961 123.8527 168.369 52.7525 150.2334.9291c-4.735-13.5253-14.7012-22.0608-26.2508-24.6758-6.82-1.5435-15.5924.3305-15.5924.3305"
+                                    fill-rule="evenodd"
+                                ></path>
+                                <title
+                                    _ngcontent-frend-c415=""
+                                    id="tg-82a516c6-ec19-46ed-f650-9a950b51b7a1"
+                                ></title>
+                            </svg>
+                            <!-- <img
+                                class="banner_logo"
+                                src="https://www.trademe.co.nz/images/frend/homepage-kindness-promo-v3.png"
+                                alt=""
+                            /> -->
+                            <!-- <div class="logo">
+                                <a href="">
+                                    <img
+                                        src="https://www.trademe.co.nz/images/frend/trademe-logo-no-tagline.png"
+                                        alt=""
+                                    />
+                                </a>
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--* END HOMEPAGE  BANNER  -->
+
+        <!--* WELCOME BANNER -->
+        <div class="welcome-banner">
+            <div class="container-fluid">
+                <div class="welcome-banner-header">
+                    <span>New</span>
+                    <p>Welcome to the new-look Trade Me</p>
+                </div>
+                <div class="welcome-banner-buttons">
+                    <a href="" class="nav-link">
+                        <i class="fa fa-exclamation-circle"></i>
+                        Learn more
+                    </a>
+                    <a href="" class="nav-link">
+                        <i class="fa fa-comment"></i>
+                        Tell us what you think
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!--* END WELCOME BANNER -->
+
+        <!--* FOOTER -->
+        <div class="footer" data-color="red">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="footer_top_div">
+                        <div class="col-12 footer_global">
+                            <div class="row">
+                                <div class="col-lg-2 col-md-2">
+                                    <div class="logo">
+                                        <a href="">
+                                            <img
+                                                src="https://www.trademe.co.nz/images/frend/trademe-logo-no-tagline.png"
+                                                alt=""
+                                            />
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-2 col-md-2">
+                                    <div class="footer_global_nav">
+                                        <a href="" class="nav-link"> home </a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-2 col-md-2">
+                                    <div class="footer_global_nav">
+                                        <a href="" class="nav-link"> home </a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-2 col-md-2">
+                                    <div class="footer_global_nav">
+                                        <a href="" class="nav-link"> home </a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-2 col-md-2">
+                                    <div class="footer_global_nav">
+                                        <a href="" class="nav-link"> home </a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-2 col-md-2">
+                                    <div class="footer_global_nav">
+                                        <a
+                                            href=""
+                                            class="nav-link mr-1 d-inline-block"
+                                        >
+                                            register
+                                        </a>
+                                        <a
+                                            href=""
+                                            class="nav-link d-inline-block"
+                                        >
+                                            login</a
+                                        >
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 footer_vertical_link">
+                            <div class="row">
+                                <div class="col-lg-2 col-md">
+                                    <ul class="navbar-nav">
+                                        <li class="nav-item">
+                                            <a href="" class="nav-link">home</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="" class="nav-link">home</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="" class="nav-link">home</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="" class="nav-link">home</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-lg-2 col-md-4">
+                                    <ul class="navbar-nav">
+                                        <li class="nav-item">
+                                            <a href="" class="nav-link">home</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="" class="nav-link">home</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="" class="nav-link">home</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="" class="nav-link">home</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-lg-2 col-md-4">
+                                    <ul class="navbar-nav">
+                                        <li class="nav-item">
+                                            <a href="" class="nav-link">home</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="" class="nav-link">home</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="" class="nav-link">home</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="" class="nav-link">home</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-lg-2 col-md-4">
+                                    <ul class="navbar-nav">
+                                        <li class="nav-item">
+                                            <a href="" class="nav-link">home</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="" class="nav-link">home</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="" class="nav-link">home</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="" class="nav-link">home</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-lg-2 col-md-4">
+                                    <ul class="navbar-nav">
+                                        <li class="nav-item">
+                                            <a href="" class="nav-link">home</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="" class="nav-link">home</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="" class="nav-link">home</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="" class="nav-link">home</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-lg-2 col-md-4">
+                                    <ul class="navbar-nav">
+                                        <li class="nav-item">
+                                            <a href="" class="nav-link">home</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="" class="nav-link">home</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="" class="nav-link">home</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="" class="nav-link">home</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer_bottom_div">
+                <div class="container-fluid">
+                    <div class="copy-right">© 2021 Trade Me Limited</div>
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a href="" class="nav-li">desktop site</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="" class="nav-li">about us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="" class="nav-li">careers</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="" class="nav-li">advertise</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="" class="nav-li">investor relations</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="" class="nav-li">privacy policy</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="" class="nav-li">terms & conditions</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="" class="nav-li">contact us</a>
+                        </li>
+                    </ul>
+                    <div class="logo-icons">
+                        <span>
+                            <a href="" class="nav-link">
+                                <img
+                                    src="https://www.trademe.co.nz/images/frend/shielded-logo.png"
+                                    alt=""
+                                />
+                            </a>
+                        </span>
+                        <span>
+                            <a href="" class="nav-link">
+                                <i class="fa fa-facebook"></i>
+                            </a>
+                            <a href="" class="nav-link">
+                                <i class="fa fa-twitter"></i>
+                            </a>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--* END FOOTER -->
     </body>
 </html>
