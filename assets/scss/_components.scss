@@ -80,8 +80,8 @@
                     padding-right: 10px;
                     font-size: 20px;
                 }
-                .auction_card_title {
-                }
+                // .auction_card_title {
+                // }
                 div {
                     margin: 20px 0;
                 }
@@ -126,18 +126,18 @@
     align-items: center;
     justify-content: space-between;
 
-    .total_count_component_result,
-    .total_count_component_option {
-    }
+    // .total_count_component_result,
+    // .total_count_component_option {
+    // }
     .total_count_component_option {
         background-color: white;
         border: 1px solid #d7d5d2;
 
-        .select-dropdown-btn {
-        }
+        // .select-dropdown-btn {
+        // }
     }
-    .total_count_component_result {
-    }
+    // .total_count_component_result {
+    // }
 }
 
 // ! PAGINATION COMPONENT
@@ -188,8 +188,8 @@
         .total_count_component_option {
             order: 1;
         }
-        .total_count_component_result {
-        }
+        // .total_count_component_result {
+        // }
     }
 }
 
