@@ -8,7 +8,7 @@
         content: '';
         position: absolute;
         width: 100%;
-        height: var(calc(--border-height * 2));
+        height: var(--border-height);
         background-color: $o-col;
     }
 
@@ -109,12 +109,13 @@
         display: inline-block;
     }
     .welcome-banner-header {
+        padding-right: 30px;
         display: inline-block;
         * {
             display: inherit;
         }
         span {
-            padding: 10px;
+            padding: 4px 8px;
             color: white;
             font-size: 12px;
             background-color: $btn;
@@ -124,7 +125,7 @@
         display: inline-block;
         * {
             display: inline-block;
-            font-size: 12px;
+            // font-size: 12px;
             color: $btn;
         }
     }
@@ -153,5 +154,32 @@
         }
         // .footer_bottom_div {
         // }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .footer {
+        &::before {
+            height: calc(--border-height / 2);
+        }
+        .footer_top_div {
+            .footer_global {
+                .logo {
+                    img {
+                        height: 15.33px;
+                        // width: ;
+                    }
+                }
+                // .footer_global_nav {
+                //     .nav-link {
+                //     }
+                // }
+            }
+        }
+    }
+
+    .welcome-banner-buttons a {   
+         padding-right: 16px;
+
     }
 }
