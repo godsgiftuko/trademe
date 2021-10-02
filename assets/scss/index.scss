@@ -6,7 +6,10 @@
 @import 'footer';
 @import 'category_search_section';
 @import 'search_box';
-@import './components';
+@import 'components';
+@import 'hero'; // not completed
+@import './selectbox'; // not completed
+@import 'marketing_content';
 
 @font-face {
     font-display: swap;
@@ -72,6 +75,11 @@
             format('truetype');
 }
 
+// ! COLORS
+.g-col {
+    color: $g-col;
+}
+
 html {
     font-family: sans-serif;
     -ms-text-size-adjust: 100%;
@@ -133,7 +141,6 @@ strong {
 dfn {
     font-style: italic;
 }
-
 
 mark {
     background: #ff0;
@@ -327,7 +334,6 @@ h6 {
     font-weight: 700;
 }
 
-
 h1 {
     font-size: 24px;
 }
@@ -402,7 +408,8 @@ p {
 }
 
 .btn,
-.btn-2, .btn-o{
+.btn-2,
+.btn-o {
     display: inline-block;
     min-width: 2rem;
     min-height: 2rem;
