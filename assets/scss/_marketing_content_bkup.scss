@@ -1,0 +1,64 @@
+.marketing_content {
+    background-color: #fff;
+    .marketing_content_title {
+        padding-bottom: 8px;
+    }
+    .marketing_content_layouts {
+        .marketing_content_card {
+            .card {
+            } 
+        }
+        .marketing_content_img {
+            // padding: 10px;   
+            display: flex;
+            justify-content: space-between;
+            .card {
+                height: 230px;
+            }
+            
+        }
+       .card {
+           background-color: #fff;
+           box-shadow: 0 1px 4px 0 rgb(0 0 0 / 10%);
+           height: auto;
+           border-radius: 8px;
+           border: none;
+        //    margin: 10px 0;
+        //    background-repeat: no-repeat;
+        //    background-size: contain;
+
+           img {
+               height: 100%;
+               width: 100%;
+            border-radius: 8px 8px 0 0;
+           }
+           p {
+               font-size: 16px;
+           }
+       }
+    }
+    
+      
+}
+
+/*
+    ? MEDIA SCREENS == 768px;
+*/
+@media screen and (min-width: 768px) {
+    .marketing_content {
+        .marketing_content_card {
+            .card {
+                height: 500px;
+
+            }
+        }
+    }
+}
+/*
+    ? MEDIA SCREENS == 1024px;
+*/
+@media screen and(min-width: 1024px) {
+    .marketing_content_cards {
+        height: 70%;
+    }
+}
