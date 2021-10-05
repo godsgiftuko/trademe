@@ -9,7 +9,7 @@
 @import 'components';
 @import 'hero'; // not completed
 @import './selectbox'; // not completed
-@import 'marketing_content';
+// @import 'marketing_content';
 
 @font-face {
     font-display: swap;
@@ -404,7 +404,7 @@ p {
 }
 
 .navbar-nav {
-    flex-direction: row;
+    flex-direction: column;
 }
 
 .btn,

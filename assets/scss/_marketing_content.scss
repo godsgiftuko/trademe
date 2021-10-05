@@ -3,15 +3,15 @@
         margin-bottom: 20px;
     }
     .card {
-        transition: box-shadow .15s ease-out;
+        transition: box-shadow 0.15s ease-out;
         border-radius: 8px;
-        box-shadow: 0 1px 2px 0 rgb(0 0 0 / 10%);
+        // box-shadow: 0 1px 2px 0 rgb(0 0 0 / 10%);
     }
-    .marketing_card {
-        img {
+    // .marketing_card {
+    //     img {
 
-        }
-    }
+    //     }
+    // }
     p {
         font-size: 16px;
     }
@@ -21,14 +21,13 @@
 */
 @media screen and (min-width: 768px) {
     .marketing_section {
-        .card {
-            box-shadow: 0 2px 4px 0 rgb(0 0 0 / 10%);
-        }
+        // .card {
+        //     // box-shadow: 0 2px 4px 0 rgb(0 0 0 / 10%);
+        // }
         .marketing_card {
             height: 100%;
             img {
                 height: 300px;
-    
             }
         }
         .marketing_img {
@@ -42,7 +41,6 @@
             flex-direction: row;
             .col {
                 height: 100%;
-
             }
         }
     }
@@ -62,7 +60,6 @@
                 display: none;
             }
         }
-       
     }
 }
 /*
