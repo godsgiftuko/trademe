@@ -31,7 +31,7 @@
             width: 100%;
             // word-break: break-all;
             padding: 24px;
-            margin-bottom: 10px;
+            // margin-bottom: 10px;
             .trending-category-card-link {
                 text-decoration: none;
                 color: white;
@@ -64,8 +64,8 @@
         .trending-category-list {
             .trending-category-card {
                 min-height: 104px;
+                height: 100px;
                 padding: 24px;
-                margin-bottom: 0;
             }
         }
     }

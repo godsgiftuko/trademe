@@ -30,12 +30,27 @@
                 div {
                     margin: 20px 0;
                     ul li a {
+                        display: inline;
                         text-transform: capitalize;
+                        font-size: 12px;
+                        &:hover {
+                            color: currentColor;
+                        }
                     }
                 }
                 // & > ul > li:first-child > a {
                 //     color: red;
                 // }
+                & div:first-child > ul > li:first-child > a,
+                & div:nth-child(2) > ul > li:first-child > a,
+                & div:nth-child(3) > ul > li:first-child > a,
+                & div:nth-child(4) > ul > li:first-child > a,
+                & div:nth-child(5) > ul > li:first-child > a,
+                & div:last-child > ul > li:first-child > a {
+                    font-size: 16px;
+                }
+
+
                 & div:first-child > ul > li:first-child > a {
                     color: #d93a3f;
                 }
@@ -83,7 +98,7 @@
             }
 
             .logo-icons {
-                flex: 1;
+                flex: 0.5;
                 justify-content: space-between;
                 img {
                     height: 32px;
@@ -142,7 +157,7 @@
             .footer_global {
                 .logo {
                     img {
-                        height: 15.33px;
+                        height: 15.33px !important;
                         // width: ;
                     }
                 }
@@ -166,7 +181,7 @@
             .footer_global {
                 .logo {
                     img {
-                        height: 15.33px;
+                        height: 100%;
                         // width: ;
                     }
                 }

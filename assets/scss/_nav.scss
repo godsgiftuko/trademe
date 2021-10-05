@@ -14,7 +14,7 @@
     .container-fluid {
         display: flex;
     }
-
+    
     //! HEADER NAV
     #navbarNav {
         display: inline-block;
@@ -32,6 +32,7 @@
 
         ul.tm-affiliates__sat-nav-list {
             display: flex;
+            flex-direction: row;
             // justify-content: space-between;
 
             li.nav-item {
@@ -71,7 +72,7 @@
         }
 
         .logo img {
-            max-height: 24px;
+            height: 100%;
             display: flex;
             align-items: center;
         }
@@ -186,6 +187,9 @@
             padding: 1px 0px;
             .browse-dropdown-btn {
                 flex: 1;
+            }
+            .logo img {
+                height: 15.33px !important;
             }
         }
         #navbarNav {

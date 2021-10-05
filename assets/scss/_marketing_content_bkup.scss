@@ -1,57 +1,69 @@
-.marketing_content {
-    background-color: #fff;
-    .marketing_content_title {
-        padding-bottom: 8px;
+.marketing_section {
+    .marketing_csection_title {
+        margin-bottom: 20px;
     }
-    .marketing_content_layouts {
-        .marketing_content_card {
-            .card {
-            } 
-        }
-        .marketing_content_img {
-            // padding: 10px;   
-            display: flex;
-            justify-content: space-between;
-            .card {
-                height: 230px;
-            }
-            
-        }
-       .card {
-           background-color: #fff;
-           box-shadow: 0 1px 4px 0 rgb(0 0 0 / 10%);
-           height: auto;
-           border-radius: 8px;
-           border: none;
-        //    margin: 10px 0;
-        //    background-repeat: no-repeat;
-        //    background-size: contain;
+    .card {
+        transition: box-shadow .15s ease-out;
+        border-radius: 8px;
+        box-shadow: 0 1px 2px 0 rgb(0 0 0 / 10%);
+    }
+    .marketing_card {
+        img {
 
-           img {
-               height: 100%;
-               width: 100%;
-            border-radius: 8px 8px 0 0;
-           }
-           p {
-               font-size: 16px;
-           }
-       }
+        }
     }
-    
-      
+    p {
+        font-size: 16px;
+    }
 }
-
 /*
     ? MEDIA SCREENS == 768px;
 */
 @media screen and (min-width: 768px) {
-    .marketing_content {
-        .marketing_content_card {
-            .card {
-                height: 500px;
+    .marketing_section {
+        .card {
+            box-shadow: 0 2px 4px 0 rgb(0 0 0 / 10%);
+        }
+        .marketing_card {
+            background-repeat: no-repeat;
+            height: 100%;
+            img {
+                height: 360px;
+    
+            }
+        }
+        .marketing_img {
+            height: 100%;
+            img {
+                height: 200px;
+            }
+        }
+        .marketing_content_img_row {
+            display: flex;
+            flex-direction: row;
+            .col {
+                height: 100%;
 
             }
         }
+    }
+}
+@media screen and (max-width: 767px) {
+    .marketing_section {
+        .row {
+            flex-wrap: nowrap;
+        }
+        .card {
+            height: 200px;
+            img {
+                height: 100%;
+            }
+            box-shadow: 0 2px 4px 0 rgb(0 0 0 / 10%);
+            p {
+                display: none;
+            }
+        }
+       
     }
 }
 /*

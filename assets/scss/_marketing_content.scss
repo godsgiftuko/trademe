@@ -25,16 +25,17 @@
             box-shadow: 0 2px 4px 0 rgb(0 0 0 / 10%);
         }
         .marketing_card {
+            background-repeat: no-repeat;
             height: 100%;
             img {
-                height: 300px;
+                height: 360px;
     
             }
         }
         .marketing_img {
             height: 100%;
             img {
-                height: 150px;
+                height: 190px;
             }
         }
         .marketing_content_img_row {
@@ -48,6 +49,24 @@
     }
 }
 @media screen and (max-width: 767px) {
+    .marketing_section {
+        .row {
+            flex-wrap: nowrap;
+        }
+        .card {
+            height: 200px;
+            img {
+                height: 100%;
+            }
+            box-shadow: 0 2px 4px 0 rgb(0 0 0 / 10%);
+            p {
+                display: none;
+            }
+        }
+       
+    }
+}
+@media screen and (min-width: 768px) {
     .marketing_section {
         .row {
             flex-wrap: nowrap;

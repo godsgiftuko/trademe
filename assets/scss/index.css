@@ -1088,7 +1088,6 @@
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
   }
   .marketing_section .marketing_card {
-    background-repeat: no-repeat;
     height: 100%;
   }
   .marketing_section .marketing_card img {
@@ -1098,7 +1097,7 @@
     height: 100%;
   }
   .marketing_section .marketing_img img {
-    height: 190px;
+    height: 200px;
   }
   .marketing_section .marketing_content_img_row {
     display: flex;
@@ -1109,21 +1108,6 @@
   }
 }
 @media screen and (max-width: 767px) {
-  .marketing_section .row {
-    flex-wrap: nowrap;
-  }
-  .marketing_section .card {
-    height: 200px;
-    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
-  }
-  .marketing_section .card img {
-    height: 100%;
-  }
-  .marketing_section .card p {
-    display: none;
-  }
-}
-@media screen and (min-width: 768px) {
   .marketing_section .row {
     flex-wrap: nowrap;
   }
