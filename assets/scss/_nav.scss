@@ -189,6 +189,14 @@
             .browse-dropdown-btn {
                 flex: 1;
             }
+
+            .main-nav__member-options-list {
+                li.nav-item {
+                    .m-affiliates__sat-nav-link {
+                        font-size: 12px !important;
+                    }
+                }
+            }
         }
         #navbarNav {
             display: block;
@@ -247,6 +255,23 @@
                 display: none;
             }
         }
+        .main-nav__global-navigation {
+            .main-nav__member-options-list {
+                display: flex;
+                justify-content: flex-end;
+                li.nav-item {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    .fa,
+                    .m-affiliates__sat-nav-link {
+                        font-size: 12px !important;
+                    }
+                }
+            }
+        }
+    }
+    .footer {
     }
 }
 
