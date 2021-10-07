@@ -2,33 +2,32 @@
 .auction_card_rec_closed_bg {
     background-color: #ffe5ec;
 }
+.auction_card_watchlist {
+    position: absolute;
+    right: 0;
+    border-color: transparent $auction_card_border_bg transparent transparent;
+    border-style: solid;
+    z-index: 22;
+    display: flex;
+    align-content: center;
+    border-width: 0 56px 56px 0;
+    cursor: pointer;
+    .fa {
+        color: #943900;
+        position: absolute;
+        transform: translate(250%, 100%);
+    }
+
+    &:hover {
+        border-color: transparent $auction_card_border_col transparent
+            transparent;
+    }
+}
 .auction_card_rec {
     display: flex;
     margin-bottom: 20px;
     position: relative;
     // max-height: 251.15px;
-    .auction_card_watchlist {
-        position: absolute;
-        right: 0;
-        border-color: transparent $auction_card_border_bg transparent
-            transparent;
-        border-style: solid;
-        z-index: 22;
-        display: flex;
-        align-content: center;
-        border-width: 0 56px 56px 0;
-        cursor: pointer;
-        .fa {
-            color: #943900;
-            position: absolute;
-            transform: translate(250%, 100%);
-        }
-
-        &:hover {
-            border-color: transparent $auction_card_border_col transparent
-                transparent;
-        }
-    }
     a {
         display: contents;
         &:hover {

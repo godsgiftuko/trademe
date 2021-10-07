@@ -6,7 +6,7 @@
 .auction-section {
     width: 100%;
     background: transparent;
-    overflow: hidden;
+    overflow-x: scroll;
 
     //! AUCTION HEADER
     .nav-link {
@@ -17,7 +17,7 @@
         //     font-weight: 500;
         // }
         &:first-child:hover {
-            color: $nav-link-col;
+            color: $body-col;
             text-decoration: none;
         }
         span {
@@ -27,7 +27,7 @@
                 text-decoration: underline;
             }
         }
-        color: $nav-link-col;
+        color: $body-col;
     }
 
     //! AUCTION CARD
@@ -102,14 +102,17 @@
             .auction_card_details {
                 display: inline-block;
 
-                padding: 12px;
+                padding: 12px 12px 5px 12px;
                 .auction-link {
+                    height: 130px;
                     text-decoration: none;
                     display: flex;
+                    justify-content: space-between;
                     flex-direction: column;
                     .auction_bid-price {
                         color: $body-col;
                     }
+
                     .auction_card_details-body {
                         // padding-bottom: 20px;
                         // display: flex;
@@ -150,6 +153,9 @@
                         }
                     }
                     .auction_card_details-footer {
+                        position: relative;
+                        bottom: 0;
+                        padding: 20px auto;
                         .auction_bid-price {
                             font-size: 16px;
                         }
@@ -189,18 +195,23 @@
                 // left: 50%;
                 // }
             }
-            &::after {
-                position: absolute;
-                font-family: 'font Awesome';
-                content: '\f1e5';
-                border-color: transparent #ffc041 transparent transparent;
-                border-style: solid;
-                top: 0;
-                border-width: 0 56px 56px 0;
-                z-index: 22;
-                right: 0;
-                text-align: center;
-            }
+            // &::after {
+            //     position: absolute;
+            //     font-family: 'font Awesome';
+            //     content: '';
+            //     border-color: transparent #ffc041 transparent transparent;
+            //     border-style: solid;
+            //     top: 0;
+            //     border-width: 0 56px 56px 0;
+            //     z-index: 22;
+            //     right: 0;
+            //     cursor: pointer !important;
+            //     text-align: center;
+
+            //     &:hover {
+            //         border-color: transparent red transparent transparent;
+            //     }
+            // }
         }
     }
 }

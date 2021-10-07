@@ -1,13 +1,3 @@
-.logo img {
-  max-height: 24px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
 .navbar {
   background-color: #f6f5f4;
   padding: 0px;
@@ -74,7 +64,7 @@
 }
 
 .navbar .main-nav__global-navigation .logo img {
-  max-height: 24px;
+  max-height: 19px !important;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -112,7 +102,7 @@
 
 .header_market_place {
   background-color: #d93a3f;
-  padding: 24px 24px 0px 0px;
+  padding: 24px 0px 0px 0px;
 }
 
 .header_market_place .header_market_place_nav ul.navbar-nav {
@@ -209,6 +199,9 @@
   .navbar .main-nav__global-navigation .main-nav__member-options-list li.nav-item .m-affiliates__sat-nav-link {
     font-size: 12px !important;
   }
+  .navbar .main-nav__global-navigation .logo img {
+    max-height: 24px !important;
+  }
   .navbar #navbarNav {
     display: block;
   }
@@ -232,9 +225,6 @@
 }
 
 @media screen and (max-width: 768px) {
-  .--none-md {
-    display: block !important;
-  }
   .navbar #navbarNav .tm-affiliates__sat-nav-list {
     padding-left: 0 !important;
     -webkit-box-orient: horizontal;
@@ -274,9 +264,25 @@
   }
 }
 
-@media screen and (min-width: 375px) {
-  .navbar .logo {
-    max-height: 24px;
+@media screen and (max-width: 767px) {
+  #navbarNav {
+    display: none !important;
+  }
+  .--none-sm {
+    display: none !important;
+  }
+  .--none-md {
+    display: block !important;
+  }
+}
+
+/*
+    ? MEDIA SCREENS == 1023px;
+*/
+@media screen and (max-width: 1024px) {
+  #navbarNav .tm-affiliates__sat-nav-list {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
   }
 }
 
@@ -421,10 +427,6 @@
     ? MEDIA SCREENS == 768px;
 */
 @media screen and (max-width: 767px) {
-  .navbar #navbarNav,
-  .navbar .--none-sm {
-    display: none !important;
-  }
   .tm-homepage-search-header__nav {
     padding: 40px 0px 15px 0 !important;
   }
@@ -634,7 +636,7 @@
 .auction-section {
   width: 100%;
   background: transparent;
-  overflow: hidden;
+  overflow-x: scroll;
 }
 
 .auction-section .nav-link {
@@ -645,11 +647,11 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  color: #85807c;
+  color: #44413d;
 }
 
 .auction-section .nav-link:first-child:hover {
-  color: #85807c;
+  color: #44413d;
   text-decoration: none;
 }
 
@@ -746,14 +748,18 @@
 
 .auction-section .auction_cards-group .auction_card .auction_card_details {
   display: inline-block;
-  padding: 12px;
+  padding: 12px 12px 5px 12px;
 }
 
 .auction-section .auction_cards-group .auction_card .auction_card_details .auction-link {
+  height: 130px;
   text-decoration: none;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -809,6 +815,12 @@
   font-size: 12px;
 }
 
+.auction-section .auction_cards-group .auction_card .auction_card_details .auction-link .auction_card_details-footer {
+  position: relative;
+  bottom: 0;
+  padding: 20px auto;
+}
+
 .auction-section .auction_cards-group .auction_card .auction_card_details .auction-link .auction_card_details-footer .auction_bid-price {
   font-size: 16px;
 }
@@ -835,19 +847,6 @@
 .auction-section .auction_cards-group .auction_card .auction_card_icon span {
   margin: auto;
   width: 100%;
-}
-
-.auction-section .auction_cards-group .auction_card::after {
-  position: absolute;
-  font-family: 'font Awesome';
-  content: '\f1e5';
-  border-color: transparent #ffc041 transparent transparent;
-  border-style: solid;
-  top: 0;
-  border-width: 0 56px 56px 0;
-  z-index: 22;
-  right: 0;
-  text-align: center;
 }
 
 /*
@@ -1133,6 +1132,10 @@
   color: #76716d;
 }
 
+.footer .footer_bottom_div div .copy-right .logo-icons {
+  display: none !important;
+}
+
 .welcome-banner div {
   display: inline-block;
 }
@@ -1163,17 +1166,93 @@
 }
 
 /*
-    ? MEDIA SCREENS == 768px;
+    ? MEDIA SCREENS == 767px;
 */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
+  .welcome-banner div {
+    padding-bottom: 5px;
+  }
+  .welcome-banner div .welcome-banner-header * {
+    padding: 0;
+    margin: 0;
+  }
+  .welcome-banner div .welcome-banner-buttons .nav-link {
+    display: block !important;
+  }
   .footer::before {
     height: calc(--border-height / 2);
+  }
+  .footer .footer_top_div {
+    display: none !important;
   }
   .footer .footer_top_div .footer_global .logo img {
     height: 15.33px;
   }
+  .footer .footer_bottom_div {
+    /* Optional: show position indicator in red */
+  }
+  .footer .footer_bottom_div div {
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+    -webkit-box-align: unset !important;
+        -ms-flex-align: unset !important;
+            align-items: unset !important;
+  }
+  .footer .footer_bottom_div div ul.navbar-nav {
+    display: -webkit-inline-box !important;
+    overflow: hidden;
+    width: 100%;
+    max-width: 1998px;
+    overflow-x: scroll;
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .footer .footer_bottom_div div ul.navbar-nav li.nav-item {
+    display: block !important;
+  }
+  .footer .footer_bottom_div div ul.navbar-nav li.nav-item a.nav-link:hover {
+    text-decoration: underline;
+  }
+  .footer .footer_bottom_div ::-webkit-scrollbar {
+    width: 0;
+    /* Remove scrollbar space */
+    background: transparent;
+    /* Optional: just make scrollbar invisible */
+  }
+  .footer .footer_bottom_div ::-webkit-scrollbar-thumb {
+    background: transparent;
+  }
+  .footer .footer_bottom_div .logo-icons {
+    display: none !important;
+  }
+  .footer .footer_bottom_div .copy-right {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -webkit-box-orient: horizontal !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: row !important;
+            flex-direction: row !important;
+  }
+  .footer .footer_bottom_div .copy-right #copy-right-logo-icons {
+    display: block !important;
+    text-align: right !important;
+  }
 }
 
+/*
+    ? MEDIA SCREENS == 768px;
+*/
 @media screen and (min-width: 768px) {
   .footer::before {
     height: calc(--border-height / 2);
@@ -1183,6 +1262,18 @@
   }
   .welcome-banner-buttons a {
     padding-right: 16px;
+  }
+}
+
+/*
+    ? MEDIA SCREENS == 1023px;
+*/
+@media screen and (min-width: 1023px) {
+  .footer_bottom_div {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 
@@ -1205,6 +1296,9 @@
     ? MEDIA SCREENS == 768px;
 */
 @media screen and (min-width: 768px) {
+  .category_search_div {
+    margin: 10px 0;
+  }
   .category_search_div .category_search_nav_dropdown_buttons {
     padding-top: 8px;
   }
@@ -1293,15 +1387,7 @@
   background-color: #ffe5ec;
 }
 
-.auction_card_rec {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-bottom: 20px;
-  position: relative;
-}
-
-.auction_card_rec .auction_card_watchlist {
+.auction_card_watchlist {
   position: absolute;
   right: 0;
   border-color: transparent #ffc041 transparent transparent;
@@ -1316,15 +1402,23 @@
   cursor: pointer;
 }
 
-.auction_card_rec .auction_card_watchlist .fa {
+.auction_card_watchlist .fa {
   color: #943900;
   position: absolute;
   -webkit-transform: translate(250%, 100%);
           transform: translate(250%, 100%);
 }
 
-.auction_card_rec .auction_card_watchlist:hover {
+.auction_card_watchlist:hover {
   border-color: transparent #ffd972 transparent transparent;
+}
+
+.auction_card_rec {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 20px;
+  position: relative;
 }
 
 .auction_card_rec a {

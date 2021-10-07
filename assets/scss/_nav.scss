@@ -1,11 +1,5 @@
 @import 'colors';
 
-.logo img {
-    max-height: 24px;
-    display: flex;
-    align-items: center;
-}
-
 .navbar {
     background-color: $navbar_bg_col;
     padding: 0px;
@@ -73,7 +67,7 @@
         }
 
         .logo img {
-            max-height: 24px;
+            max-height: 19px !important;
             display: flex;
             align-items: center;
         }
@@ -107,7 +101,7 @@
 
 .header_market_place {
     background-color: $r-col;
-    padding: 24px 24px 0px 0px;
+    padding: 24px 0px 0px 0px;
 
     .header_market_place_nav {
         ul.navbar-nav {
@@ -197,6 +191,10 @@
                     }
                 }
             }
+
+            .logo img {
+                max-height: 24px !important;
+            }
         }
         #navbarNav {
             display: block;
@@ -231,10 +229,8 @@
         }
     }
 }
+
 @media screen and (max-width: 768px) {
-    .--none-md {
-        display: block !important;
-    }
     .navbar {
         #navbarNav {
             // display: none;
@@ -271,14 +267,28 @@
             }
         }
     }
-    .footer {
+}
+
+@media screen and (max-width: 767px) {
+    #navbarNav {
+        display: none !important;
+    }
+    .--none-sm {
+        display: none !important;
+    }
+    .--none-md {
+        display: block !important;
     }
 }
 
-@media screen and (min-width: 375px) {
-    .navbar {
-        .logo {
-            max-height: 24px;
+/*
+    ? MEDIA SCREENS == 1023px;
+*/
+@media screen and (max-width: 1024px) {
+    #navbarNav {
+        .tm-affiliates__sat-nav-list {
+            padding-left: 0 !important;
+            padding-right: 0 !important;
         }
     }
 }
