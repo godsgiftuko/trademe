@@ -431,8 +431,8 @@ p {
     vertical-align: middle;
     padding: 0.75rem 24px;
     &:hover {
-        opacity: 0.8;
-        // color: white;
+        // opacity: 0.8;
+        background-color: #1699eff8 !important;
     }
 }
 
@@ -486,6 +486,12 @@ p {
     max-width: 1600px;
     margin-right: auto;
     margin-left: auto;
+}
+
+section {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: #fff;
 }
 
 // ? DISPLAY: NONE;
