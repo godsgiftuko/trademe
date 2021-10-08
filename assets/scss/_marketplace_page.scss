@@ -1,0 +1,29 @@
+.tm-marketplace-landing-page-wrapper {
+    background-color: #fff;
+    .navbar {
+        ul.navbar-nav {
+            display: flex;
+            background-color: #fff;
+            column-count: 3;
+            flex-direction: row !important;
+            li.nav-item {
+                padding: 15px 20px 15px 0;
+                border-radius: 5px;
+                display: inline-block;
+                
+                &:focus {
+                    border: 2px solid $p-col;
+                }
+                
+                a.nav-link {
+                    font-size: 1rem;
+                    color: $p-col !important;
+                }
+            }
+        }
+    }
+}
+
+/*
+    ? MEDIA SCREENS == 768px;
+*/
