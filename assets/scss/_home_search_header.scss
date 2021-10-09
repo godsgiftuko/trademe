@@ -57,8 +57,7 @@
                     -webkit-transition: border-color 0.2s ease-out;
                     transition: border-color 0.2s ease-out;
 
-                    &:focus,
-                    &:active {
+                    &:focus-within {
                         outline: 2px solid rgba(99, 99, 99, 0.66);
                     }
                     input[type='text'] {
@@ -227,7 +226,7 @@
 
     // ! ANNOUNCEMENT NAV
 
-    .browse-dropdown-btn {
+    .main-nav__global-navigation .browse-dropdown-btn {
         display: none !important;
     }
 }

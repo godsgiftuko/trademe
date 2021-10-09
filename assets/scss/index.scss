@@ -11,6 +11,8 @@
 @import './selectbox'; // not completed
 // @import 'marketing_content';
 @import 'marketplace_page';
+@import 'property';
+@import 'motorbikes';
 
 @font-face {
     font-display: swap;
@@ -408,12 +410,104 @@ p {
     flex-direction: column;
 }
 
+// ? SEARCH BOX
+
+.tm-global-search-form {
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    // padding-right: 65px;
+    form {
+        // flex: 1;
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        height: 48px;
+        width: 100%;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+        box-sizing: content-box;
+        // padding-right: 16px;
+        padding-left: 16px;
+        background-color: #fff;
+        border-radius: 3px;
+        color: #44413d;
+        cursor: text;
+        border: 1px solid #d7d5d2 !important;
+        -webkit-transition: border-color 0.2s ease-out;
+        transition: border-color 0.2s ease-out;
+
+        &:focus-within {
+            outline: 2px solid rgba(99, 99, 99, 0.66);
+        }
+        input[type='text'] {
+            height: inherit;
+            border: none;
+            padding: 0 15px 0 15px;
+            width: 100%;
+        }
+    }
+    .btn {
+        display: inline-block;
+        // width: 100%;
+        min-width: 2rem;
+        min-height: 100% !important;
+        border: none;
+        text-transform: capitalize;
+        border-radius: 0px 3px 3px 0px;
+        background-color: $btn;
+        color: white;
+        cursor: pointer;
+        font-size: 1rem;
+        font-weight: 500;
+        line-height: 1.5rem;
+        text-align: center;
+        -webkit-transition-duration: 0.1s;
+        transition-duration: 0.1s;
+        -webkit-transition-property: background-color, border-color, box-shadow,
+            padding-top, padding-bottom, color;
+        transition-property: background-color, border-color, box-shadow,
+            padding-top, padding-bottom, color;
+        vertical-align: middle;
+        padding: 0.75rem 24px;
+        &:hover {
+            opacity: 0.7;
+        }
+    }
+}
+form {
+    button {
+        .fa {
+            display: none;
+        }
+        &::before {
+            content: 'Search';
+            position: relative;
+        }
+    }
+}
+@media screen and (max-width: 425px) {
+    form {
+        button {
+            .fa {
+                display: block !important;
+            }
+            &::before {
+                display: none !important;
+            }
+        }
+    }
+}
+
 .btn,
 .btn-2,
-.btn-o {
+.btn-o,
+button {
     display: inline-block;
     min-width: 2rem;
-    min-height: 2rem;
+    min-height: 100% !important;
     border: none;
     text-transform: capitalize;
     border-radius: 0px 3px 3px 0px;
@@ -432,6 +526,8 @@ p {
     padding: 0.75rem 24px;
     &:hover {
         // opacity: 0.8;
+        color: #fff;
+        text-decoration: none;
         background-color: #1699eff8 !important;
     }
 }

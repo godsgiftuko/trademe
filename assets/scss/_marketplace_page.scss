@@ -273,6 +273,93 @@
     }
 }
 
+.tm-marketplace-landing-page-search-area {
+    position: relative;
+    background-color: #cbeaff;
+    margin-bottom: 100px;
+
+    h3.search_box-title {
+        color: #65605d;
+        font-size: 1rem;
+        font-weight: 500;
+        line-height: 24px;
+        padding-right: 16px;
+        margin-bottom: 8px;
+        span {
+            font-size: 0.75rem;
+            line-height: 16px;
+            color: #9b9591;
+            font-weight: 400;
+        }
+    }
+    .tm-marketplace-landing-page-header {
+        z-index: 2;
+        position: relative;
+        display: flex;
+        overflow: hidden;
+        // display: flex !important;
+        // flex-direction: row !important;
+        justify-content: space-between !important;
+        .tm-marketplace-header-section__headline {
+            width: 550px;
+            padding-top: 40px !important;
+            font-size: 3.125rem !important;
+            line-height: 60px;
+        }
+        .tm-marketplace-header-section__svg {
+            display: flex;
+            align-items: center;
+            text-align: right;
+        }
+    }
+
+    .tm-marketplace-landing-page-search-section {
+        .container-fluid {
+            background-color: #fff;
+            height: 136px !important;
+            padding: 16px 24px;
+            border-radius: 6px;
+            margin-top: -50px;
+            left: 0;
+            position: absolute;
+            width: 100%;
+            z-index: 3;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            div {
+                padding: 0 5px;
+                select,
+                button {
+                    height: 48px;
+                }
+            }
+
+            .search_box {
+                flex: 2;
+            }
+        }
+    }
+    .tm-marketplace-landing-page-bottom-section {
+        position: absolute;
+        bottom: 0;
+        // width: 1956px;
+        overflow: hidden !important;
+
+        svg {
+            width: 100%;
+        }
+    }
+
+    .tm-marketplace-landing-page-search-section-button {
+        button {
+            background-color: $btn;
+            color: #fff;
+        }
+    }
+}
+
 /*
     ? MEDIA SCREENS == 768px;
 */
@@ -292,15 +379,61 @@
         }
     }
 
-    // .tm-marketplace-landing__stripes-wrapper {
-    //     .product-cardlist {
-    //         // display: grid !important;
-    //         // grid-template-columns: 1fr 1fr auto !important;
-    //         // grid-auto-rows: max-content;
-    //     }
-    // }
+    .tm-marketplace-landing-page-search-area {
+        .tm-marketplace-landing-page-header {
+            display: flex !important;
+            flex-direction: row !important;
+            justify-content: space-between !important;
+            .tm-marketplace-header-section__headline {
+                width: 394px !important;
+                padding-top: 64px !important;
+                font-size: 2.1875rem !important;
+                line-height: 40px !important;
+            }
+            .tm-marketplace-header-section__svg {
+                // flex: 4;
+                svg {
+                    height: 120.13px;
+                    width: 300px;
+                }
+            }
+        }
+    }
 }
 
+@media screen and (min-width: 768px) {
+    .tm-marketplace-landing-page-search-area {
+        .tm-marketplace-landing-page-header {
+            height: 240px;
+        }
+    }
+    .tm-marketplace-landing-page-search-area {
+        div {
+            position: relative;
+        }
+        .tm-marketplace-landing-page-header {
+            // height: 140px;
+
+            h1.tm-marketplace-header-section__headline {
+                // position: absolute;
+                // z-index: 1;
+                // width: 254px;
+                // padding-top: 16px;
+                color: #00569e;
+                // font-size: 1.5rem;
+                // line-height: 32px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 960px) {
+    .tm-marketplace-landing-page-search-area {
+        .tm-marketplace-landing-page-header {
+            height: 270px;
+        }
+    }
+}
 @media screen and (max-width: 767px) {
     .tm-marketplace-deals-div {
         flex-direction: column;
@@ -308,15 +441,52 @@
             width: 100% !important;
         }
     }
+
+    .tm-marketplace-landing-page-search-area {
+        .tm-marketplace-landing-page-header {
+            flex-direction: column !important;
+            .tm-marketplace-header-section__headline {
+                width: 254px !important;
+                padding-top: 16px !important;
+                color: #00569e;
+                font-size: 24px !important;
+                line-height: 32px !important;
+                margin-bottom: 24px !important;
+            }
+            .tm-marketplace-header-section__svg {
+                svg {
+                    height: 20vh;
+                }
+            }
+        }
+        .tm-marketplace-landing-page-bottom-section {
+            svg {
+                height: 100px !important;
+            }
+        }
+    }
+
+    .tm-marketplace-landing-page-search-section {
+        // margin-top: 55px;
+        margin-top: 60px;
+        .container-fluid {
+            position: relative !important;
+            flex-direction: column !important;
+        }
+    }
 }
 
-@media screen and (min-width: 1280px) {
-    // .tm-marketplace-deals-div {
-    //     .container-fluid {
-    //         padding-right: 8.71%;
-    //         padding-left: 8.71%;
-    //     }
-    // }
+@media screen and (max-width: 1024px) {
+    .tm-marketplace-landing-page-search-area {
+        .tm-marketplace-landing-page-header {
+            .tm-marketplace-header-section__headline {
+                width: 394px;
+                padding-top: 64px;
+                font-size: 2.1875rem;
+                line-height: 48px;
+            }
+        }
+    }
 }
 
 @media screen and (min-width: 480px) {
@@ -324,6 +494,26 @@
     //     .container-fluid {
     //         padding-right: 24px;
     //         padding-left: 24px;
+    //     }
+    // }
+}
+
+@media screen and (min-width: 1440px) {
+    // .tm-marketplace-landing-page-search-area {
+    //     .tm-marketplace-landing-page-header {
+    //         display: flex !important;
+    //         flex-direction: row !important;
+    //         justify-content: space-between !important;
+    //         .tm-marketplace-header-section__headline {
+    //             width: 550px;
+    //             padding-top: 40px !important;
+    //             font-size: 3.125rem !important;
+    //             line-height: 60px;
+    //         }
+    //         .tm-marketplace-header-section__svg {
+    //             // flex: 4;
+    //             text-align: right;
+    //         }
     //     }
     // }
 }

@@ -1,6 +1,7 @@
 .search_box {
     background-color: #fff;
     font-size: 16px !important;
+    margin-bottom: 20px;
     .fa {
         font-size: 20px;
     }
@@ -39,7 +40,7 @@
         display: inline-block;
         // width: 100%;
         min-width: 2rem;
-        min-height: 2rem;
+        min-height: 100% !important;
         border: none;
         text-transform: capitalize;
         border-radius: 0px 3px 3px 0px;

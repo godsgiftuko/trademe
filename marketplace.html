@@ -225,9 +225,12 @@
             <!--* END NAV -->
 
             <!--*  HEADER MARKETPLACE NAV -->
-            <div class="header_market_place">
+            <div
+                class="header_global_navigation"
+                style="background-color: #d93a3f"
+            >
                 <div class="container-fluid">
-                    <div class="header_market_place_nav">
+                    <div class="header_global_navigation_nav">
                         <ul class="navbar-nav">
                             <li class="nav-item">
                                 <a href="" class="nav-link">marketplace</a>
@@ -246,7 +249,7 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="header_market_place_sub_nav">
+                    <div class="header_global_navigation_sub_nav">
                         <div class="dropdown browse-dropdown-btn">
                             <button
                                 class="btn dropdown-toggle"
@@ -273,13 +276,13 @@
                         </div>
                         <ul class="navbar-nav">
                             <li class="nav-item">
-                                <a href="" class="nav-link">stores</a>
+                                <a href="" class="nav-link">Stores</a>
                             </li>
                             <li class="nav-item">
-                                <a href="" class="nav-link">deals</a>
+                                <a href="" class="nav-link">Deals</a>
                             </li>
                             <li class="nav-item">
-                                <a href="" class="nav-link">book a courier</a>
+                                <a href="" class="nav-link">Book a courier</a>
                             </li>
                         </ul>
                         <div class="dropdown browse-dropdown-btn">
@@ -291,7 +294,7 @@
                                 aria-haspopup="true"
                                 aria-expanded="false"
                             >
-                                Browse Marketplace
+                                List an item
                             </button>
                             <div
                                 class="dropdown-menu"
@@ -313,264 +316,278 @@
         </header>
 
         <main>
-            <!--* AUCTION -->
-            <section class="auction-section pb-0 d-none">
+            <!--* MARKETPLACE SEARCH AREA -->
+            <div class="tm-marketplace-landing-page-search-area">
                 <div class="container-fluid">
-                    <a href="" class="nav-link">
-                        <h2 class="fw-bold mb-3">Cool auctions</h2>
-                        <span> View all (10) </span>
-                    </a>
-                    <div class="auction_cards-group">
-                        <button id="chevron-left" type="button" disabled>
-                            <i class="fa fa-chevron-left"></i>
-                        </button>
-                        <div class="auction_card auction_card-border">
-                            <div class="auction_card_watchlist">
-                                <i class="fa fa-binoculars"></i>
+                    <div class="tm-marketplace-landing-page-header">
+                        <h1 class="tm-marketplace-header-section__headline">
+                            Shop our unique range of new & used.
+                        </h1>
+                        <div class="tm-marketplace-header-section__svg">
+                            <svg
+                                width="467"
+                                height="187"
+                                viewBox="0 0 467 187"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                                preserveAspectRatio="xMinYMid meet"
+                                focusable="false"
+                                role="img"
+                                aria-labelledby="tg-ae661306-3d2d-fa1b-6cc9-ed14b42d6a6c"
+                            >
+                                <path
+                                    d="M257.449 139.808C257.369 135.99 257.699 132.853 258.278 130.274L268.301 118.399C268.631 118.347 269.568 118.336 273.546 118.336C275.614 118.336 276.989 117.711 277.227 116.427C277.239 116.359 277.227 116.427 277.216 116.228C279.989 116.131 281.012 113.2 281.012 113.2H250.597C249.977 113.2 245.33 117.717 243.483 119.864C240 115.376 235.409 112.149 228 113.2C231.875 115.876 233.903 117.762 235.994 120.342C241.324 126.91 240.057 162.274 240.057 162.274"
+                                    fill="#F9AF2C"
+                                ></path>
+                                <path
+                                    d="M258.676 139.799L238.727 139.771L238.662 186.165L258.611 186.193L258.676 139.799Z"
+                                    fill="#8DCEFC"
+                                ></path>
+                                <path
+                                    d="M190.563 139.808C190.642 135.99 190.313 132.853 189.733 130.274L179.71 118.399C179.381 118.347 178.443 118.336 174.466 118.336C172.398 118.336 171.023 117.711 170.784 116.427C170.773 116.359 170.784 116.427 170.795 116.228C168.023 116.131 167 113.2 167 113.2H197.415C198.034 113.2 202.682 117.717 204.528 119.864C208.011 115.376 212.602 112.149 220.011 113.2C216.136 115.876 214.108 117.762 212.017 120.342C206.688 126.91 207.955 162.274 207.955 162.274"
+                                    fill="#F9AF2C"
+                                ></path>
+                                <path
+                                    d="M189.335 139.799L209.284 139.771L209.349 186.17L189.4 186.198L189.335 139.799Z"
+                                    fill="#8DCEFC"
+                                ></path>
+                                <path
+                                    d="M147.978 128H142L148.015 98H160L147.978 128Z"
+                                    fill="#F9AF2C"
+                                ></path>
+                                <path
+                                    d="M296.695 128L303 127.992L296.641 98L284 98.0076L296.695 128Z"
+                                    fill="#F9AF2C"
+                                ></path>
+                                <path
+                                    d="M262.735 66L306.685 66.0225H315V72.9111H306.678L306.663 113L262.675 112.978H182.325L138.345 113L138.322 72.9111H130V66.0225H138.322L182.265 66"
+                                    fill="#007ACD"
+                                ></path>
+                                <path
+                                    d="M262.735 82H300L287.944 22.5632C287.899 22.1398 287.703 21.7474 287.391 21.4597C287.079 21.1719 286.674 21.0085 286.252 21H262.675H182.332H158.756C158.332 21.0083 157.926 21.1715 157.613 21.4591C157.301 21.7467 157.102 22.1391 157.056 22.5632L145 82H182.273"
+                                    fill="#279BE9"
+                                ></path>
+                                <path
+                                    d="M300 82H145V106H300V82Z"
+                                    fill="#52B0F0"
+                                ></path>
+                                <path
+                                    d="M248 53H193V58H248V53Z"
+                                    fill="#52B0F0"
+                                ></path>
+                                <path
+                                    d="M258 53H253V58H258V53Z"
+                                    fill="#52B0F0"
+                                ></path>
+                                <path
+                                    d="M376.336 143.96L417.584 144C417.939 144 418.278 143.859 418.529 143.608C418.779 143.357 418.92 143.016 418.92 142.661L419 64.3387C419 63.9836 418.859 63.6431 418.609 63.3921C418.358 63.141 418.019 63 417.664 63H376.408C376.064 62.9996 375.734 63.1318 375.485 63.3692C375.236 63.6065 375.088 63.9307 375.072 64.2745L375 142.597C375 142.952 375.141 143.293 375.391 143.544C375.642 143.795 375.981 143.936 376.336 143.936"
+                                    fill="#787878"
+                                ></path>
+                                <path
+                                    d="M379.09 134H414.853C414.864 134 414.876 133.998 414.886 133.993C414.897 133.989 414.906 133.982 414.914 133.974C414.921 133.965 414.927 133.956 414.931 133.945C414.934 133.934 414.936 133.923 414.935 133.912L415 70.0883C415 70.0767 414.998 70.0652 414.993 70.0545C414.989 70.0438 414.982 70.0341 414.974 70.0259C414.965 70.0177 414.955 70.0111 414.944 70.0067C414.934 70.0023 414.922 70 414.91 70H379.147C379.123 70 379.1 70.0093 379.084 70.0259C379.067 70.0424 379.057 70.0648 379.057 70.0883L379 133.912C379 133.935 379.009 133.958 379.026 133.974C379.043 133.991 379.066 134 379.09 134Z"
+                                    fill="#8DCEFC"
+                                ></path>
+                                <path
+                                    d="M393.593 68H400.399C400.559 68 400.711 67.9195 400.824 67.7761C400.937 67.6328 401 67.4384 401 67.2356V66.7644C401 66.5617 400.937 66.3673 400.824 66.2239C400.711 66.0806 400.559 66.0001 400.399 66.0001H393.601C393.522 65.9987 393.444 66.0171 393.372 66.0544C393.299 66.0917 393.232 66.147 393.177 66.2171C393.121 66.2873 393.076 66.3709 393.046 66.463C393.016 66.5552 393 66.6541 393 66.754V67.1937C392.999 67.2936 393.013 67.3928 393.043 67.4855C393.072 67.5781 393.116 67.6625 393.171 67.7336C393.226 67.8047 393.292 67.8612 393.364 67.8997C393.436 67.9383 393.514 67.9581 393.593 67.9581"
+                                    fill="#545454"
+                                ></path>
+                                <path
+                                    d="M395 139.023C395.004 139.417 395.126 139.802 395.348 140.128C395.57 140.453 395.884 140.706 396.25 140.854C396.616 141.002 397.017 141.038 397.404 140.959C397.79 140.879 398.145 140.687 398.422 140.406C398.7 140.126 398.888 139.769 398.963 139.382C399.039 138.995 398.998 138.594 398.846 138.229C398.694 137.865 398.437 137.554 398.109 137.336C397.78 137.117 397.395 137 397 137C396.468 137.006 395.959 137.222 395.584 137.6C395.21 137.979 395 138.49 395 139.023Z"
+                                    fill="#545454"
+                                ></path>
+                                <path
+                                    d="M379 97H414V135H379V97Z"
+                                    fill="#CBEAFF"
+                                ></path>
+                                <path
+                                    d="M445 150.706L441.361 143.812L434.684 116.264L418.713 97L418.656 123.817C418.656 123.817 402.098 107.314 401.207 106.809C400.869 106.608 396.137 114.835 408.068 129.283C410.068 136.612 410.373 140.777 413.298 146.42C414.983 149.727 417.549 152.504 420.713 154.447L424.401 162L445 150.706Z"
+                                    fill="#F9AF2C"
+                                ></path>
+                                <path
+                                    d="M467 185L431.921 184.968L421 164.035L449.028 149L467 185Z"
+                                    fill="#279BE9"
+                                ></path>
+                                <path
+                                    d="M429.763 180L458 165.565L449.205 148L421 163.101L429.763 180Z"
+                                    fill="#F2FAFF"
+                                ></path>
+                                <path
+                                    d="M428 168.47C427.993 169.361 428.281 170.234 428.826 170.978C429.372 171.722 430.15 172.303 431.063 172.649C431.976 172.994 432.983 173.087 433.955 172.917C434.927 172.747 435.821 172.321 436.524 171.693C437.226 171.065 437.706 170.263 437.901 169.389C438.097 168.515 438 167.609 437.623 166.785C437.245 165.961 436.604 165.256 435.781 164.761C434.958 164.265 433.99 164 433 164C431.679 163.998 430.411 164.467 429.474 165.305C428.537 166.143 428.007 167.281 428 168.47Z"
+                                    fill="#8DCEFC"
+                                ></path>
+                                <path
+                                    d="M379.008 72.1689C381.048 71.8665 383.13 71.971 385.125 72.4757C387.12 72.9804 388.984 73.8744 390.599 75.1012L390.885 75.328C392.595 76.5666 394.682 77.2371 396.828 77.2371C398.974 77.2371 401.061 76.5666 402.771 75.328C404.475 74.0432 406.451 73.1263 408.562 72.6404C410.673 72.1544 412.87 72.1109 415 72.513V77.752C413.509 77.3156 411.931 77.2241 410.395 77.4852C408.86 77.7462 407.411 78.3523 406.17 79.2534C403.508 81.2503 400.221 82.3359 396.836 82.3359C393.451 82.3359 390.164 81.2503 387.502 79.2534L387.216 79.0188C386.063 78.1824 384.731 77.5994 383.315 77.3115C381.899 77.0236 380.434 77.0379 379.025 77.3532L379.008 72.1689ZM414.984 90.4196C413.491 89.9859 411.913 89.8952 410.377 90.1547C408.841 90.4143 407.391 91.0168 406.145 91.9131C403.485 93.9127 400.198 95 396.812 95C393.426 95 390.138 93.9127 387.478 91.9131L387.191 91.6864C386.039 90.8487 384.708 90.2643 383.292 89.975C381.876 89.6857 380.41 89.6987 379 90.013V84.8287C381.039 84.5268 383.122 84.6315 385.117 85.1362C387.112 85.6409 388.975 86.5346 390.59 87.761L390.877 87.9877C392.587 89.2264 394.674 89.8969 396.82 89.8969C398.966 89.8969 401.053 89.2264 402.762 87.9877C404.464 86.7013 406.439 85.7838 408.549 85.2991C410.66 84.8143 412.855 84.7739 414.984 85.1806V90.4196Z"
+                                    fill="#279BE9"
+                                ></path>
+                                <g clip-path="url(#clip0)">
+                                    <path
+                                        d="M12.3945 136.046L28.0046 146.249L31.0259 140.174C13.8277 130.905 12.3945 136.046 12.3945 136.046"
+                                        fill="#EB9600"
+                                    ></path>
+                                    <path
+                                        d="M11 125.997L18.5145 134.993L25.6804 143.561L27.8108 146.093L27.9658 146.21H28.0432L47.2556 150.844L46.7134 184.961H71L70.9225 148.546C70.9231 142.455 68.6411 136.587 64.5313 132.112V132.112C57.3654 124.245 38.3467 121.207 38.3467 121.207C38.3467 121.207 34.9768 126.231 48.224 132.735H36.5261C19.4829 114.703 15.8806 121.09 15.8806 121.09L24.131 130.943C13.5177 122.064 11 125.997 11 125.997Z"
+                                        fill="#F9AF2C"
+                                    ></path>
+                                </g>
+                                <mask
+                                    id="shoeMask"
+                                    mask-type="alpha"
+                                    maskUnits="userSpaceOnUse"
+                                    x="1"
+                                    y="49"
+                                    width="104"
+                                    height="73"
+                                >
+                                    <path
+                                        fill-rule="evenodd"
+                                        clip-rule="evenodd"
+                                        d="M104.651 84.4045L16.0933 49.5023L1.59963 86.2773L90.1576 121.18L104.651 84.4045Z"
+                                        fill="white"
+                                    ></path>
+                                </mask>
+                                <g mask="url(#shoeMask)">
+                                    <path
+                                        fill-rule="evenodd"
+                                        clip-rule="evenodd"
+                                        d="M90.0344 118.226C86.7627 118.906 83.4154 118.526 80.576 117.403L51.9423 106.081C44.8185 103.263 35.0784 94.6101 35.0784 94.6101C32.4662 92.833 29.666 91.3505 26.7284 90.1887L3.6542 81.0643L7.04378 72.493L12.3317 59.1212C13.5399 56.066 17.7019 55.6683 19.4668 58.4393L22.302 62.89C24.5317 66.3902 28.9992 67.7133 32.7754 65.9904L42.1233 61.7266C44.5835 60.6046 47.4896 61.2719 49.2134 63.3553L56.9172 72.6676L78.3412 98.5631L89.3269 105.088C90.7073 105.907 91.7283 107.056 92.3757 108.358C93.9741 111.569 93.3017 115.709 90.1631 118.128C90.1203 118.16 90.0779 118.193 90.0344 118.226"
+                                        fill="#148FE2"
+                                    ></path>
+                                </g>
+                                <path
+                                    fill-rule="evenodd"
+                                    clip-rule="evenodd"
+                                    d="M92.3755 108.358C91.7279 107.057 90.7074 105.908 89.3272 105.088L78.3413 98.5637L54.258 69.453L51.654 76.0395C51.0668 77.5237 51.3528 79.212 52.3963 80.4204L64.5027 94.5713C66.0615 96.376 67.9797 97.8363 70.1349 98.8585L89.7375 108.154C90.9372 108.767 91.7563 108.732 92.3763 108.358"
+                                    fill="#3DA5EB"
+                                ></path>
+                                <path
+                                    fill-rule="evenodd"
+                                    clip-rule="evenodd"
+                                    d="M80.5758 117.403V117.403L51.9421 106.081C44.8184 103.263 35.0782 94.6099 35.0782 94.6099C32.466 92.8329 29.6663 91.3505 26.7282 90.1886C26.7282 90.1886 3.65451 81.0643 3.6547 81.0638L7.0436 72.4929C8.4225 73.7286 10.2957 74.2566 12.117 73.924L20.0383 72.4762C22.628 72.003 25.2899 72.7583 27.2444 74.5221L54.7805 99.3653C58.2045 102.455 62.1552 104.905 66.4435 106.601L73.7246 109.481C76.9009 110.994 79.3571 113.991 80.5758 117.403"
+                                    fill="#006EBD"
+                                ></path>
+                                <path
+                                    fill-rule="evenodd"
+                                    clip-rule="evenodd"
+                                    d="M26.7282 90.1884C29.6658 91.3502 32.4661 92.8328 35.0782 94.6098C35.0782 94.6098 44.8184 103.263 51.9422 106.08L80.5759 117.403C83.4153 118.526 86.7626 118.905 90.0343 118.226C86.8471 120.475 83.0897 121.873 79.3874 120.408L50.7409 109.118L6.46792 91.6695C3.12108 90.3464 1.51379 86.477 2.83737 83.1303L3.65407 81.064L26.7282 90.1884Z"
+                                    fill="#3DA5EB"
+                                ></path>
+                                <path
+                                    fill-rule="evenodd"
+                                    clip-rule="evenodd"
+                                    d="M13.0871 90.7056C13.2448 91.0683 13.5403 91.372 13.9386 91.5289L20.3504 94.0559C21.1456 94.3688 22.0435 93.9786 22.3573 93.1837C22.6716 92.3879 22.2809 91.4898 21.4846 91.1766L15.0723 88.6494C14.2771 88.3365 13.3799 88.7264 13.0661 89.5213C12.9091 89.9196 12.9295 90.3428 13.0871 90.7056"
+                                    fill="#006EBD"
+                                ></path>
+                                <path
+                                    fill-rule="evenodd"
+                                    clip-rule="evenodd"
+                                    d="M69.8148 88.2575L71.9272 90.8102L67.1972 92.4049C66.7925 92.5419 66.3705 92.5006 66.016 92.3246C65.6608 92.1489 65.3726 91.8384 65.2371 91.4325C64.9642 90.6229 65.399 89.7462 66.2081 89.473L69.8148 88.2575Z"
+                                    fill="#0061AF"
+                                ></path>
+                                <path
+                                    fill-rule="evenodd"
+                                    clip-rule="evenodd"
+                                    d="M65.6426 83.2138L67.7548 85.767L62.7188 87.4645C62.314 87.6016 61.8921 87.5602 61.5376 87.3842C61.1826 87.2081 60.8944 86.8975 60.7587 86.4922C60.4857 85.6826 60.9205 84.8058 61.7296 84.5327L65.6426 83.2138Z"
+                                    fill="#0061AF"
+                                ></path>
+                                <path
+                                    fill-rule="evenodd"
+                                    clip-rule="evenodd"
+                                    d="M57.2515 79.5925L61.4705 78.1708L63.5827 80.724L58.2411 82.5246C57.8352 82.6617 57.4139 82.6201 57.0592 82.4446C56.7042 82.2684 56.4165 81.9581 56.2798 81.5523C56.0074 80.7429 56.4422 79.8662 57.2515 79.5925"
+                                    fill="#0061AF"
+                                ></path>
+                                <defs>
+                                    <clipPath id="handClip">
+                                        <rect
+                                            width="60"
+                                            height="65"
+                                            fill="white"
+                                            transform="matrix(-1 0 0 1 71 120)"
+                                        ></rect>
+                                    </clipPath>
+                                </defs>
+                                <title
+                                    id="tg-ae661306-3d2d-fa1b-6cc9-ed14b42d6a6c"
+                                ></title>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="tm-marketplace-landing-page-search-section">
+                        <div class="container-fluid">
+                            <!--* SEARCH BOX -->
+                            <div class="search_box">
+                                <h3 class="search_box-title">
+                                    Search by keywords <span>(optional)</span>
+                                </h3>
+                                <div class="tm-global-search-form">
+                                    <form action="">
+                                        <i class="fa fa-search"></i>
+                                        <input
+                                            type="text"
+                                            class="o-input__body"
+                                            name=""
+                                            id=""
+                                            placeholder="Search by keywords"
+                                        />
+                                    </form>
+                                </div>
                             </div>
-                            <div class="auction_card_img">
-                                <img
-                                    src="https://trademe.tmcdn.co.nz/photoserver/352x264p/1615017066.jpg"
-                                    alt=""
-                                    srcset=""
-                                />
+                            <!--* END SEARCH BOX -->
+
+                            <!--* MARKETPLACE CATEGORY OPTIONS -->
+                            <div class="dropdown select-dropdown-btn">
+                                <h3 class="search_box-title">
+                                    Category <span>(optional)</span>
+                                </h3>
+                                <select
+                                    class="form-select"
+                                    aria-label="Default select example"
+                                >
+                                    <option selected>All Categories</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
                             </div>
-                            <div class="auction_card_details">
-                                <a href="" class="auction-link">
-                                    <div class="auction_card_details-body">
-                                        <div class="auction_location-and-time">
-                                            <span
-                                                class="
-                                                    text-capitalize
-                                                    auction_loc
-                                                "
-                                                >Auckland</span
-                                            >
-                                            <span
-                                                class="
-                                                    text-capitalize
-                                                    auction_date-and-time
-                                                "
-                                                >closes: mon, 4 oct</span
-                                            >
-                                        </div>
-                                        <div class="auction-title">
-                                            Ashley Bloomfield, Ballpoint Pen
-                                            Portrait
-                                        </div>
-                                        <div class="auction-subtitle">
-                                            Collectable Art Auction
-                                        </div>
-                                    </div>
-                                    <div class="auction_card_details-footer">
-                                        <div class="auction_bid-info-stalking">
-                                            Reserve met
-                                        </div>
-                                        <div class="auction_bid-price fw-bold">
-                                            $201.00
-                                        </div>
-                                    </div>
-                                </a>
+                            <!--* END MARKETPLACE CATEGORY OPTIONS -->
+
+                            <div
+                                class="
+                                    tm-marketplace-landing-page-search-section-button
+                                "
+                            >
+                                <button
+                                    type="button"
+                                    class="btn text-capitalize mt-4"
+                                >
+                                    search marketplace
+                                </button>
                             </div>
                         </div>
-                        <div class="auction_card auction_card-border">
-                            <div class="auction_card_watchlist">
-                                <i class="fa fa-binoculars"></i>
-                            </div>
-                            <div class="auction_card_img">
-                                <img
-                                    src="https://trademe.tmcdn.co.nz/photoserver/352x264p/1615862838.jpg"
-                                    alt=""
-                                    srcset=""
-                                />
-                            </div>
-                            <div class="auction_card_details">
-                                <a href="" class="auction-link">
-                                    <div class="auction_card_details-body">
-                                        <div class="auction_location-and-time">
-                                            <span
-                                                class="
-                                                    text-capitalize
-                                                    auction_loc
-                                                "
-                                                >Auckland</span
-                                            >
-                                            <span
-                                                class="
-                                                    text-capitalize
-                                                    auction_date-and-time
-                                                "
-                                                >closes: mon, 4 oct</span
-                                            >
-                                        </div>
-                                        <div class="auction-title">
-                                            Ashley Bloomfield, Ballpoint Pen
-                                            Portrait
-                                        </div>
-                                        <div class="auction-subtitle">
-                                            Collectable Art Auction
-                                        </div>
-                                    </div>
-                                    <div class="auction_card_details-footer">
-                                        <div class="auction_bid-info-stalking">
-                                            Reserve met
-                                        </div>
-                                        <div class="auction_bid-price fw-bold">
-                                            $201.00
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="auction_card auction_card-border">
-                            <div class="auction_card_watchlist">
-                                <i class="fa fa-binoculars"></i>
-                            </div>
-                            <div class="auction_card_img">
-                                <img
-                                    src="https://trademe.tmcdn.co.nz/photoserver/352x264p/1615017066.jpg"
-                                    alt=""
-                                    srcset=""
-                                />
-                                <span class="">Private seller</span>
-                            </div>
-                            <div class="auction_card_details">
-                                <a href="" class="auction-link">
-                                    <div class="auction_card_details-body">
-                                        <div
-                                            class="
-                                                auction_location-and-time_private_seller
-                                            "
-                                        >
-                                            <span class="">Auckland</span>
-                                            <span class=""
-                                                >listed recently</span
-                                            >
-                                        </div>
-                                        <div class="auction-title">
-                                            Ashley Bloomfield, Ballpoint Pen
-                                            Portrait
-                                        </div>
-                                        <div class="auction-subtitle">
-                                            Collectable Art Auction
-                                        </div>
-                                    </div>
-                                    <div class="auction_card_details-footer">
-                                        <div class="auction_bid-info-stalking">
-                                            Reserve met
-                                        </div>
-                                        <div class="auction_bid-price fw-bold">
-                                            $201.00
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="auction_card auction_card-border">
-                            <div class="auction_card_watchlist">
-                                <i class="fa fa-binoculars"></i>
-                            </div>
-                            <div class="auction_card_img">
-                                <img
-                                    src="https://trademe.tmcdn.co.nz/photoserver/352x264p/1615017066.jpg"
-                                    alt=""
-                                    srcset=""
-                                />
-                            </div>
-                            <div class="auction_card_details">
-                                <a href="" class="auction-link">
-                                    <div class="auction_card_details-body">
-                                        <div class="auction_location-and-time">
-                                            <span
-                                                class="
-                                                    text-capitalize
-                                                    auction_loc
-                                                "
-                                                >Auckland</span
-                                            >
-                                            <span
-                                                class="
-                                                    text-capitalize
-                                                    auction_date-and-time
-                                                "
-                                                >closes: mon, 4 oct</span
-                                            >
-                                        </div>
-                                        <div class="auction-title">
-                                            Ashley Bloomfield, Ballpoint Pen
-                                            Portrait
-                                        </div>
-                                        <div class="auction-subtitle">
-                                            Collectable Art Auction
-                                        </div>
-                                    </div>
-                                    <div class="auction_card_details-footer">
-                                        <div class="auction_bid-info-stalking">
-                                            Reserve met
-                                        </div>
-                                        <div class="auction_bid-price fw-bold">
-                                            $201.00
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="auction_card auction_card-border">
-                            <div class="auction_card_watchlist">
-                                <i class="fa fa-binoculars"></i>
-                            </div>
-                            <div class="auction_card_img">
-                                <img
-                                    src="https://trademe.tmcdn.co.nz/photoserver/352x264p/1615017066.jpg"
-                                    alt=""
-                                    srcset=""
-                                />
-                            </div>
-                            <div class="auction_card_details">
-                                <a href="" class="auction-link">
-                                    <div class="auction_card_details-body">
-                                        <div class="auction_location-and-time">
-                                            <span
-                                                class="
-                                                    text-capitalize
-                                                    auction_loc
-                                                "
-                                                >Auckland</span
-                                            >
-                                            <span
-                                                class="
-                                                    text-capitalize
-                                                    auction_date-and-time
-                                                "
-                                                >closes: mon, 4 oct</span
-                                            >
-                                        </div>
-                                        <div class="auction-title">
-                                            Ashley Bloomfield, Ballpoint Pen
-                                            Portrait
-                                        </div>
-                                        <div class="auction-subtitle">
-                                            Collectable Art Auction
-                                        </div>
-                                    </div>
-                                    <div class="auction_card_details-footer">
-                                        <div class="auction_bid-info-stalking">
-                                            Reserve met
-                                        </div>
-                                        <div class="auction_bid-price fw-bold">
-                                            $201.00
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                        <button id="chevron-right" type="button" disabled>
-                            <i class="fa fa-chevron-right"></i>
-                        </button>
                     </div>
                 </div>
-            </section>
-            <!--* END AUCTION -->
+                <div class="tm-marketplace-landing-page-bottom-section">
+                    <svg
+                        viewBox="0 0 1604 178"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        preserveAspectRatio="none"
+                        focusable="false"
+                        role="img"
+                        aria-labelledby="tg-fbb8bbf5-38f9-7447-3f57-37fcc1d010d0"
+                        height="178"
+                        width="1604"
+                    >
+                        <path
+                            d="M0 178V9.81176C334.167 -10.3875 428.065 -1.02684 752.289 53.1662C1011.67 96.5206 1428.17 52.8377 1604 25.577V178H0Z"
+                            fill="#AEDEFF"
+                        ></path>
+                        <title
+                            id="tg-fbb8bbf5-38f9-7447-3f57-37fcc1d010d0"
+                        ></title>
+                    </svg>
+                </div>
+            </div>
+            <!--* END MARKETPLACE SEARCH AREA -->
 
             <!--* MARKETPLACE CATEGORY -->
             <section class="tm-marketplace-landing-page-wrapper">

@@ -1,0 +1,39 @@
+.category_search_div {
+    .category_search_nav_search_box {
+        form {
+            button {
+                display: none;
+                border: 1px solid $btn;
+            }
+            &:focus-within {
+                .fa {
+                    display: none;
+                }
+                input[type='text'] {
+                    padding-left: 0;
+                }
+                button {
+                    display: block;
+                }
+            }
+        }
+    }
+
+    .category_suggestions_container {
+        ul.navbar-nav {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            li.nav-item {
+                width: 33.33%;
+                a.nav-link {
+                    font-size: 16px;
+                    color: $btn;
+                    span {
+                        color: $nav-link-col;
+                    }
+                }
+            }
+        }
+    }
+}

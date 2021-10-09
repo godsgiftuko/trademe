@@ -1,0 +1,19 @@
+.header_global_navigation {
+    .nav-item:last-child {
+        display: none;
+    }
+}
+@media screen and (max-width: 768px) {
+    .header_global_navigation {
+        .navbar-nav {
+            align-items: flex-end;
+            .nav-item {
+                display: none;
+            }
+
+            .nav-item:last-child {
+                display: block;
+            }
+        }
+    }
+}
