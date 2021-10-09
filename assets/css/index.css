@@ -1844,13 +1844,6 @@
   color: #85807c !important;
 }
 
-.tm-marketplace-landing__stripes-wrapper .product-cardlist {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 1981px;
-}
-
 .tm-marketplace-landing__stripes-wrapper .product-cardlist .product-card {
   margin: 0 20px 20px 0;
   border-radius: 8px;
