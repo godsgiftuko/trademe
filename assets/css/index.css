@@ -1388,7 +1388,7 @@
     margin: 10px 0;
   }
   .category_search_div .category_search_nav_dropdown_buttons {
-    padding-top: 8px;
+    padding: 10px 0;
   }
   .category_search_div .category_search_nav_dropdown_buttons .browse-dropdown-btn button {
     padding-bottom: 5px;
@@ -2353,6 +2353,10 @@
 
 .category_search_div .category_search_nav_search_box form:focus-within button {
   display: block;
+}
+
+.category_search_div .category_suggestions_container {
+  padding: 10px 0 20px 0;
 }
 
 .category_search_div .category_suggestions_container ul.navbar-nav {
