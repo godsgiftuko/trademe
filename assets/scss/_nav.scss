@@ -320,6 +320,37 @@
     }
 }
 
+@media screen and (max-width: 1024px) {
+    .navbar {
+        #navbarNav {
+            .tm-affiliates__sat-nav-list {
+                flex-direction: row;
+                li.nav-item {
+                    &:nth-child(8),
+                    &:nth-child(9) {
+                        display: none;
+                    }
+                }
+            }
+        }
+        // .main-nav__global-navigation {
+        //     .main-nav__member-options-list {
+        //         display: flex;
+        //         justify-content: flex-end;
+        //         li.nav-item {
+        //             display: flex;
+        //             flex-direction: column;
+        //             align-items: center;
+        //             .fa,
+        //             .m-affiliates__sat-nav-link {
+        //                 font-size: 12px !important;
+        //             }
+        //         }
+        //     }
+        // }
+    }
+}
+
 @media screen and (max-width: 767px) {
     #navbarNav {
         display: none !important;

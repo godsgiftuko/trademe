@@ -1,3 +1,7 @@
+._green {
+  color: #1b8840;
+}
+
 .navbar {
   background-color: #f6f5f4;
   padding: 0px;
@@ -258,6 +262,15 @@
   .navbar .main-nav__global-navigation .main-nav__member-options-list li.nav-item .fa,
   .navbar .main-nav__global-navigation .main-nav__member-options-list li.nav-item .m-affiliates__sat-nav-link {
     font-size: 12px !important;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .navbar #navbarNav .tm-affiliates__sat-nav-list {
+    flex-direction: row;
+  }
+  .navbar #navbarNav .tm-affiliates__sat-nav-list li.nav-item:nth-child(8), .navbar #navbarNav .tm-affiliates__sat-nav-list li.nav-item:nth-child(9) {
+    display: none;
   }
 }
 
@@ -1487,6 +1500,7 @@
   width: 100%;
   top: 0;
   display: flex;
+  z-index: 30 !important;
   justify-content: space-between;
 }
 
@@ -1542,10 +1556,13 @@
 
 .tm-marketplace-landing__stripes-wrapper .product-cardlist .product-card .product-card-img {
   border-radius: 8px 0 0 0 !important;
-  background-color: #815b5b;
   display: flex;
   justify-content: center;
   height: 200px;
+  /* background-attachment: fixed; */
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
 }
 
 .tm-marketplace-landing__stripes-wrapper .product-cardlist .product-card .product-card-img img {
@@ -1947,14 +1964,19 @@
   }
 }
 
-.searched_item-regular {
+.searched_item-large a.nav-link {
   width: 100%;
   height: 376px;
   background-color: #fff;
   display: flex;
 }
 
-.searched_item-regular .searched_item-regular_watchlist_icon {
+.searched_item-large a.nav-link:hover {
+  text-decoration: none !important;
+  color: #76716d !important;
+}
+
+.searched_item-large a.nav-link .searched_item-large_watchlist_icon {
   position: absolute;
   right: 0;
   border-color: transparent #ffc041 transparent transparent;
@@ -1966,47 +1988,93 @@
   cursor: pointer;
 }
 
-.searched_item-regular .searched_item-regular_watchlist_icon .fa {
+.searched_item-large a.nav-link .searched_item-large_watchlist_icon .fa {
   color: #943900;
   position: absolute;
   transform: translate(250%, 100%);
 }
 
-.searched_item-regular .searched_item-regular_watchlist_icon:hover {
+.searched_item-large a.nav-link .searched_item-large_watchlist_icon:hover {
   border-color: transparent #ffd972 transparent transparent;
 }
 
-.searched_item-regular .searched_item-regular_img {
+.searched_item-large a.nav-link .searched_item-large_img {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: normal;
   background-color: grey;
   width: 60%;
 }
 
-.searched_item-regular .searched_item-regular_details {
+.searched_item-large a.nav-link .searched_item-large_img .searched_item-large_img-large {
+  background-position: center;
+  background-size: contain;
+  height: 100%;
+  background-repeat: no-repeat;
+}
+
+.searched_item-large a.nav-link .searched_item-large_img .searched_item-large_img-small {
+  background-color: #e8e6e3;
+  color: #76716d;
+  padding: 5px;
+  font-size: 14px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.searched_item-large a.nav-link .searched_item-large_details {
+  padding: 16px;
   width: 40%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: normal;
 }
 
-.searched_item-regular .searched_item-regular_details div {
-  display: block;
+.searched_item-large a.nav-link .searched_item-large_details .searched_item-large_details-body div {
+  margin: 20px 0;
 }
 
-.searched_item-regular .searched_item-regular_details .searched_item-regular_details-footer {
+.searched_item-large a.nav-link .searched_item-large_details .searched_item-large_details-body span {
+  text-transform: capitalize;
+}
+
+.searched_item-large a.nav-link .searched_item-large_details .searched_item-large_details-footer {
   border-top: 1px solid #cbcbcb;
 }
 
-.searched_item-regular .searched_item-regular_details .searched_item-regular_details-footer span {
+.searched_item-large a.nav-link .searched_item-large_details .searched_item-large_details-footer span {
   font-weight: 500;
   color: #d93a3f !important;
 }
 
-.searched_item-regular .searched_item-regular_details .searched_item-regular_details-footer span * {
+.searched_item-large a.nav-link .searched_item-large_details .searched_item-large_details-footer span h3 {
   display: inline-block;
 }
 
-.auction_card_rec_closed_bg {
+@media screen and (max-width: 767px) {
+  .searched_item-large a.nav-link {
+    flex-direction: column !important;
+    height: 487.75px !important;
+  }
+  .searched_item-large a.nav-link .searched_item-large_img {
+    height: 70%;
+    width: 100% !important;
+  }
+  .searched_item-large a.nav-link .searched_item-large_details {
+    width: 100% !important;
+  }
+  .searched_item-large a.nav-link .searched_item-large_details div {
+    margin: 5px 0 !important;
+  }
+}
+
+.searched_item-large .auction_card_rec_closed_bg {
   background-color: #ffe5ec;
 }
 
-.auction_card_watchlist {
+.searched_item-large .auction_card_watchlist {
   position: absolute;
   right: 0;
   border-color: transparent #ffc041 transparent transparent;
@@ -2018,31 +2086,31 @@
   cursor: pointer;
 }
 
-.auction_card_watchlist .fa {
+.searched_item-large .auction_card_watchlist .fa {
   color: #943900;
   position: absolute;
   transform: translate(250%, 100%);
 }
 
-.auction_card_watchlist:hover {
+.searched_item-large .auction_card_watchlist:hover {
   border-color: transparent #ffd972 transparent transparent;
 }
 
-.auction_card_rec {
+.searched_item-large .auction_card_rec {
   display: flex;
   margin-bottom: 20px;
   position: relative;
 }
 
-.auction_card_rec a {
+.searched_item-large .auction_card_rec a {
   display: contents;
 }
 
-.auction_card_rec a:hover {
+.searched_item-large .auction_card_rec a:hover {
   text-decoration: none;
 }
 
-.auction_card_rec a .auction_card_rec_img_and_seller {
+.searched_item-large .auction_card_rec a .auction_card_rec_img_and_seller {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -2050,11 +2118,11 @@
   width: 80%;
 }
 
-.auction_card_rec a .auction_card_rec_img_and_seller img {
+.searched_item-large .auction_card_rec a .auction_card_rec_img_and_seller img {
   width: 100%;
 }
 
-.auction_card_rec a .auction_card_rec_img_and_seller .auction_card_seller {
+.searched_item-large .auction_card_rec a .auction_card_rec_img_and_seller .auction_card_seller {
   background-color: #e8e6e3;
   text-align: center;
   padding: 5px 0;
@@ -2063,71 +2131,71 @@
   bottom: 0;
 }
 
-.auction_card_rec a .auction_card_rec_img_and_seller .auction_card_seller img {
+.searched_item-large .auction_card_rec a .auction_card_rec_img_and_seller .auction_card_seller img {
   height: 40px;
   width: 120px;
 }
 
-.auction_card_rec a .auction_card_details {
+.searched_item-large .auction_card_rec a .auction_card_details {
   padding: 16px;
   display: flex;
   justify-content: space-between;
   flex-direction: column;
 }
 
-.auction_card_rec a .auction_card_details .auction_card_detail_body {
+.searched_item-large .auction_card_rec a .auction_card_details .auction_card_detail_body {
   flex: 2;
 }
 
-.auction_card_rec a .auction_card_details .auction_card_detail_body * {
+.searched_item-large .auction_card_rec a .auction_card_details .auction_card_detail_body * {
   text-transform: capitalize;
 }
 
-.auction_card_rec a .auction_card_details .auction_card_detail_body *:not(h3) {
+.searched_item-large .auction_card_rec a .auction_card_details .auction_card_detail_body *:not(h3) {
   font-weight: 300;
 }
 
-.auction_card_rec a .auction_card_details .auction_card_detail_body h6 i {
+.searched_item-large .auction_card_rec a .auction_card_details .auction_card_detail_body h6 i {
   padding-right: 10px;
   font-size: 20px;
 }
 
-.auction_card_rec a .auction_card_details .auction_card_detail_body div {
+.searched_item-large .auction_card_rec a .auction_card_details .auction_card_detail_body div {
   margin: 20px 0;
 }
 
-.auction_card_rec a .auction_card_details .auction_card_detail_body .auction_card_odometer_and_engine_detail {
+.searched_item-large .auction_card_rec a .auction_card_details .auction_card_detail_body .auction_card_odometer_and_engine_detail {
   color: #76716d;
 }
 
-.auction_card_rec a .auction_card_details .auction_card_detail_body .auction_card_bg_check {
+.searched_item-large .auction_card_rec a .auction_card_details .auction_card_detail_body .auction_card_bg_check {
   height: 60px;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
 }
 
-.auction_card_rec a .auction_card_details .auction_card_detail_footer {
+.searched_item-large .auction_card_rec a .auction_card_details .auction_card_detail_footer {
   padding-top: 10px;
   text-align: right;
   border-top: 1px solid #cbcbcb;
 }
 
-.auction_card_rec a .auction_card_details .auction_card_detail_footer * {
+.searched_item-large .auction_card_rec a .auction_card_details .auction_card_detail_footer * {
   display: block;
   font-weight: 500;
 }
 
-.auction_card_rec a .auction_card_details .auction_card_detail_footer h3 {
+.searched_item-large .auction_card_rec a .auction_card_details .auction_card_detail_footer h3 {
   font-weight: bold;
 }
 
-.auction_card_rec a .auction_card_details .auction_card_detail_footer h6 {
+.searched_item-large .auction_card_rec a .auction_card_details .auction_card_detail_footer h6 {
   font-weight: 300;
   color: #76716d;
 }
 
-.auction_card_rec a:hover {
+.searched_item-large .auction_card_rec a:hover {
   box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1);
   transition: box-shadow 0.2s ease-out;
 }

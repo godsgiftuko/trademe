@@ -1,5 +1,6 @@
 .tm-marketplace-landing-page-wrapper {
     background-color: #fff;
+
     .navbar {
         ul.navbar-nav {
             display: grid;
@@ -8,6 +9,7 @@
             // background-color: #fff;
             // column-count: 3;
             flex-direction: row !important;
+
             li.nav-item {
                 padding: 15px 20px 15px 0;
                 // border-radius: 5px;
@@ -32,6 +34,7 @@
         text-transform: capitalize;
         margin-bottom: 16px;
     }
+
     .nav-link {
         &:hover {
             color: inherit !important;
@@ -44,7 +47,9 @@
             }
         }
     }
+
     .product-cardlist {
+
         // display: flex;
         // width: 1981px;
         .product-card {
@@ -62,12 +67,14 @@
                 width: 100%;
                 top: 0;
                 display: flex;
+                z-index: 30 !important;
                 justify-content: space-between;
 
                 .product-card-discount {
                     font-weight: 700;
                     display: flex;
                     flex-direction: column;
+
                     span {
                         font-size: 0.75rem;
                         color: #fff;
@@ -76,13 +83,16 @@
                         font-size: 0.75rem;
                         line-height: 16px;
                         padding: 4px 10px 4px 8px;
+
                         &:first-child {
                             border-radius: 8px 0 0 0 !important;
                         }
                     }
+
                     span.product-card-discount-class {
                         background-color: $r-col;
                     }
+
                     span.product-card-shipping-class {
                         background-color: #00825a;
                     }
@@ -91,14 +101,14 @@
                 .product-card-watchlist {
                     position: absolute;
                     right: 0;
-                    border-color: transparent $auction_card_border_bg
-                        transparent transparent;
+                    border-color: transparent $auction_card_border_bg transparent transparent;
                     border-style: solid;
                     z-index: 22;
                     display: flex;
                     align-content: center;
                     border-width: 0 56px 56px 0;
                     cursor: pointer;
+
                     .fa {
                         color: #943900;
                         position: absolute;
@@ -106,18 +116,21 @@
                     }
 
                     &:hover {
-                        border-color: transparent $auction_card_border_col
-                            transparent transparent;
+                        border-color: transparent $auction_card_border_col transparent transparent;
                     }
                 }
             }
 
             .product-card-img {
                 border-radius: 8px 0 0 0 !important;
-                background-color: rgb(129, 91, 91);
                 display: flex;
                 justify-content: center;
                 height: 200px;
+                /* background-attachment: fixed; */
+                background-repeat: no-repeat;
+                background-size: contain;
+                background-position: center;
+
                 img {
                     width: 100%;
                     position: relative;
@@ -128,17 +141,21 @@
                 padding: 12px;
                 // height: calc(358.33px / 2);
                 width: 100%;
+
                 .product-card-body,
                 .product-card-footer {
                     padding: 10px 0;
                     height: 50px;
                 }
+
                 .product-card-body {
                     padding: 0 0 100px 0;
+
                     .product-card-location-and-time {
                         margin-bottom: 8px;
                         display: flex;
                         justify-content: space-between;
+
                         span {
                             color: $a-col;
                             font-size: 0.75rem;
@@ -152,6 +169,7 @@
                         font-size: 0.875rem;
                         font-weight: 500;
                     }
+
                     .product-card-subtitle {
                         color: $a-col;
                         // margin: 5px 0;
@@ -159,6 +177,7 @@
                         line-height: 16px;
                     }
                 }
+
                 .product-card-footer {
                     width: 100%;
                     text-align: right;
@@ -178,6 +197,7 @@
                             line-height: 16px;
                             color: $body-col;
                         }
+
                         .discount_price {
                             font-size: 0.75rem;
                             color: $r-col;
@@ -186,6 +206,7 @@
                     }
                 }
             }
+
             box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.197);
             transition: box-shadow 0.2s ease-out;
 
@@ -203,15 +224,18 @@
         text-transform: capitalize;
         margin-bottom: 16px;
     }
+
     nav.navbar {
         background-color: transparent !important;
         margin-bottom: 20px;
+
         ul.navbar-nav {
             &:first-child {
                 font-weight: 500;
                 font-size: 16px;
                 color: $nav-link-col;
             }
+
             li.nav-item {
                 a.nav-link {
                     color: $g-col;
@@ -221,6 +245,7 @@
                     margin-bottom: 4px;
                     font-weight: 400;
                     line-height: 20px;
+
                     &:hover {
                         color: $p-col;
                     }
@@ -285,6 +310,7 @@
         line-height: 24px;
         padding-right: 16px;
         margin-bottom: 8px;
+
         span {
             font-size: 0.75rem;
             line-height: 16px;
@@ -292,6 +318,7 @@
             font-weight: 400;
         }
     }
+
     .tm-marketplace-landing-page-header {
         z-index: 2;
         position: relative;
@@ -300,12 +327,14 @@
         // display: flex !important;
         // flex-direction: row !important;
         justify-content: space-between !important;
+
         .tm-marketplace-header-section__headline {
             width: 550px;
             padding-top: 40px !important;
             font-size: 3.125rem !important;
             line-height: 60px;
         }
+
         .tm-marketplace-header-section__svg {
             display: flex;
             align-items: center;
@@ -330,6 +359,7 @@
 
             div {
                 padding: 0 5px;
+
                 select,
                 button {
                     height: 48px;
@@ -341,6 +371,7 @@
             }
         }
     }
+
     .tm-marketplace-landing-page-bottom-section {
         position: absolute;
         bottom: 0;
@@ -368,13 +399,14 @@
     .tm-marketplace-landing-page-wrapper {
         display: none !important;
     }
+
     .tm-marketplace-deals-div {
         padding: 0 24px;
 
         div {
             &:first-child {
                 background-size: contain !important;
-                background-repeat: no-repeat !important ;
+                background-repeat: no-repeat !important;
             }
         }
     }
@@ -384,13 +416,16 @@
             display: flex !important;
             flex-direction: row !important;
             justify-content: space-between !important;
+
             .tm-marketplace-header-section__headline {
                 width: 394px !important;
                 padding-top: 64px !important;
                 font-size: 2.1875rem !important;
                 line-height: 40px !important;
             }
+
             .tm-marketplace-header-section__svg {
+
                 // flex: 4;
                 svg {
                     height: 120.13px;
@@ -407,10 +442,12 @@
             height: 240px;
         }
     }
+
     .tm-marketplace-landing-page-search-area {
         div {
             position: relative;
         }
+
         .tm-marketplace-landing-page-header {
             // height: 140px;
 
@@ -434,9 +471,11 @@
         }
     }
 }
+
 @media screen and (max-width: 767px) {
     .tm-marketplace-deals-div {
         flex-direction: column;
+
         div {
             width: 100% !important;
         }
@@ -445,6 +484,7 @@
     .tm-marketplace-landing-page-search-area {
         .tm-marketplace-landing-page-header {
             flex-direction: column !important;
+
             .tm-marketplace-header-section__headline {
                 width: 254px !important;
                 padding-top: 16px !important;
@@ -453,12 +493,14 @@
                 line-height: 32px !important;
                 margin-bottom: 24px !important;
             }
+
             .tm-marketplace-header-section__svg {
                 svg {
                     height: 20vh;
                 }
             }
         }
+
         .tm-marketplace-landing-page-bottom-section {
             svg {
                 height: 100px !important;
@@ -469,6 +511,7 @@
     .tm-marketplace-landing-page-search-section {
         // margin-top: 55px;
         margin-top: 60px;
+
         .container-fluid {
             position: relative !important;
             flex-direction: column !important;

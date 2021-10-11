@@ -1,3 +1,11 @@
-@mixin mobile($width) {
-    
+@mixin media--screens($width, $screen) {
+    @media screen and ($screen: $width)  {
+        @content;
+    }
+}
+
+@mixin mobile-max($width) {
+    @media screen and (max-width: $width)  {
+        @content;
+    }
 }

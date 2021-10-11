@@ -8,14 +8,21 @@ $font-weights: (
     @return map-get($font-weights, $weight-name);
 }
 
-$font-colors: (
+$app_colors: (
     "primary": #007acd,
     "_orange": #f3632d,
     "_red": #d93a3f,
     "_green": #1b8840,
-    "link": #76716d
+    "link": #76716d,
+    "_white": #fff,
+    "_black": #44413d,
+    "_grey": #e8e6e3
 );
 
 @function colors($color-name) {
-    @return map-get($font-colors, $color-name);
+    @return map-get($app_colors, $color-name);
+}
+
+._green {
+    color: colors(_green);
 }
