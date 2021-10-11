@@ -1,0 +1,181 @@
+// ! AUCTION RECTANGULAR CARD
+
+.searched_item-regular {
+    // width: 639.84px;
+    width: 100%;
+    height: 376px;
+    background-color: #fff;
+    display: flex;
+
+    .searched_item-regular_watchlist_icon {
+        position: absolute;
+        right: 0;
+        border-color: transparent $auction_card_border_bg transparent transparent;
+        border-style: solid;
+        z-index: 50 !important;
+        display: flex;
+        align-content: center;
+        border-width: 0 56px 56px 0;
+        cursor: pointer;
+        .fa {
+            color: #943900;
+            position: absolute;
+            transform: translate(250%, 100%);
+        }
+
+        &:hover {
+            border-color: transparent $auction_card_border_col transparent
+                transparent;
+        }
+    }
+
+    .searched_item-regular_img {
+        background-color: grey;
+        width: 60%;
+    }
+
+    .searched_item-regular_details {
+        width: 40%;
+        div {
+            display: block;
+        }
+
+        .searched_item-regular_details-footer {
+            border-top: 1px solid #cbcbcb;
+            span {
+                font-weight: weight(medium);
+        color: colors(_red) !important;
+    
+                * {
+                    display: inline-block;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+.auction_card_rec_closed_bg {
+    background-color: #ffe5ec;
+}
+.auction_card_watchlist {
+    position: absolute;
+    right: 0;
+    border-color: transparent $auction_card_border_bg transparent transparent;
+    border-style: solid;
+    z-index: 22;
+    display: flex;
+    align-content: center;
+    border-width: 0 56px 56px 0;
+    cursor: pointer;
+    .fa {
+        color: #943900;
+        position: absolute;
+        transform: translate(250%, 100%);
+    }
+
+    &:hover {
+        border-color: transparent $auction_card_border_col transparent
+            transparent;
+    }
+}
+.auction_card_rec {
+    display: flex;
+    margin-bottom: 20px;
+    position: relative;
+    // max-height: 251.15px;
+    a {
+        display: contents;
+        &:hover {
+            text-decoration: none;
+        }
+
+        .auction_card_rec_img_and_seller {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            position: relative;
+            // display: inline-block;
+            width: 80%;
+            img {
+                width: 100%;
+            }
+            // height: 310.5px;
+            .auction_card_seller {
+                background-color: $body_bg_col-2;
+                text-align: center;
+                padding: 5px 0;
+                position: absolute;
+                width: 100%;
+                bottom: 0;
+
+                img {
+                    height: 40px;
+                    width: 120px;
+                }
+            }
+        }
+        .auction_card_details {
+            padding: 16px;
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+            .auction_card_detail_body {
+                flex: 2;
+                *:not(span h6) {
+                    text-transform: capitalize;
+                    // margin: 20px 0;
+                }
+
+                *:not(h3) {
+                    font-weight: 300;
+                }
+
+                h6 i {
+                    padding-right: 10px;
+                    font-size: 20px;
+                }
+                // .auction_card_title {
+                // }
+                div {
+                    margin: 20px 0;
+                }
+                .auction_card_odometer_and_engine_detail {
+                    color: $a-col;
+                }
+                .auction_card_bg_check {
+                    height: 60px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: flex-end;
+                }
+            }
+            .auction_card_detail_footer {
+                * {
+                    display: block;
+                    font-weight: 500;
+                }
+                h3 {
+                    font-weight: bold;
+                }
+                h6 {
+                    font-weight: 300;
+                    color: $a-col;
+                }
+                padding-top: 10px;
+                text-align: right;
+                border-top: 1px solid #cbcbcb;
+            }
+        }
+
+        &:hover {
+            box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1);
+            transition: box-shadow 0.2s ease-out;
+        }
+    }
+}
+/*
+    ? MEDIA SCREENS == 768px;
+*/

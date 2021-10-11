@@ -1,0 +1,21 @@
+$font-weights: (
+    "regular": 400,
+    "medium": 500,
+    "bold": 700
+);
+
+@function weight($weight-name) {
+    @return map-get($font-weights, $weight-name);
+}
+
+$font-colors: (
+    "primary": #007acd,
+    "_orange": #f3632d,
+    "_red": #d93a3f,
+    "_green": #1b8840,
+    "link": #76716d
+);
+
+@function colors($color-name) {
+    @return map-get($font-colors, $color-name);
+}
