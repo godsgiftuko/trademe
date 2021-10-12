@@ -1,11 +1,32 @@
 // ! AUCTION RECTANGULAR CARD
 // $flex-center-col: d-flex(column);
 .searched_item-large {
+    position: relative;
+    box-shadow: 0 1px 5px 0 rgba(0, 0, 1, 0.153);
+    transition: box-shadow 0.2s ease-out;
+
+    &:hover {
+        box-shadow: 0 5px 8px 0 rgba(0, 0, 1, 0.153);
+    }
     a.nav-link {
         width: 100%;
         height: 376px;
         background-color: colors(_white);
         display: flex;
+
+        // ##1
+        
+        .searched_item-large_img_#1 {
+            @include d-flex(column);
+            background-color: colors(_black);
+            width: 60%;
+            height: 200px;
+
+            .searched_item-large_img-large_#1 {
+                height: 300px;
+            }
+        }
+
 
         &:hover {
             text-decoration: none !important;
@@ -38,24 +59,29 @@
         // #2
         .searched_item-large_img {
             @include d-flex(column);
-            background-color: grey;
+            background-color: colors(_white);
             width: 60%;
 
             .searched_item-large_img-large {
                 // background-image: url('https://trademe.tmcdn.co.nz/photoserver/580x435c/1621578109.jpg');
                 background-position: center;
-                background-size: contain;
+                background-size: cover;
                 height: 100%;
                 background-repeat: no-repeat;
                 
             }
             .searched_item-large_img-small {
-                background-color: colors(_grey);
                 color: colors(link);
                 padding: 5px;
                 font-size: 14px;
                 font-weight: weight(medium);
                 text-align: center;
+                position: relative;
+                
+                img {
+                    // height: 100%;
+                    height: 48px;
+                }
             }
         }
 
@@ -68,19 +94,23 @@
                 div {
                     margin: 20px 0;
                 }
-                span {
-                    text-transform: capitalize;
+
+                .search_item-large-title {
+                    color: colors(_black);
                 }
             }
 
             .searched_item-large_details-footer {
                 border-top: 1px solid #cbcbcb;
-
+                padding: 10px 0;
+                text-align: right;
                 span {
                     font-weight: weight(medium);
-                    color: colors(_red) !important;
+                    color: colors(_black) !important;
+                    display: block;
 
                     h3 {
+                        font-weight: weight(bold);
                         display: inline-block;
                     }
                 }
