@@ -218,7 +218,8 @@ button {
     text-transform: none;
 }
 
-select, .form-select {
+select,
+.form-select {
     text-transform: none;
     width: 100%;
     height: 38px;
@@ -283,7 +284,8 @@ input[type='search']::-webkit-search-cancel-button,
 input[type='search']::-webkit-search-decoration {
     -webkit-appearance: none;
 }
-select, button:focus .bootstrap-select .btn:focus {
+select,
+button:focus .bootstrap-select .btn:focus {
     outline: none !important;
     box-shadow: none !important;
 }
@@ -532,7 +534,7 @@ form {
 button {
     display: inline-block;
     min-width: 2rem;
-    min-height: 100% !important;
+    min-height: auto !important;
     border: none;
     text-transform: capitalize;
     border-radius: 0px 3px 3px 0px;

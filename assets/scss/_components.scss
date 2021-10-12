@@ -1,3 +1,17 @@
+// ! CHEVRON BTNS
+.card_arrow-btn {
+    display: none;
+    position: absolute;
+    cursor: pointer !important;
+    &:hover {
+        background-color: colors(_white) !important;
+        color: colors(_black) !important;
+    }
+}
+#chevron-right {
+    right: 0;
+}
+
 // ! TOTAL COUNT COMPONENT
 .total_count_component {
     padding: 16px 0;
@@ -59,8 +73,6 @@
         color: $b-col;
     }
 }
-
-
 
 /*
     ? MEDIA SCREENS == 768px;
