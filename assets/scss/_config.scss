@@ -20,6 +20,8 @@ $app_colors: (
     '_grey': #e8e6e3,
     '_grey2': #d7d5d2,
     'nothing': 'transparent',
+    'table-head-bg': #f6f5f4,
+    'th-border-col': #dee2e6
 );
 
 @function colors($color-name) {

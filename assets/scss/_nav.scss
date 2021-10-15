@@ -11,7 +11,8 @@
 
     //! HEADER NAV
     #navbarNav {
-        display: inline-block;
+        // display: inline-block;
+        display: none !important;
         font-size: 12px;
         justify-content: space-between;
         width: 100%;

@@ -1,11 +1,17 @@
 @mixin media--screens($width, $screen) {
-    @media screen and ($screen: $width)  {
+    @media screen and ($screen: $width) {
         @content;
     }
 }
 
 @mixin mobile-max($width) {
-    @media screen and (max-width: $width)  {
+    @media screen and (max-width: $width) {
+        @content;
+    }
+}
+
+@mixin mobile-min($width) {
+    @media screen and (min-width: $width) {
         @content;
     }
 }

@@ -26,96 +26,201 @@
 
     .hero_bottom {
         margin-top: -60px;
+        // #myTab {
+        //     // border-bottom: 1px solid grey;
+        // }
 
-        ul {
+        ul#myTab {
             border-radius: 10px 10px 0 0;
             // border: none;
+            @include d-flex(row, stretch);
             li {
+                margin: 0px;
                 height: 40px;
-
-                // border: 1px solid red;
                 button {
-                    // border-bottom: 1px solid colors(_grey2);
-                    // background-color: #ffff;
                     box-shadow: -1px 0 colors(_grey2);
-                    border-top-color: transparent;
                     border-radius: 0;
+                    height: 100%;
+                    width: 100%;
                     // border: none;
                     padding: 11px 20px;
                     text-transform: capitalize;
                     font-size: 16px;
                     background-color: colors(_white) !important;
-                    color: colors(link) !important;
-                    // .fa {
-                    //     padding: 5px;
-                    //     color: $p-col;
-                    // }
+                    color: colors(_black) !important;
+                    font-weight: weight(regular);
+                    .fa,
+                    span {
+                        padding: 0 5px;
+                    }
 
-                    &:hover {
-                        background-color: colors(_white) !important;
+                    .fa {
+                        color: colors(primary);
                     }
                 }
                 &:first-child button {
                     border-radius: 10px 0 0 0;
                 }
+                &:last-child button {
+                    border-radius: 0 10px 0 0;
+                }
+            }
+            .active {
+                background-color: colors(tab-col) !important;
+                * {
+                    color: colors(_white) !important;
+                }
+            }
+
+            @include mobile-max(1023px) {
+                li button .fa {
+                    display: none;
+                }
+            }
+            @include mobile-max(950px) {
+                li button {
+                    padding: 10px 5px !important;
+                }
+            }
+            @include mobile-max(767px) {
+                display: none !important;
             }
         }
 
-        .tab-content .tab-pane {
-            .hero_bottom_nav_button {
-                display: inline-block;
-                padding: 24px;
-
+        .myTab-sm-scrn {
+            display: none;
+            background-color: colors(_white);
+            padding: 16px 24px 10px 16px;
+            @include mobile-max(767px) {
+                display: block !important;
+                .myTab-sm-scrn-title {
+                    font-size: 16px;
+                    color: colors(link);
+                    margin-bottom: 10px;
+                }
                 ul.nav-tabs {
-                    border-radius: 0;
+                    width: 100%;
+                    flex-wrap: nowrap !important;
+                    max-width: 1600px;
+                    overflow-x: scroll;
+                    display: flex !important;
+                    flex-direction: row !important;
+                    padding-bottom: 24px;
 
-                    .active {
-                        color: colors(_white) !important;
-                    }
-
-                    li {
-                        color: #65605d;
-                        font-size: 16px;
-                        width: 144px;
-                        padding: 9px 0;
-                        text-transform: capitalize;
-                        border: 1px solid #d7d5d2;
-                        text-align: center;
-                        cursor: pointer;
-                        &:first-child {
-                            border-radius: 3px 0 0 3px;
+                    li.nav-item {
+                        display: block;
+                        .active {
+                            background-color: #323a4d !important;
+                            * {
+                                color: colors(_white) !important;
+                            }
                         }
-                        &:last-child {
-                            border-radius: 0 3px 3px 0;
+                        padding: 0 3px;
+
+                        &:first-child {
+                            padding-left: 0;
+                        }
+                        button {
+                            padding: 0;
+                            // word-break: break-all;
+                            color: #323a4d !important;
+                            cursor: pointer;
+                            font-size: 0.75rem;
+                            line-height: 15px;
+                            text-align: center;
+                            height: 88.91px;
+                            width: 101.25px;
+                            border-radius: radius(lg);
+                            border: 1px solid colors(_grey2);
+                            background-color: colors(_white) !important;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: space-between;
+                            align-items: center;
+
+                            span,
+                            .fa {
+                                height: 50%;
+                            }
+
+                            .fa {
+                                font-size: 18px;
+                                color: colors(primary);
+                                display: flex;
+                                align-items: flex-end;
+                                padding-bottom: 4px;
+                            }
                         }
                     }
                 }
             }
-            // ul.navbar-nav {
-            //     li {
-            //         height: 39px;
-            //         box-shadow: unset;
-            //         color: #65605d;
-            //         font-weight: 300;
-            //         line-height: 16px;
-            //         padding: 10px 20px;
-            //     }
-            // }
+        }
+
+        .hero_bottom_nav {
+            display: inline-block;
+            padding: 24px;
+
+            ul#my_bottom_tab {
+                .active {
+                    border: 2px solid #65605d !important;
+                    * {
+                        color: #65605d !important;
+                        font-weight: weight(medium);
+                    }
+                }
+                border-radius: 0;
+                @include d-flex();
+
+                li.nav-item {
+                    // color: #65605d;
+                    box-sizing: content-box;
+                    font-size: 16px;
+                    text-transform: capitalize;
+                    border: 1px solid #d7d5d2;
+                    text-align: center;
+                    cursor: pointer;
+                    width: 144px;
+                    padding: 7px 0;
+                    a.nav-link {
+                        background: colors(_white);
+                        color: color(link);
+                        text-decoration: none;
+                        &:hover {
+                            color: colors(link) !important;
+                        }
+                    }
+                    // &:first-child {
+                    //     border-radius: 3px 0 0 3px;
+                    // }
+                    // &:last-child {
+                    //     border-radius: 0 3px 3px 0;
+                    // }
+                }
+            }
+            @include mobile-min(768px) {
+                li {
+                    width: 144px;
+                }
+            }
         }
         ul,
         .tab-content {
-            // width: 100%;
             background-color: #ffff;
         }
-        // .tab-content {
-        //     // display: inline-block;
-        //     padding: auto 24px;
-        //     ul {
-        //         li {
-        //             padding: 10px 0px;
-        //         }
-        //     }
-        // }
+
+        #myTabContent {
+            input,
+            button {
+                height: 37px;
+            }
+        }
+
+        @include mobile-max(767px) {
+            .container-fluid {
+                padding-left: 0 !important;
+                padding-right: 0 !important;
+            }
+        }
     }
 }
 
