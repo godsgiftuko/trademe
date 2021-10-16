@@ -454,12 +454,15 @@
   justify-content: space-between;
   height: 48px;
   width: 100%;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
   align-items: center;
   padding-left: 16px;
   background-color: #fff;
   border-radius: 3px;
   color: #44413d;
   cursor: text;
+  -webkit-transition: border-color 0.2s ease-out;
   transition: border-color 0.2s ease-out;
 }
 .tm-homepage-search-header .tm-homepage-search-header__nav .tm-homepage-search-header__header .tm-homepage-search-header__global-search-form form:focus-within {
@@ -485,7 +488,9 @@
   font-weight: 500;
   line-height: 1.5rem;
   text-align: center;
+  -webkit-transition-duration: 0.1s;
   transition-duration: 0.1s;
+  -webkit-transition-property: background-color, border-color, box-shadow, padding-top, padding-bottom, color;
   transition-property: background-color, border-color, box-shadow, padding-top, padding-bottom, color;
   vertical-align: middle;
   padding: 0.75rem 24px;
@@ -737,6 +742,9 @@
   width: 100%;
   max-width: 275.78px;
   flex: 1 1 auto;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-flow: column nowrap;
   flex-flow: column nowrap;
   margin-bottom: 24px;
   background: #fff;
@@ -984,6 +992,7 @@
 }
 .footer .footer_top_div .footer_vertical_link .row div ul li a {
   text-transform: capitalize;
+  display: inline;
 }
 .footer .footer_top_div .footer_vertical_link .row div:first-child > ul > li:first-child > a {
   color: #d93a3f;
@@ -1248,7 +1257,9 @@
   font-weight: 500;
   line-height: 1.5rem;
   text-align: center;
+  -webkit-transition-duration: 0.1s;
   transition-duration: 0.1s;
+  -webkit-transition-property: background-color, border-color, box-shadow, padding-top, padding-bottom, color;
   transition-property: background-color, border-color, box-shadow, padding-top, padding-bottom, color;
   vertical-align: middle;
   padding: 0.75rem 24px;
@@ -2393,7 +2404,7 @@
   justify-content: space-between;
   flex-direction: column;
   align-items: normal;
-  background-color: #44413d;
+  background-color: #d93a3f;
   width: 100%;
 }
 .searched_item_showcase a.nav-link .searched_item_showcase-img .searched_item_showcase-img-large {
@@ -2499,9 +2510,7 @@
 .salary-guide #content .salary-guide-content table.table td {
   color: #44413d !important;
   height: 40px;
-  -webkit-hyphens: auto;
-      -ms-hyphens: auto;
-          hyphens: auto;
+  hyphens: auto;
   overflow-wrap: break-word;
   vertical-align: top;
   word-wrap: break-word;
@@ -2927,14 +2936,10 @@ fieldset {
 
 p {
   display: block;
-  -webkit-margin-before: 1em;
-          margin-block-start: 1em;
-  -webkit-margin-after: 1em;
-          margin-block-end: 1em;
-  -webkit-margin-start: 0px;
-          margin-inline-start: 0px;
-  -webkit-margin-end: 0px;
-          margin-inline-end: 0px;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
 }
 
 .navbar-nav {
@@ -2953,6 +2958,8 @@ p {
   justify-content: space-between;
   height: 48px;
   width: 100%;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
   align-items: center;
   box-sizing: content-box;
   padding-left: 16px;
@@ -2961,6 +2968,7 @@ p {
   color: #44413d;
   cursor: text;
   border: 1px solid #d7d5d2 !important;
+  -webkit-transition: border-color 0.2s ease-out;
   transition: border-color 0.2s ease-out;
 }
 .tm-global-search-form form:focus-within {
@@ -2986,7 +2994,9 @@ p {
   font-weight: 500;
   line-height: 1.5rem;
   text-align: center;
+  -webkit-transition-duration: 0.1s;
   transition-duration: 0.1s;
+  -webkit-transition-property: background-color, border-color, box-shadow, padding-top, padding-bottom, color;
   transition-property: background-color, border-color, box-shadow, padding-top, padding-bottom, color;
   vertical-align: middle;
   padding: 0.75rem 24px;
@@ -3026,7 +3036,9 @@ button {
   font-weight: 500;
   line-height: 1.5rem;
   text-align: center;
+  -webkit-transition-duration: 0.1s;
   transition-duration: 0.1s;
+  -webkit-transition-property: background-color, border-color, box-shadow, padding-top, padding-bottom, color;
   transition-property: background-color, border-color, box-shadow, padding-top, padding-bottom, color;
   vertical-align: middle;
   padding: 0.75rem 24px;

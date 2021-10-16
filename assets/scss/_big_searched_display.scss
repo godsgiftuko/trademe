@@ -266,7 +266,7 @@
     height: 338.84px !important;
     a.nav-link {
         @include d-flex(column);
-        background-color: colors(_black);
+        background-color: colors(_red);
         width: 100%;
 
         .searched_item_showcase-img {
