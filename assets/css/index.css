@@ -14,6 +14,10 @@
   color: #007acd !important;
 }
 
+._lite_grey_BG {
+  background-color: #f6f5f4 !important;
+}
+
 .navbar {
   background-color: #f6f5f4;
   padding: 0px;
@@ -1245,6 +1249,132 @@
     margin-bottom: 16px;
   }
 }
+.cardlist-container .cardlist-title {
+  margin-bottom: 15px;
+}
+.cardlist-container .cardlist-title p {
+  font-size: 16px !important;
+}
+.cardlist-container .cardlist {
+  display: flex;
+}
+@media screen and (max-width: 767px) {
+  .cardlist-container .cardlist {
+    display: flex;
+    flex-wrap: nowrap !important;
+    flex-direction: row !important;
+    width: 100%;
+    max-width: 1600px;
+    overflow-x: scroll;
+  }
+}
+.cardlist-container .cardlist a.nav-link {
+  text-decoration: none !important;
+  color: #76716d !important;
+}
+.cardlist-container .cardlist .card {
+  overflow: hidden;
+  border-radius: 8px;
+  color: inherit;
+  transform: translateZ(0);
+  transition: box-shadow 0.15s ease-out;
+  height: 425px;
+}
+.cardlist-container .cardlist .card:hover {
+  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.1);
+}
+.cardlist-container .cardlist .card .card-header {
+  height: 200px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+.cardlist-container .cardlist .card .card-body .body-header .rem_psuedo::before, .cardlist-container .cardlist .card .card-body .body-header .rem_psuedo::after {
+  display: none;
+}
+.cardlist-container .cardlist .card .card-body .body-header span {
+  font-weight: 500 !important;
+}
+.cardlist-container .cardlist .card .card-body .body-header span:first-child {
+  font-size: 14px;
+  color: #f3632d !important;
+}
+.cardlist-container .cardlist .card .card-body .body-header span:last-child {
+  font-size: 12px;
+}
+.cardlist-container .cardlist .card .card-body .body-header span:last-child::before {
+  position: relative;
+  content: "|";
+  padding: 0 8px;
+}
+.cardlist-container .cardlist .card .card-body .body-title {
+  height: 80px;
+}
+.cardlist-container .cardlist .card .card-body .body-title h2 {
+  color: #44413d !important;
+  margin-top: 10px;
+}
+.cardlist-container .cardlist .card .card-body .body-title p {
+  font-size: 16px !important;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+@supports (-webkit-line-clamp: 3) {
+  .cardlist-container .cardlist .card .card-body .body-title p {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: initial;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+  }
+}
+.cardlist-container .cardlist .card .card-body .body-footer {
+  position: absolute;
+  bottom: 10px;
+}
+.cardlist-container .more-button {
+  margin-top: 15px;
+}
+
+.rack-item .container-fluid div {
+  width: 100%;
+  padding: 30px 0 !important;
+}
+.rack-item .container-fluid div h1 {
+  font-size: 32px;
+}
+.rack-item .container-fluid div p {
+  font-size: 20px;
+}
+.rack-item .container-fluid div:nth-child(2) {
+  height: 200px;
+  display: flex;
+  justify-content: center;
+}
+.rack-item .container-fluid div:nth-child(2) img {
+  height: 100%;
+}
+@media screen and (min-width: 768px) {
+  .rack-item .container-fluid {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .rack-item .container-fluid div {
+    width: 50% !important;
+  }
+  .rack-item .container-fluid div:nth-child(2) {
+    height: 200px;
+    display: flex;
+    justify-content: center;
+  }
+  .rack-item .container-fluid div:nth-child(2) img {
+    height: 100%;
+  }
+}
+
 .nav-tabs .nav-item.show .nav-link,
 .nav-tabs .nav-link.active {
   color: red;
@@ -2228,8 +2358,18 @@
   flex-direction: row;
   position: relative;
 }
+#navbar-2 .bottom-nav ul.navbar-nav .active {
+  background-color: #d54209;
+  font-weight: 700 !important;
+  border-radius: 3px;
+  padding: 6px 20px !important;
+}
 #navbar-2 .bottom-nav ul.navbar-nav .remAfter:after {
   display: none !important;
+}
+#navbar-2 .bottom-nav ul.navbar-nav .flex-left {
+  flex: 3;
+  text-align: right;
 }
 #navbar-2 .bottom-nav ul.navbar-nav li.nav-item {
   margin-bottom: 24px;
@@ -2237,15 +2377,6 @@
 }
 #navbar-2 .bottom-nav ul.navbar-nav li.nav-item:first-child {
   padding-left: 0;
-}
-#navbar-2 .bottom-nav ul.navbar-nav li.nav-item:last-child {
-  flex: 3;
-  text-align: right;
-}
-#navbar-2 .bottom-nav ul.navbar-nav li.nav-item:nth-child(4) {
-  background-color: #d54209;
-  font-weight: 700 !important;
-  border-radius: 3px;
 }
 #navbar-2 .bottom-nav ul.navbar-nav li.nav-item a.btn {
   background-color: transparent !important;

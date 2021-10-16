@@ -12,3 +12,9 @@
     flex-direction: $direction;
     align-items: $align-items;
 }
+
+@mixin d-flex-center() {
+    display: flex;
+    justify-content: center;
+    // align-items: center;
+}
