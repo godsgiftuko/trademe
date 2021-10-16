@@ -9,8 +9,8 @@
         color: #fff;
     }
 }
-// .active_hero_tab {
-// }
+
+
 .hero_div {
     position: relative;
     display: block;
@@ -37,6 +37,7 @@
             li {
                 margin: 0px;
                 height: 40px;
+
                 button {
                     box-shadow: -1px 0 colors(_grey2);
                     border-radius: 0;
@@ -46,7 +47,7 @@
                     padding: 11px 20px;
                     text-transform: capitalize;
                     font-size: 16px;
-                    background-color: colors(_white) !important;
+                    background-color: colors(_white);
                     color: colors(_black) !important;
                     font-weight: weight(regular);
                     .fa,
@@ -56,6 +57,9 @@
 
                     .fa {
                         color: colors(primary);
+                    }
+                    &:hover {
+                        background-color: transparent !important;
                     }
                 }
                 &:first-child button {
@@ -98,6 +102,7 @@
                     color: colors(link);
                     margin-bottom: 10px;
                 }
+                
                 ul.nav-tabs {
                     width: 100%;
                     flex-wrap: nowrap !important;
@@ -109,12 +114,6 @@
 
                     li.nav-item {
                         display: block;
-                        .active {
-                            background-color: #323a4d !important;
-                            * {
-                                color: colors(_white) !important;
-                            }
-                        }
                         padding: 0 3px;
 
                         &:first-child {
@@ -223,7 +222,18 @@
         }
     }
 }
-
+.active-tab {
+    button {
+        background-color: #323a4d !important;
+        
+        &:hover {
+            background-color: currentColor !important;
+        }
+    }
+    * {
+        color: colors(_white) !important;
+    }
+}
 // @media screen and (min-width: 768px) {
 //     .hero_div {
 //         .hero_bottom {

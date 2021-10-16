@@ -266,6 +266,7 @@
 
     .more-button {
         margin-top: 15px;
+        text-decoration: none;
     }
 }
 
@@ -285,7 +286,7 @@
 
             &:nth-child(2) {
                 height: 200px;
-                @include d-flex-center();
+                display: none;
 
                 img {
                     height: 100%;

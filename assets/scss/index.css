@@ -87,115 +87,6 @@
   text-decoration: underline;
 }
 
-@media screen and (max-width: 767px) {
-  #navbar-2 {
-    padding-top: 8px;
-  }
-  #navbar-2 .top-nav {
-    flex-direction: column !important;
-    align-items: flex-start !important;
-  }
-  #navbar-2 .top-nav span {
-    order: 2 !important;
-  }
-}
-#navbar-2 .top-nav {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  flex-direction: row;
-  align-items: center;
-}
-#navbar-2 .top-nav .logo {
-  margin-bottom: -16px;
-  height: 68px;
-  order: 1;
-}
-#navbar-2 .top-nav .logo img {
-  height: 100%;
-}
-#navbar-2 .bottom-nav {
-  width: 100%;
-  padding: 16px 0 0 0;
-}
-@media screen and (max-width: 767px) {
-  #navbar-2 .bottom-nav {
-    max-width: 1600px;
-    overflow-x: scroll;
-  }
-}
-#navbar-2 .bottom-nav ul.navbar-nav {
-  display: flex;
-  justify-content: space-between;
-  flex-direction: row;
-  position: relative;
-}
-#navbar-2 .bottom-nav ul.navbar-nav .active {
-  background-color: #d54209;
-  font-weight: 700 !important;
-  border-radius: 3px;
-  padding: 6px 20px !important;
-}
-#navbar-2 .bottom-nav ul.navbar-nav .remAfter:after {
-  display: none !important;
-}
-#navbar-2 .bottom-nav ul.navbar-nav .flex-left {
-  flex: 3;
-  text-align: right;
-}
-#navbar-2 .bottom-nav ul.navbar-nav li.nav-item {
-  margin-bottom: 24px;
-  padding: 6px 20px;
-}
-#navbar-2 .bottom-nav ul.navbar-nav li.nav-item:first-child {
-  padding-left: 0;
-}
-#navbar-2 .bottom-nav ul.navbar-nav li.nav-item a.btn {
-  background-color: transparent !important;
-  outline: none;
-  border: none;
-  box-shadow: none;
-  font-size: 14px !important;
-  padding: 0 !important;
-}
-#navbar-2 .bottom-nav ul.navbar-nav li.nav-item .dropdown-menu {
-  position: absolute;
-  padding: 12px;
-}
-#navbar-2 .bottom-nav ul.navbar-nav li.nav-item .dropdown-menu .dropdown-item {
-  color: #007acd !important;
-  font-size: 14px !important;
-  padding-left: 0;
-  padding-right: 0;
-}
-#navbar-2 .bottom-nav ul.navbar-nav li.nav-item .dropdown-menu .dropdown-item:hover {
-  background-color: transparent !important;
-}
-#navbar-2 .bottom-nav ul.navbar-nav li.nav-item .dropdown-menu .dropdown-item:focus {
-  background-color: #fff !important;
-}
-#navbar-2 .bottom-nav ul.navbar-nav li.nav-item .dropdown-menu::before {
-  content: "";
-  position: absolute;
-  height: 50px;
-  width: 50px;
-  border-width: 30px;
-  border-style: solid;
-  border-color: transparent;
-  border-bottom-color: #fff;
-  left: 30%;
-  top: -40px;
-}
-@media screen and (max-width: 767px) {
-  #navbar-2 .top-nav .logo {
-    margin-bottom: auto;
-    margin-left: -16px;
-  }
-  #navbar-2 .bottom-nav button {
-    background-color: !important;
-  }
-}
-
 .header_global_navigation {
   padding: 24px 0px 0px 0px;
 }
@@ -1435,7 +1326,6 @@
 }
 .cardlist-container .more-button {
   margin-top: 15px;
-  text-decoration: none;
 }
 
 .rack-item .container-fluid div {
@@ -1450,7 +1340,8 @@
 }
 .rack-item .container-fluid div:nth-child(2) {
   height: 200px;
-  display: none;
+  display: flex;
+  justify-content: center;
 }
 .rack-item .container-fluid div:nth-child(2) img {
   height: 100%;
@@ -1519,7 +1410,7 @@
   padding: 11px 20px;
   text-transform: capitalize;
   font-size: 16px;
-  background-color: #fff;
+  background-color: #fff !important;
   color: #44413d !important;
   font-weight: 400;
 }
@@ -1529,9 +1420,6 @@
 }
 .hero_div .hero_bottom ul#myTab li button .fa {
   color: #007acd;
-}
-.hero_div .hero_bottom ul#myTab li button:hover {
-  background-color: transparent !important;
 }
 .hero_div .hero_bottom ul#myTab li:first-child button {
   border-radius: 10px 0 0 0;
@@ -1586,6 +1474,12 @@
   .hero_div .hero_bottom .myTab-sm-scrn ul.nav-tabs li.nav-item {
     display: block;
     padding: 0 3px;
+  }
+  .hero_div .hero_bottom .myTab-sm-scrn ul.nav-tabs li.nav-item .active {
+    background-color: #323a4d !important;
+  }
+  .hero_div .hero_bottom .myTab-sm-scrn ul.nav-tabs li.nav-item .active * {
+    color: #fff !important;
   }
   .hero_div .hero_bottom .myTab-sm-scrn ul.nav-tabs li.nav-item:first-child {
     padding-left: 0;
@@ -1673,16 +1567,6 @@
     padding-left: 0 !important;
     padding-right: 0 !important;
   }
-}
-
-.active-tab button {
-  background-color: #323a4d !important;
-}
-.active-tab button:hover {
-  background-color: currentColor !important;
-}
-.active-tab * {
-  color: #fff !important;
 }
 
 .form-select-lg {
@@ -2421,6 +2305,114 @@
   padding-bottom: 0;
 }
 
+@media screen and (max-width: 767px) {
+  #navbar-2 {
+    padding-top: 8px;
+  }
+  #navbar-2 .top-nav {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+  }
+  #navbar-2 .top-nav span {
+    order: 2 !important;
+  }
+}
+#navbar-2 .top-nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+}
+#navbar-2 .top-nav .logo {
+  margin-bottom: -16px;
+  height: 68px;
+  order: 1;
+}
+#navbar-2 .top-nav .logo img {
+  height: 100%;
+}
+#navbar-2 .bottom-nav {
+  width: 100%;
+  padding: 16px 0 0 0;
+}
+@media screen and (max-width: 767px) {
+  #navbar-2 .bottom-nav {
+    max-width: 1600px;
+    overflow-x: scroll;
+  }
+}
+#navbar-2 .bottom-nav ul.navbar-nav {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  position: relative;
+}
+#navbar-2 .bottom-nav ul.navbar-nav .active {
+  background-color: #d54209;
+  font-weight: 700 !important;
+  border-radius: 3px;
+  padding: 6px 20px !important;
+}
+#navbar-2 .bottom-nav ul.navbar-nav .remAfter:after {
+  display: none !important;
+}
+#navbar-2 .bottom-nav ul.navbar-nav .flex-left {
+  flex: 3;
+  text-align: right;
+}
+#navbar-2 .bottom-nav ul.navbar-nav li.nav-item {
+  margin-bottom: 24px;
+  padding: 6px 20px;
+}
+#navbar-2 .bottom-nav ul.navbar-nav li.nav-item:first-child {
+  padding-left: 0;
+}
+#navbar-2 .bottom-nav ul.navbar-nav li.nav-item a.btn {
+  background-color: transparent !important;
+  outline: none;
+  border: none;
+  box-shadow: none;
+  font-size: 14px !important;
+  padding: 0 !important;
+}
+#navbar-2 .bottom-nav ul.navbar-nav li.nav-item .dropdown-menu {
+  position: absolute;
+  padding: 12px;
+}
+#navbar-2 .bottom-nav ul.navbar-nav li.nav-item .dropdown-menu .dropdown-item {
+  color: #007acd !important;
+  font-size: 14px !important;
+  padding-left: 0;
+  padding-right: 0;
+}
+#navbar-2 .bottom-nav ul.navbar-nav li.nav-item .dropdown-menu .dropdown-item:hover {
+  background-color: transparent !important;
+}
+#navbar-2 .bottom-nav ul.navbar-nav li.nav-item .dropdown-menu .dropdown-item:focus {
+  background-color: #fff !important;
+}
+#navbar-2 .bottom-nav ul.navbar-nav li.nav-item .dropdown-menu::before {
+  content: "";
+  position: absolute;
+  height: 50px;
+  width: 50px;
+  border-width: 30px;
+  border-style: solid;
+  border-color: transparent;
+  border-bottom-color: #fff;
+  left: 30%;
+  top: -40px;
+}
+@media screen and (max-width: 767px) {
+  #navbar-2 .top-nav .logo img {
+    height: 32px;
+  }
+  #navbar-2 .bottom-nav button {
+    background-color: !important;
+  }
+}
+
 .salary-guide #content aside {
   background-color: #fff !important;
 }
@@ -2447,11 +2439,10 @@
 }
 .salary-guide #content .salary-guide-content .anchor {
   margin-top: 50px;
-  padding: 20px 0;
+  padding: 30px 0;
   padding-left: 30px;
 }
 .salary-guide #content .salary-guide-content .anchor:nth-child(even) {
-  padding: 20px 10px;
   background-color: #f6f5f4 !important;
 }
 .salary-guide #content .salary-guide-content .anchor:nth-child(even) thead th {
@@ -2493,11 +2484,10 @@
 }
 .salary-guide #content .salary-guide-content table.table th {
   font-weight: 500 !important;
-  border-bottom-color: #c1c1c1;
-  color: #44413d !important;
+  border-bottom-color: #dee2e6;
 }
 .salary-guide #content .salary-guide-content table.table td {
-  color: #44413d !important;
+  color: #76716d !important;
   height: 40px;
   -webkit-hyphens: auto;
       -ms-hyphens: auto;
@@ -2534,7 +2524,7 @@
 .salary-guide #content .salary-guide-content table.table-sm tbody tr td:first-child {
   font-weight: 500 !important;
   background-color: #e8e6e3 !important;
-  border-bottom: 1px solid #c1c1c1;
+  border-bottom: 1px solid #e8e6e3;
   margin: 10px 0;
 }
 .salary-guide #content .salary-guide-content table.table-sm tbody tr td:first-child::before {

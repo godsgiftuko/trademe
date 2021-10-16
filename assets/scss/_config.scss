@@ -21,7 +21,8 @@ $app_colors: (
     '_grey2': #d7d5d2,
     'nothing': 'transparent',
     'table-head-bg': #f6f5f4,
-    'th-border-col': #dee2e6
+    'th-border-col': #dee2e6,
+    'table-border': #c1c1c1
 );
 
 @function colors($color-name) {
