@@ -1,4 +1,4 @@
-@use "sass:string";
+@use 'sass:string';
 
 // @mixin  border($axis: normal, $width: 1px, $style: solid, $color) {
 //     @if $axis == normal {
@@ -10,7 +10,8 @@
 
 $footer_border: 7.99px;
 
-.__g-footer-border {
+.__g-footer-border,
+._f_green-border {
     border-top: $footer_border solid colors(_f_green);
 }
 .__o-footer-border {
@@ -21,6 +22,12 @@ $footer_border: 7.99px;
 }
 .__b-footer-border {
     border-top: $footer_border solid #555555;
+}
+.__gray-footer-border {
+    border-top: $footer_border solid colors(_gray);
+}
+.__blue-footer-border {
+    border-top: $footer_border solid colors(primary);
 }
 
 .footer {

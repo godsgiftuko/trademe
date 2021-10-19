@@ -2,7 +2,6 @@
     // ! SEARCH NAV
     padding-top: 0;
     .tm-homepage-search-header__nav {
-        background-color: #f9af2c;
         padding: 40px 0px 1px 0;
         // .container-fluid {
         // padding-right: 8.71%;
@@ -108,7 +107,6 @@
 
     // ! ANNOUNCEMENT NAV
     .tm-homepage-announcement {
-        background-color: #006ebd;
         height: auto;
         padding: 5px 0 0 0;
 
@@ -300,26 +298,21 @@
                     font-weight: 700;
                 }
                 &:nth-child(1) {
-                    background-color: #d93a3f;
+                    background-color: colors(_orange);
                     flex: 1;
                     border-radius: 4px 0 0 4px;
                     // flex: 2;
                 }
                 &:nth-child(2) {
-                    background-color: #f3632d;
+                    background-color: colors(_gray);
                     flex: 1;
                 }
                 &:nth-child(3) {
-                    background-color: #5f6f88;
+                    background-color: colors(_red);
                     flex: 1;
                 }
                 &:nth-child(4) {
-                    background-color: #29a754;
-                    flex: 1;
-                }
-                &:nth-child(5) {
-                    background-color: #555;
-                    border-radius: 0 4px 4px 0;
+                    background-color: colors(_f_green);
                     flex: 1;
                 }
                 &:last-child {

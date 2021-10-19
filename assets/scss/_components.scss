@@ -17,7 +17,8 @@
     }
 
     &:hover {
-        border-color: transparent $auction_card_border_col transparent transparent;
+        border-color: transparent $auction_card_border_col transparent
+            transparent;
     }
 }
 
@@ -54,8 +55,6 @@
                 margin-bottom: 0;
             }
         }
-        
-
     }
     padding: 16px 0;
     margin: 10px 0;
@@ -88,12 +87,6 @@
 // ! PAGINATION COMPONENT
 .pagination_div {
     padding: 20px 0;
-
-    .paginated {
-        font-weight: bold;
-        color: $body-col;
-    }
-
     ul {
         display: flex;
         justify-content: center;
@@ -105,10 +98,14 @@
             a {
                 text-transform: capitalize;
                 font-size: 16px;
-                color: $b-col;
+                color: colors(primary) !important;
                 text-decoration: none;
             }
         }
+    }
+    .paginated {
+        font-weight: bold;
+        color: colors(_black) !important;
     }
 }
 
@@ -117,8 +114,11 @@
     text-align: center;
     padding: 16px 0;
 
-    a.nav-link {
-        color: $b-col;
+    button {
+        color: colors(primary) !important;
+        &:hover {
+            background-color: transparent !important;
+        }
     }
 }
 
@@ -129,7 +129,7 @@
     padding: 16px 0;
 
     a.nav-link {
-        color: $b-col;
+        color: colors(primary) !important;
     }
 }
 
@@ -165,7 +165,6 @@
 }
 
 @media screen and (max-width: 768px) {
-
     // ! PAGINATION COMPONENT
     .pagination_div {
         padding: 8px 0;
@@ -184,7 +183,7 @@
 
         div {
             width: 100% !important;
-            
+
             &:first-child {
                 order: 1;
                 margin-bottom: 16px;
@@ -193,7 +192,6 @@
         }
     }
 }
-
 
 .cardlist-container {
     .cardlist-title {
@@ -217,10 +215,9 @@
             overflow-x: scroll;
         }
 
-
         a.nav-link {
             text-decoration: none !important;
-            color: colors(link) !important;
+            color: colors(link);
         }
 
         .card {
@@ -228,11 +225,11 @@
             border-radius: 8px;
             color: inherit;
             transform: translateZ(0);
-            transition: box-shadow .15s ease-out;
+            transition: box-shadow 0.15s ease-out;
             height: 425px;
 
             &:hover {
-                box-shadow: 0 1px 4px 0 rgb(0, 0, 0, 0.10);
+                box-shadow: 0 1px 4px 0 #0000001a;
             }
 
             .card-header {
@@ -243,7 +240,6 @@
             }
 
             .card-body {
-
                 // height: 135.34px;
                 // display: flex;
                 // flex-direction: column;
@@ -256,7 +252,6 @@
                     margin-bottom: 12px;
 
                     .rem_psuedo {
-
                         &::before,
                         &::after {
                             display: none;
@@ -296,7 +291,6 @@
                         white-space: nowrap;
                         text-overflow: ellipsis;
                         overflow: hidden;
-
 
                         @supports (-webkit-line-clamp: 3) {
                             overflow: hidden;
@@ -339,7 +333,7 @@
                     margin: 3px 0 0 0 !important;
                     line-height: 15px;
                 }
-    
+
                 h4 {
                     color: colors(_black2) !important;
                     font-weight: weight(medium) !important;
@@ -365,7 +359,6 @@
                         font-family: 'FontAwesome';
                         position: relative;
                         font-weight: weight(regular);
-
                     }
                     &::after {
                         content: 'positive feedback';
@@ -375,7 +368,6 @@
                     }
                 }
             }
-
         }
 
         .card-list-view {
@@ -414,7 +406,6 @@
         }
     }
 
-    
     .more-button {
         margin-top: 15px;
         text-decoration: none;
@@ -437,10 +428,9 @@
         display: flex;
         height: 48px !important;
         background-color: colors(_white) !important;
-        
-      }
-      
-      .switch-field input {
+    }
+
+    .switch-field input {
         position: absolute !important;
         clip: rect(0, 0, 0, 0);
         height: 1px;
@@ -448,19 +438,19 @@
         border: 0;
         overflow: hidden;
         --switch-field-border-width: 2px;
-      }
-      
-      .switch-field label {
+    }
+
+    .switch-field label {
         color: colors(_black);
         font-weight: weight(medium) !important;
         display: flex;
-        place-items: center; 
+        place-items: center;
         width: 46px;
         margin-right: -1px;
         border-width: var(--switch-field-border-width);
         font-size: 16px !important;
         justify-content: center;
-        background-color: colors(_white );
+        background-color: colors(_white);
         transition: all 0.1s ease-in-out;
         * {
             padding: 0 2px;
@@ -480,39 +470,40 @@
                 display: block;
             }
         }
-      }
-      
-      .switch-field label:hover {
+    }
+
+    .switch-field label:hover {
         cursor: pointer;
-      }
-      
-      .switch-field input:checked + label {
+    }
+
+    .switch-field input:checked + label {
         border: var(--switch-field-border-width) solid colors(_black);
-        box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.3), 0 1px rgba(255, 255, 255, 0.1);
-      }
-      
-      .switch-field label:first-of-type {
+        box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.3),
+            0 1px rgba(255, 255, 255, 0.1);
+    }
+
+    .switch-field label:first-of-type {
         border-radius: 4px 0 0 4px;
-      }
-      
-      .switch-field label:last-of-type {
+    }
+
+    .switch-field label:last-of-type {
         border-radius: 0 4px 4px 0;
-      }
-      
-      /* This is just for CodePen. */
-      
-      .form {
+    }
+
+    /* This is just for CodePen. */
+
+    .form {
         // max-width: 600px;
         // font-family: "Lucida Grande", Tahoma, Verdana, sans-serif;
         font-weight: normal;
         // margin: 8px auto;
         // padding: 16px;
-      }
-      
-      h2 {
+    }
+
+    h2 {
         font-size: 18px;
         margin-bottom: 8px;
-      }
+    }
 }
 
 .rack-item {
@@ -528,7 +519,6 @@
             p {
                 font-size: 20px;
             }
-
         }
 
         .l-rack {
@@ -537,7 +527,6 @@
                 font-weight: weight(regular);
             }
         }
-
 
         .r-rack {
             height: 200px;
@@ -554,7 +543,6 @@
 
             div {
                 width: 50% !important;
-
 
                 &:nth-child(2) {
                     height: 200px;

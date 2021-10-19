@@ -1,7 +1,7 @@
 @import 'colors';
 
 .navbar {
-    background-color: $navbar_bg_col;
+    background-color: colors(_whitesmoke);
     padding: 0px;
     display: block;
 
@@ -21,7 +21,7 @@
             margin-right: 8px !important;
             background-color: #fff !important;
             border-radius: 3px 3px 0 0 !important;
-            color: $nav-link-col !important;
+            color: colors(link) !important;
             font-weight: 700 !important;
         }
 
@@ -75,6 +75,13 @@
 
         .browse-dropdown-btn {
             flex: 2;
+            button {
+                background: transparent !important;
+
+                &:hover {
+                    color: colors(_black) !important;
+                }
+            }
         }
 
         .main-nav__member-options-list {
@@ -89,7 +96,7 @@
                 padding: 0px 10px;
 
                 .m-affiliates__sat-nav-link {
-                    color: $nav-link-col;
+                    color: colors(link);
 
                     &:hover {
                         text-decoration: underline;
@@ -117,7 +124,6 @@
         }
     }
 
-
     .top-nav {
         width: 100%;
         @include d-flex(row, space-between, center);
@@ -132,9 +138,6 @@
             }
         }
     }
-
-    
-
 
     .bottom-nav {
         width: 100%;
@@ -229,7 +232,7 @@
             .logo {
                 margin-bottom: auto;
                 margin-left: -16px;
-            } 
+            }
         }
 
         .bottom-nav {
@@ -237,7 +240,6 @@
                 background-color: colors(transparent) !important;
             }
         }
-
     }
 }
 

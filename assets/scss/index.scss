@@ -20,6 +20,8 @@
 @import 'salaryguide';
 @import 'careeradvice';
 @import 'breadcumb_div';
+@import 'services';
+@import 'help';
 
 @font-face {
     font-display: swap;
@@ -127,7 +129,7 @@ a,
 .nav-link {
     background-color: transparent;
     text-decoration: none;
-    color: $nav-link-col;
+    color: colors(link);
     margin: 0;
     padding: 0;
 }
@@ -136,7 +138,7 @@ a:active,
 a:hover {
     outline: 0;
     text-decoration: underline;
-    color: $nav-link-col;
+    color: colors(link);
 }
 
 abbr[title] {
@@ -365,6 +367,7 @@ h4,
 h5,
 h6 {
     font-weight: 700;
+    line-height: 24px;
 }
 
 h1 {
@@ -577,23 +580,27 @@ button {
 }
 
 .btn-o--no-bg {
-    background-color: transparent;
+    background-color: transparent !important;
     border: 1px solid $btn;
     color: $btn;
 }
 
-// .btn-o-transparent {
-//     background-color: transparent;
-//     border: 1px solid $btn;
-//     padding: 0.35rem 12px;
-//     border-radius: 30px;
-//     color: $btn;
-//     &:hover {
-//         opacity: 1;
-//         color: $btn;
-//     }
-// }
+.btn--no-b-bg {
+    background-color: transparent !important;
+    border: none !important;
+    color: $btn;
+}
 
+.btn--grey {
+    background-color: colors(_grey);
+    color: colors(primary);
+    height: 100%;
+
+    &:hover {
+        color: colors(primary);
+        background-color: colors(_white) !important;
+    }
+}
 .breadcrumb {
     margin-bottom: 0;
 }
@@ -614,10 +621,22 @@ button {
     margin-left: auto;
 }
 
+.container {
+    width: 100%;
+    max-width: 100%;
+    padding: 0 12px;
+    margin: 0;
+}
+
 section {
     padding-top: 30px;
     padding-bottom: 30px;
     background-color: #fff;
+    --help-pg-section-padding: 0 16px;
+}
+section h1.header-section-title {
+    color: colors(_black) !important;
+    padding: 50px 0 30px 0;
 }
 
 // ? DISPLAY: NONE;
@@ -645,7 +664,7 @@ section {
 
 @media screen and (min-width: 768px) {
     section {
-        padding-top: 48px;
+        padding-top: 20px;
         padding-bottom: 48px;
     }
 }

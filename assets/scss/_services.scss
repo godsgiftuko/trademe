@@ -1,0 +1,28 @@
+.service-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    // grid-template-areas: "
+    //     domestic events trades other
+    //     domestic health trades other";
+
+    ul.navbar-nav {
+        li {
+            width: 100%;
+            margin: 5px 0;
+
+            a.nav-link {
+                color: colors(primary);
+                font-weight: weight(regular) !important;
+                font-size: 16px;
+                display: inline;
+            }
+            &:first-child {
+                margin: 15px 0;
+                a.nav-link {
+                    font-weight: weight(bold) !important;
+                    // color: colors(_red) !important;
+                }
+            }
+        }
+    }
+}

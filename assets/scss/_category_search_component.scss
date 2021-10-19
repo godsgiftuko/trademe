@@ -53,7 +53,7 @@
         padding: 10px 0 20px 0;
         ul.navbar-nav {
             display: grid !important;
-                grid-template-columns: 1fr 1fr 1fr;
+            grid-template-columns: 1fr 1fr 1fr;
             li.nav-item {
                 width: 100%;
                 display: inline-block;
@@ -62,7 +62,7 @@
                     font-size: 16px;
                     color: $btn;
                     span {
-                        color: $nav-link-col;
+                        color: colors(link);
                     }
                 }
             }

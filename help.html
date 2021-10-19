@@ -19,136 +19,30 @@
             crossorigin="anonymous"
         />
         <link rel="stylesheet" href="./assets/css/index.min.css" />
-        <script
-            src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
-            integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
-            crossorigin="anonymous"
-            referrerpolicy="no-referrer"
-        ></script>
-        <script
-            src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js"
-            integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/"
-            crossorigin="anonymous"
-        ></script>
     </head>
 
     <body>
+        <!--*  HEADER -->
         <header>
-            <!--* NAV -->
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                <div class="container-fluid">
-                    <div class="collapse navbar-collapse" id="navbarNav">
-                        <ul class="navbar-nav tm-affiliates__sat-nav-list">
-                            <li class="nav-item">
-                                <a
-                                    _ngcontent-frend-c204
-                                    class="
-                                        nav-link
-                                        tm-affiliates__sat-nav-link
-                                        active
-                                    "
-                                    aria-current="page"
-                                    href="/"
-                                    >Trade me</a
-                                >
-                            </li>
-                            <li class="nav-item">
-                                <a
-                                    _ngcontent-frend-c204
-                                    class="nav-link tm-affiliates__sat-nav-link"
-                                    aria-current="page"
-                                    href="/"
-                                    >LifeDirect
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a
-                                    _ngcontent-frend-c204
-                                    class="nav-link tm-affiliates__sat-nav-link"
-                                    aria-current="page"
-                                    href="/"
-                                    >Trade Me Insurance</a
-                                >
-                            </li>
-                            <li class="nav-item">
-                                <a
-                                    _ngcontent-frend-c204
-                                    class="nav-link tm-affiliates__sat-nav-link"
-                                    aria-current="page"
-                                    href="/"
-                                    >Holiday Houses</a
-                                >
-                            </li>
-                            <li class="nav-item">
-                                <a
-                                    _ngcontent-frend-c204
-                                    class="nav-link tm-affiliates__sat-nav-link"
-                                    aria-current="page"
-                                    href="/"
-                                >
-                                    FindSomeone</a
-                                >
-                            </li>
-                            <li class="nav-item">
-                                <a
-                                    _ngcontent-frend-c204
-                                    class="nav-link tm-affiliates__sat-nav-link"
-                                    aria-current="page"
-                                    href="/"
-                                >
-                                    MotorWeb</a
-                                >
-                            </li>
-                            <li class="nav-item">
-                                <a
-                                    _ngcontent-frend-c204
-                                    class="nav-link tm-affiliates__sat-nav-link"
-                                    aria-current="page"
-                                    href="/"
-                                >
-                                    Harmoney</a
-                                >
-                            </li>
-                            <li class="nav-item --none-md">
-                                <a
-                                    _ngcontent-frend-c204
-                                    class="nav-link tm-affiliates__sat-nav-link"
-                                    aria-current="page"
-                                    href="/"
-                                >
-                                    Register</a
-                                >
-                            </li>
-                            <li class="nav-item --none-md">
-                                <a
-                                    _ngcontent-frend-c204
-                                    class="nav-link tm-affiliates__sat-nav-link"
-                                    aria-current="page"
-                                    href="/"
-                                >
-                                    Log in</a
-                                >
-                            </li>
-                        </ul>
-                        <div class="logged-out__actions">
-                            <a
-                                rel="nofollow"
-                                class="logged-out__register"
-                                href="https://www.trademe.co.nz/Members/Register.aspx?bof=fjh28YBT"
-                            >
-                                Register </a
-                            ><a
-                                rel="nofollow"
-                                class="logged-out__log-in"
-                                href="https://www.trademe.co.nz/Members/Login.aspx?url=%2Fmotors&amp;bof=fjh28YBT"
-                            >
-                                Log in
-                            </a>
-                        </div>
+            <div class="container">
+                <nav class="navbar navbar-expand-lg navbar-light">
+                    <div class="d-grid bg-white" style="place-items: end">
+                        <a
+                            href="./login.html"
+                            class="nav-link pt-2"
+                            style="font-size: 12px"
+                        >
+                            Log in
+                        </a>
                     </div>
-                </div>
-                <div class="main-nav__global-navigation">
-                    <div class="container-fluid">
+                    <div
+                        class="
+                            main-nav__global-navigation
+                            d-flex
+                            justify-content-between
+                            py-3
+                        "
+                    >
                         <div class="logo">
                             <a href="">
                                 <img
@@ -157,222 +51,382 @@
                                 />
                             </a>
                         </div>
-                        <div class="dropdown browse-dropdown-btn">
-                            <button
-                                class="btn dropdown-toggle"
-                                type="button"
-                                id="dropdownMenuButton"
-                                data-toggle="dropdown"
-                                aria-haspopup="true"
-                                aria-expanded="false"
-                            >
-                                Browse
-                            </button>
-                            <div
-                                class="dropdown-menu"
-                                aria-labelledby="dropdownMenuButton"
-                            >
-                                <a class="dropdown-item" href="#">Action</a>
-                                <a class="dropdown-item" href="#"
-                                    >Another action</a
-                                >
-                                <a class="dropdown-item" href="#"
-                                    >Something else here</a
-                                >
-                            </div>
-                        </div>
                         <ul class="main-nav__member-options-list">
-                            <li class="nav-item">
-                                <i class="fa fa-binoculars"></i>
-                                <a
-                                    class="m-affiliates__sat-nav-link"
-                                    aria-current="page"
-                                    href="/"
-                                    >watchlist</a
-                                >
-                            </li>
-                            <li class="nav-item --none-sm">
-                                <i class="fa fa-heart-o"></i>
-                                <a
-                                    class="m-affiliates__sat-nav-link"
-                                    aria-current="page"
-                                    href="/"
-                                    >favourites</a
-                                >
-                            </li>
-                            <li class="nav-item --none-sm">
-                                <i class="fa fa-heart-o"></i>
-                                <a
-                                    class="m-affiliates__sat-nav-link"
-                                    aria-current="page"
-                                    href="/"
-                                    >start a listing</a
-                                >
-                            </li>
-                            <li class="nav-item">
-                                <i class="fa fs-5 fa-user-circle"></i>
+                            <li class="nav-item d-inline-block">
                                 <a
                                     class="m-affiliates__sat-nav-link"
                                     aria-current="page"
                                     href="/"
                                     >my trade me</a
                                 >
+                                <i
+                                    class="fa fa-user-circle"
+                                    style="font-size: 16px !important"
+                                ></i>
                             </li>
                         </ul>
                     </div>
-                </div>
-            </nav>
-            <!--* END NAV -->
-
-            <!--*  HEADER MARKETPLACE NAV -->
-            <div class="header_global_navigation _gray_BG">
-                <div class="container-fluid">
-                    <div class="header_global_navigation_nav">
-                        <ul class="navbar-nav">
-                            <li class="nav-item">
-                                <a href="" class="nav-link">marketplace</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="" class="nav-link">jobs</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="" class="nav-link">motors</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="" class="nav-link active">property</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="" class="nav-link">services</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="header_global_navigation_sub_nav">
-                        <div class="dropdown browse-dropdown-btn">
-                            <button
-                                class="btn dropdown-toggle"
-                                type="button"
-                                id="dropdownMenuButton"
-                                data-toggle="dropdown"
-                                aria-haspopup="true"
-                                aria-expanded="false"
-                            >
-                                Browse Property
-                            </button>
-                            <div
-                                class="dropdown-menu"
-                                aria-labelledby="dropdownMenuButton"
-                            >
-                                <a class="dropdown-item" href="#">Action</a>
-                                <a class="dropdown-item" href="#"
-                                    >Another action</a
-                                >
-                                <a class="dropdown-item" href="#"
-                                    >Something else here</a
-                                >
-                            </div>
-                        </div>
-                        <ul class="navbar-nav">
-                            <li class="nav-item">
-                                <a href="" class="nav-link">Residential</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="" class="nav-link" data-tag="NEW"
-                                    >New homes <span class="new">NEW</span></a
-                                >
-                            </li>
-                            <li class="nav-item">
-                                <a href="" class="nav-link">Commercial</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="" class="nav-link">Rural</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="" class="nav-link">Businesses</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="" class="nav-link"
-                                    >Retirement villages</a
-                                >
-                            </li>
-                            <li class="nav-item">
-                                <a href="" class="nav-link">List a property</a>
-                            </li>
-                        </ul>
-                        <div class="dropdown browse-dropdown-btn">
-                            <button
-                                class="btn dropdown-toggle"
-                                type="button"
-                                id="dropdownMenuButton"
-                                data-toggle="dropdown"
-                                aria-haspopup="true"
-                                aria-expanded="false"
-                            >
-                                Tools
-                            </button>
-                            <div
-                                class="dropdown-menu"
-                                aria-labelledby="dropdownMenuButton"
-                            >
-                                <a class="dropdown-item" href="#">Action</a>
-                                <a class="dropdown-item" href="#"
-                                    >Another action</a
-                                >
-                                <a class="dropdown-item" href="#"
-                                    >Something else here</a
-                                >
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                </nav>
+                <nav class="nav"></nav>
             </div>
-            <!--*  END HEADER MARKETPLACE NAV -->
-
-            <!--*  ANNOUCEMENT BANNER -->
-            <div class="announcement-banner">
-                <div class="container-fluid">
-                    <div class="announcement-banner-container">
-                        <h1
-                            class="announcement-banner-heading"
-                            style="color: #ffc041"
-                        >
-                            COVID-19 Property update
-                        </h1>
-                        <p class="announcement-banner-content">
-                            Guidelines for your safety.
-                        </p>
-                        <a href="" class="btn-2 announcement-banner-button"
-                            >Learn more</a
-                        >
-                    </div>
-                </div>
-            </div>
-            <!--*  END ANNOUCEMENT BANNER -->
         </header>
+        <!--*  END HEADER-->
 
-        <main></main>
-        <footer>
-            <!--* WELCOME BANNER -->
-            <div class="welcome-banner">
-                <div class="container-fluid">
-                    <div class="welcome-banner-header">
-                        <span class="--none-sm">New</span>
-                        <p>Welcome to the new-look Trade Me</p>
+        <main>
+            <section class="tm-homepage-search-header _blue_BG pb-3">
+                <div class="container">
+                    <div class="tm-homepage-search-header__nav pt-4">
+                        <div
+                            class="tm-homepage-search-header__header"
+                            style="flex-direction: column; margin-bottom: 5px"
+                        >
+                            <div
+                                class="
+                                    m-0
+                                    tm-homepage-search-header__header-brand-title
+                                "
+                            >
+                                <p style="font-size: 53px">
+                                    Hi, how can we help?
+                                </p>
+                            </div>
+                            <div
+                                class="
+                                    tm-homepage-search-header__global-search-form
+                                    py-3
+                                "
+                            >
+                                <form action="">
+                                    <i class="fa fa-search"></i>
+                                    <input
+                                        type="text"
+                                        class="o-input__body"
+                                        name=""
+                                        id=""
+                                        placeholder="Search "
+                                    />
+                                    <button class="btn--grey">
+                                        <i class="fa fa-search"></i>
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
                     </div>
-                    <div class="welcome-banner-buttons">
-                        <a href="" class="nav-link">
-                            <i class="fa fa-exclamation-circle"></i>
-                            Learn more
-                        </a>
-                        <a href="" class="nav-link">
-                            <i class="fa fa-comment"></i>
-                            Tell us what you think
-                        </a>
+                    <div class="dropdown browse-dropdown-btn help-pg-dropdown">
+                        <button
+                            class="btn dropdown-toggle"
+                            type="button"
+                            id="dropdownMenuButton"
+                            data-toggle="dropdown"
+                            aria-haspopup="true"
+                            aria-expanded="false"
+                        >
+                            Help Center Categories
+                        </button>
+                        <div
+                            class="dropdown-menu"
+                            aria-labelledby="dropdownMenuButton"
+                        >
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <a class="dropdown-item" href="#"
+                                >Something else here</a
+                            >
+                        </div>
+                    </div>
+                    <ul class="navbar-nav help-pg-ul">
+                        <li class="nav-item">
+                            <a href="" class="nav-link">Account</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="" class="nav-link">Buying</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="" class="nav-link">Selling & fees</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="" class="nav-link">Payments & money</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="" class="nav-link"
+                                >Staying safe & site security</a
+                            >
+                        </li>
+                        <li class="nav-item">
+                            <a href="" class="nav-link"
+                                >Policies, terms & conditions</a
+                            >
+                        </li>
+                        <li class="nav-item active">
+                            <a href="" class="nav-link">Community</a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section class="flash-card">
+                <div class="container">
+                    <h1 class="header-section-title">Frequent problems</h1>
+                    <div class="row">
+                        <div class="col-lg-3 col-md-6 col-12 mb-4">
+                            <div class="card">
+                                <div class="card-body">
+                                    <strong class="faq-title"
+                                        >Successfees</strong
+                                    >
+                                    <p>
+                                        Calculate your success fees, and apply
+                                        for a success fee refund if you need.
+                                    </p>
+                                </div>
+                                <div class="card-footer">
+                                    <a href="" class="nav-link">
+                                        Find out more
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-12 mb-4">
+                            <div class="card">
+                                <div class="card-body">
+                                    <strong class="faq-title"
+                                        >Problems completing a trade</strong
+                                    >
+                                    <p>
+                                        If you’ve won a listing and are
+                                        struggling to have the trade completed –
+                                        we can help.
+                                    </p>
+                                </div>
+                                <div class="card-footer">
+                                    <a href="" class="nav-link">
+                                        Find out more
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-12 mb-4">
+                            <div class="card">
+                                <div class="card-body">
+                                    <strong class="faq-title"
+                                        >Ping balance</strong
+                                    >
+                                    <p>
+                                        Withdraw your Ping balance, update saved
+                                        account details and export your Ping
+                                        transactional info.
+                                    </p>
+                                </div>
+                                <div class="card-footer">
+                                    <a href="" class="nav-link">
+                                        Find out more
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-12 mb-4">
+                            <div class="card">
+                                <div class="card-body">
+                                    <strong class="faq-title"
+                                        >Logging in</strong
+                                    >
+                                    <p>
+                                        If you’re having problems logging into
+                                        your account – we can help.
+                                    </p>
+                                </div>
+                                <div class="card-footer">
+                                    <a href="" class="nav-link">
+                                        Find out more
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-12 mb-4">
+                            <div class="card">
+                                <div class="card-body">
+                                    <strong class="faq-title"
+                                        >Update your account details</strong
+                                    >
+                                    <p>
+                                        Update your password, email, username
+                                        and address.
+                                    </p>
+                                </div>
+                                <div class="card-footer">
+                                    <a href="" class="nav-link">
+                                        Find out more
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-12 mb-4">
+                            <div class="card">
+                                <div class="card-body">
+                                    <strong class="faq-title"
+                                        >Removing bids</strong
+                                    >
+                                    <p>
+                                        If you’ve placed a bid, and now need it
+                                        removed – we can help.
+                                    </p>
+                                </div>
+                                <div class="card-footer">
+                                    <a href="" class="nav-link">
+                                        Find out more
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <!--* END WELCOME BANNER -->
+            </section>
+
+            <section class="flash-card categories-we-help _lite_grey_BG">
+                <div class="container">
+                    <h1 class="header-section-title">
+                        We can help with everything – browse all Categories
+                    </h1>
+                    <div class="row">
+                        <div class="col-lg-3 col-md-6 col-12 mb-4">
+                            <div class="card">
+                                <div
+                                    class="card-header"
+                                    style="
+                                        background: url(https://theme.zdassets.com/theme_assets/2129876/812fcd50cf7d909541e8fc4e91b758f5c93c6d52.png);
+                                    "
+                                ></div>
+                                <div class="card-body">
+                                    <strong class="faq-title">Account</strong>
+                                    <p>
+                                        The ins and outs of using your account.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-12 mb-4">
+                            <div class="card">
+                                <div
+                                    class="card-header"
+                                    style="
+                                        background: url(https://theme.zdassets.com/theme_assets/2129876/660b50074c26149891933bfed1e84b43d7654774.png);
+                                    "
+                                ></div>
+                                <div class="card-body">
+                                    <strong class="faq-title">Buying</strong>
+                                    <p>
+                                        Having issues with buying, completing a
+                                        trade, or bidding? We can help.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-12 mb-4">
+                            <div class="card">
+                                <div
+                                    class="card-header"
+                                    style="
+                                        background: url(https://theme.zdassets.com/theme_assets/2129876/660b50074c26149891933bfed1e84b43d7654774.png);
+                                    "
+                                ></div>
+                                <div class="card-body">
+                                    <strong class="faq-title"
+                                        >Selling & fees</strong
+                                    >
+                                    <p>
+                                        The lowdown on fees, listing policies,
+                                        managing a listing, and info for
+                                        professional sellers.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-12 mb-4">
+                            <div class="card">
+                                <div
+                                    class="card-header"
+                                    style="
+                                        background: url(https://theme.zdassets.com/theme_assets/2129876/46b0c7ce4701966f5de150faf50e85645dcb9d52.png);
+                                    "
+                                ></div>
+                                <div class="card-body">
+                                    <strong class="faq-title"
+                                        >Payments & money</strong
+                                    >
+                                    <p>
+                                        Need a hand with payments, ways to pay,
+                                        or your accounts and balances?
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-12 mb-4">
+                            <div class="card">
+                                <div
+                                    class="card-header"
+                                    style="
+                                        background: url(https://theme.zdassets.com/theme_assets/2129876/224a1f6b789f579d520aab0f2caf3a965134a839.png);
+                                    "
+                                ></div>
+                                <div class="card-body">
+                                    <strong class="faq-title"
+                                        >Staying safe & site security</strong
+                                    >
+                                    <p>
+                                        From site security to scams and
+                                        reporting inappropriate things – learn
+                                        how to stay safe online.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-12 mb-4">
+                            <div class="card">
+                                <div
+                                    class="card-header"
+                                    style="
+                                        background: url(https://theme.zdassets.com/theme_assets/2129876/c8d855eab29147c756dd5ee7886d4e8f60fb024f.png);
+                                    "
+                                ></div>
+                                <div class="card-body">
+                                    <strong class="faq-title"
+                                        >Policies, terms & conditions</strong
+                                    >
+                                    <p>
+                                        You’ll find all our terms and
+                                        conditions, policies, and code of
+                                        conduct here.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="community-banner-section">
+                <div class="container">
+                    <div class="community-banner">
+                        <div class="banner-content">
+                            <h1>Join the Community</h1>
+                            <p>
+                                Get support from members of the Trade Me
+                                Community.
+                            </p>
+                            <button class="btn-2">Explore Community</button>
+                        </div>
+                        <div
+                            class="banner-img"
+                            style="
+                                background: url(https://theme.zdassets.com/theme_assets/2129876/ea951f8dda5e4163c2ce33a027b471bd65c80e8d.png);
+                            "
+                        ></div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer>
             <!--* FOOTER -->
-            <div class="footer __gray-footer-border">
+            <div class="footer __blue-footer-border">
                 <div class="container-fluid">
                     <div class="row">
                         <div class="footer_top_div">
@@ -580,7 +634,9 @@
                                                 >
                                             </li>
                                             <li class="nav-item">
-                                                <a href="" class="nav-link"
+                                                <a
+                                                    href="./trades.html"
+                                                    class="nav-link"
                                                     >Trades</a
                                                 >
                                             </li>
@@ -590,12 +646,16 @@
                                                 >
                                             </li>
                                             <li class="nav-item">
-                                                <a href="" class="nav-link"
+                                                <a
+                                                    href="./events_n_entertainment.html"
+                                                    class="nav-link"
                                                     >Events & entertainment</a
                                                 >
                                             </li>
                                             <li class="nav-item">
-                                                <a href="" class="nav-link"
+                                                <a
+                                                    href="./health_n_wellbeing.html"
+                                                    class="nav-link"
                                                     >Health & wellbeing</a
                                                 >
                                             </li>
@@ -707,5 +767,25 @@
             </div>
             <!--* END FOOTER -->
         </footer>
+
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+            integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        ></script>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.0/js/bootstrap.min.js"
+            integrity="sha512-XKa9Hemdy1Ui3KSGgJdgMyYlUg1gM+QhL6cnlyTe2qzMCYm4nAZ1PsVerQzTTXzonUR+dmswHqgJPuwCq1MaAg=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        ></script>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.0/js/bootstrap.bundle.min.js"
+            integrity="sha512-wV7Yj1alIZDqZFCUQJy85VN+qvEIly93fIQAN7iqDFCPEucLCeNFz4r35FCo9s6WrpdDQPi80xbljXB8Bjtvcg=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        ></script>
+        <script src="./assets/js/_components.js"></script>
     </body>
 </html>

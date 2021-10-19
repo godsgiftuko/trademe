@@ -10,7 +10,6 @@
     }
 }
 
-
 .hero_div {
     position: relative;
     display: block;
@@ -102,7 +101,7 @@
                     color: colors(link);
                     margin-bottom: 10px;
                 }
-                
+
                 ul.nav-tabs {
                     width: 100%;
                     flex-wrap: nowrap !important;
@@ -225,7 +224,7 @@
 .active-tab {
     button {
         background-color: #323a4d !important;
-        
+
         &:hover {
             background-color: currentColor !important;
         }

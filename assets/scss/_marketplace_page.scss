@@ -53,7 +53,7 @@
             text-decoration: none;
             .price-card {
                 h5 {
-                    color: $nav-link-col !important;
+                    color: colors(link) !important;
                 }
             }
         }
@@ -115,7 +115,6 @@
                         background-color: #00825a;
                     }
                 }
-
             }
 
             .product-card-img {
@@ -186,7 +185,7 @@
 
                         // .price-card {
                         //     h5:hover {
-                        //         color: $nav-link-col !important;
+                        //         color: colors(link) !important;
                         //     }
                         // }
                         span,
@@ -231,7 +230,7 @@
             &:first-child {
                 font-weight: 500;
                 font-size: 16px;
-                color: $nav-link-col;
+                color: colors(link);
             }
 
             li.nav-item {

@@ -23,10 +23,7 @@
     }
 }
 
-
-
 .salary-guide {
-
     // display: flex;
     // flex-direction: column;
     #content {
@@ -67,10 +64,10 @@
                 margin-top: 50px;
                 padding: 20px 0;
                 padding-left: 30px;
-                
+
                 &:nth-child(even) {
                     padding: 20px 10px;
-                    background-color: colors(table-head-bg) !important;
+                    background-color: colors(_whitesmoke) !important;
 
                     thead th {
                         background-color: colors(_grey) !important;
@@ -107,10 +104,8 @@
                         padding: 0 !important;
                         margin: 0 !important;
                     }
-
                 }
             }
-
 
             table.table {
                 * {
@@ -119,9 +114,9 @@
                 }
 
                 thead {
-                    background-color: colors(table-head-bg);
+                    background-color: colors(_whitesmoke);
                 }
-                
+
                 th {
                     font-weight: weight(medium) !important;
                     border-bottom-color: colors(table-border);
@@ -168,10 +163,10 @@
                 }
 
                 width: 100%;
-                
+
                 tbody tr {
                     padding: 16px 0;
-                    
+
                     td {
                         padding-left: 15px;
                         padding-right: 15px;
@@ -191,7 +186,7 @@
 
                         &::before {
                             font-weight: weight(medium) !important;
-                            content: attr(data-td) ": ";
+                            content: attr(data-td) ': ';
                             position: relative;
                         }
                     }

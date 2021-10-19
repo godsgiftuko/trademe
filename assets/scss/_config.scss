@@ -9,19 +9,20 @@ $font-weights: (
 }
 
 $app_colors: (
-    'primary': #007acd,
+    'primary': #006ebd,
     '_orange': #f3632d,
     '_red': #d93a3f,
     '_green': #1b8840,
     '_f_green': #29a754,
-    'link': #76716d,
+    'link': #85807c,
     '_white': #fff,
     '_black': #44413d,
     '_black2': #65605d,
+    '_gray': #555555,
     '_grey': #e8e6e3,
     '_grey2': #d7d5d2,
     'nothing': 'transparent',
-    'table-head-bg': #f6f5f4,
+    '_whitesmoke': #f6f5f4,
     'th-border-col': #dee2e6,
     'table-border': #c1c1c1,
     'tab-col': blue,
@@ -33,6 +34,10 @@ $app_colors: (
 
 ._green {
     color: colors(_green) !important;
+}
+
+._f_green {
+    color: colors(_f_green) !important;
 }
 
 ._red {
@@ -58,7 +63,31 @@ $app_colors: (
     color: colors(primary) !important;
 }
 ._lite_grey_BG {
-    background-color: colors(table-head-bg) !important;
+    background-color: colors(_whitesmoke) !important;
+}
+
+._blue_BG {
+    background-color: colors(primary) !important;
+}
+
+._red_BG {
+    background-color: colors(_red) !important;
+}
+
+._orange_BG {
+    background-color: colors(_orange) !important;
+}
+
+._black_BG {
+    background-color: colors(_black) !important;
+}
+
+._gray_BG {
+    background-color: colors(_gray) !important;
+}
+
+._f_green_BG {
+    background-color: colors(_f_green) !important;
 }
 
 .transparent {
