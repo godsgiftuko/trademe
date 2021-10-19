@@ -1,3 +1,26 @@
+.product-card-watchlist {
+    position: absolute;
+    right: 0;
+    top: 0;
+    border-color: transparent $auction_card_border_bg transparent transparent;
+    border-style: solid;
+    z-index: 22;
+    display: flex;
+    align-content: center;
+    border-width: 0 56px 56px 0;
+    cursor: pointer;
+
+    .fa {
+        color: #943900;
+        position: absolute;
+        transform: translate(250%, 100%);
+    }
+
+    &:hover {
+        border-color: transparent $auction_card_border_col transparent transparent;
+    }
+}
+
 // ! CHEVRON BTNS
 .card_arrow-btn {
     display: none;
@@ -15,25 +38,51 @@
 }
 
 // ! TOTAL COUNT COMPONENT
-.total_count_component {
-    padding: 16px 0;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+.total_search_count_component {
+    @include mobile-max(767px) {
+        .container-fluid {
+            // flex-direction: column !important;
+            flex-wrap: wrap !important;
 
-    // .total_count_component_result,
-    // .total_count_component_option {
-    // }
-    .total_count_component_option {
-        background-color: white;
-        // border: 1px solid #d7d5d2;
+            div {
+                height: 38px;
+                width: 50% !important;
+            }
 
-        // .select-dropdown-btn {
-        // }
+            .total_search_count_component_result {
+                margin-top: 10px;
+                margin-bottom: 0;
+            }
+        }
+        
+
     }
+    padding: 16px 0;
+    margin: 10px 0;
 
-    // .total_count_component_result {
-    // }
+    div.container-fluid {
+        padding: 16px initial;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .total_search_count_component_result {
+            display: flex;
+            align-items: center;
+            height: 48px;
+        }
+
+        .total_search_count_component_option {
+            background-color: white;
+
+            select.form-select {
+                height: 48px !important;
+                width: 240px;
+                color: colors(link) !important;
+                font-weight: weight(regular) !important;
+            }
+        }
+    }
 }
 
 // ! PAGINATION COMPONENT
@@ -100,17 +149,17 @@
     //     }
     //     .auction_card_details {}
     // }
-    .total_count_component {
+    .total_search_count_component {
         // padding: 16px 0;
         // display: flex;
         // align-items: center;
         // justify-content: space-between;
 
-        .total_count_component_option {
+        .total_search_count_component_option {
             order: 1;
         }
 
-        // .total_count_component_result {
+        // .total_search_count_component_result {
         // }
     }
 }
@@ -130,15 +179,16 @@
 }
 
 @media screen and (max-width: 767px) {
-    .total_count_component {
+    .total_search_count_component {
         flex-wrap: wrap !important;
 
         div {
             width: 100% !important;
-
+            
             &:first-child {
                 order: 1;
                 margin-bottom: 16px;
+                width: 100% !important;
             }
         }
     }
@@ -151,6 +201,7 @@
 
         p {
             font-size: 16px !important;
+            color: colors(link) !important;
         }
     }
 
@@ -161,7 +212,7 @@
             display: flex;
             flex-wrap: nowrap !important;
             flex-direction: row !important;
-            width: 100%;
+            // width: 100%;
             max-width: 1600px;
             overflow-x: scroll;
         }
@@ -202,6 +253,8 @@
                 //     margin-bottom: 10px;
                 // }
                 .body-header {
+                    margin-bottom: 12px;
+
                     .rem_psuedo {
 
                         &::before,
@@ -215,7 +268,7 @@
 
                         &:first-child {
                             font-size: 14px;
-                            color: colors(_orange) !important;
+                            color: colors(_orange);
                         }
 
                         &:last-child {
@@ -234,12 +287,12 @@
                     height: 80px;
 
                     h2 {
-                        color: colors(_black) !important;
+                        color: colors(_black);
                         margin-top: 10px;
                     }
 
                     p {
-                        font-size: 16px !important;
+                        font-size: 16px;
                         white-space: nowrap;
                         text-overflow: ellipsis;
                         overflow: hidden;
@@ -262,12 +315,204 @@
                 }
             }
         }
+
+        .blog-card {
+            height: auto;
+
+            .card-body {
+                padding: 0 16px !important;
+            }
+            .card-header {
+                height: 266.5px !important;
+                margin-bottom: 5px !important;
+            }
+            .body-header {
+                span {
+                    color: colors(link) !important;
+                }
+            }
+
+            .body-title {
+                p {
+                    font-size: 12px !important;
+                    color: colors(link) !important;
+                    margin: 3px 0 0 0 !important;
+                    line-height: 15px;
+                }
+    
+                h4 {
+                    color: colors(_black2) !important;
+                    font-weight: weight(medium) !important;
+                }
+            }
+
+            .body-footer {
+                text-align: right;
+                // width: 100%;
+                // left: 0;
+                position: relative !important;
+                padding: 20px 0 0 0;
+
+                h5 {
+                    font-weight: weight(regular) !important;
+                }
+                span {
+                    color: colors(_black) !important;
+                    font-weight: weight(medium) !important;
+
+                    &::before {
+                        content: '\f164';
+                        font-family: 'FontAwesome';
+                        position: relative;
+                        font-weight: weight(regular);
+
+                    }
+                    &::after {
+                        content: 'positive feedback';
+                        position: relative;
+                        padding-left: 5px;
+                        display: inline-block;
+                    }
+                }
+            }
+
+        }
+
+        .card-list-view {
+            a.nav-link {
+                display: flex;
+                height: 144px !important;
+            }
+
+            .card-header {
+                width: 192px !important;
+                height: 144px !important;
+                border-radius: 0 !important;
+            }
+
+            .card-body {
+                padding: 8px !important;
+                display: flex;
+                flex-direction: column;
+
+                .body-header {
+                    margin-bottom: 5px;
+                }
+                .body-title {
+                    height: auto !important;
+                    flex: 2;
+                }
+
+                .body-footer {
+                    padding-top: 0;
+                }
+            }
+
+            .card-header {
+                height: 100% !important;
+            }
+        }
     }
 
+    
     .more-button {
         margin-top: 15px;
         text-decoration: none;
     }
+}
+
+.view-mode-refiner {
+    @include mobile-min(768px) {
+        order: 1;
+        margin: 0 0 0 10px;
+    }
+    // display: none;
+    .switch-field {
+        @include mobile-max(767px) {
+            background-color: transparent !important;
+            justify-content: flex-end;
+            width: 100%;
+            height: 38px;
+        }
+        display: flex;
+        height: 48px !important;
+        background-color: colors(_white) !important;
+        
+      }
+      
+      .switch-field input {
+        position: absolute !important;
+        clip: rect(0, 0, 0, 0);
+        height: 1px;
+        width: 1px;
+        border: 0;
+        overflow: hidden;
+        --switch-field-border-width: 2px;
+      }
+      
+      .switch-field label {
+        color: colors(_black);
+        font-weight: weight(medium) !important;
+        display: flex;
+        place-items: center; 
+        width: 46px;
+        margin-right: -1px;
+        border-width: var(--switch-field-border-width);
+        font-size: 16px !important;
+        justify-content: center;
+        background-color: colors(_white );
+        transition: all 0.1s ease-in-out;
+        * {
+            padding: 0 2px;
+        }
+
+        span {
+            display: none;
+        }
+        @include mobile-max(767px) {
+            .fa {
+                font-size: 20px;
+            }
+        }
+        @include mobile-min(768px) {
+            width: 101px;
+            span {
+                display: block;
+            }
+        }
+      }
+      
+      .switch-field label:hover {
+        cursor: pointer;
+      }
+      
+      .switch-field input:checked + label {
+        border: var(--switch-field-border-width) solid colors(_black);
+        box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.3), 0 1px rgba(255, 255, 255, 0.1);
+      }
+      
+      .switch-field label:first-of-type {
+        border-radius: 4px 0 0 4px;
+      }
+      
+      .switch-field label:last-of-type {
+        border-radius: 0 4px 4px 0;
+      }
+      
+      /* This is just for CodePen. */
+      
+      .form {
+        // max-width: 600px;
+        // font-family: "Lucida Grande", Tahoma, Verdana, sans-serif;
+        font-weight: normal;
+        // margin: 8px auto;
+        // padding: 16px;
+      }
+      
+      h2 {
+        font-size: 18px;
+        margin-bottom: 8px;
+      }
 }
 
 .rack-item {
@@ -284,13 +529,21 @@
                 font-size: 20px;
             }
 
-            &:nth-child(2) {
-                height: 200px;
-                display: none;
+        }
 
-                img {
-                    height: 100%;
-                }
+        .l-rack {
+            p {
+                color: colors(link);
+                font-weight: weight(regular);
+            }
+        }
+
+
+        .r-rack {
+            height: 200px;
+
+            img {
+                height: 100%;
             }
         }
 

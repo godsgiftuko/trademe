@@ -13,6 +13,7 @@ $app_colors: (
     '_orange': #f3632d,
     '_red': #d93a3f,
     '_green': #1b8840,
+    '_f_green': #29a754,
     'link': #76716d,
     '_white': #fff,
     '_black': #44413d,
@@ -22,7 +23,8 @@ $app_colors: (
     'nothing': 'transparent',
     'table-head-bg': #f6f5f4,
     'th-border-col': #dee2e6,
-    'table-border': #c1c1c1
+    'table-border': #c1c1c1,
+    'tab-col': blue,
 );
 
 @function colors($color-name) {
@@ -41,9 +43,24 @@ $app_colors: (
     color: colors(_white) !important;
 }
 
+._black {
+    color: colors(_black) !important;
+}
+
+._black2 {
+    color: colors(_black2) !important;
+}
+._link {
+    color: colors(link) !important;
+}
+
 ._blue {
     color: colors(primary) !important;
 }
 ._lite_grey_BG {
     background-color: colors(table-head-bg) !important;
+}
+
+.transparent {
+    background-color: transparent !important;
 }

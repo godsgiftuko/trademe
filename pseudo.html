@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <style>
+            .wrapper {
+                height: 100px;
+                width: 100px;
+                display: block;
+                border-radius: 0 12px 0 0;
+                background: linear-gradient(
+                    42deg,
+                    white 50%,
+                    rgba(255, 142, 27, 1) 50%
+                );
+            }
+
+            .wrapper::before {
+                content: '';
+            }
+        </style>
+    </head>
+    <body>
+        <div class="wrapper"></div>
+    </body>
+</html>

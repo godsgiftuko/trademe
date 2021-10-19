@@ -7,18 +7,19 @@
 @import 'category';
 @import 'homepage_banner';
 @import 'footer';
-@import 'category_search_section';
 @import 'search_box';
 @import 'components';
 @import 'hero'; // not completed
-@import './selectbox'; // not completed
+@import 'selectbox'; // not completed
 // @import 'marketing_content';
 @import 'marketplace_page';
 @import 'property';
+@import '_category_search_component';
 @import 'motorbikes';
-@import './big_searched_display';
-@import './salaryguide';
-@import './careeradvice.scss';
+@import 'big_searched_display';
+@import 'salaryguide';
+@import 'careeradvice';
+@import 'breadcumb_div';
 
 @font-face {
     font-display: swap;
@@ -597,7 +598,7 @@ button {
     margin-bottom: 0;
 }
 .breadcrumb-item + .breadcrumb-item::before {
-    display: none;
+    // display: none;
     float: left;
     padding-right: 0.5rem;
     color: #fff;

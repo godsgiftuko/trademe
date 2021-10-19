@@ -80,8 +80,11 @@
             .product-card-header {
                 position: absolute;
                 width: 100%;
+                height: 100%;
                 top: 0;
                 display: flex;
+                border-radius: 8px 8px;
+                overflow: hidden;
                 z-index: 30 !important;
                 justify-content: space-between;
 
@@ -113,29 +116,6 @@
                     }
                 }
 
-                .product-card-watchlist {
-                    position: absolute;
-                    right: 0;
-                    border-color: transparent $auction_card_border_bg
-                        transparent transparent;
-                    border-style: solid;
-                    z-index: 22;
-                    display: flex;
-                    align-content: center;
-                    border-width: 0 56px 56px 0;
-                    cursor: pointer;
-
-                    .fa {
-                        color: #943900;
-                        position: absolute;
-                        transform: translate(250%, 100%);
-                    }
-
-                    &:hover {
-                        border-color: transparent $auction_card_border_col
-                            transparent transparent;
-                    }
-                }
             }
 
             .product-card-img {

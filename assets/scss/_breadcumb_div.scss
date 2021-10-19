@@ -1,0 +1,22 @@
+.breadcumb-div {
+    background-color: #fff !important;
+    padding: 16px 0;
+
+    @include mobile-max(767px) {
+        display: none;
+    }
+
+    .breadcrumb {
+        .breadcrumb-item, .active {
+            font-size: 12px !important;
+        }
+        .breadcrumb-item {
+            a {
+                color: colors(primary) !important;
+            }
+        }
+        .breadcrumb-item + .breadcrumb-item::before {
+            color: colors(link) !important;
+        }
+    }
+}
