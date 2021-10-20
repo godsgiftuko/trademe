@@ -2268,6 +2268,7 @@
 
 .rack-item .container-fluid .r-rack {
   height: 200px;
+  text-align: center;
 }
 
 .rack-item .container-fluid .r-rack img {
