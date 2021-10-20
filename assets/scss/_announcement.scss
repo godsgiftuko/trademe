@@ -1,3 +1,16 @@
+.trust-safety-section {
+    .card-header {
+        background-position: center !important;
+    }
+    @include mobile-max(767px) {
+        .card {
+            height: auto !important;
+        }
+        .body-title p {
+            display: none !important;
+        }
+    }
+}
 .announcement-header-bottom-nav,
 .trust-safety-header-bottom-nav {
     display: flex;

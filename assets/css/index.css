@@ -4007,6 +4007,19 @@
   background-position: bottom right !important;
 }
 
+.trust-safety-section .card-header {
+  background-position: center !important;
+}
+
+@media screen and (max-width: 767px) {
+  .trust-safety-section .card {
+    height: auto !important;
+  }
+  .trust-safety-section .body-title p {
+    display: none !important;
+  }
+}
+
 .announcement-header-bottom-nav,
 .trust-safety-header-bottom-nav {
   display: -webkit-box;
