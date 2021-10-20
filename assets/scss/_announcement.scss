@@ -1,0 +1,113 @@
+.announcement-header-bottom-nav,
+.trust-safety-header-bottom-nav {
+    display: flex;
+    flex-direction: column;
+
+    ul.navbar-nav {
+        display: flex;
+        flex-direction: row;
+        @include mobile-max(768px) {
+            width: 100%;
+            max-width: 1600px;
+            overflow-x: scroll;
+
+            .browse-dropdown-bt {
+                display: none;
+            }
+        }
+        @include mobile-min(767px) {
+            li.nav-item {
+                &:first-child,
+                &:nth-child(2) {
+                    display: none;
+                }
+            }
+        }
+        li.nav-item {
+            width: max-content !important;
+            padding-right: 15px;
+        }
+        a {
+            color: colors(_black) !important;
+            font-weight: weight(medium) !important;
+            padding-right: 15px;
+            text-decoration: none !important;
+        }
+    }
+}
+.announcement-pg--rack-item,
+.trust-safety-pg--rack-item {
+    .r-rack,
+    .l-rack {
+        padding-top: 20px !important;
+        padding-bottom: 20px !important;
+    }
+    @include mobile-max(767px) {
+        .r-rack {
+            display: none;
+        }
+    }
+}
+.annoucement-section {
+    @include mobile-max(768px) {
+        .more-button {
+            display: none;
+        }
+    }
+    @include mobile-max(767px) {
+        .header-section-title {
+            padding: 0 0 30px 0 !important;
+        }
+        .card {
+            height: auto !important;
+            .annoucement-title {
+                padding-top: 0;
+                font-size: 20px !important;
+            }
+
+            .card-body {
+                padding-top: 0;
+            }
+        }
+    }
+    .card {
+        @include mobile-max(768px) {
+            height: 210px;
+        }
+        height: 330px;
+        .card-header,
+        .card-footer {
+            color: colors(primary);
+            border: none;
+            background-color: transparent;
+            font-weight: weight(regular) !important;
+        }
+        .card-body {
+            padding-bottom: 0;
+
+            .annoucement-title {
+                margin: 0;
+                font-size: 32px;
+                font-weight: weight(regular);
+                color: colors(link);
+                line-height: 1.15em;
+            }
+
+            @include mobile-max(768px) {
+                .annoucement-title {
+                    font-size: 24px;
+                }
+                p {
+                    display: none;
+                }
+            }
+        }
+        .card-footer {
+            .card-footer-title {
+                color: colors(link2);
+                text-transform: capitalize;
+                font-weight: weight(regular) !important;
+            }
+        }
+    }
+}

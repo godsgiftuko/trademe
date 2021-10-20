@@ -58,8 +58,48 @@
   background-color: #29a754 !important;
 }
 
+._white_BG {
+  background-color: #fff !important;
+}
+
 .transparent {
   background-color: transparent !important;
+}
+
+.f-24 {
+  font-size: 24 !important;
+}
+
+.f-20 {
+  font-size: 20 !important;
+}
+
+.f-18 {
+  font-size: 18 !important;
+}
+
+.f-16 {
+  font-size: 16 !important;
+}
+
+.f-14 {
+  font-size: 14 !important;
+}
+
+.f-12 {
+  font-size: 12 !important;
+}
+
+.f-10 {
+  font-size: 10 !important;
+}
+
+._y-border-bottom {
+  border-bottom: 7.99px solid #f9af2c;
+}
+
+._o-border-bottom {
+  border-bottom: 7.99px solid #f3632d;
 }
 
 .navbar {
@@ -3966,6 +4006,147 @@
   background-position: bottom right !important;
 }
 
+.announcement-header-bottom-nav,
+.trust-safety-header-bottom-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.announcement-header-bottom-nav ul.navbar-nav,
+.trust-safety-header-bottom-nav ul.navbar-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+@media screen and (max-width: 768px) {
+  .announcement-header-bottom-nav ul.navbar-nav,
+  .trust-safety-header-bottom-nav ul.navbar-nav {
+    width: 100%;
+    max-width: 1600px;
+    overflow-x: scroll;
+  }
+  .announcement-header-bottom-nav ul.navbar-nav .browse-dropdown-bt,
+  .trust-safety-header-bottom-nav ul.navbar-nav .browse-dropdown-bt {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 767px) {
+  .announcement-header-bottom-nav ul.navbar-nav li.nav-item:first-child, .announcement-header-bottom-nav ul.navbar-nav li.nav-item:nth-child(2),
+  .trust-safety-header-bottom-nav ul.navbar-nav li.nav-item:first-child,
+  .trust-safety-header-bottom-nav ul.navbar-nav li.nav-item:nth-child(2) {
+    display: none;
+  }
+}
+
+.announcement-header-bottom-nav ul.navbar-nav li.nav-item,
+.trust-safety-header-bottom-nav ul.navbar-nav li.nav-item {
+  width: -webkit-max-content !important;
+  width: -moz-max-content !important;
+  width: max-content !important;
+  padding-right: 15px;
+}
+
+.announcement-header-bottom-nav ul.navbar-nav a,
+.trust-safety-header-bottom-nav ul.navbar-nav a {
+  color: #44413d !important;
+  font-weight: 500 !important;
+  padding-right: 15px;
+  text-decoration: none !important;
+}
+
+.announcement-pg--rack-item .r-rack,
+.announcement-pg--rack-item .l-rack,
+.trust-safety-pg--rack-item .r-rack,
+.trust-safety-pg--rack-item .l-rack {
+  padding-top: 20px !important;
+  padding-bottom: 20px !important;
+}
+
+@media screen and (max-width: 767px) {
+  .announcement-pg--rack-item .r-rack,
+  .trust-safety-pg--rack-item .r-rack {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .annoucement-section .more-button {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .annoucement-section .header-section-title {
+    padding: 0 0 30px 0 !important;
+  }
+  .annoucement-section .card {
+    height: auto !important;
+  }
+  .annoucement-section .card .annoucement-title {
+    padding-top: 0;
+    font-size: 20px !important;
+  }
+  .annoucement-section .card .card-body {
+    padding-top: 0;
+  }
+}
+
+.annoucement-section .card {
+  height: 330px;
+}
+
+@media screen and (max-width: 768px) {
+  .annoucement-section .card {
+    height: 210px;
+  }
+}
+
+.annoucement-section .card .card-header,
+.annoucement-section .card .card-footer {
+  color: #006ebd;
+  border: none;
+  background-color: transparent;
+  font-weight: 400 !important;
+}
+
+.annoucement-section .card .card-body {
+  padding-bottom: 0;
+}
+
+.annoucement-section .card .card-body .annoucement-title {
+  margin: 0;
+  font-size: 32px;
+  font-weight: 400;
+  color: #85807c;
+  line-height: 1.15em;
+}
+
+@media screen and (max-width: 768px) {
+  .annoucement-section .card .card-body .annoucement-title {
+    font-size: 24px;
+  }
+  .annoucement-section .card .card-body p {
+    display: none;
+  }
+}
+
+.annoucement-section .card .card-footer .card-footer-title {
+  color: #76716d;
+  text-transform: capitalize;
+  font-weight: 400 !important;
+}
+
 @font-face {
   font-display: swap;
   font-family: Story Sans;
@@ -4113,6 +4294,11 @@ hr {
 
 pre {
   overflow: auto;
+}
+
+p {
+  color: #65605d;
+  font-size: 16px;
 }
 
 code,

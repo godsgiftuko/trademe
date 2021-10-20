@@ -1,5 +1,14 @@
 @import 'colors';
 
+$nav_border_size: 7.99px;
+
+._y-border-bottom {
+    border-bottom: $nav_border_size solid colors(_yellow);
+}
+
+._o-border-bottom {
+    border-bottom: $nav_border_size solid colors(_orange);
+}
 .navbar {
     background-color: colors(_whitesmoke);
     padding: 0px;
