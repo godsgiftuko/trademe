@@ -10,6 +10,8 @@ $font-weights: (
 
 $app_colors: (
     'primary': #006ebd,
+    'primary2': #007acd,
+    'primary3': #00558f,
     '_orange': #f3632d,
     '_yellow': #f9af2c,
     '_red': #d93a3f,
@@ -64,6 +66,12 @@ $app_colors: (
 ._blue {
     color: colors(primary) !important;
 }
+._blue2 {
+    color: colors(primary2) !important;
+}
+._blue3 {
+    color: colors(primary3) !important;
+}
 ._lite_grey_BG {
     background-color: colors(_whitesmoke) !important;
 }
@@ -97,10 +105,17 @@ $app_colors: (
 
 .transparent {
     background-color: transparent !important;
+    &:hover {
+        background-color: transparent !important;
+        color: currentColor;
+    }
 }
 
 // FONT SIZES
 
+.f-28 {
+    font-size: 28 !important;
+}
 .f-24 {
     font-size: 24 !important;
 }

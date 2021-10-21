@@ -287,6 +287,7 @@ $nav_border_size: 7.99px;
     .active {
         background-color: rgba(0, 0, 0, 0.19);
         border-radius: 3px;
+        padding-left: 8px !important;
         font-weight: bold !important;
     }
 

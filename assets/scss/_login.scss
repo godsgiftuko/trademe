@@ -1,0 +1,93 @@
+.login-pg-section {
+    display: grid;
+    place-items: center;
+    .login-pg-area {
+        width: 100%;
+        flex-direction: column;
+        max-width: 368px;
+        background-color: transparent;
+        display: flex;
+        .logo {
+            margin-bottom: 30px;
+            width: 100%;
+            align-self: center;
+            max-width: 230px !important;
+            img {
+                height: 100%;
+                width: 100%;
+            }
+        }
+
+        .login-card {
+            display: flex;
+            width: 100%;
+            min-height: 2px;
+            background-color: rgb(255, 255, 255);
+            box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 4px 0px;
+            margin-bottom: 24px;
+            flex: 1 1 auto;
+            flex-flow: column nowrap;
+            padding: 24px 32px;
+            h1 {
+                font-size: 28px !important;
+                font-weight: weight(bold);
+            }
+            h1,
+            p,
+            .form-group,
+            .forgot-pw-link,
+            .form-check {
+                margin-bottom: 24px;
+            }
+
+            .form-check {
+                font-size: 16px;
+                input {
+                    transition: border-color 0.2s ease-out;
+                    cursor: pointer;
+                }
+            }
+            .form-group {
+                label {
+                    font-size: 16px;
+                    color: colors(_black2);
+                    font-weight: weight(bold);
+                    padding-bottom: 8px;
+                }
+
+                input {
+                    height: 48px;
+                    &:focus-within {
+                        border: none;
+                        // box-shadow: none;
+                        // outline: none;
+                        border: 2px solid rgb(75, 75, 75);
+                    }
+                }
+            }
+
+            .form-submit-btn {
+                background-color: colors(primary2);
+                border: none;
+                text-transform: none;
+                // border-bottom: 3px solid colors(primary3);
+                box-shadow: inset 0px -4px 0px colors(primary3);
+                border-radius: 3px;
+
+                &:hover {
+                    box-shadow: inset 0px -5px 0px colors(primary3);
+                }
+                &::before {
+                    display: none;
+                }
+            }
+
+            .form-cancel-btn {
+                font-weight: weight(regular);
+                &::before {
+                    display: none;
+                }
+            }
+        }
+    }
+}
