@@ -23,7 +23,8 @@
 @import 'services';
 @import 'help';
 @import 'announcement';
-@import 'login';
+@import 'standalone_auth_form';
+@import 'auth_form';
 
 @font-face {
     font-display: swap;
@@ -280,6 +281,14 @@ input[type='checkbox'],
 input[type='radio'] {
     box-sizing: border-box;
     padding: 0;
+    border: 1px solid colors(_grey2);
+
+    &:focus,
+    &:active {
+        box-shadow: none !important;
+        outline: none !important;
+        border: 1px solid colors(_grey2);
+    }
 }
 
 input[type='number']::-webkit-inner-spin-button,
@@ -570,6 +579,12 @@ button {
         text-decoration: none;
         background-color: #1699eff8 !important;
     }
+    &:focus,
+    &:active {
+        box-shadow: none !important;
+        outline: none !important;
+        border: none !important;
+    }
 }
 
 .btn-2 {
@@ -606,6 +621,20 @@ button {
     &:hover {
         color: colors(primary);
         background-color: colors(_white) !important;
+    }
+}
+.pressible-btn {
+    background-color: colors(primary2);
+    border: none;
+    text-transform: none;
+    box-shadow: inset 0px -4px 0px colors(primary3);
+    border-radius: 3px;
+
+    &:hover {
+        box-shadow: inset 0px -5px 0px colors(primary3);
+    }
+    &::before {
+        display: none;
     }
 }
 .breadcrumb {

@@ -1,7 +1,8 @@
-.login-pg-section {
+.standalone-auth-form-section {
+    margin-top: 10px;
     display: grid;
     place-items: center;
-    .login-pg-area {
+    .standalone-auth-form-area {
         width: 100%;
         flex-direction: column;
         max-width: 368px;
@@ -14,11 +15,11 @@
             max-width: 230px !important;
             img {
                 height: 100%;
-                width: 100%;
+                width: 85%;
             }
         }
 
-        .login-card {
+        .form-card {
             display: flex;
             width: 100%;
             min-height: 2px;
@@ -45,8 +46,11 @@
                 input {
                     transition: border-color 0.2s ease-out;
                     cursor: pointer;
+                    width: 22px;
+                    height: 22px;
                 }
             }
+
             .form-group {
                 label {
                     font-size: 16px;
@@ -58,27 +62,11 @@
                 input {
                     height: 48px;
                     &:focus-within {
-                        border: none;
-                        // box-shadow: none;
-                        // outline: none;
-                        border: 2px solid rgb(75, 75, 75);
+                        border: none !important;
+                        box-shadow: none !important;
+                        outline: none !important;
+                        border: 2px solid rgb(75, 75, 75) !important;
                     }
-                }
-            }
-
-            .form-submit-btn {
-                background-color: colors(primary2);
-                border: none;
-                text-transform: none;
-                // border-bottom: 3px solid colors(primary3);
-                box-shadow: inset 0px -4px 0px colors(primary3);
-                border-radius: 3px;
-
-                &:hover {
-                    box-shadow: inset 0px -5px 0px colors(primary3);
-                }
-                &::before {
-                    display: none;
                 }
             }
 
@@ -88,6 +76,18 @@
                     display: none;
                 }
             }
+        }
+
+        a.nav-link {
+            display: inline-block !important;
+        }
+
+        .standalone-auth-form-help-link {
+            margin-bottom: 24px;
+        }
+
+        .standalone-auth-form-protection-p {
+            font-size: 11px;
         }
     }
 }

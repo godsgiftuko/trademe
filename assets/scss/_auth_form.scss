@@ -1,0 +1,103 @@
+.auth-form-section {
+    margin-top: 10px;
+    padding-bottom: 0;
+    display: grid;
+    place-items: center;
+    .auth-form-area {
+        width: 100%;
+        flex-direction: column;
+        max-width: 600px;
+        background-color: transparent;
+        display: flex;
+
+        .auth-form-progress-div {
+            display: flex;
+            justify-content: space-between;
+            div {
+                flex: 1;
+
+                &:nth-child(2) {
+                    text-align: right;
+                }
+            }
+        }
+
+        .form-card {
+            display: flex;
+            width: 100%;
+            min-height: 2px;
+            margin-bottom: 24px;
+            flex: 1 1 auto;
+            flex-flow: column nowrap;
+            padding: 24px 12px 0 12px;
+
+            h1,
+            p,
+            .form-group,
+            .forgot-pw-link,
+            .form-check {
+                margin-bottom: 24px;
+            }
+
+            .form-group {
+                position: relative;
+                label {
+                    font-size: 16px;
+                    color: colors(_black2) !important;
+                    font-weight: weight(bold);
+                    padding-bottom: 8px;
+                }
+
+                input {
+                    height: 48px;
+                    width: 100%;
+                    background-color: transparent;
+                    margin-bottom: 8px;
+                    &:focus-within {
+                        border: none !important;
+                        box-shadow: none !important;
+                        outline: none !important;
+                        border: 2px solid rgb(75, 75, 75) !important;
+                    }
+                }
+
+                small {
+                    font-size: 16px;
+                }
+            }
+
+            .auth-radio-btn {
+                display: flex;
+                place-items: center;
+                position: relative;
+                padding: 12px 0 0 0;
+                margin-bottom: 0;
+                input {
+                    width: auto;
+                    width: 24px;
+                    margin-right: 12px;
+                }
+
+                span {
+                    font-size: 16px;
+                }
+            }
+
+            .selectCountry {
+                width: 24px;
+                height: 24px;
+            }
+
+            .form-submit-btn {
+                background-color: colors(primary);
+                border: none;
+                text-transform: none;
+                width: 100%;
+                border-radius: 3px;
+                &::before {
+                    display: none;
+                }
+            }
+        }
+    }
+}
