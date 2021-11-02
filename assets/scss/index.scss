@@ -25,6 +25,7 @@
 @import 'announcement';
 @import 'standalone_auth_form';
 @import 'auth_form';
+@import 'lastest_deals';
 
 @font-face {
     font-display: swap;
@@ -662,6 +663,13 @@ button {
     max-width: 100%;
     padding: 0 12px;
     margin: 0;
+}
+
+.container-sml {
+    margin: 0 221.5px;
+    width: 980px;
+    position: relative;
+    display: flex;
 }
 
 section {

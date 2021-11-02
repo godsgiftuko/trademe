@@ -1,0 +1,131 @@
+.trade-pg-header {
+    .trade-pg-nav__global-navigation {
+        display: flex;
+        .logo {
+            // height: 58px !important;
+            // width: 300px !important;
+            img {
+                height: 100% !important;
+                width: 300px;
+            }
+        }
+    }
+
+    button {
+        color: colors(primary);
+        font-size: 20px;
+        font-weight: weight(bold);
+        padding: 12px 9px !important;
+        &:hover {
+            background-color: transparent !important;
+            color: colors(primary2);
+        }
+    }
+
+    .trade-pg-nav_bottom {
+        background-color: colors(_yellow2);
+        margin: 10px 0;
+        display: flex;
+        flex-direction: row;
+
+        * {
+            font-weight: weight(regular);
+            flex: auto;
+        }
+
+        button {
+            font-size: 16px;
+            color: colors(_coffee);
+        }
+    }
+
+    .fa {
+        font-size: 24px !important;
+        padding: 0 10px;
+        cursor: pointer;
+        color: colors(_coffee);
+    }
+    .fa-chevron-down {
+        font-size: 10px !important;
+        color: colors(_coffee2);
+    }
+
+    .browse-dropdown-btn {
+        display: flex;
+        * {
+            font-weight: bold;
+        }
+        .fa-chevron-down {
+            font-weight: weight(regular);
+        }
+        place-items: center;
+        button {
+            padding-left: 0 !important;
+        }
+        // grid-template-columns: 1fr 0fr;
+    }
+}
+
+.trade-search {
+    // width: 100%;
+    flex: 10 !important;
+    padding: 10px 0 9px 10px;
+    display: flex;
+    place-items: center !important;
+    --descHeight: 28px;
+    --desRadius: 3px;
+
+    * {
+        height: var(--descHeight);
+        border: none;
+        outline: none;
+        border: 0;
+        box-shadow: none;
+    }
+
+    input[type='text'] {
+        background: colors(_white);
+        font-size: 16px;
+        color: #333;
+        font-weight: bold;
+        border-radius: var(--desRadius) 0 0 var(--desRadius);
+        line-height: 21px;
+        padding: 5px 13px 5px 10px;
+        width: 80%;
+    }
+
+    select {
+        font-size: 14px;
+        width: 20%;
+        border-radius: 0px var(--desRadius) var(--desRadius) 0px;
+        border-width: 1px;
+        border-style: solid;
+        border-color: transparent !important;
+        &:focus {
+            border: 1px solid whitesmoke;
+            background-color: whitesmoke;
+            opacity: 0.9;
+        }
+    }
+
+    button {
+        background-image: none;
+        border: none;
+        box-shadow: 0 2px 0 0 #c26e0b;
+        border-radius: 2px;
+        background-color: #d87e01;
+        padding: 3px 9px !important;
+        margin-left: 10px;
+        color: whitesmoke;
+
+        &::before {
+            content: '\034';
+            font-family: 'FontAwesome';
+        }
+
+        &:hover {
+            color: inherit;
+            background-color: colors(_coffee2) !important;
+        }
+    }
+}

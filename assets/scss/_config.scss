@@ -14,6 +14,7 @@ $app_colors: (
     'primary3': #00558f,
     '_orange': #f3632d,
     '_yellow': #f9af2c,
+    '_yellow2': #fbcc48,
     '_red': #d93a3f,
     '_green': #1b8840,
     '_f_green': #29a754,
@@ -30,6 +31,8 @@ $app_colors: (
     'th-border-col': #dee2e6,
     'table-border': #c1c1c1,
     'tab-col': blue,
+    '_coffee': #ad5319,
+    '_coffee2': #ef900c,
 );
 
 @function colors($color-name) {
