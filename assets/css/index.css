@@ -1555,6 +1555,10 @@
   color: #006ebd;
 }
 
+.footer_tw {
+  background-color: #343434;
+}
+
 /*
     ? MEDIA SCREENS == 767px;
 */
@@ -4428,10 +4432,17 @@
   display: none;
 }
 
+.trade-pg-header {
+  width: 100%;
+}
+
 .trade-pg-header .trade-pg-nav__global-navigation {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .trade-pg-header .trade-pg-nav__global-navigation .logo img {
@@ -4476,7 +4487,7 @@
 }
 
 .trade-pg-header .fa {
-  font-size: 24px !important;
+  font-size: 30px !important;
   padding: 0 10px;
   cursor: pointer;
   color: #ad5319;
@@ -4494,8 +4505,17 @@
   place-items: center;
 }
 
-.trade-pg-header .browse-dropdown-btn * {
-  font-weight: bold;
+.trade-pg-header .browse-dropdown-btn .fa {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  font-weight: 500;
 }
 
 .trade-pg-header .browse-dropdown-btn .fa-chevron-down {
@@ -4532,7 +4552,6 @@
   background: #fff;
   font-size: 16px;
   color: #333;
-  font-weight: bold;
   border-radius: var(--desRadius) 0 0 var(--desRadius);
   line-height: 21px;
   padding: 5px 13px 5px 10px;
@@ -4574,6 +4593,147 @@
 .trade-search button:hover {
   color: inherit;
   background-color: #ef900c !important;
+}
+
+.trade-pg-mainContent div {
+  display: block;
+}
+
+.trade-pg-mainContent .trade-pg-mainContent-banner {
+  background-color: #f9af2c;
+  height: 223px;
+  width: 100%;
+}
+
+.trade-pg-mainContent .trade-pg-mainContent-banner img {
+  width: 100%;
+}
+
+.trade-pg-mainContent .trade-pg-mainContent-nav {
+  position: relative;
+  padding: 15px;
+  min-height: 75px;
+  background-color: #fff;
+  -webkit-box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.2);
+          box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.2);
+  border-left: 1px solid #e0e0e0;
+  top: -20px;
+  width: 960px;
+  margin: 0 10px;
+}
+
+.trade-pg-mainContent .trade-pg-mainContent-nav li.nav-item span {
+  display: inline;
+  color: #85807c;
+}
+
+.trade-pg-mainContent .trade-pg-mainContent-nav a.nav-link {
+  color: #0066cc;
+  display: inline-block;
+}
+
+.trade-pg-mainContent .trade-pg-mainContent-nav a.nav-link:hover {
+  color: #007acd;
+}
+
+.trade-pg-mainContent .trade-pg-mainContent-nav span {
+  width: 100%;
+  display: inline-block;
+  position: relative;
+  text-align: right;
+}
+
+.trade-pg-mainContent .trade-pg-mainContent-nav .title {
+  padding: 30px 0 10px;
+  border-bottom: 1px solid #b7b7b7;
+  margin-bottom: 15px;
+}
+
+.trade-pg-mainContent .trade-pg-mainContent-nav .title h1 {
+  font-weight: 400;
+  color: #333333;
+}
+
+.trade-listing-wrapper {
+  background-color: #f7f7f7 !important;
+  padding: 5px 0 5px 5px;
+}
+
+.trade-listing-wrapper form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.trade-listing-wrapper form .trade-list {
+  border-right: 1px solid #c1c1c1;
+  padding: 0 15px 0 20px;
+}
+
+.trade-listing-wrapper form .trade-list .title {
+  color: #85807c;
+}
+
+.trade-listing-wrapper form .trade-list .trade-list-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.trade-listing-wrapper form .trade-list .trade-list-content div {
+  display: inline-block;
+}
+
+.trade-listing-wrapper .form-check {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  justify-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 8px;
+}
+
+.trade-listing-wrapper .form-check input[type='radio'],
+.trade-listing-wrapper .form-check input[type='checkbox'] {
+  height: 18px;
+  width: 18px;
+}
+
+.trade-listing-wrapper .form-check label,
+.trade-listing-wrapper .form-check select {
+  margin-left: 5px;
+}
+
+.trade-listing-wrapper .form-check label {
+  font-weight: 400;
+}
+
+.trade-listing-wrapper select {
+  max-height: 30px;
+  font-size: 13.33px;
+  padding: 0 5px 0 7px !important;
+  border-color: #c1c1c1;
+}
+
+.trade-listing-wrapper select:focus {
+  border: 1px solid #c1c1c1;
+}
+
+.trade-listing-wrapper select:hover {
+  background: -webkit-gradient(linear, left top, left bottom, from(#f6f5f4), to(#dee2e6));
+  background: linear-gradient(180deg, #f6f5f4, #dee2e6);
+}
+
+.total-listing {
+  margin: 10px 0;
+}
+
+.total-listing * {
+  font-size: 12px;
 }
 
 @font-face {
