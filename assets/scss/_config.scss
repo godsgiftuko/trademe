@@ -12,8 +12,10 @@ $app_colors: (
     'primary': #006ebd,
     'primary2': #007acd,
     'primary3': #00558f,
+    'primary4': #0066cc,
     '_orange': #f3632d,
     '_yellow': #f9af2c,
+    '_yellow2': #fbcc48,
     '_red': #d93a3f,
     '_green': #1b8840,
     '_f_green': #29a754,
@@ -22,14 +24,21 @@ $app_colors: (
     '_white': #fff,
     '_black': #44413d,
     '_black2': #65605d,
+    '_black3': #343434,
     '_gray': #555555,
+    '_gray2': #333333,
+    '_gray3': #666666,
     '_grey': #e8e6e3,
     '_grey2': #d7d5d2,
+    '_grey3': #f7f7f7,
+    '_grey4': #f8f8f8,
     'nothing': 'transparent',
     '_whitesmoke': #f6f5f4,
     'th-border-col': #dee2e6,
     'table-border': #c1c1c1,
     'tab-col': blue,
+    '_coffee': #ad5319,
+    '_coffee2': #ef900c,
 );
 
 @function colors($color-name) {
@@ -61,6 +70,9 @@ $app_colors: (
 }
 ._link {
     color: colors(link) !important;
+}
+._gray {
+    color: colors(_gray) !important;
 }
 
 ._blue {
