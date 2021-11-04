@@ -286,7 +286,7 @@
         border-radius: 8px;
         background-color: colors(_white) !important;
         --genPadding: 8px;
-        --transition: 
+        --transition: 0.4s;
         .card-header {
             position: relative;
             height: 165px;
@@ -304,7 +304,7 @@
                 color: colors(_black) !important;
                 background-color: colors(_grey2);
                 opacity: 0.5;
-                transition: 0.4s ease-in-out;
+                transition: var(--transition) ease-in-out;
                 // display: none;
                 .text {
                     font-weight: weight(regular);
@@ -332,7 +332,7 @@
             width: 100%;
             height: auto;
 
-            transition: 0.5s cubic-bezier(0, 0, 0.2, 1);
+            transition: var(--transition) cubic-bezier(0, 0, 0.2, 1);
             p {
                 width: 100%;
                 overflow-x: hidden;

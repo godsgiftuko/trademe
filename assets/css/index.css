@@ -4763,10 +4763,10 @@
   border-radius: 8px;
   background-color: #fff !important;
   --genPadding: 8px;
+  --transition: 0.4s;
 }
 
-.supergrid-listing .card --transition
-.card-header {
+.supergrid-listing .card .card-header {
   position: relative;
   height: 165px;
   width: 100%;
@@ -4775,8 +4775,7 @@
   background-position: center;
 }
 
-.supergrid-listing .card --transition
-.card-header .title {
+.supergrid-listing .card .card-header .title {
   position: absolute;
   z-index: 2;
   width: 100%;
@@ -4786,18 +4785,16 @@
   color: #44413d !important;
   background-color: #d7d5d2;
   opacity: 0.5;
-  -webkit-transition: 0.4s ease-in-out;
-  transition: 0.4s ease-in-out;
+  -webkit-transition: var(--transition) ease-in-out;
+  transition: var(--transition) ease-in-out;
 }
 
-.supergrid-listing .card --transition
-.card-header .title .text {
+.supergrid-listing .card .card-header .title .text {
   font-weight: 400;
   z-index: 3;
 }
 
-.supergrid-listing .card --transition
-.card-header .title .text::before {
+.supergrid-listing .card .card-header .title .text::before {
   position: relative;
   content: '';
 }
@@ -4816,8 +4813,8 @@
   position: relative;
   width: 100%;
   height: auto;
-  -webkit-transition: 0.5s cubic-bezier(0, 0, 0.2, 1);
-  transition: 0.5s cubic-bezier(0, 0, 0.2, 1);
+  -webkit-transition: var(--transition) cubic-bezier(0, 0, 0.2, 1);
+  transition: var(--transition) cubic-bezier(0, 0, 0.2, 1);
 }
 
 .supergrid-listing .card .card-body p {
