@@ -70,6 +70,9 @@ $app_colors: (
 ._link {
     color: colors(link) !important;
 }
+._gray {
+    color: colors(_gray) !important;
+}
 
 ._blue {
     color: colors(primary) !important;

@@ -259,3 +259,115 @@
         font-size: 12px;
     }
 }
+
+.supergrid-listing {
+    a.nav-link {
+        text-decoration: none;
+
+        &:hover {
+            .card-header {
+                .title {
+                    display: block;
+                    bottom: 0px;
+                }
+            }
+            .card-body {
+                padding-bottom: 25px;
+
+                p {
+                    color: colors(primary2);
+                    white-space: normal;
+                    text-overflow: initial;
+                }
+            }
+        }
+    }
+    .card {
+        border-radius: 8px;
+        background-color: colors(_white) !important;
+        --genPadding: 8px;
+        --transition: 
+        .card-header {
+            position: relative;
+            height: 165px;
+            width: 100%;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            .title {
+                position: absolute;
+                z-index: 2;
+                width: 100%;
+                left: 0;
+                bottom: -25px;
+                padding: 0 var(--genPadding);
+                color: colors(_black) !important;
+                background-color: colors(_grey2);
+                opacity: 0.5;
+                transition: 0.4s ease-in-out;
+                // display: none;
+                .text {
+                    font-weight: weight(regular);
+                    z-index: 3;
+
+                    &::before {
+                        position: relative;
+                        content: '';
+                    }
+                }
+            }
+        }
+
+        .card-body,
+        .card-footer {
+            padding: var(--genPadding);
+            border: none;
+            z-index: 10;
+            background-color: colors(_white);
+        }
+        .card-body {
+            padding-top: 0px;
+            padding-bottom: 0px;
+            position: relative;
+            width: 100%;
+            height: auto;
+
+            transition: 0.5s cubic-bezier(0, 0, 0.2, 1);
+            p {
+                width: 100%;
+                overflow-x: hidden;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+                margin-top: 0;
+                margin-bottom: 0;
+                font-size: 14px;
+            }
+        }
+
+        .card-footer {
+            background-color: transparent;
+            background-color: colors(_white);
+
+            text-align: right;
+            .price {
+                font-weight: weight(bold);
+                line-height: 1;
+
+                // &::before {
+                //     content: attr(starting-price) ' - ';
+                // }
+
+                &::before {
+                    content: attr(discount-price);
+                    text-decoration: line-through;
+                    color: colors(link);
+                    font-weight: weight(regular);
+                }
+            }
+            span {
+                font-size: 12px;
+                display: none;
+            }
+        }
+    }
+}

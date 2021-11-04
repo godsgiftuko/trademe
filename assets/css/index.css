@@ -26,6 +26,10 @@
   color: #85807c !important;
 }
 
+._gray {
+  color: #555555 !important;
+}
+
 ._blue {
   color: #006ebd !important;
 }
@@ -4734,6 +4738,119 @@
 
 .total-listing * {
   font-size: 12px;
+}
+
+.supergrid-listing a.nav-link {
+  text-decoration: none;
+}
+
+.supergrid-listing a.nav-link:hover .card-header .title {
+  display: block;
+  bottom: 0px;
+}
+
+.supergrid-listing a.nav-link:hover .card-body {
+  padding-bottom: 25px;
+}
+
+.supergrid-listing a.nav-link:hover .card-body p {
+  color: #007acd;
+  white-space: normal;
+  text-overflow: initial;
+}
+
+.supergrid-listing .card {
+  border-radius: 8px;
+  background-color: #fff !important;
+  --genPadding: 8px;
+}
+
+.supergrid-listing .card --transition
+.card-header {
+  position: relative;
+  height: 165px;
+  width: 100%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.supergrid-listing .card --transition
+.card-header .title {
+  position: absolute;
+  z-index: 2;
+  width: 100%;
+  left: 0;
+  bottom: -25px;
+  padding: 0 var(--genPadding);
+  color: #44413d !important;
+  background-color: #d7d5d2;
+  opacity: 0.5;
+  -webkit-transition: 0.4s ease-in-out;
+  transition: 0.4s ease-in-out;
+}
+
+.supergrid-listing .card --transition
+.card-header .title .text {
+  font-weight: 400;
+  z-index: 3;
+}
+
+.supergrid-listing .card --transition
+.card-header .title .text::before {
+  position: relative;
+  content: '';
+}
+
+.supergrid-listing .card .card-body,
+.supergrid-listing .card .card-footer {
+  padding: var(--genPadding);
+  border: none;
+  z-index: 10;
+  background-color: #fff;
+}
+
+.supergrid-listing .card .card-body {
+  padding-top: 0px;
+  padding-bottom: 0px;
+  position: relative;
+  width: 100%;
+  height: auto;
+  -webkit-transition: 0.5s cubic-bezier(0, 0, 0.2, 1);
+  transition: 0.5s cubic-bezier(0, 0, 0.2, 1);
+}
+
+.supergrid-listing .card .card-body p {
+  width: 100%;
+  overflow-x: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 14px;
+}
+
+.supergrid-listing .card .card-footer {
+  background-color: transparent;
+  background-color: #fff;
+  text-align: right;
+}
+
+.supergrid-listing .card .card-footer .price {
+  font-weight: 700;
+  line-height: 1;
+}
+
+.supergrid-listing .card .card-footer .price::before {
+  content: attr(discount-price);
+  text-decoration: line-through;
+  color: #85807c;
+  font-weight: 400;
+}
+
+.supergrid-listing .card .card-footer span {
+  font-size: 12px;
+  display: none;
 }
 
 @font-face {
