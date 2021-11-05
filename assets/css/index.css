@@ -1211,7 +1211,69 @@
 }
 
 .footer_tw {
+  padding: 20px 0;
   background-color: #343434;
+}
+.footer_tw .wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  margin: 10px 142.5px 0;
+}
+.footer_tw .footer-section {
+  background: #343434;
+  margin: 10px;
+  border: 1px solid #444;
+  height: 178px;
+  -moz-border-radius: 3.01px;
+  -webkit-border-radius: 3.01px;
+  border-radius: 3.01px;
+  zoom: 1;
+}
+.footer_tw .footer-links {
+  display: flex;
+  justify-content: space-between;
+  justify-items: center;
+  align-items: center;
+  width: 638px;
+  overflow: hidden;
+  padding: 20px;
+}
+.footer_tw .footer-links a.nav-link {
+  color: #ccc;
+  font-weight: 700;
+  font-size: 16px;
+}
+.footer_tw .footer-links a.nav-link:hover {
+  opacity: 0.8;
+}
+.footer_tw .footer-sidebar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px 30px 30px 20px;
+}
+.footer_tw .footer-sidebar .copyright {
+  font-size: 12px;
+  color: #999;
+}
+.footer_tw .footer-sidebar a {
+  color: #fff;
+  font-size: 14px;
+}
+.footer_tw .footer-sidebar .choose-platform .btn {
+  height: 20px;
+  background-color: #444;
+  border-color: #222;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
+  color: #ccc;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.5);
+  background-image: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzQ0NDQ0NCIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzMzMzMzMyIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==");
+  background-size: 100%;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #444), color-stop(100%, #333));
+  background-image: linear-gradient(#444, #333);
 }
 
 /*
@@ -3466,7 +3528,7 @@
 }
 .trade-search select {
   font-size: 14px;
-  width: 20%;
+  width: 33%;
   border-radius: 0px var(--desRadius) var(--desRadius) 0px;
   border-width: 1px;
   border-style: solid;
@@ -3534,6 +3596,8 @@
   display: inline-block;
   position: relative;
   text-align: right;
+  font-size: 12px;
+  color: #44413d;
 }
 .trade-pg-mainContent .trade-pg-mainContent-nav .title {
   padding: 30px 0 10px;
@@ -3589,6 +3653,7 @@
   font-size: 13.33px;
   padding: 0 5px 0 7px !important;
   border-color: #c1c1c1;
+  background: linear-gradient(180deg, #fff, #f7f7f7);
 }
 .trade-listing-wrapper select:focus {
   border: 1px solid #c1c1c1;
@@ -3606,10 +3671,20 @@
 
 .supergrid-listing a.nav-link {
   text-decoration: none;
+  position: relative;
+  margin-top: 245px;
+}
+.supergrid-listing a.nav-link .card {
+  position: absolute !important;
+  flex-direction: column !important;
+  width: 100% !important;
 }
 .supergrid-listing a.nav-link:hover .card-header .title {
   display: block;
   bottom: 0px;
+}
+.supergrid-listing a.nav-link:hover .card-header .icon {
+  opacity: 1;
 }
 .supergrid-listing a.nav-link:hover .card-body {
   padding-bottom: 25px;
@@ -3619,54 +3694,124 @@
   white-space: normal;
   text-overflow: initial;
 }
+.supergrid-listing a.nav-link .supergrid-ofs {
+  position: absolute;
+  width: 40%;
+}
+.supergrid-listing a.nav-link .supergrid-ofs ._discount {
+  background-color: #e34647 !important;
+  width: 90%;
+}
+.supergrid-listing a.nav-link .supergrid-ofs ._discount::before {
+  content: "";
+  position: absolute;
+  border-width: 3.9px;
+  border-style: solid;
+  border-color: #9f2023 #9f2023 transparent transparent;
+  display: block;
+  left: 0;
+  bottom: -8px;
+  z-index: 3;
+}
+.supergrid-listing a.nav-link .supergrid-ofs ._freeShipping {
+  background-color: #00aa76 !important;
+}
+.supergrid-listing a.nav-link .supergrid-ofs ._freeShipping::before {
+  content: "";
+  position: absolute;
+  border-width: 3.9px;
+  border-style: solid;
+  border-color: #009166 #009166 transparent transparent;
+  display: block;
+  left: 0;
+  bottom: -8px;
+  z-index: 3;
+}
+.supergrid-listing a.nav-link .supergrid-ofs .tag {
+  position: relative;
+  left: 0;
+  top: 3px;
+  padding: 1px 5px 1px 7px;
+  left: -6px;
+  z-index: 1;
+  font-size: 12px;
+  color: #fff;
+}
 .supergrid-listing .card {
   border-radius: 8px;
   background-color: #fff !important;
+  border: 1px solid #e6e6e6;
   --genPadding: 8px;
-  --transition: 0.4s;
+  --transition: 0.3s;
 }
 .supergrid-listing .card .card-header {
   position: relative;
+  overflow: hidden;
   height: 165px;
   width: 100%;
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
+  border: none;
+  background-color: #fff;
 }
 .supergrid-listing .card .card-header .title {
   position: absolute;
-  z-index: 2;
   width: 100%;
   left: 0;
   bottom: -25px;
   padding: 0 var(--genPadding);
-  color: #44413d !important;
+  transition: var(--transition) ease-in-out;
   background-color: #d7d5d2;
   opacity: 0.5;
-  transition: var(--transition) ease-in-out;
 }
 .supergrid-listing .card .card-header .title .text {
-  font-weight: 400;
+  color: #000 !important;
+  position: relative;
+  font-weight: 400 !important;
   z-index: 3;
 }
 .supergrid-listing .card .card-header .title .text::before {
   position: relative;
   content: "";
 }
+.supergrid-listing .card .card-header .icon {
+  position: absolute;
+  right: 0;
+  top: 0;
+  border-color: transparent #f9af2c transparent transparent;
+  border-style: solid;
+  --borderWidth: 50px;
+  z-index: 22;
+  display: flex;
+  align-content: center;
+  border-width: 0 var(--borderWidth) var(--borderWidth) 0;
+  cursor: pointer;
+  opacity: 0;
+  transition: 0.2s cubic-bezier(0.37, -0.01, 0.2, 1);
+}
+.supergrid-listing .card .card-header .icon .fa {
+  position: absolute;
+  transform: translate(200%, 50%);
+  color: #ad5319;
+}
+.supergrid-listing .card .card-header .icon .fa::before {
+  font-size: 18px;
+  font-weight: 100;
+}
 .supergrid-listing .card .card-body,
 .supergrid-listing .card .card-footer {
   padding: var(--genPadding);
   border: none;
-  z-index: 10;
+  z-index: 2;
   background-color: #f8f8f8;
 }
 .supergrid-listing .card .card-body {
-  padding-top: 0px;
   padding-bottom: 0px;
   position: relative;
   width: 100%;
   height: auto;
-  transition: var(--transition) cubic-bezier(0, 0, 0.2, 1);
+  transition: var(--transition) cubic-bezier(0.4, 0.12, 0.2, 1);
 }
 .supergrid-listing .card .card-body p {
   width: 100%;
@@ -3693,6 +3838,9 @@
 .supergrid-listing .card .card-footer span {
   font-size: 12px;
   display: none;
+}
+.supergrid-listing .card:hover {
+  box-shadow: 0px 2px 3px 0px #7b7b7b85;
 }
 
 @font-face {
@@ -4299,6 +4447,18 @@ button:active {
   width: 980px;
   position: relative;
   display: flex;
+}
+
+.card {
+  overflow: hidden;
+}
+
+.visibility-hidden {
+  visibility: hidden;
+}
+
+.visibility-visible {
+  visibility: visible;
 }
 
 section {

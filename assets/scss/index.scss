@@ -672,6 +672,18 @@ button {
     display: flex;
 }
 
+.card {
+    overflow: hidden;
+}
+
+.visibility-hidden {
+    visibility: hidden;
+}
+
+.visibility-visible {
+    visibility: visible;
+}
+
 section {
     padding-top: 30px;
     padding-bottom: 30px;
