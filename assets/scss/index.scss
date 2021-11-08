@@ -666,10 +666,14 @@ button {
 }
 
 .container-sml {
-    margin: 0 auto;
-    width: 980px;
     position: relative;
     display: flex;
+    padding-right: 16px;
+    padding-left: 16px;
+    width: 100%;
+    max-width: 980px;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 .card {
@@ -723,4 +727,10 @@ section h1.header-section-title {
         padding-top: 20px;
         padding-bottom: 48px;
     }
+}
+
+@media screen and (max-width: 425px) {
+    // #zm--3 {
+    //     zoom: 0.7 !important;
+    // }
 }

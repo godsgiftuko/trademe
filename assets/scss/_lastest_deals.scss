@@ -241,11 +241,7 @@
         font-size: 13.33px;
         padding: 0 5px 0 7px !important;
         border-color: colors(table-border);
-        background: linear-gradient(
-                180deg,
-                colors(_white),
-                colors(_grey3)
-            );
+        background: linear-gradient(180deg, colors(_white), colors(_grey3));
         &:focus {
             border: 1px solid colors(table-border);
         }
@@ -268,6 +264,7 @@
 }
 
 .supergrid-listing {
+    height: 100vh;
     a.nav-link {
         text-decoration: none;
         position: relative;
@@ -280,7 +277,6 @@
         }
 
         &:hover {
-            
             .card-header {
                 .title {
                     display: block;
@@ -313,14 +309,15 @@
                     position: absolute;
                     border-width: 3.9px;
                     border-style: solid;
-                    border-color: colors(_red3) colors(_red3) transparent transparent;
+                    border-color: colors(_red3) colors(_red3) transparent
+                        transparent;
                     display: block;
                     left: 0;
                     bottom: -8px;
                     z-index: 3;
                 }
             }
-    
+
             ._freeShipping {
                 background-color: colors(_green2) !important;
                 &::before {
@@ -328,14 +325,15 @@
                     position: absolute;
                     border-width: 3.9px;
                     border-style: solid;
-                    border-color: colors(_green3) colors(_green3) transparent transparent;
+                    border-color: colors(_green3) colors(_green3) transparent
+                        transparent;
                     display: block;
                     left: 0;
                     bottom: -8px;
                     z-index: 3;
                 }
             }
-    
+
             .tag {
                 position: relative;
                 left: 0;
@@ -347,8 +345,6 @@
                 color: colors(_white);
             }
         }
-
-
     }
     .card {
         border-radius: 8px;
@@ -393,7 +389,8 @@
                 position: absolute;
                 right: 0;
                 top: 0;
-                border-color: transparent colors(_yellow) transparent transparent;
+                border-color: transparent colors(_yellow) transparent
+                    transparent;
                 border-style: solid;
                 --borderWidth: 50px;
                 z-index: 22;

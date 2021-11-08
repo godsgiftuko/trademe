@@ -109,6 +109,15 @@
     }
 }
 
+._layout2_pagination_div {
+    .nav-item {
+        padding: 2px !important;
+        a:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
 // ! BACK TO TOP
 .back_to_top {
     text-align: center;
