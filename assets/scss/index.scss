@@ -638,16 +638,6 @@ button {
         display: none;
     }
 }
-.breadcrumb {
-    margin-bottom: 0;
-}
-.breadcrumb-item + .breadcrumb-item::before {
-    // display: none;
-    float: left;
-    padding-right: 0.5rem;
-    color: #fff;
-    content: var(--bs-breadcrumb-divider, '/');
-}
 
 .container-fluid {
     padding-right: 16px;
@@ -729,8 +719,11 @@ section h1.header-section-title {
     }
 }
 
-@media screen and (max-width: 425px) {
-    // #zm--3 {
-    //     zoom: 0.7 !important;
-    // }
+@media screen and (min-width: 425px) {
+    .zm--3 {
+        zoom: 0;
+    }
+}
+.zm--3 {
+    zoom: 0.3 !important;
 }

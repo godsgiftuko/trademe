@@ -323,6 +323,82 @@ $footer_border: 7.99px;
     }
 }
 
+.footer_sm {
+    padding: 20px 0;
+    // margin-top: 70px;
+    width: 100%;
+    min-width: 980px;
+    background-color: colors(_black3);
+
+    .row {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .sm_footer-border {
+        border: 1px solid #444;
+        display: flex;
+    }
+
+    .footer-sidebar {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 20px 30px 30px 20px;
+        .copyright {
+            font-size: 12.5px;
+            color: #999;
+        }
+        a {
+            color: colors(_white);
+            font-size: 14px;
+        }
+
+        .choose-platform {
+            display: flex;
+        }
+        .choose-platform .footer-btn {
+            &:hover {
+                background-image: -webkit-gradient(
+                    linear,
+                    50% 0%,
+                    50% 100%,
+                    color-stop(0%, rgb(75, 75, 75)),
+                    color-stop(100%, rgb(28, 28, 28))
+                );
+            }
+
+            background-color: #444;
+            padding: 3px 20px;
+            border-color: #222;
+            text-decoration: none;
+            -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
+            -webkit-box-shadow: inset 0 1px 0 rgb(255 255 255 / 10%);
+            box-shadow: inset 0 1px 0 rgb(255 255 255 / 10%);
+            color: #ccc;
+            text-shadow: 0 1px 0 rgb(0 0 0 / 50%);
+            background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzQ0NDQ0NCIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzMzMzMzMyIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==);
+            background-size: 100%;
+            background-image: -webkit-gradient(
+                linear,
+                50% 0%,
+                50% 100%,
+                color-stop(0%, #444),
+                color-stop(100%, #333)
+            );
+            background-image: -moz-linear-gradient(#444, #333);
+            background-image: -webkit-linear-gradient(#444, #333);
+            background-image: linear-gradient(#444, #333);
+            padding: 0px ​ !important;
+            border-radius: 3.01px 0 0 3.01px;
+            &:last-child {
+                border-radius: 0 3.01px 3.01px 0;
+            }
+        }
+    }
+}
+
 /*
     ? MEDIA SCREENS == 767px;
 */

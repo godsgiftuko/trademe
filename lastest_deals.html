@@ -38,7 +38,7 @@
         ></script>
     </head>
 
-    <body class="_white_BG">
+    <body class="_white_BG zm--3">
         <header class="pt-3">
             <div class="container-sml">
                 <div class="trade-pg-header">
@@ -271,7 +271,7 @@
             </div>
         </header>
 
-        <main>
+        <main class="">
             <div class="container-sml" style="flex-direction: column">
                 <div class="trade-pg-mainContent">
                     <div class="trade-pg-mainContent-banner">
@@ -958,5 +958,24 @@
                 </div>
             </div>
         </footer>
+        <script>
+            $(document).ready(function () {
+                $(window).resize(function (e) {
+                    removeZoom(e)
+                })
+
+                function removeZoom(e) {
+                    const winWidth = e.currentTarget.innerWidth > 425
+                    if ('innerWidth' in e.currentTarget) {
+                        if (winWidth) {
+                            $('body').removeClass('zm--3')
+                            // console.log(winWidth, $('body').attr('class'))
+                        } else {
+                            $('body').addClass('zm--3')
+                        }
+                    }
+                }
+            })
+        </script>
     </body>
 </html>
