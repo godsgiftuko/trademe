@@ -33,47 +33,46 @@
             border-radius: 10px 10px 0 0;
             // border: none;
             overflow: hidden;
-            @include d-flex(row, space-between);
+            @include d-flex(row);
+            // display: grid;
+            // grid-template-columns: 1fr 1fr 2fr 1fr 2fr 2fr; 
             li {
                 margin: 0px;
-                flex: 1;
+                flex-grow: 1;
                 text-align: center;
                 // height: 40px;
+                box-shadow: -1px 0 colors(_grey2);
+                cursor: pointer;
     
 
                 button {
-                    box-shadow: -1px 0 colors(_grey2);
                     border-radius: 0;
-                    // height: 100%;
-                    // width: 100%;
-                    // border: none;
                     padding: 7px 0;
                     text-transform: capitalize;
                     font-size: 16px;
-                    background-color: colors(_white);
+                    background-color: transparent;
                     color: colors(_black) !important;
                     font-weight: weight(regular);
-                    .fa,
-                    span {
-                        padding: 0 5px;
-                    }
-
-                    .fa {
-                        color: colors(primary);
+                    
+                    svg {
+                        padding: 0 px;
+                        fill: colors(primary);
+                        width: 24;
+                        @include mobile-max(1024px) {
+                            display: none;
+                        }
                     }
                     &:hover {
                         background-color: transparent !important;
                     }
                 }
-                // &:first-child button {
-                //     border-radius: 10px 0 0 0;
-                // }
-                // &:last-child button {
-                //     border-radius: 0 10px 0 0;
-                // }
             }
             .active {
                 background-color: colors(tab-col) !important;
+                display: none;
+                button {
+                    background-color: colors(tab-col) !important;
+                }
                 * {
                     color: colors(_white) !important;
                 }
@@ -227,12 +226,12 @@
 }
 .active-tab {
     background-color: #323a4d !important;
-    &:hover {
-        background-color: currentColor !important;
-    }
-    // button {
+    
+    &, button {
+        cursor: default !important;
 
-    // }
+    }
+
     * {
         color: colors(_white) !important;
     }
