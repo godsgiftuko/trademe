@@ -2572,31 +2572,18 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
   }
-  .hero_div .hero_bottom .myTab-sm-scrn ul.nav-tabs li.nav-item button span,
-.hero_div .hero_bottom .myTab-sm-scrn ul.nav-tabs li.nav-item button .fa {
-    height: 50%;
-  }
-  .hero_div .hero_bottom .myTab-sm-scrn ul.nav-tabs li.nav-item button .fa {
-    font-size: 18px;
-    color: #006ebd;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: end;
-        -ms-flex-align: end;
-            align-items: flex-end;
-    padding-bottom: 4px;
+  .hero_div .hero_bottom .myTab-sm-scrn ul.nav-tabs li.nav-item button svg {
+    fill: #006ebd;
   }
 }
 .hero_div .hero_bottom .hero_bottom_nav {
-  display: inline-block;
   padding: 24px;
 }
 .hero_div .hero_bottom .hero_bottom_nav ul#my_bottom_tab {
@@ -2604,16 +2591,10 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-align: normal;
-      -ms-flex-align: normal;
-          align-items: normal;
 }
 .hero_div .hero_bottom .hero_bottom_nav ul#my_bottom_tab .active {
   border: 2px solid #65605d !important;
