@@ -1,10 +1,12 @@
 .banner-section {
-    padding-left: 20px;
+    // padding-left: 20px;
+    .banner-frame {
+        background: #fff;
+    }
     .banner {
         position: relative;
         display: flex;
         margin-bottom: 24px;
-        background: #fff;
         background: linear-gradient(180deg, #fff, #fff 48%, #007acd 0, #007acd);
 
         @include mobile-min(1440px) {
@@ -16,7 +18,13 @@
                 #007acd
             ) !important;
         }
+
+        @include mobile-min(768px) {
+            height: 220px;
+        }
         .banner_details {
+        padding: 24px 24px 0;
+
             flex: 1;
             .banner_title {
                 h1 {
@@ -40,9 +48,14 @@
         .banner_svg {
             flex: 1.5;
             div {
-                // width: 50%;
+                height: 100%;
 
                 svg {
+                    height: 100%;
+                    position: relative;
+                   @include mobile-min(768px) {
+                    left: -42px;
+                   }
                     fill: $p-col;
                     // position: absolute;
                 }
@@ -174,6 +187,11 @@
 
         .banner_svg div {
             padding-top: 65px !important;
+
+            svg {
+                width: 100% !important;
+                height: 180% !important;
+            }
         }
     }
 }
