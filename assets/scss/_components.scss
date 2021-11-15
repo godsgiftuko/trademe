@@ -436,6 +436,9 @@
     }
     // display: none;
     .switch-field {
+        @include mobile-max(320px) {
+            display: none !important;
+        }
         @include mobile-max(767px) {
             background-color: transparent !important;
             justify-content: flex-end;

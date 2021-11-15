@@ -43,6 +43,7 @@ $app_colors: (
     'tab-col': blue,
     '_coffee': #ad5319,
     '_coffee2': #ef900c,
+    '_navyblue': #323a4d
 );
 
 @function colors($color-name) {
@@ -153,3 +154,4 @@ $app_colors: (
 .f-10 {
     font-size: 10 !important;
 }
+

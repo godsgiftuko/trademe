@@ -490,7 +490,7 @@ p {
         transition: border-color 0.2s ease-out;
 
         &:focus-within {
-            outline: 2px solid rgba(99, 99, 99, 0.66);
+            outline: 2px solid #44413d;
         }
         input[type='text'] {
             height: inherit;

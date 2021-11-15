@@ -18,3 +18,11 @@
     justify-content: center;
     // align-items: center;
 }
+
+
+// DISPLAY
+@include mobile-max(768px) {
+    .d-mb-none {
+        display: none !important;
+    }
+}
