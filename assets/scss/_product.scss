@@ -1,0 +1,111 @@
+.product-container {
+    .product-viewport {
+        // display: flex;
+        // flex-direction: column;
+
+        .product-viewer {
+          
+            border: 1px solid lightgray;
+            height: 500px;  
+            position: relative;
+            // background-color: rosybrown;
+
+            .single-slider {
+                height: 100%;
+                margin: auto;
+                // width: 80%
+
+                .prev {
+                    background-color: violet;
+                    color: red;
+                }
+                .slick-prev, .slick-next {
+                    z-index: 1000;
+                  }
+                
+                .slick-prev {
+                    left: 0;
+                    background-color: yellow;
+                }
+                
+                .slick-next {
+                    background-color: yellow;
+                    right: 0;
+                }
+                .slick-list {
+                    height: 100%;
+                    width: 95%;
+                    margin: 0 auto;
+                    .slick-track {
+                        height: 100%;
+                    }
+                    .slick-slide {
+                        display: flex;
+                        justify-content: center;
+                      
+                    }
+
+                }
+                div {
+                    position: relative;
+                    // background-color: royalblue;
+                    width: 100%;
+                    text-align: center;
+                    img {
+                        width: 50% !important;
+                    }
+                }
+            }
+            
+        }
+
+        .product-imgs {
+            box-sizing: border-box;
+            --border-width: 2px;
+            .product-img {
+                img {
+                    border: var(--border-width) solid transparent;
+                }
+            }
+            .slick-slide.slick-current{
+                display: block;	
+                opacity: 1;
+                transition-delay: 0.3s;
+                transition-duration: 0.2s;
+                transition-property: opacity;
+                transition-timing-function: ease-in;
+                margin: 0 !important;
+                img {
+                    border: var(--border-width) solid colors(_yellow3);
+                }
+            }
+           @include mobile-min(768px) {
+                padding: 30px 10px;
+           }
+        }
+
+    }   
+
+    .marketplace-listing {
+        .marketplace-buyer-option-profile-image {
+            height: 112px;
+            .member-profile-image {
+                height: 112px;
+                width: 112px;
+                background-repeat: no-repeat;
+                background-position: center;
+            }
+        }
+
+        .marketplace-buyer-option-profile-title {
+            .marketplace-buyer-option-profile-title-text {
+                margin-bottom: 16px;
+                @include mobile-min(768px) {
+                    font-size: 2rem;
+                    line-height: 40px;
+                }            
+
+            }
+        }
+    }
+}

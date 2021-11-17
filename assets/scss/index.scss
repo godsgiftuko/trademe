@@ -26,6 +26,7 @@
 @import 'standalone_auth_form';
 @import 'auth_form';
 @import 'lastest_deals';
+@import 'product';
 
 @font-face {
     font-display: swap;
@@ -689,6 +690,70 @@ section h1.header-section-title {
     padding: 50px 0 30px 0;
 }
 
+.o-box-info--warning {
+    .o-box-info {
+        border-color: hsl(38, 100%, 46%) !important;
+        background: #fffae5 !important;
+        color: currentColor !important;
+    }
+}
+
+.o-box-info--primary {
+    .o-box-info {
+        border-color: #007acd !important;
+        background: #e1f3ff !important;
+        color: currentColor !important;
+    }
+}
+
+.reusable__notification {
+    position: relative !important;
+    .container {
+        padding: 0 !important;
+    }
+}
+
+
+.root__notification {
+    top: 8px;
+    position: fixed;
+    width: 100%;
+
+    @include mobile-max(425px) {
+        top: auto;
+        bottom: 8px;
+    }
+    .o-box-info {
+        display: flex;
+        border-left: 8px solid #65605d;
+        margin-bottom: 24px;
+        background: #f6f5f4;
+        border-radius: 6px;
+        color: #65605d;
+    }
+    .o__media_block_icon {
+        padding: 16px 0 16px 16px;
+    }
+    .o-box-info__content {
+        padding: 16px;
+        .o-info-title {
+            color: colors(_black2);
+        }
+        p {
+            margin: 0;
+        }
+    }
+    
+    .o-box-info__actions {
+        padding: 0 16px 16px;
+        button {
+            background-color: transparent !important;
+            color: colors(primary2);
+            padding: 0;
+        }
+    }
+
+}
 // ? DISPLAY: NONE;
 
 @media (min-width: 480px) {

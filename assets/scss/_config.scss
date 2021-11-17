@@ -16,6 +16,7 @@ $app_colors: (
     '_orange': #f3632d,
     '_yellow': #f9af2c,
     '_yellow2': #fbcc48,
+    '_yellow3': #ffcb4f,
     '_red': #d93a3f,
     '_red2': #e34647,
     '_red3': #9f2023,
@@ -43,6 +44,7 @@ $app_colors: (
     'tab-col': blue,
     '_coffee': #ad5319,
     '_coffee2': #ef900c,
+    '_coffee3': #943900,
     '_navyblue': #323a4d
 );
 
@@ -82,6 +84,7 @@ $app_colors: (
 
 ._blue {
     color: colors(primary) !important;
+    fill: colors(primary) !important;
 }
 ._blue2 {
     color: colors(primary2) !important;
@@ -89,6 +92,12 @@ $app_colors: (
 ._blue3 {
     color: colors(primary3) !important;
 }
+._coffee3 {
+    color: colors(_coffee3) !important;
+    fill: colors(_coffee3) !important;
+}
+
+
 ._lite_grey_BG {
     background-color: colors(_whitesmoke) !important;
 }
