@@ -26,3 +26,9 @@
         display: none !important;
     }
 }
+
+@include mobile-max(425px) {
+    .d-sb-none {
+        display: none !important;
+    }
+}

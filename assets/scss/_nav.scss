@@ -569,13 +569,12 @@ $nav_border_size: 7.99px;
         box-shadow: -2px 0 3px 0 #dadada;
         transition: top .25s ease-out!important;
         transition-property: bottom,opacity;
-        display: none;
         
         @include mobile-min(769px) {
-            display: block;
+            display: none;
         }
         @include mobile-max(768px) {
-            display: block;
+            display: none;
             .container {
                 padding: 0 0 0 5px !important;
             }

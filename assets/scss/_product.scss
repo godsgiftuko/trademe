@@ -1,14 +1,42 @@
+.pseudo-bracket {
+    &::before {
+        content: '(';
+        color: colors(_black2) !important;
+        position: relative;
+        font-size: inherit !important;
+    }
+    &::after {
+        content: ')';
+        color: colors(_black2) !important;
+        position: relative;
+        font-size: inherit !important;
+    }
+}
 .product-container {
+    .product-potential-content {
+        div {
+            // flex: 1;
+
+            justify-content: space-between;
+        }
+        // grid-template-columns: 1fr 1fr;
+        // grid-template-rows: 1fr;
+    }
     .product-viewport {
         // display: flex;
         // flex-direction: column;
 
         .product-viewer {
-          
             border: 1px solid lightgray;
-            height: 500px;  
             position: relative;
-            // background-color: rosybrown;
+            height: 500px;  
+            @include mobile-max(768px) {
+                height: 310px !important;  
+                margin-bottom: 30px;
+            }
+            @include mobile-max(375px) {
+                height: 250px !important;
+            }
 
             .single-slider {
                 height: 100%;
@@ -59,12 +87,25 @@
             
         }
 
+        .slick-track {
+            @include mobile-max(768px) {
+                display:  flex !important;
+                overflow-x: scroll;
+            }
+        }
+
         .product-imgs {
             box-sizing: border-box;
             --border-width: 2px;
             .product-img {
+                @include mobile-max(425px) {
+                    width: auto !important;
+                }
                 img {
                     border: var(--border-width) solid transparent;
+                    @include mobile-max(768px) {
+                        width: 65px;
+                    }
                 }
             }
             .slick-slide.slick-current{
@@ -83,8 +124,27 @@
                 padding: 30px 10px;
            }
         }
-
+        
     }   
+    
+    .member-summary {
+        .bottom-summary {
+            div {
+                width: 540px; 
+                border-bottom: 1px solid lightgrey;
+
+                // &:last-child {
+                //     button {
+                //         width: 100%;
+                //     }
+                //     border: none;
+                // }
+                @include mobile-max(768px) {
+                    width: 380px !important;
+                }
+            }
+        }
+    }
 
     .marketplace-listing {
         .marketplace-buyer-option-profile-image {
@@ -106,6 +166,106 @@
                 }            
 
             }
+        }
+
+        .marketplace-buyer-option-watchlist {
+            button {
+                background-color: colors(_yellow) !important;
+                width: 100%;
+                border-radius: 3px;
+                * {
+                    fill: colors(_coffee3);
+                    color: colors(_coffee3);
+                }
+                &:hover {
+                    background-color: colors(_yellow3) !important;
+                }
+            }
+        }
+
+        
+        
+        
+    }
+    .product-share-listing-link {
+        div {
+            @include mobile-max(425px) {
+                &:first-child, ol {
+                    flex-direction: column;
+                    
+                }
+            }
+        }
+    }
+}
+
+.chat-content {
+    .reciever-msg, .sender-msg {
+        p {
+            border-radius: 6px;
+            position: relative;
+
+            &::after {
+                position: absolute;
+                content: '';
+                top: 5px;
+                border-width: 10px;
+                border-style: solid;
+                border-color: transparent transparent transparent colors(_whitesmoke);
+            }
+        }
+    }
+    .sender-msg {
+        justify-content: end !important;
+        .chat-msg {
+            p {
+                &::after {
+                    right: -20px;
+                }
+            }
+        }
+
+        .chat-time-n-reputation {
+            text-align: right;
+        }
+    }
+
+    .reciever-msg {
+        .chat-block {
+            order: 2;
+        }
+        .member-profile {
+            justify-content: flex-start !important;
+
+            .member-image {
+                background: #c6f1f5 !important;
+                color: #02a5bc !important;
+            }
+        }
+        .chat-msg {
+            p {
+                &::after {
+                    left: -20px; border-color: transparent colors(_whitesmoke) transparent transparent;
+                }
+            }
+        }
+    }
+
+    .single-chat {
+        .member-profile {
+            align-self: baseline;
+            justify-content: end;
+            margin: 0 10px !important;
+             a.member-image {
+                text-decoration: none;
+                font-size: 16px; 
+                place-items: center; 
+                background:#ffe7e7; 
+                color: #e95958;
+                height: 32px; 
+                width: 32px; 
+                border-radius: 50%;
+             }
         }
     }
 }

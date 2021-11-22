@@ -1,4 +1,4 @@
-$('#moreOpt').click(function(e) {
+$('.moreOpt').click(function(e) {
     const optContent = $('.moreOpt-content');
     $(this).find('span').text(!optContent.hasClass('d-none') ? 'More options' : 'Fewer options');
     $(this).find('i').toggleClass('rotate-180');

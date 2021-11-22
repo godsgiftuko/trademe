@@ -746,9 +746,10 @@ section h1.header-section-title {
     
     .o-box-info__actions {
         padding: 0 16px 16px;
-        button {
+        button, .nav-link {
             background-color: transparent !important;
             color: colors(primary2);
+            font-size: 16px;
             padding: 0;
         }
     }
