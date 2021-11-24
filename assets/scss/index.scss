@@ -27,6 +27,8 @@
 @import 'auth_form';
 @import 'lastest_deals';
 @import 'product';
+@import 'jobs';
+@import 'positons';
 
 @font-face {
     font-display: swap;
@@ -623,6 +625,12 @@ button {
     &:hover {
         color: colors(primary);
         background-color: colors(_white) !important;
+    }
+}
+.coofee-btn {
+    background-color: colors(_yellow);
+    &:hover {
+        background-color: colors(_yellow3) !important;
     }
 }
 .pressible-btn {

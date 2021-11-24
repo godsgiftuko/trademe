@@ -59,6 +59,7 @@ $app_colors: (
 }
 ._green {
     color: colors(_green) !important;
+    fill: colors(_green) !important;
 }
 
 ._f_green {
@@ -67,6 +68,11 @@ $app_colors: (
 
 ._red {
     color: colors(_red) !important;
+}
+
+._orange {
+    color: colors(_orange) !important;
+    fill: colors(_orange) !important;
 }
 
 ._white {
@@ -88,6 +94,12 @@ $app_colors: (
 }
 ._gray {
     color: colors(_gray) !important;
+    fill: colors(_gray) !important;
+}
+
+._grey {
+    color: colors(link) !important;
+    fill: colors(link) !important;
 }
 
 ._blue {
@@ -136,6 +148,9 @@ $app_colors: (
 }
 ._white_BG {
     background-color: colors(_white) !important;
+}
+._yellow_BG {
+    background-color: colors(_yellow) !important;
 }
 
 .transparent {
@@ -213,4 +228,11 @@ $app_colors: (
 // Border radius
 .rad-3 {
     border-radius: 3px !important;
+}
+
+.disabled {
+    cursor: not-allowed;
+    opacity: 0.4;
+    // * {
+    // }
 }

@@ -32,6 +32,8 @@
                 flex-grow: 1;
                 box-shadow: -1px 0 colors(_grey2);
                 cursor: pointer;
+                box-shadow: -1px 1px #d7d5d2;
+
     
 
                 a.nav-link {
@@ -46,7 +48,7 @@
                     display: flex;
                     justify-content: space-evenly;
                     width: 100%;
-                    box-shadow: -1px 1px #d7d5d2;
+                    height: 100%;
                     svg {
                         padding: 0px;
                         fill: colors(primary);
@@ -218,7 +220,8 @@
                     }
                     
                     .form-select:disabled {
-                        background-color: #e9ecef3b;
+                        opacity: 0.4;
+                        cursor: not-allowed;
                     }
                     .form-select-year {
                         display: flex;
@@ -473,5 +476,34 @@
                 }
             }
         }
+    }
+}
+
+.property-pg {
+    .hero_bottom_nav {
+        .row div {
+            @include mobile-max(425px) {
+                margin-bottom: 30px;
+                .search_box {
+                    margin: 0;
+                }
+                &:first-child {
+                    flex-direction: column;
+                    .search_box_form {  
+                        .form-label {
+                            
+                        }
+                    }
+                } 
+                &:nth-child(2), &:nth-child(3) {
+                    .search_box_form { 
+                        .form-label {
+                            display: none;
+                        }
+                    }
+                } 
+            }            
+        }
+        
     }
 }

@@ -4,16 +4,20 @@
     top: 0;
     border-color: transparent $auction_card_border_bg transparent transparent;
     border-style: solid;
-    z-index: 22;
+    z-index: 5;
     display: flex;
     align-content: center;
     border-width: 0 56px 56px 0;
     cursor: pointer;
 
-    .fa {
+    .fa , svg{
         color: #943900;
+        fill: #943900;
         position: absolute;
-        transform: translate(250%, 100%);
+        // transform: translate(250%, 100%);
+    }
+    svg {
+        transform: translate(140%, 10px);
     }
 
     &:hover {

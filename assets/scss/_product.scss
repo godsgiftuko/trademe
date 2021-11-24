@@ -108,6 +108,7 @@
                     }
                 }
             }
+
             .slick-slide.slick-current{
                 display: block;	
                 opacity: 1;
@@ -143,6 +144,12 @@
                     width: 380px !important;
                 }
             }
+        }
+    }
+
+    .marketplace-listing-lg {
+        @include mobile-max(425px) {
+            display: none;
         }
     }
 
@@ -267,5 +274,11 @@
                 border-radius: 50%;
              }
         }
+    }
+}
+
+.breadcumb-div {
+    @include mobile-min(769px) {
+        display: none !important;
     }
 }

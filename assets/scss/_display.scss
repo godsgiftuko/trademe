@@ -25,10 +25,40 @@
     .d-mb-none {
         display: none !important;
     }
+
+    .flex-md-col {
+        flex-direction: column !important;
+    }
+
+    .flex-md-row {
+        flex-direction: row !important;
+    }
 }
 
 @include mobile-max(425px) {
     .d-sb-none {
         display: none !important;
+    }
+
+    .flex-sd-col {
+        flex-direction: column !important;
+    }
+
+    .flex-sd-row {
+        flex-direction: row !important;
+    }
+}
+
+@include mobile-max(375px) {
+    .d-xb-none {
+        display: none !important;
+    }
+
+    .flex-xd-col {
+        flex-direction: column !important;
+    }
+
+    .flex-xd-row {
+        flex-direction: row !important;
     }
 }
