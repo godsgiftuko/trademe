@@ -633,6 +633,12 @@ button {
         background-color: colors(_yellow3) !important;
     }
 }
+.grey-btn {
+    background-color: colors(_lite_grey_BG);
+    &:hover {
+        background-color: #f5f5f5 !important;
+    }
+}
 .pressible-btn {
     background-color: colors(primary2);
     border: none;

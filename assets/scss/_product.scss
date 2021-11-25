@@ -147,6 +147,16 @@
         }
     }
 
+    #member-summary-single-p {
+        .bottom-summary {
+            div {
+                @include mobile-max(768px) {
+                    width: 100% !important;
+                }
+            }
+        }
+    }
+
     .marketplace-listing-lg {
         @include mobile-max(425px) {
             display: none;
@@ -279,6 +289,16 @@
 
 .breadcumb-div {
     @include mobile-min(769px) {
-        display: none !important;
+        display: none;
+    }
+}
+
+#sellers-actions-btn {
+    @include mobile-max(768px) {
+        flex-direction: column !important;
+        button {
+            margin: 5px 0 !important;
+            width: 100% !important;
+        }
     }
 }
