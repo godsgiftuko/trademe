@@ -208,7 +208,7 @@
                         </li>
                     </ol>
                 </nav>
-                <nav>
+                <nav class="d-mt-none">
                     <button type="button" class="p-0 transparent _blue2">
                         <svg width="20" height="20" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
                             preserveAspectRatio="xMinYMid meet" focusable="false" role="img"
@@ -1242,7 +1242,7 @@
         (() => {
             const header = $('.jb-listing__listing-sticky-header')[0];
             const jb_listing = $('.tm-jobs-listing-body__item-content')[0];
-            const main = $('.welcome-banner')[0];
+            const main = $('footer')[0];
             const sticky = header.offsetTop;
             const hideAt = jb_listing.offsetTop;
             const hideStickyFooterAt = main.offsetTop;
@@ -1250,7 +1250,7 @@
             const classes = ['fixed', 'd-none'];
             const initSticky = (element) => {
                 $(element).css('width', '100%');
-                window.pageYOffset > hideStickyFooterAt ? $('#sticky_action').slideUp() : $('#sticky_action').slideDown();
+                window.pageYOffset > (hideStickyFooterAt - 400) ? $('#sticky_action').slideUp() : $('#sticky_action').slideDown();
 
                 if (window.pageYOffset > sticky && window.innerWidth > 768) {
                     window.pageYOffset > sticky ? $(element).addClass(classes[0]) : $(element).removeClass(classes[0]);

@@ -21,6 +21,19 @@
 
 
 // DISPLAY
+@include mobile-min(768px) {
+    .d-mt-none {
+        display: none !important;
+    }
+
+    .flex-mt-col {
+        flex-direction: column !important;
+    }
+
+    .flex-mt-row {
+        flex-direction: row !important;
+    }
+}
 @include mobile-max(768px) {
     .d-mb-none {
         display: none !important;

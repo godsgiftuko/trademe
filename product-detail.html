@@ -288,31 +288,12 @@
                         <div class="product-viewport">
                             <div class="product-viewer">
                                 <div class="single-slider">
-                                    <div>
-                                        <img class="" src="https://trademe.tmcdn.co.nz/photoserver/full/1642869739.jpg"
-                                            alt="">
+                                    <div
+                                        style="background-image: url(https://trademe.tmcdn.co.nz/photoserver/full/1642869739.jpg); background-repeat: no-repeat; background-position: center; background-size: contain;">
                                     </div>
-                                    <div>
-                                        <img class="" src="https://trademe.tmcdn.co.nz/photoserver/full/1642869740.jpg"
-                                            alt="">
+                                    <div
+                                        style="background-image: url(https://trademe.tmcdn.co.nz/photoserver/full/1649224877.jpg); background-repeat: no-repeat; background-position: center; background-size: contain;">
                                     </div>
-                                    <div>
-                                        <img class="" src="https://trademe.tmcdn.co.nz/photoserver/full/1642869741.jpg"
-                                            alt="">
-                                    </div>
-                                    <div>
-                                        <img class="" src="https://trademe.tmcdn.co.nz/photoserver/full/1642869743.jpg"
-                                            alt="">
-                                    </div>
-                                    <div>
-                                        <img class="" src="https://trademe.tmcdn.co.nz/photoserver/full/1642869745.jpg"
-                                            alt="">
-                                    </div>
-                                    <div>
-                                        <img class="" src="https://trademe.tmcdn.co.nz/photoserver/full/1642869747.jpg"
-                                            alt="">
-                                    </div>
-
                                 </div>
 
                             </div>
@@ -1172,7 +1153,7 @@
                 </a>
                 <div class="product-cardlist">
                     <div class="product-card d-inline-block">
-                        <a href="" class="nav-link">
+                        <a href="./product-detail.html" class="nav-link">
                             <div class="product-card-header">
                                 <div class="product-card-discount">
                                     <!-- <span class="product-card-shipping-class"
@@ -1228,7 +1209,7 @@
                         </a>
                     </div>
                     <div class="product-card d-inline-block">
-                        <a href="" class="nav-link">
+                        <a href="./product-detail.html" class="nav-link">
                             <div class="product-card-header">
                                 <div class="product-card-discount">
                                     <!-- <span class="product-card-shipping-class"
@@ -1282,7 +1263,7 @@
                     </div>
 
                     <div class="product-card d-inline-block">
-                        <a href="" class="nav-link">
+                        <a href="./product-detail.html" class="nav-link">
                             <div class="product-card-header">
                                 <div class="product-card-discount">
                                     <!-- <span class="product-card-discount-class"
@@ -1335,7 +1316,7 @@
                         </a>
                     </div>
                     <div class="product-card d-inline-block">
-                        <a href="" class="nav-link">
+                        <a href="./product-detail.html" class="nav-link">
                             <div class="product-card-header">
                                 <div class="product-card-discount">
                                     <!-- <span class="product-card-discount-class"
@@ -1682,7 +1663,7 @@
 
                 if (window.pageYOffset > sticky && window.innerWidth > 768) {
                     window.pageYOffset > sticky ? $(element).addClass(classes[0]) : $(element).removeClass(classes[0]);
-                    window.pageYOffset > hideAt ? $(element).addClass(classes[1]) : $(element).removeClass(classes[1]);
+                    window.pageYOffset > hideAt ? $(element).slideDown(150) : $(element).slideUp(150);
                     return
                 }
 

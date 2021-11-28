@@ -302,3 +302,9 @@
         }
     }
 }
+
+.round-tags {
+    @include mobile-min(768px) {
+        width: 60%;
+    }
+}

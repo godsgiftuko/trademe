@@ -241,6 +241,25 @@
   opacity: 0.4;
 }
 
+@media screen and (min-width: 768px) {
+  .d-mt-none {
+    display: none !important;
+  }
+
+  .flex-mt-col {
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+  }
+
+  .flex-mt-row {
+    -webkit-box-orient: horizontal !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: row !important;
+            flex-direction: row !important;
+  }
+}
 @media screen and (max-width: 768px) {
   .d-mb-none {
     display: none !important;
@@ -5522,6 +5541,12 @@
   }
 }
 
+@media screen and (min-width: 768px) {
+  .round-tags {
+    width: 60%;
+  }
+}
+
 .single-job .single-job-container .tm-key-details__container {
   margin-top: 10px;
   padding: 24px;
@@ -6248,7 +6273,7 @@ button:active {
 }
 
 .grey-btn:hover {
-  background-color: #f5f5f5 !important;
+  background-color: #f0f0f0 !important;
 }
 
 .pressible-btn {
