@@ -1238,7 +1238,6 @@
     <script src="./assets/js/main.js"></script>
 
     <script>
-        // tm-jobs-listing-body__item-content
         (() => {
             const header = $('.jb-listing__listing-sticky-header')[0];
             const jb_listing = $('.tm-jobs-listing-body__item-content')[0];
@@ -1250,7 +1249,8 @@
             const classes = ['fixed', 'd-none'];
             const initSticky = (element) => {
                 $(element).css('width', '100%');
-                window.pageYOffset > (hideStickyFooterAt - 400) ? $('#sticky_action').slideUp() : $('#sticky_action').slideDown();
+
+                window.pageYOffset > (hideStickyFooterAt - 650) ? $('#sticky_action').slideUp() : $('#sticky_action').slideDown();
 
                 if (window.pageYOffset > sticky && window.innerWidth > 768) {
                     window.pageYOffset > sticky ? $(element).addClass(classes[0]) : $(element).removeClass(classes[0]);
