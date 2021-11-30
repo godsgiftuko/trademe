@@ -97,9 +97,9 @@ const popMenu = function ({ title }) {
 
 $('.browse-dropdown-btn button').click(function () {
     const ref = $(this).attr("data-ref");
-    const preRef = ref.split(' ').length
-        ? ref.replace(' ', '_')
-        : ref;
+    // const preRef = ref.split(' ').length
+    //     ? ref.replace(' ', '_')
+    //     : ref;
 
     const findDataname = (data) => (data.title == ref);
     const data = !dataList.length
