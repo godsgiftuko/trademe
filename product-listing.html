@@ -218,6 +218,58 @@
     </header>
 
     <main>
+        <div class="dropdown-modal">
+            <div class="dropdown-modal-container">
+                <div class="dropdown-modal-header">
+                    <div class="dropdown-modal-header-top_nav _lite_grey_BG px-3 py-2">
+                        <span class="dropdown-modal-header-title text-capitalize _black text-center" style="flex: 2;" default-title="refine"></span>
+                        <button type="button" class="transparent _blue f-16 p-0" id="close-dropdown-modal" clickable="true">
+                            <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"
+                                preserveAspectRatio="xMinYMid meet" focusable="false" role="img"
+                                aria-labelledby="tg-1bb2eccb-0670-4970-629e-85032d221c6f">
+                                <path
+                                    d="M3.29 12.71a1 1 0 0 0 1.41 0L8 9.41l3.29 3.29a1 1 0 0 0 1.41-1.41L9.41 8l3.29-3.29a1 1 0 0 0-1.41-1.41L8 6.59l-3.29-3.3a1.004 1.004 0 1 0-1.42 1.42L6.59 8l-3.3 3.29a1 1 0 0 0 0 1.42z">
+                                </path>
+                                <title id="tg-1bb2eccb-0670-4970-629e-85032d221c6f">Close dialog window</title>
+                            </svg>
+                            <span>close</span>
+                        </button>
+                    </div>
+                    <div class="dropdown-modal-header-bottom_nav align-items-center mt-3 mb-2 px-3">
+                        <div style="flex: 1;">
+                            <span class="_black">View</span>
+                        </div>
+                        <div class="view-mode d-flex" style="flex: 1;">
+                            <div class="single-view d-flex  _black active">
+                                <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMinYMid meet" focusable="false" role="img" aria-labelledby="tg-6f68ff59-011c-b823-70f9-5951958b3796"><path d="M2 19a3 3 0 0 0 3 3h14a3 3 0 0 0 3-3V5a3 3 0 0 0-3-3H5a3 3 0 0 0-3 3v14zM4 5a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V5zm6.5 8H17a1 1 0 0 0 0-2h-6.5a1 1 0 0 0 0 2zm0-4H17a1 1 0 0 0 0-2h-6.5a1 1 0 1 0 0 2zm0 8H17a1 1 0 0 0 0-2h-6.5a1 1 0 0 0 0 2zM7 9a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm0 4a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm0 4a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"></path><title id="tg-6f68ff59-011c-b823-70f9-5951958b3796">Switch to list view</title></svg>
+                                <span class="mx-1">List</span>
+                            </div>
+                            <div class="single-view d-flex  _black">
+                                <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMinYMid meet" focusable="false" role="img" aria-labelledby="tg-9a47620d-c1fe-efc3-2f53-d3b66bf325ae"><path d="M19 2H5a3 3 0 0 0-3 3v14a3 3 0 0 0 3 3h14a3 3 0 0 0 3-3V5a3 3 0 0 0-3-3zm1 17a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v14zM6 7v3c0 .556.448 1 1 1h3c.556 0 1-.448 1-1V7c0-.556-.448-1-1-1H7c-.556 0-1 .448-1 1zm7 0v3c0 .556.448 1 1 1h3c.556 0 1-.448 1-1V7c0-.556-.448-1-1-1h-3c-.556 0-1 .448-1 1zm-7 7v3c0 .556.448 1 1 1h3c.556 0 1-.448 1-1v-3c0-.556-.448-1-1-1H7c-.556 0-1 .448-1 1zm7 0v3c0 .556.448 1 1 1h3c.556 0 1-.448 1-1v-3c0-.556-.448-1-1-1h-3c-.556 0-1 .448-1 1z"></path><title id="tg-9a47620d-c1fe-efc3-2f53-d3b66bf325ae">Switch to card view</title></svg>
+                                <span class="mx-1">Gallery</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="dropdown-modal-body pb-3">
+                    <ul class="nav navbar transparent"></ul>
+
+                    <div class="other-actions px-3 mt-2">
+                        <a href="" class="nav-link _blue2 f-16">
+                            Search expired lisitings
+                            <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMinYMid meet" focusable="false" role="img" aria-labelledby="tg-28915f2a-eb77-3985-a43c-dc357b15f07e"><path d="M15.1 1h-5a.9.9 0 0 0 0 1.8h1.83L8.36 6.36a.905.905 0 1 0 1.28 1.28L13.3 4v2a.9.9 0 1 0 1.8 0V1z"></path><path d="M2.9 15h8.2a1.9 1.9 0 0 0 1.9-1.9v-2.51a.9.9 0 1 0-1.8 0v2.51a.1.1 0 0 1-.1.1H2.9a.1.1 0 0 1-.1-.1V4.9a.1.1 0 0 1 .1-.1h2.43a.9.9 0 0 0 0-1.8H2.9A1.9 1.9 0 0 0 1 4.9v8.2c0 1.05.85 1.9 1.9 1.9z"></path><title id="tg-28915f2a-eb77-3985-a43c-dc357b15f07e"></title></svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="dropdown-modal-footer p-3 m-0 w-100 h-20" style="position: absolute; bottom: 0; border-top: 1px solid lightgrey;">
+                    <button type="button" class="btn _blue_BG _white w-100 mb-2">View 1 result</button>
+                    <button type="button" class="btn _lite_grey_BG2 _blue2 w-100 mb-2 ">
+                        <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMinYMid meet" focusable="false" role="img" aria-labelledby="tg-4eedce4f-c8ac-5839-d88f-95ca7b6a1d98"><path d="M23 17a1 1 0 0 1-1 1h-3v3a1 1 0 0 1-2 0v-3h-3a1 1 0 0 1 0-2h3v-3a1 1 0 0 1 2 0v3h3a1 1 0 0 1 1 1zm-11 4.938c-1.473 0-10.982-4.845-10.982-12.792a6.058 6.058 0 0 1 1.568-4.413A5.924 5.924 0 0 1 6.8 2.993a6.356 6.356 0 0 1 5.207 3.08 6.358 6.358 0 0 1 5.193-3.08 5.926 5.926 0 0 1 4.207 1.741 6.06 6.06 0 0 1 1.568 4.412c0 1.074-.168 2.141-.5 3.163a1 1 0 1 1-1.9-.617 8.242 8.242 0 0 0 .406-2.546 4.1 4.1 0 0 0-1-3.012 3.913 3.913 0 0 0-2.786-1.141c-2.062 0-3.481 1.887-4.309 3.47A1 1 0 0 1 12 9a1 1 0 0 1-.883-.539C10.3 6.879 8.879 4.993 6.8 4.993a3.916 3.916 0 0 0-2.782 1.14 4.1 4.1 0 0 0-1 3.012c0 6.558 7.748 10.371 8.98 10.771.112-.037.307-.109.592-.237a1 1 0 0 1 .819 1.824 3.387 3.387 0 0 1-1.409.435z"></path><title id="tg-4eedce4f-c8ac-5839-d88f-95ca7b6a1d98">Save this search</title></svg>
+                        Save this seller
+                    </button>
+                </div>
+            </div>
+        </div>
         <div class="breadcumb-div d-block pb-0 d-sb-none">
             <div class="container-fluid d-flex flex-row align-items-center justify-content-between">
                 <nav aria-label="breadcrumb" style="order: 2;">
@@ -307,86 +359,418 @@
                     </div>
                     <!--* END SEARCH BOX -->
                 </div>
-                
-       
+
+
                 <div class="category_search_nav_dropdown_buttons" id="category_search_nav_dropdown_buttons">
-                     <!--*  MARKETPLACE STICKY BANNER -->
-        <div class="sticky-action-banner d-mb-none py-3" style=" border: none; box-shadow: none; position: relative; display: block !important;">
-            <div class="container-fluid p-0">
-                <div class="sticky-action-content">
-                    <div class="category_search_nav_dropdown_buttons d-flex d-flex-beween">
-                        <div class="dropdown browse-dropdown-btn m-1">
-                            <button class="btn-o dropdown-toggle _white" type="button" id="dropdownMenuButton"
-                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"
-                                    preserveAspectRatio="xMinYMid meet" focusable="false" role="img"
-                                    aria-labelledby="tg-05e8755f-f5cb-82b8-c100-5a830c2a73c3">
-                                    <path
-                                        d="M12.88 4h-1.09a2.5 2.5 0 0 0-4.58 0H3.13a1 1 0 1 0 0 2h4.08a2.5 2.5 0 0 0 4.58 0h1.09a1 1 0 0 0 0-2zm0 6H8.79a2.5 2.5 0 0 0-4.58 0H3.13a1 1 0 0 0 0 2h1.08a2.5 2.5 0 0 0 4.58 0h4.09a1 1 0 0 0 0-2z">
-                                    </path>
-                                    <title id="tg-05e8755f-f5cb-82b8-c100-5a830c2a73c3"></title>
-                                </svg>
-                                <span>refine</span>
-                            </button>
-                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                <a class="dropdown-item" href="#">Action</a>
-                                <a class="dropdown-item" href="#">Another action</a>
-                                <a class="dropdown-item" href="#">Something else here</a>
-                            </div>
-                        </div>
-                        <div class="dropdown browse-dropdown-btn m-1">
-                            <button class="
+                    <!--*  MARKETPLACE STICKY BANNER -->
+                    <div class="sticky-action-banner d-mb-none py-3" id="sticky-action-banner-listing"
+                        style=" border: none; box-shadow: none; position: relative; display: block !important;">
+                        <div class="container-fluid p-0">
+                            <div class="sticky-action-content">
+                                <div class="category_search_nav_dropdown_buttons d-flex d-flex-beween">
+                                    <div class="dropdown browse-dropdown-btn m-1">
+                                        <button class="btn-o dropdown-toggle _white" type="button"
+                                            id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+                                            aria-expanded="false" data-ref="refine">
+                                            <svg width="16" height="16" viewBox="0 0 16 16"
+                                                xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMinYMid meet"
+                                                focusable="false" role="img"
+                                                aria-labelledby="tg-05e8755f-f5cb-82b8-c100-5a830c2a73c3">
+                                                <path
+                                                    d="M12.88 4h-1.09a2.5 2.5 0 0 0-4.58 0H3.13a1 1 0 1 0 0 2h4.08a2.5 2.5 0 0 0 4.58 0h1.09a1 1 0 0 0 0-2zm0 6H8.79a2.5 2.5 0 0 0-4.58 0H3.13a1 1 0 0 0 0 2h1.08a2.5 2.5 0 0 0 4.58 0h4.09a1 1 0 0 0 0-2z">
+                                                </path>
+                                                <title id="tg-05e8755f-f5cb-82b8-c100-5a830c2a73c3"></title>
+                                            </svg>
+                                            <span>refine</span>
+                                        </button>
+                                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                            <a class="dropdown-item" href="#">Action</a>
+                                            <a class="dropdown-item" href="#">Another action</a>
+                                            <a class="dropdown-item" href="#">Something else here</a>
+                                        </div>
+                                    </div>
+                                    <div class="dropdown browse-dropdown-btn m-1">
+                                        <button class="
                                     btn-o btn-o--no-bg
                                     dropdown-toggle
                                     fw-bold
                                 " type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
-                                aria-expanded="false">
-                                category
-                            </button>
-                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                <a class="dropdown-item" href="#">Action</a>
-                                <a class="dropdown-item" href="#">Another action</a>
-                                <a class="dropdown-item" href="#">Something else here</a>
-                            </div>
-                        </div>
-                        <div class="dropdown browse-dropdown-btn m-1">
-                            <button class="btn-o btn-o--no-bg dropdown-toggle" type="button" id="dropdownMenuButton"
-                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                all locations
-                            </button>
-                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                <a class="dropdown-item" href="#">Action</a>
-                                <a class="dropdown-item" href="#">Another action</a>
-                                <a class="dropdown-item" href="#">Something else here</a>
-                            </div>
-                        </div>
-                        <div class="dropdown browse-dropdown-btn m-1">
-                            <button class="btn-o btn-o--no-bg dropdown-toggle" type="button" id="dropdownMenuButton"
-                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                New &amp; used
-                            </button>
-                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                <a class="dropdown-item" href="#">Action</a>
-                                <a class="dropdown-item" href="#">Another action</a>
-                                <a class="dropdown-item" href="#">Something else here</a>
-                            </div>
-                        </div>
-                        <div class="dropdown browse-dropdown-btn m-1">
-                            <button class="btn-o btn-o--no-bg dropdown-toggle" type="button" id="dropdownMenuButton"
-                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Shipping: All
-                            </button>
-                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                <a class="dropdown-item" href="#">Action</a>
-                                <a class="dropdown-item" href="#">Another action</a>
-                                <a class="dropdown-item" href="#">Something else here</a>
+                                            aria-expanded="false" data-ref="category">
+                                            category
+                                        </button>
+                                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                            <div class="dropdown-inputs p-3">
+                                                <h1 class="mb-3 _black">Category</h1>
+                                                <div class="dropdown-nav">
+                                                    <ul class="nav navbar transparent px-4 py-2">
+                                                        <li class="nav-item my-3">
+                                                            <a href="" class="nav-link _black {
+                                                                text-decoration-none fw-bold">
+                                                                <svg width="16" height="16" viewBox="0 0 16 16"
+                                                                    xmlns="http://www.w3.org/2000/svg"
+                                                                    preserveAspectRatio="xMinYMid meet"
+                                                                    focusable="false" role="img"
+                                                                    aria-labelledby="tg-435e717f-3096-376b-2e35-81612bbe20f2">
+                                                                    <path
+                                                                        d="M12.79 3.79l-7.29 7.3-2.79-2.8a1.004 1.004 0 0 0-1.42 1.42l3.5 3.5a1 1 0 0 0 1.41 0l8-8a1 1 0 0 0-1.41-1.42z">
+                                                                    </path>
+                                                                    <title id="tg-435e717f-3096-376b-2e35-81612bbe20f2">
+                                                                    </title>
+                                                                </svg>
+                                                                <span>All categories</span>
+                                                            </a>
+                                                        </li>
+                                                        <li class="nav-item my-3">
+                                                            <a href="" class="nav-link _grey {
+                                                                text-decoration-none">
+                                                                <span>Trade Me Motors</span>
+                                                                <svg width="16" height="16" viewBox="0 0 16 16"
+                                                                    xmlns="http://www.w3.org/2000/svg"
+                                                                    preserveAspectRatio="xMinYMid meet"
+                                                                    focusable="false" role="img"
+                                                                    aria-labelledby="tg-6a6134cb-d9a8-46fe-e202-4923a1763a84">
+                                                                    <path
+                                                                        d="M5.29 14.71a1 1 0 0 0 1.41 0l6-6a1 1 0 0 0 0-1.41l-6-6a1 1 0 0 0-1.41 1.41L10.59 8l-5.3 5.29a1 1 0 0 0 0 1.42z">
+                                                                    </path>
+                                                                    <title id="tg-6a6134cb-d9a8-46fe-e202-4923a1763a84">
+                                                                    </title>
+                                                                </svg>
+                                                            </a>
+                                                        </li>
+                                                        <li class="nav-item my-3">
+                                                            <a href="" class="nav-link _green {
+                                                                text-decoration-none">
+                                                                <span>Trade Me Property</span>
+                                                                <svg width="16" height="16" viewBox="0 0 16 16"
+                                                                    xmlns="http://www.w3.org/2000/svg"
+                                                                    preserveAspectRatio="xMinYMid meet"
+                                                                    focusable="false" role="img"
+                                                                    aria-labelledby="tg-6a6134cb-d9a8-46fe-e202-4923a1763a84">
+                                                                    <path
+                                                                        d="M5.29 14.71a1 1 0 0 0 1.41 0l6-6a1 1 0 0 0 0-1.41l-6-6a1 1 0 0 0-1.41 1.41L10.59 8l-5.3 5.29a1 1 0 0 0 0 1.42z">
+                                                                    </path>
+                                                                    <title id="tg-6a6134cb-d9a8-46fe-e202-4923a1763a84">
+                                                                    </title>
+                                                                </svg>
+                                                            </a>
+                                                        </li>
+                                                        <li class="nav-item my-3">
+                                                            <a href="" class="nav-link _red {
+                                                                text-decoration-none">
+                                                                <span>Trade Me Jobs</span>
+                                                                <svg width="16" height="16" viewBox="0 0 16 16"
+                                                                    xmlns="http://www.w3.org/2000/svg"
+                                                                    preserveAspectRatio="xMinYMid meet"
+                                                                    focusable="false" role="img"
+                                                                    aria-labelledby="tg-6a6134cb-d9a8-46fe-e202-4923a1763a84">
+                                                                    <path
+                                                                        d="M5.29 14.71a1 1 0 0 0 1.41 0l6-6a1 1 0 0 0 0-1.41l-6-6a1 1 0 0 0-1.41 1.41L10.59 8l-5.3 5.29a1 1 0 0 0 0 1.42z">
+                                                                    </path>
+                                                                    <title id="tg-6a6134cb-d9a8-46fe-e202-4923a1763a84">
+                                                                    </title>
+                                                                </svg>
+                                                            </a>
+                                                        </li>
+                                                        <li class="nav-item my-3">
+                                                            <a href="" class="nav-link _blue2 {
+                                                                text-decoration-none">
+                                                                <span>Antiques & collectables</span>
+                                                                <svg width="16" height="16" viewBox="0 0 16 16"
+                                                                    xmlns="http://www.w3.org/2000/svg"
+                                                                    preserveAspectRatio="xMinYMid meet"
+                                                                    focusable="false" role="img"
+                                                                    aria-labelledby="tg-6a6134cb-d9a8-46fe-e202-4923a1763a84">
+                                                                    <path
+                                                                        d="M5.29 14.71a1 1 0 0 0 1.41 0l6-6a1 1 0 0 0 0-1.41l-6-6a1 1 0 0 0-1.41 1.41L10.59 8l-5.3 5.29a1 1 0 0 0 0 1.42z">
+                                                                    </path>
+                                                                    <title id="tg-6a6134cb-d9a8-46fe-e202-4923a1763a84">
+                                                                    </title>
+                                                                </svg>
+                                                            </a>
+                                                        </li>
+                                                        <li class="nav-item my-3">
+                                                            <a href="" class="nav-link _blue2 {
+                                                                text-decoration-none">
+                                                                <span>Art</span>
+                                                                <svg width="16" height="16" viewBox="0 0 16 16"
+                                                                    xmlns="http://www.w3.org/2000/svg"
+                                                                    preserveAspectRatio="xMinYMid meet"
+                                                                    focusable="false" role="img"
+                                                                    aria-labelledby="tg-6a6134cb-d9a8-46fe-e202-4923a1763a84">
+                                                                    <path
+                                                                        d="M5.29 14.71a1 1 0 0 0 1.41 0l6-6a1 1 0 0 0 0-1.41l-6-6a1 1 0 0 0-1.41 1.41L10.59 8l-5.3 5.29a1 1 0 0 0 0 1.42z">
+                                                                    </path>
+                                                                    <title id="tg-6a6134cb-d9a8-46fe-e202-4923a1763a84">
+                                                                    </title>
+                                                                </svg>
+                                                            </a>
+                                                        </li>
+                                                        <li class="nav-item my-3">
+                                                            <a href="" class="nav-link _blue2 {
+                                                                text-decoration-none">
+                                                                <span>Baby gear</span>
+                                                                <svg width="16" height="16" viewBox="0 0 16 16"
+                                                                    xmlns="http://www.w3.org/2000/svg"
+                                                                    preserveAspectRatio="xMinYMid meet"
+                                                                    focusable="false" role="img"
+                                                                    aria-labelledby="tg-6a6134cb-d9a8-46fe-e202-4923a1763a84">
+                                                                    <path
+                                                                        d="M5.29 14.71a1 1 0 0 0 1.41 0l6-6a1 1 0 0 0 0-1.41l-6-6a1 1 0 0 0-1.41 1.41L10.59 8l-5.3 5.29a1 1 0 0 0 0 1.42z">
+                                                                    </path>
+                                                                    <title id="tg-6a6134cb-d9a8-46fe-e202-4923a1763a84">
+                                                                    </title>
+                                                                </svg>
+                                                            </a>
+                                                        </li>
+                                                        <li class="nav-item my-3">
+                                                            <a href="" class="nav-link _blue2 {
+                                                                text-decoration-none">
+                                                                <span>Books</span>
+                                                                <svg width="16" height="16" viewBox="0 0 16 16"
+                                                                    xmlns="http://www.w3.org/2000/svg"
+                                                                    preserveAspectRatio="xMinYMid meet"
+                                                                    focusable="false" role="img"
+                                                                    aria-labelledby="tg-6a6134cb-d9a8-46fe-e202-4923a1763a84">
+                                                                    <path
+                                                                        d="M5.29 14.71a1 1 0 0 0 1.41 0l6-6a1 1 0 0 0 0-1.41l-6-6a1 1 0 0 0-1.41 1.41L10.59 8l-5.3 5.29a1 1 0 0 0 0 1.42z">
+                                                                    </path>
+                                                                    <title id="tg-6a6134cb-d9a8-46fe-e202-4923a1763a84">
+                                                                    </title>
+                                                                </svg>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="dropdown-footer p-3" style="border-top: 1px solid lightgrey;">
+                                                <button type="button" class="btn _blue_BG _white w-100">View 4
+                                                    results</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="dropdown browse-dropdown-btn m-1">
+                                        <button class="btn btn-o btn-o--no-bg dropdown-toggle" type="button"
+                                            id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+                                            aria-expanded="false" data-ref="locations">
+                                            all locations
+                                        </button>
+                                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                            <div class="dropdown-inputs p-3">
+                                                <h1 class="mb-4 _black">Location</h1>
+                                                <form>
+                                                    <div class="form-group mb-3">
+                                                        <label class="mb-2 fw-normal"
+                                                            for="exampleFormControlSelect1">Region</label>
+                                                        <select class="form-control" id="exampleFormControlSelect1">
+                                                            <option _ngcontent-frend-c477="" value="0: Object"
+                                                                class="ng-star-inserted"> All locations </option>
+                                                            <option _ngcontent-frend-c477="" value="1: Object"
+                                                                class="ng-star-inserted"> New Zealand </option>
+                                                            <option _ngcontent-frend-c477="" value="2: Object"
+                                                                class="ng-star-inserted"> North Island </option>
+                                                            <option _ngcontent-frend-c477="" value="3: Object"
+                                                                class="ng-star-inserted"> Northland </option>
+                                                            <option _ngcontent-frend-c477="" value="4: Object"
+                                                                class="ng-star-inserted"> Auckland </option>
+                                                            <option _ngcontent-frend-c477="" value="5: Object"
+                                                                class="ng-star-inserted"> Waikato </option>
+                                                            <option _ngcontent-frend-c477="" value="6: Object"
+                                                                class="ng-star-inserted"> Bay of Plenty </option>
+                                                            <option _ngcontent-frend-c477="" value="7: Object"
+                                                                class="ng-star-inserted"> Gisborne </option>
+                                                            <option _ngcontent-frend-c477="" value="8: Object"
+                                                                class="ng-star-inserted"> Hawke's Bay </option>
+                                                            <option _ngcontent-frend-c477="" value="9: Object"
+                                                                class="ng-star-inserted"> Taranaki </option>
+                                                            <option _ngcontent-frend-c477="" value="10: Object"
+                                                                class="ng-star-inserted"> Whanganui </option>
+                                                            <option _ngcontent-frend-c477="" value="11: Object"
+                                                                class="ng-star-inserted"> Manawatu </option>
+                                                            <option _ngcontent-frend-c477="" value="12: Object"
+                                                                class="ng-star-inserted"> Wairarapa </option>
+                                                            <option _ngcontent-frend-c477="" value="13: Object"
+                                                                class="ng-star-inserted"> Wellington </option>
+                                                            <option _ngcontent-frend-c477="" value="14: Object"
+                                                                class="ng-star-inserted"> South Island </option>
+                                                            <option _ngcontent-frend-c477="" value="15: Object"
+                                                                class="ng-star-inserted"> Nelson Bays </option>
+                                                            <option _ngcontent-frend-c477="" value="16: Object"
+                                                                class="ng-star-inserted"> Marlborough </option>
+                                                            <option _ngcontent-frend-c477="" value="17: Object"
+                                                                class="ng-star-inserted"> West Coast </option>
+                                                            <option _ngcontent-frend-c477="" value="18: Object"
+                                                                class="ng-star-inserted"> Canterbury </option>
+                                                            <option _ngcontent-frend-c477="" value="19: Object"
+                                                                class="ng-star-inserted"> Timaru - Oamaru </option>
+                                                            <option _ngcontent-frend-c477="" value="20: Object"
+                                                                class="ng-star-inserted"> Otago </option>
+                                                            <option _ngcontent-frend-c477="" value="21: Object"
+                                                                class="ng-star-inserted"> Southland </option>
+                                                            <option _ngcontent-frend-c477="" value="22: Object"
+                                                                class="ng-star-inserted"> International </option>
+                                                            <!---->
+                                                        </select>
+                                                    </div>
+                                                    <div class="form-group mb-3">
+                                                        <label class="mb-2 fw-normal"
+                                                            for="exampleFormControlSelect1">District</label>
+                                                        <select class="form-control disabled"
+                                                            id="exampleFormControlSelect1" disabled>
+                                                            <option _ngcontent-frend-c477="" value="0: Object"
+                                                                class="ng-star-inserted"> All locations </option>
+                                                            <option _ngcontent-frend-c477="" value="1: Object"
+                                                                class="ng-star-inserted"> New Zealand </option>
+                                                            <option _ngcontent-frend-c477="" value="2: Object"
+                                                                class="ng-star-inserted"> North Island </option>
+                                                            <option _ngcontent-frend-c477="" value="3: Object"
+                                                                class="ng-star-inserted"> Northland </option>
+                                                            <option _ngcontent-frend-c477="" value="4: Object"
+                                                                class="ng-star-inserted"> Auckland </option>
+                                                            <option _ngcontent-frend-c477="" value="5: Object"
+                                                                class="ng-star-inserted"> Waikato </option>
+                                                            <option _ngcontent-frend-c477="" value="6: Object"
+                                                                class="ng-star-inserted"> Bay of Plenty </option>
+                                                            <option _ngcontent-frend-c477="" value="7: Object"
+                                                                class="ng-star-inserted"> Gisborne </option>
+                                                            <option _ngcontent-frend-c477="" value="8: Object"
+                                                                class="ng-star-inserted"> Hawke's Bay </option>
+                                                            <option _ngcontent-frend-c477="" value="9: Object"
+                                                                class="ng-star-inserted"> Taranaki </option>
+                                                            <option _ngcontent-frend-c477="" value="10: Object"
+                                                                class="ng-star-inserted"> Whanganui </option>
+                                                            <option _ngcontent-frend-c477="" value="11: Object"
+                                                                class="ng-star-inserted"> Manawatu </option>
+                                                            <option _ngcontent-frend-c477="" value="12: Object"
+                                                                class="ng-star-inserted"> Wairarapa </option>
+                                                            <option _ngcontent-frend-c477="" value="13: Object"
+                                                                class="ng-star-inserted"> Wellington </option>
+                                                            <option _ngcontent-frend-c477="" value="14: Object"
+                                                                class="ng-star-inserted"> South Island </option>
+                                                            <option _ngcontent-frend-c477="" value="15: Object"
+                                                                class="ng-star-inserted"> Nelson Bays </option>
+                                                            <option _ngcontent-frend-c477="" value="16: Object"
+                                                                class="ng-star-inserted"> Marlborough </option>
+                                                            <option _ngcontent-frend-c477="" value="17: Object"
+                                                                class="ng-star-inserted"> West Coast </option>
+                                                            <option _ngcontent-frend-c477="" value="18: Object"
+                                                                class="ng-star-inserted"> Canterbury </option>
+                                                            <option _ngcontent-frend-c477="" value="19: Object"
+                                                                class="ng-star-inserted"> Timaru - Oamaru </option>
+                                                            <option _ngcontent-frend-c477="" value="20: Object"
+                                                                class="ng-star-inserted"> Otago </option>
+                                                            <option _ngcontent-frend-c477="" value="21: Object"
+                                                                class="ng-star-inserted"> Southland </option>
+                                                            <option _ngcontent-frend-c477="" value="22: Object"
+                                                                class="ng-star-inserted"> International </option>
+                                                            <!---->
+                                                        </select>
+                                                    </div>
+                                                    <div class="form-group mb-3">
+                                                        <button type="button"
+                                                            class="transparent rem_psuedo disabled">Clear</button>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                            <div class="dropdown-footer p-3" style="border-top: 1px solid lightgrey;">
+                                                <button type="button" class="btn _blue_BG _white w-100">View 4
+                                                    results</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="dropdown browse-dropdown-btn m-1">
+                                        <button class="btn btn-o btn-o--no-bg dropdown-toggle" type="button"
+                                            id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+                                            aria-expanded="false" data-ref="condition">
+                                            New & used
+                                        </button>
+                                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                            <div class="dropdown-inputs p-3">
+                                                <h1 class="mb-4 _black">New & Used</h1>
+                                                <form action="">
+                                                    <div class="form-check d-flex align-items-center mb-3">
+                                                        <input class="form-check-input my-auto" type="radio"
+                                                            name="flexRadioDefault" id="all"
+                                                            style="height: 24px; width: 24px;" checked>
+                                                        <label class="form-check-label mx-3 py-1 fw-normal" for="all">
+                                                            All
+                                                        </label>
+                                                    </div>
+                                                    <div class="form-check d-flex align-items-center mb-3">
+                                                        <input class="form-check-input my-auto" type="radio"
+                                                            name="flexRadioDefault" id="new-only"
+                                                            style="height: 24px; width: 24px;">
+                                                        <label class="form-check-label mx-3 py-1 fw-normal"
+                                                            for="new-only">
+                                                            New only
+                                                        </label>
+                                                    </div>
+                                                    <div class="form-check d-flex align-items-center mb-3">
+                                                        <input class="form-check-input my-auto" type="radio"
+                                                            name="flexRadioDefault" id="used-only"
+                                                            style="height: 24px; width: 24px;">
+                                                        <label class="form-check-label mx-3 py-1 fw-normal"
+                                                            for="used-only">
+                                                            Used only
+                                                        </label>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                            <div class="dropdown-footer p-3" style="border-top: 1px solid lightgrey;">
+                                                <button type="button" class="btn _blue_BG _white w-100">View 4
+                                                    results</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="dropdown browse-dropdown-btn m-1">
+                                        <button class="btn btn-o btn-o--no-bg dropdown-toggle" type="button"
+                                            id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+                                            aria-expanded="false" data-ref="shipping_method">
+                                            Shipping: All
+                                        </button>
+                                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                            <div class="dropdown-inputs p-3">
+                                                <h1 class="mb-4 _black">Shipping</h1>
+                                                <form action="">
+                                                    <div class="form-check d-flex align-items-center mb-3">
+                                                        <input class="form-check-input my-auto" type="radio"
+                                                            name="flexRadioDefault" id="shipping-all"
+                                                            style="height: 24px; width: 24px;" checked>
+                                                        <label class="form-check-label mx-3 py-1 fw-normal"
+                                                            for="shipping-all">
+                                                            All
+                                                        </label>
+                                                    </div>
+                                                    <div class="form-check d-flex align-items-center mb-3">
+                                                        <input class="form-check-input my-auto" type="radio"
+                                                            name="flexRadioDefault" id="free-shipping"
+                                                            style="height: 24px; width: 24px;">
+                                                        <label class="form-check-label mx-3 py-1 fw-normal"
+                                                            for="free-shipping">
+                                                            Free shipping
+                                                        </label>
+                                                    </div>
+                                                    <div class="form-check d-flex align-items-center mb-3">
+                                                        <input class="form-check-input my-auto" type="radio"
+                                                            name="flexRadioDefault" id="pickup-available"
+                                                            style="height: 24px; width: 24px;">
+                                                        <label class="form-check-label mx-3 py-1 fw-normal"
+                                                            for="pickup-available">
+                                                            Pickup available
+                                                        </label>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                            <div class="dropdown-footer p-3" style="border-top: 1px solid lightgrey;">
+                                                <button type="button" class="btn _blue_BG _white w-100">View 4
+                                                    results</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
-        </div>
-        <!--*  END MARKETPLACE STICKY BANNER -->
+                    <!--*  END MARKETPLACE STICKY BANNER -->
                 </div>
                 <div class="category_suggestions_container">
                     <ul class="navbar-nav" style="grid-template-columns: 1fr 1fr; width: 50%;">
@@ -642,6 +1026,7 @@
                 </div>
             </div>
         </section>
+        
     </main>
     <footer>
         <!--* WELCOME BANNER -->
@@ -902,6 +1287,7 @@
         <!--* END FOOTER -->
     </footer>
 
+    <script src="./assets/js/dropdown.js"></script>
     <script>
         $('.single-slider').slick({
             slidesToShow: 1,
@@ -932,12 +1318,12 @@
 
                 if (window.pageYOffset > sticky && window.innerWidth > 768) {
 
-                    window.pageYOffset > sticky 
-                        ? $(element).addClass(classes[0]) 
+                    window.pageYOffset > sticky
+                        ? $(element).addClass(classes[0])
                         : $(element).removeClass(classes[0]);
 
-                    window.pageYOffset > hideAt 
-                        ? $(element).addClass(classes[1]) 
+                    window.pageYOffset > hideAt
+                        ? $(element).addClass(classes[1])
                         : $(element).removeClass(classes[1]);
 
                     $(element)

@@ -1,3 +1,4 @@
+
 $('.moreOpt').click(function(e) {
     const optContent = $('.moreOpt-content');
     $(this).find('span').text(!optContent.hasClass('d-none') ? 'More options' : 'Fewer options');
@@ -19,3 +20,4 @@ $('#my_bottom_tab li').click(function(){
     // }
     // console.log(odometer);
 })
+
