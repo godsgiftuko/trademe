@@ -159,7 +159,7 @@
         <section class="auth-form-section">
             <div class="auth-form-area">
                 <div class="form-card">
-                    <div class="auth-form-progress-div">
+                    <div class="auth-form-progress-div d-flex align-items-center">
                         <div class="l-place"></div>
                         <div class="r-place">
                             <p class="_black2">step 1/2</p>
@@ -212,19 +212,381 @@
                             known to other members and can't be changed
                         </p>
 
-                        <div class="form-group">
-                            <label for="username">Country</label>
-                            <div class="auth-radio-btn">
-                                <input type="radio" class="d-inline-block" name="selectCountry" checked id="" />
-                                <span>New Zealand</span>
+                        <div class="form-group select_pseudo">
+                            <label class="pb-0" for="">Country</label>
+                            <div class="auth-radio-btn py-0">
+                                <input type="radio" class="d-inline-block" name="country_radio2" id="new_zealan" />
+                                <label class="pb-0" for="new_zealan">New Zealand</label>
                             </div>
                             <div class="auth-radio-btn py-0">
-                                <input type="radio" class="d-inline-block" name="selectCountry" checked id="" />
-                                <span>Australia</span>
+                                <input type="radio" class="d-inline-block" name="country_radio2" id="australia" />
+                                <label class="pb-0" for="australia">Australia</label>
                             </div>
+                            <small class="_red">This field is required</small>
                         </div>
                         <button type="submit" class="btn form-submit-btn btn-primary">
                             Next step
+                        </button>
+                    </form>
+                    <hr class="mt-4" />
+                    <p>
+                        Already have an account?
+                        <a href="./login.html" class="nav-link _blue2 d-inline-block">Log in</a>
+                    </p>
+                </div>
+                <div class="form-card d-none">
+                    <div class="auth-form-progress-div d-flex align-items-center mb-4">
+                        <div class="l-place">
+                            <span class="f-16 _blue2 d-flex align-items-center" id="toStep1">
+                                <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
+                                    preserveAspectRatio="xMinYMid meet" focusable="false" role="img"
+                                    aria-labelledby="tg-cf432652-2461-4e5e-c1d6-6363703ec9d3">
+                                    <path
+                                        d="M16.707 2.293a1 1 0 0 0-1.414 0l-9 9a1 1 0 0 0 0 1.414l9 9a1 1 0 0 0 1.414-1.414L8.414 12l8.293-8.293a1 1 0 0 0 0-1.414z">
+                                    </path>
+                                    <title id="tg-cf432652-2461-4e5e-c1d6-6363703ec9d3"></title>
+                                </svg>
+                                <span>Account details</span>
+                            </span>
+                        </div>
+                        <div class="r-place">
+                            <p class="_black2">step 2/2</p>
+                        </div>
+                    </div>
+                    <p class="mt-0 fw-bold" style="font-size: 18px">
+                        Tell us about yourself
+                    </p>
+                    <form>
+                        <div class="form-group">
+                            <label for="firstN">First Name</label>
+                            <input type="text" class="form-control" id="firstN" aria-describedby="firstNHelp" />
+                            <small class="_red">Please enter your first name</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="lastN">Last Name</label>
+                            <input type="text" class="form-control" id="lastN" />
+                            <small class="_red">Please enter your last name</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="">Date of Birth</label>
+                            <div class="d-flex justify-content-between DOB-div">
+                                <div>
+                                    <input type="text" class="form-control" id="DOB" placeholder="Day" />
+                                    <small clas">This field is required</small>
+                                </div>
+                                <div>
+                                    <select class="form-select mb-2" aria-label="Default select example">
+                                        <option selected></option>
+                                        <option value="0: 1"> January </option>
+                                        <option value="1: 2"> February </option>
+                                        <option value="2: 3"> March </option>
+                                        <option value="3: 4"> April </option>
+                                        <option value="4: 5"> May </option>
+                                        <option value="5: 6"> June </option>
+                                        <option value="6: 7"> July </option>
+                                        <option value="7: 8"> August </option>
+                                        <option value="8: 9"> September </option>
+                                        <option value="9: 10"> October </option>
+                                        <option value="10: 11"> November </option>
+                                        <option value="11: 12"> December </option>
+                                        <!---->
+                                    </select>
+                                    <small class="_red">This field is required</small>
+                                </div>
+                                <div>
+                                    <input type="text" class="form-control" id="DOB" placeholder="Year (YYYY)" />
+                                    <small class="_red">This field is required</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="">Phone number</label>
+                            <div class="d-flex justify-content-between DOB-div mb-4">
+                                <div>
+                                    <select class="form-select mb-2" aria-label="Default select example">
+                                        <option selected></option>
+                                        <option value="0: 1"> 03 </option>
+                                        <option value="1: 2"> 432 </option>
+                                        <option value="2: 3"> 07 </option>
+                                        <option value="3: 4"> 08 </option>
+                                        <!---->
+                                    </select>
+                                    <small class="_red">This field is required</small>
+                                </div>
+                                <div style="width: 65.66666666666666%;">
+                                    <input type="phone" class="form-control" id="phoneNumber" placeholder="1234567" />
+                                    <small class="_red">Please enter a phone number</small>
+                                </div>
+                            </div>
+                            <div class="f-16 _blue2">
+                                <span class="d-flex align-items-center">
+                                    <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"
+                                        preserveAspectRatio="xMinYMid meet" focusable="false" role="img"
+                                        aria-labelledby="tg-51df1cf2-1818-c666-b344-0bfa9a518084">
+                                        <path
+                                            d="M14 7H9V2a1 1 0 1 0-2 0v5H2a1 1 0 1 0 0 2h5v5a1 1 0 0 0 2 0V9h5a1 1 0 0 0 0-2z">
+                                        </path>
+                                        <title id="tg-51df1cf2-1818-c666-b344-0bfa9a518084"></title>
+                                    </svg>
+                                    <span class="mx-2">Add another phone number</span>
+                                </span>
+                                <span class="d-none">
+                                    <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"
+                                        preserveAspectRatio="xMinYMid meet" focusable="false" role="img"
+                                        aria-labelledby="tg-9c506149-658a-d0dd-c74c-52577b750269">
+                                        <path
+                                            d="M3.29 12.71a1 1 0 0 0 1.41 0L8 9.41l3.29 3.29a1 1 0 0 0 1.41-1.41L9.41 8l3.29-3.29a1 1 0 0 0-1.41-1.41L8 6.59l-3.29-3.3a1.004 1.004 0 1 0-1.42 1.42L6.59 8l-3.3 3.29a1 1 0 0 0 0 1.42z">
+                                        </path>
+                                        <title id="tg-9c506149-658a-d0dd-c74c-52577b750269"></title>
+                                    </svg>
+                                    <span class="mx-1">Remove phone number</span>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="form-group select_pseudo">
+                            <label class="pb-0" for="username">Gender</label>
+                            <div class="auth-radio-btn py-0">
+                                <input type="radio" class="d-inline-block" name="gender_radio" id="man" checked />
+                                <label class="fw-normal" for="man">Man</label>
+                            </div>
+                            <div class="auth-radio-btn py-0">
+                                <input type="radio" class="d-inline-block" name="gender_radio" id="woman" />
+                                <label class="fw-normal" for="woman">Woman</label>
+                            </div>
+                            <div class="auth-radio-btn py-0">
+                                <input type="radio" class="d-inline-block" name="gender_radio" id="gender_diverse" />
+                                <label class="fw-normal" for="gender_diverse">Gender diverse</label>
+                            </div>
+                            <small class="_red">This field is required</small>
+                        </div>
+                        <div class="form-group">
+                            <span class="d-block f-16">New Zealand</span>
+                            <label for="">Address</label>
+                            <div class="standalone-search d-flex align-items-center _gray mb-3">
+                                <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
+                                    preserveAspectRatio="xMinYMid meet" focusable="false" role="img"
+                                    aria-labelledby="tg-39474a72-4233-4576-6c11-8d935ca191af">
+                                    <path
+                                        d="M9.5 18a8.461 8.461 0 0 0 4.057-1.029l5.736 5.736a2.623 2.623 0 0 0 1.867.828 2.38 2.38 0 0 0 1.675-.688 2.46 2.46 0 0 0-.128-3.554l-5.736-5.736A8.5 8.5 0 1 0 9.5 18zm11.793 2.707c.135.117.221.28.242.458a.38.38 0 0 1-.114.267c-.183.182-.443.132-.714-.14l-5.5-5.5c.205-.186.4-.381.586-.586l5.5 5.501zM9.5 3A6.5 6.5 0 1 1 3 9.5 6.507 6.507 0 0 1 9.5 3z">
+                                    </path>
+                                    <title id="tg-39474a72-4233-4576-6c11-8d935ca191af"></title>
+                                </svg>
+                                <input type="text" class="o-input__body f-16" name="" id=""
+                                    placeholder="Search typing your address" style="border: none !important;">
+                                <button class="btn d-none">
+                                    <i class="fa fa-search"></i>
+                                </button>
+                                <button class="btn rem_psuedo _gray py-0 clear-input" type="button"
+                                    style="background-color: transparent !important;">
+                                </button>
+                            </div>
+                            <small class="_red">Please enter an address</small>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="">Closet town</label>
+                            <select class="form-select mb-2" aria-label="Default select example">
+                                <option hidden="" value="null">Select town</option>
+                                <option value="4"> Northland - Dargaville </option>
+                                <option value="2"> Northland - Kaikohe </option>
+                                <option value="1"> Northland - Kaitaia </option>
+                                <option value="3"> Northland - Kawakawa </option>
+                                <option value="120"> Northland - Kerikeri </option>
+                                <option value="173"> Northland - Mangawhai </option>
+                                <option value="6"> Northland - Maungaturoto </option>
+                                <option value="121"> Northland - Paihia </option>
+                                <option value="5"> Northland - Whangarei </option>
+                                <option value="160"> Auckland - Albany </option>
+                                <option value="13"> Auckland - Auckland City </option>
+                                <option value="161"> Auckland - Botany Downs </option>
+                                <option value="162"> Auckland - Clevedon </option>
+                                <option value="18"> Auckland - Franklin </option>
+                                <option value="8"> Auckland - Great Barrier Island </option>
+                                <option value="9"> Auckland - Helensville </option>
+                                <option value="163"> Auckland - Henderson </option>
+                                <option value="10"> Auckland - Hibiscus Coast </option>
+                                <option value="164"> Auckland - Kumeu </option>
+                                <option value="165"> Auckland - Mangere </option>
+                                <option value="15"> Auckland - Manukau </option>
+                                <option value="166"> Auckland - New Lynn </option>
+                                <option value="12"> Auckland - North Shore </option>
+                                <option value="167"> Auckland - Onehunga </option>
+                                <option value="17"> Auckland - Papakura </option>
+                                <option value="168"> Auckland - Pukekohe </option>
+                                <option value="169"> Auckland - Remuera </option>
+                                <option value="14"> Auckland - Waiheke Island </option>
+                                <option value="11"> Auckland - Waitakere </option>
+                                <option value="170"> Auckland - Waiuku </option>
+                                <option value="7"> Auckland - Warkworth </option>
+                                <option value="142"> Auckland - Wellsford </option>
+                                <option value="130"> Waikato - Cambridge </option>
+                                <option value="19"> Waikato - Coromandel </option>
+                                <option value="25"> Waikato - Hamilton </option>
+                                <option value="23"> Waikato - Huntly </option>
+                                <option value="26"> Waikato - Matamata </option>
+                                <option value="24"> Waikato - Morrinsville </option>
+                                <option value="172"> Waikato - Ngaruawahia </option>
+                                <option value="176"> Waikato - Ngatea </option>
+                                <option value="28"> Waikato - Otorohanga </option>
+                                <option value="21"> Waikato - Paeroa </option>
+                                <option value="140"> Waikato - Raglan </option>
+                                <option value="31"> Waikato - Taumarunui </option>
+                                <option value="38"> Waikato - Taupo </option>
+                                <option value="27"> Waikato - Te Awamutu </option>
+                                <option value="30"> Waikato - Te Kuiti </option>
+                                <option value="20"> Waikato - Thames </option>
+                                <option value="29"> Waikato - Tokoroa/Putaruru </option>
+                                <option value="39"> Waikato - Turangi </option>
+                                <option value="22"> Waikato - Waihi </option>
+                                <option value="125"> Waikato - Whangamata </option>
+                                <option value="155"> Waikato - Whitianga </option>
+                                <option value="32"> Bay of Plenty - Katikati </option>
+                                <option value="174"> Bay of Plenty - Kawerau </option>
+                                <option value="139"> Bay of Plenty - Mt. Maunganui </option>
+                                <option value="36"> Bay of Plenty - Opotiki </option>
+                                <option value="171"> Bay of Plenty - Papamoa </option>
+                                <option value="37"> Bay of Plenty - Rotorua </option>
+                                <option value="33"> Bay of Plenty - Tauranga </option>
+                                <option value="34"> Bay of Plenty - Te Puke </option>
+                                <option value="141"> Bay of Plenty - Waihi Beach </option>
+                                <option value="35"> Bay of Plenty - Whakatane </option>
+                                <option value="40"> Gisborne - Gisborne </option>
+                                <option value="41"> Gisborne - Ruatoria </option>
+                                <option value="44"> Hawke's Bay - Hastings </option>
+                                <option value="43"> Hawke's Bay - Napier </option>
+                                <option value="132"> Hawke's Bay - Waipukurau </option>
+                                <option value="42"> Hawke's Bay - Wairoa </option>
+                                <option value="50"> Taranaki - Hawera </option>
+                                <option value="46"> Taranaki - Mokau </option>
+                                <option value="47"> Taranaki - New Plymouth </option>
+                                <option value="48"> Taranaki - Opunake </option>
+                                <option value="49"> Taranaki - Stratford </option>
+                                <option value="51"> Whanganui - Ohakune </option>
+                                <option value="54"> Whanganui - Taihape </option>
+                                <option value="52"> Whanganui - Waiouru </option>
+                                <option value="53"> Whanganui - Whanganui </option>
+                                <option value="56"> Manawatu - Bulls </option>
+                                <option value="45"> Manawatu - Dannevirke </option>
+                                <option value="138"> Manawatu - Feilding </option>
+                                <option value="58"> Manawatu - Levin </option>
+                                <option value="129"> Manawatu - Manawatu </option>
+                                <option value="55"> Manawatu - Marton </option>
+                                <option value="59"> Manawatu - Pahiatua </option>
+                                <option value="57"> Manawatu - Palmerston North </option>
+                                <option value="128"> Manawatu - Woodville </option>
+                                <option value="131"> Wairarapa - Carterton </option>
+                                <option value="61"> Wairarapa - Featherston </option>
+                                <option value="126"> Wairarapa - Greytown </option>
+                                <option value="62"> Wairarapa - Martinborough </option>
+                                <option value="60"> Wairarapa - Masterton </option>
+                                <option value="63"> Wellington - Kapiti </option>
+                                <option value="65"> Wellington - Lower Hutt City </option>
+                                <option value="64"> Wellington - Porirua </option>
+                                <option value="66"> Wellington - Upper Hutt City </option>
+                                <option value="67"> Wellington - Wellington City </option>
+                                <option value="70"> Nelson Bays - Golden Bay </option>
+                                <option value="71"> Nelson Bays - Motueka </option>
+                                <option value="73"> Nelson Bays - Murchison </option>
+                                <option value="72"> Nelson Bays - Nelson </option>
+                                <option value="75"> Marlborough - Blenheim </option>
+                                <option value="76"> Marlborough - Marlborough Sounds </option>
+                                <option value="74"> Marlborough - Picton </option>
+                                <option value="78"> West Coast - Greymouth </option>
+                                <option value="79"> West Coast - Hokitika </option>
+                                <option value="77"> West Coast - Westport </option>
+                                <option value="87"> Canterbury - Akaroa </option>
+                                <option value="83"> Canterbury - Amberley </option>
+                                <option value="88"> Canterbury - Ashburton </option>
+                                <option value="178"> Canterbury - Belfast </option>
+                                <option value="81"> Canterbury - Cheviot </option>
+                                <option value="86"> Canterbury - Christchurch City </option>
+                                <option value="85"> Canterbury - Darfield </option>
+                                <option value="90"> Canterbury - Fairlie </option>
+                                <option value="179"> Canterbury - Ferrymead </option>
+                                <option value="89"> Canterbury - Geraldine </option>
+                                <option value="180"> Canterbury - Halswell </option>
+                                <option value="82"> Canterbury - Hanmer Springs </option>
+                                <option value="143"> Canterbury - Kaiapoi </option>
+                                <option value="80"> Canterbury - Kaikoura </option>
+                                <option value="181"> Canterbury - Lyttelton </option>
+                                <option value="91"> Canterbury - Mt Cook </option>
+                                <option value="84"> Canterbury - Rangiora </option>
+                                <option value="177"> Canterbury - Rolleston </option>
+                                <option value="182"> Canterbury - Selwyn </option>
+                                <option value="95"> Timaru - Oamaru - Kurow </option>
+                                <option value="96"> Timaru - Oamaru - Oamaru </option>
+                                <option value="93"> Timaru - Oamaru - Timaru </option>
+                                <option value="92"> Timaru - Oamaru - Twizel </option>
+                                <option value="94"> Timaru - Oamaru - Waimate </option>
+                                <option value="100"> Otago - Alexandra </option>
+                                <option value="106"> Otago - Balclutha </option>
+                                <option value="98"> Otago - Cromwell </option>
+                                <option value="104"> Otago - Dunedin </option>
+                                <option value="105"> Otago - Lawrence </option>
+                                <option value="107"> Otago - Milton </option>
+                                <option value="102"> Otago - Palmerston </option>
+                                <option value="99"> Otago - Queenstown </option>
+                                <option value="101"> Otago - Ranfurly </option>
+                                <option value="103"> Otago - Roxburgh </option>
+                                <option value="175"> Otago - Tapanui </option>
+                                <option value="97"> Otago - Wanaka </option>
+                                <option value="127"> Southland - Bluff </option>
+                                <option value="115"> Southland - Edendale </option>
+                                <option value="111"> Southland - Gore </option>
+                                <option value="113"> Southland - Invercargill </option>
+                                <option value="110"> Southland - Lumsden </option>
+                                <option value="109"> Southland - Otautau </option>
+                                <option value="114"> Southland - Riverton </option>
+                                <option value="117"> Southland - Stewart Island </option>
+                                <option value="108"> Southland - Te Anau </option>
+                                <option value="116"> Southland - Tokanui </option>
+                                <option value="112"> Southland - Winton </option>
+                                <option value="122"> Australia </option>
+                                <option value="118"> Chatham Islands </option>
+                            </select>
+                            <small class="_red">This field is required</small>
+                        </div>
+                        <p style="font-size: 12px; color: #76716d">
+                            This is the location we'll display to other Trade Me members
+                        </p>
+                        <div class="form-check mt-3">
+                            <input type="checkbox" class="form-check-input d-inline" id="exampleCheck1"
+                                style="width: 22px; height: 22px; margin-right: 10px;">
+                            <label class="form-check-label d-inline" for="exampleCheck1" style="font-size: 16px">
+                                I am over 18 and have read and accepted Trade Me's <a href=""
+                                    class="nav-link _blue2 d-inline">terms & conditions</a> and <a href=""
+                                    class="nav-link _blue2 d-inline">privacy policy</a>
+                            </label>
+                        </div>
+                        <div class="root__notification reusable__notification o-box-info--danger mb-4">
+                            <div class="container px-4">
+                                <div class="o-box-info m-0">
+                                    <div class="o__media_block_icon">
+                                        <svg width="24" height="24" viewBox="0 0 24 24"
+                                            xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMinYMid meet"
+                                            focusable="false" role="img"
+                                            aria-labelledby="tg-4e2a55c4-255b-1922-7937-be3819e5781b">
+                                            <path
+                                                d="M22.387 19.042A2 2 0 0 1 20.631 22H3.369a2 2 0 0 1-1.756-2.958l8.631-15.823a2 2 0 0 1 3.512 0l8.631 15.823zM11 10a1 1 0 0 1 2 0v5a1 1 0 0 1-2 0v-5zm1 9.25a1.25 1.25 0 1 1 0-2.5 1.25 1.25 0 0 1 0 2.5zM3.369 20h17.262L12 4.178h-.009L3.369 20z">
+                                            </path>
+                                            <title id="tg-4e2a55c4-255b-1922-7937-be3819e5781b"></title>
+                                        </svg>
+                                    </div>
+                                    <div class="o__media_block_content">
+                                        <div class="o-box-info__content pb-0">
+                                            <p>You must agree to our terms and conditions to register</p>
+                                        </div>
+                                        <div class="o-box-info__actions p-3 d-none">
+                                            <a href="" class="nav-link">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <button type="submit" class="btn form-submit-btn btn-primary">
+                            Create account
                         </button>
                     </form>
                     <hr class="mt-4" />
@@ -494,6 +856,9 @@
         </div>
         <!--* END FOOTER -->
     </footer>
+
+    <script src="./assets/js/main.js"></script>
+    <script src="./assets/js/auth.js"></script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
         integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="

@@ -1,13 +1,12 @@
 
 .dropdown {
-    button {
-        
-    }
+    position: relative;
     .dropdown-menu {
-        top: 15px !important;
+        top: 140% !important;
         width: 370px !important;
         overflow: visible;
         background-color: white;
+        transform: none !important;
         @include mobile-max(425px) {
             display: none;
         }
@@ -88,7 +87,7 @@
     z-index: 100000;
 
     button {
-        border-radius: 3px !important;
+        border-radius: 3px;
     }
 
     .dropdown-modal-container {
@@ -113,8 +112,8 @@
         .dropdown-modal-header-bottom_nav {
             display: none;
             .view-mode {
-                .active {
-                    border: 1px solid colors(_gray);
+                .active_view {
+                    border: 2px solid colors(_black4) !important;
                 }
 
                 div {

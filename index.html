@@ -66,11 +66,13 @@
                     'trades',
                     'manufacturing-operations',
                     'single-product',
-                    'product-listing'
+                    'product-listing',
+                    'reg-membership',
+                    'user-dashboard',
                 ]
 
                 pages.forEach((page) => {
-                    const rawText = page.replace(/_/g, ' ')
+                    const rawText = page.replace(/_/g, ' ');
 
                     main.append(`
                     <div

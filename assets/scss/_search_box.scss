@@ -64,3 +64,38 @@
         }
     }
 }
+
+.standalone-search {
+    border-width: 2px;
+    border-style: solid;
+    border-color: transparent;
+    outline: 1px solid lightgrey;
+    border-radius: 3px;
+    color: colors(_black2) !important;
+    .clear-input {
+        display: none;
+        &::before {
+            content: '\f00d';
+            position: relative;
+            font-size: 16px;
+            font-family: 'FontAwesome';
+            display: block;
+        }
+    }
+    
+    &:focus-within {
+        border: 2px solid #212121;
+        .clear-input {
+            display: block;
+        }
+    }
+
+    input {
+        margin-bottom: 0 !important;
+    }
+
+
+    svg, i {
+        margin: 0 10px;
+    }
+}

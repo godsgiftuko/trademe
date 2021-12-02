@@ -177,3 +177,105 @@
         background-position: bottom right !important;
     }
 }
+
+.help_details {
+    ul.navbar {
+        gap: 16px;
+        flex-direction: column;
+        background-color: transparent !important;
+
+        ul {
+            display: none;
+        }
+        
+        .active {
+            color: #5a5653 !important;
+            position: relative;
+            padding: 0 !important;
+            
+            .nav-link {
+                padding: 0 !important;
+                font-weight: weight(bold);
+            }
+
+            
+            ul {
+                .active_selected {
+                    border-left: 3px solid #5a5653;                
+                }
+                display: block;
+                margin: 0 0 0 35px;
+                li {
+                    a {
+                        font-weight: weight(regular) !important;
+                    }
+                    padding-left: 15px;
+                }
+            }
+
+        }
+
+        li.nav-item {
+            margin: 15px 0;
+            a.nav-link {
+                text-decoration: none;
+                color: colors(_black4);
+                font-size: 16px;
+                display: inline;
+                background-color: transparent !important;
+            }
+        }
+    }
+
+    // #help_sidebar {
+    // }
+    .was-helpful-div {
+        .was-helpful-div-action {
+            .active {
+                position: relative;
+                z-index: 1;
+                border: 2px solid #65605d !important;
+                // box-shadow: 0 0 0 1px #65605d inset;
+                cursor: default;
+                font-weight: 500;
+            }
+        }
+        div {
+            &:last-child {
+                @include mobile-max(768px) {
+                    flex: 1 !important;
+                }
+            }
+            &:first-child {
+                @include mobile-max(768px) {
+                    flex: 2 !important;
+                }
+            }
+        }
+
+        .was-helpful-div-more {
+            button {
+                background-color: colors(_whitesmoke2);
+                border-radius: 3px;
+                border: none !important;
+                &:hover {
+                    background-color: colors(_whitesmoke) !important;
+                }
+            }
+            .helpful-yes, .helpful-no  {
+                display: none;
+            }
+            textarea {
+                width: 100%;
+                resize: none; 
+                height: 70px; 
+                border-radius: 4px;
+                border-color: lightgrey;
+                padding:8px 10px ;
+                &:focus-within {
+                    border: 2px solid colors(_black);
+                }
+            }
+        }
+    }
+}

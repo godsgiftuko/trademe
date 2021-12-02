@@ -30,6 +30,7 @@
 @import 'jobs';
 @import 'positons';
 @import 'dropdown_modal';
+@import 'user_dashboard';
 
 @font-face {
     font-display: swap;
@@ -113,8 +114,8 @@ body {
     min-height: 100%;
     overflow-x: hidden;
     font-size: 14px;
-    color: $body-col;
-    background-color: $body_bg_col;
+    color: colors(_black);
+    background-color: colors(_whitesmoke);
 }
 
 article,
@@ -587,15 +588,21 @@ button {
     &:focus,
     &:active {
         box-shadow: none !important;
-        outline: none !important;
-        border: none !important;
+        // outline: none !important;
+        // border: none !important;
+    }
+
+    &:disabled {
+        cursor: not-allowed !important;
+        border-color: colors(table-border) !important;
+        color: colors(table-border) !important;
+
     }
 }
 
 .btn-2 {
     color: white;
     background-color: $btn;
-    padding: 0.35rem 12px;
     border-radius: 3px;
 }
 
@@ -609,7 +616,11 @@ button {
 .btn-o--no-bg {
     background-color: transparent !important;
     border: 1px solid $btn;
-    color: $btn;
+    color: $btn !important;
+
+    &:hover {
+        background-color: transparent !important;
+    }
 }
 
 .btn--no-b-bg {
@@ -635,9 +646,10 @@ button {
     }
 }
 .grey-btn {
-    background-color: colors(_lite_grey_BG);
+    background-color: colors(_whitesmoke3);
+    color: colors(_gray) !important;
     &:hover {
-        background-color: #f0f0f0 !important;
+        background-color: colors(_whitesmoke) !important;
     }
 }
 .pressible-btn {
@@ -705,17 +717,34 @@ section h1.header-section-title {
     padding: 50px 0 30px 0;
 }
 
+.o-box-info--danger {
+    .o-box-info {
+        svg {
+            fill: colors(_red2) !important;
+        }
+        border-color: colors(_red2) !important;
+        background:#fff1f2!important;
+        color: currentColor !important;
+    }
+}
+
 .o-box-info--warning {
     .o-box-info {
-        border-color: hsl(38, 100%, 46%) !important;
-        background: #fffae5 !important;
+        svg {
+            fill: colors(_orange2) !important;
+        }
+        border-color: colors(_orange2) !important;
+        background: #fff1f2 !important;
         color: currentColor !important;
     }
 }
 
 .o-box-info--primary {
     .o-box-info {
-        border-color: #007acd !important;
+        svg {
+            fill: colors(primary2) !important;
+        }
+        border-color: colors(primary2) !important;
         background: #e1f3ff !important;
         color: currentColor !important;
     }
@@ -725,6 +754,9 @@ section h1.header-section-title {
     position: relative !important;
     .container {
         padding: 0 !important;
+        .o-box-info {
+            box-shadow: none !important;
+        }
     }
 }
 
@@ -733,7 +765,6 @@ section h1.header-section-title {
     top: 8px;
     position: fixed;
     width: 100%;
-
     @include mobile-max(425px) {
         top: auto;
         bottom: 8px;
@@ -745,6 +776,11 @@ section h1.header-section-title {
         background: #f6f5f4;
         border-radius: 6px;
         color: #65605d;
+        box-shadow: 0 12px 12px 0 rgb(0 0 0 / 10%);
+
+        @include mobile-min(768px) {
+            box-shadow: 0 32px 32px 0 rgb(0 0 0 / 10%);
+        }
     }
     .o__media_block_icon {
         padding: 16px 0 16px 16px;

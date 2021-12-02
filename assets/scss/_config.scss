@@ -13,7 +13,9 @@ $app_colors: (
     'primary2': #007acd,
     'primary3': #00558f,
     'primary4': #0066cc,
+    '_skyblue': #00b3c8,
     '_orange': #f3632d,
+    '_orange2': #eb9500,
     '_yellow': #f9af2c,
     '_yellow2': #fbcc48,
     '_yellow3': #ffcb4f,
@@ -29,7 +31,8 @@ $app_colors: (
     '_white': #fff,
     '_black': #44413d,
     '_black2': #65605d,
-    '_black3': #343434,
+    '_black3': #a39797,
+    '_black4': #5a5653,
     '_gray': #555555,
     '_gray2': #333333,
     '_gray3': #666666,
@@ -40,6 +43,7 @@ $app_colors: (
     'nothing': 'transparent',
     '_whitesmoke': #f6f5f4,
     '_whitesmoke2': #f0efee,
+    '_whitesmoke3': #c4c0bc40,
     'th-border-col': #dee2e6,
     'table-border': #c1c1c1,
     'tab-col': blue,
@@ -54,6 +58,11 @@ $app_colors: (
     @return map-get($app_colors, $color-name);
 }
 
+
+._skyblue {
+    color: colors(_skyblue) !important;
+    fill: colors(_skyblue) !important;
+}
 
 ._whitesmoke {
     color: colors(_whitesmoke) !important;
@@ -78,6 +87,7 @@ $app_colors: (
 
 ._red {
     color: colors(_red) !important;
+    fill: colors(_red) !important;
 }
 
 ._orange {
@@ -286,6 +296,9 @@ $app_colors: (
 }
 
 // Border radius
+.rad-0 {
+    border-radius: 0 !important;
+}
 .rad-3 {
     border-radius: 3px !important;
 }
