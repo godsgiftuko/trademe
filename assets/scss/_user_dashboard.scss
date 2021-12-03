@@ -1,5 +1,9 @@
 .user_dashboard {
-
+    @include mobile-min(426px) {
+        .container-fluid {
+            background: linear-gradient(90deg, colors(_white) 60%, colors(_whitesmoke) 40%);
+        }
+    }
     .no--bg {
         background-color: transparent !important;
         box-shadow: none !important;
@@ -14,6 +18,18 @@
             h1 {
                 color: colors(_black);
             }
+
+            ul.navbar {
+                li {
+                    @include mobile-max(425px) {
+                        padding: 16px !important;   
+                    }
+
+                    &:first-child {
+                        padding-left: 0 !important;
+                    }
+                }
+            }
         }
 
         .user_dashboard-card-content {
@@ -25,6 +41,9 @@
             margin-bottom: 1rem;
             box-shadow: 0px 1px 3px 0px #c8c6c6;
 
+            svg {
+                width: 200px;
+            }
 
             @include mobile-min(767px) {
                 padding: 25px 32px 45px;
@@ -56,15 +75,16 @@
 
             .subtitle {
                 font-size: 14px;
-                color: colors(_grey2) !important;
+                color: colors(_grey) !important;
             }
 
             li.nav-item {
-                border-bottom: 1px solid lightgrey;
+                border-bottom: 1px solid #e8e8e8;
                 padding: 16px 0;
                 a.nav-link {
                     font-size: 16px;
                     color: colors(_black);
+                    display: inline;
                 }
             }
         }
