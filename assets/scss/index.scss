@@ -96,6 +96,17 @@
             format('truetype');
 }
 
+@font-face {
+    font-display: swap;
+    font-family: 'foundation-icons';
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    src: url(https://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.ttf)
+        format('truetype');
+}
+
 // ! COLORS
 .g-col {
     color: $g-col;

@@ -144,6 +144,10 @@
   color: currentColor;
 }
 
+.f-48 {
+  font-size: 48px !important;
+}
+
 .f-32 {
   font-size: 32px !important;
 }
@@ -5334,6 +5338,15 @@
   font-weight: 300;
   src: url(//trademe.tmcdn.co.nz/tm/fonts/StorySansWeb-Light.eot);
   src: url(//trademe.tmcdn.co.nz/tm/fonts/StorySansWeb-Light.eot#iefix) format("embedded-opentype"), url(//trademe.tmcdn.co.nz/tm/fonts/StorySansWeb-Light.woff2) format("woff2"), url(//trademe.tmcdn.co.nz/tm/fonts/StorySansWeb-Light.woff) format("woff"), url(//trademe.tmcdn.co.nz/tm/fonts/StorySansWeb-Light.ttf) format("truetype");
+}
+@font-face {
+  font-display: swap;
+  font-family: "foundation-icons";
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  src: url(https://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.ttf) format("truetype");
 }
 .g-col {
   color: #1b8840;
