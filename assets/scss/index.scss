@@ -596,7 +596,6 @@ button {
         cursor: not-allowed !important;
         border-color: colors(table-border) !important;
         color: colors(table-border) !important;
-
     }
 }
 
@@ -723,7 +722,7 @@ section h1.header-section-title {
             fill: colors(_red2) !important;
         }
         border-color: colors(_red2) !important;
-        background:#fff1f2!important;
+        background: #fff1f2 !important;
         color: currentColor !important;
     }
 }
@@ -760,7 +759,6 @@ section h1.header-section-title {
     }
 }
 
-
 .root__notification {
     top: 8px;
     position: fixed;
@@ -794,17 +792,17 @@ section h1.header-section-title {
             margin: 0;
         }
     }
-    
+
     .o-box-info__actions {
         padding: 0 16px 16px;
-        button, .nav-link {
+        button,
+        .nav-link {
             background-color: transparent !important;
             color: colors(primary2);
             font-size: 16px;
             padding: 0;
         }
     }
-
 }
 // ? DISPLAY: NONE;
 

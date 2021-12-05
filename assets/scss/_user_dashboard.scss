@@ -1,17 +1,27 @@
 .user_dashboard {
     @include mobile-min(426px) {
         .container-fluid {
-            background: linear-gradient(90deg, colors(_white) 60%, colors(_whitesmoke) 40%);
+            background: linear-gradient(
+                90deg,
+                colors(_white) 60%,
+                colors(_whitesmoke) 40%
+            );
         }
     }
     .no--bg {
         background-color: transparent !important;
         box-shadow: none !important;
     }
-    
+
     .user_dashboard-card {
         padding: 0 15px;
         margin-bottom: 50px;
+
+        @include mobile-max(375px) {
+            padding-left: 8px !important;
+            padding-right: 8px !important;
+        }
+
         .user_dashboard-card-title {
             width: 100%;
             text-align: left;
@@ -21,10 +31,12 @@
 
             ul.navbar {
                 li {
-                    @include mobile-max(425px) {
-                        padding: 16px !important;   
+                    @include mobile-min(769px) {
+                        padding: 16px !important;
                     }
-
+                    @include mobile-max(425px) {
+                        padding: 14px;
+                    }
                     &:first-child {
                         padding-left: 0 !important;
                     }
@@ -35,7 +47,7 @@
         .user_dashboard-card-content {
             background-color: colors(_white);
             border-radius: 2px;
-            width: 100%;   
+            width: 100%;
             padding: 3rem 1rem 0.5rem;
             margin-top: 2rem;
             margin-bottom: 1rem;
@@ -58,7 +70,6 @@
 
     .user_dashboard-sidebar {
         .user_dashboard-sidebar-title {
-            
         }
 
         ul.navbar {
@@ -68,7 +79,7 @@
                 a.nav-link {
                     padding: 4px 0 4px 16px;
                     border-radius: 0 !important;
-                    background: linear-gradient(90deg,#f9af2c 4px,#fff 2%);
+                    background: linear-gradient(90deg, #f9af2c 4px, #fff 2%);
                     font-weight: weight(bold);
                 }
             }
@@ -81,10 +92,33 @@
             li.nav-item {
                 border-bottom: 1px solid #e8e8e8;
                 padding: 16px 0;
+                display: flex;
                 a.nav-link {
                     font-size: 16px;
                     color: colors(_black);
-                    display: inline;
+                }
+
+                .error {
+                    background-color: colors(_red);
+                }
+
+                .warning {
+                    background-color: colors(_yellow);
+                }
+
+                .success {
+                    background-color: colors(_green);
+                }
+
+                .badge {
+                    border-radius: 50%;
+                    display: flex;
+                    font-size: 12px;
+                    justify-content: center;
+                    align-items: center;
+                    width: 24px;
+                    height: 24px;
+                    margin: 0 10px;
                 }
             }
         }

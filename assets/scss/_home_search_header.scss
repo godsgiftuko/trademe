@@ -99,8 +99,10 @@
                 position: relative;
                 width: 40%;
                 order: 1;
-                // display: flex;
-                // justify-content: right;
+                @include mobile-min(768px) {
+                    text-align: center;
+                    // width: 100%;
+                }
             }
         }
     }

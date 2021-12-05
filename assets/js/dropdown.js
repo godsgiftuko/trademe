@@ -56,7 +56,7 @@ const dataList = [
         ]
     }
 ];
-
+P
 const clearList = () => menuList.find('li').remove();
 
 cancelBtn.click(function () {
