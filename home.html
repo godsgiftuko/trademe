@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <!-- <link href="https://cdn.staticaly.com/gh/hung1001/font-awesome-pro/4cac1a6/css/all.css" rel="stylesheet" type="text/css" /> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
         integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -14,7 +15,13 @@
     <link rel="stylesheet" href="./assets/css/index.min.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
         integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+        integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+        integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js"
         integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/"
         crossorigin="anonymous"></script>
@@ -90,39 +97,99 @@
                             <img src="https://www.trademe.co.nz/images/frend/trademe-logo-no-tagline.png" alt="" />
                         </a>
                     </div>
-                    <div class="dropdown browse-dropdown-btn">
-                        <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+                    <div class="dropdown browse-dropdown-btn d-mb-none">
+                        <button class="btn dropdown-toggle ext-dropdown-btn" type="button" data-toggle=""
                             aria-haspopup="true" aria-expanded="false">
                             Browse
                         </button>
-                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                            <a class="dropdown-item" href="#">Action</a>
-                            <a class="dropdown-item" href="#">Another action</a>
-                            <a class="dropdown-item" href="#">Something else here</a>
-                        </div>
                     </div>
                     <ul class="main-nav__member-options-list">
-                        <li class="nav-item">
-                            <i class="fa fa-binoculars"></i>
+                        <li class="nav-item _grey">
+                            <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMinYMid meet" focusable="false" role="img" aria-labelledby="tg-adc722a6-aafd-eee4-a41f-fa13e9fb65f9"><path d="M7 13.9a1 1 0 0 0-1-1H5a1 1 0 0 0 0 2h1a1 1 0 0 0 1-1zm4 1a1 1 0 0 0 0-2h-1a1 1 0 0 0 0 2h1zm-8.44-4.74A2.88 2.88 0 0 0 5.26 12h5.47a2.88 2.88 0 0 0 2.7-1.84l1.09-2.77A6.87 6.87 0 0 0 15 4.87V2.4A1.4 1.4 0 0 0 13.6 1h-3.2A1.4 1.4 0 0 0 9 2.4V5a1 1 0 0 1-1 1.21A1 1 0 0 1 7 5V2.4A1.4 1.4 0 0 0 5.6 1H2.4A1.4 1.4 0 0 0 1 2.4v2.47c0 .863.163 1.718.48 2.52l1.08 2.77zM13.2 2.8v1.4h-2.4V2.8h2.4zM8 8a2.75 2.75 0 0 0 2.66-2h2.41a5.05 5.05 0 0 1-.21.73l-1.1 2.77a1.11 1.11 0 0 1-1 .7H9a1 1 0 1 0-2 0H5.26a1.11 1.11 0 0 1-1-.7L3.15 6.73A5 5 0 0 1 2.94 6h2.41A2.73 2.73 0 0 0 8 8zM5.2 2.8v1.4H2.8V2.8h2.4z"></path><title id="tg-adc722a6-aafd-eee4-a41f-fa13e9fb65f9"></title></svg>
                             <a class="m-affiliates__sat-nav-link" aria-current="page" href="/">watchlist</a>
                         </li>
-                        <li class="nav-item --none-sm">
-                            <i class="fa fa-heart-o"></i>
+                        <li class="nav-item --none-sm _grey">
+                            <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMinYMid meet" focusable="false" role="img" aria-labelledby="tg-5eb456dc-783c-fbd6-f600-cb0e8a98a070"><path d="M14 3.07a3.91 3.91 0 0 0-2.78-1.15A4 4 0 0 0 8 3.61a4 4 0 0 0-3.18-1.69A3.91 3.91 0 0 0 2 3.07 4 4 0 0 0 1 6c0 5.08 5.94 8.11 7 8.11 1.06 0 7-3 7-8.11a4 4 0 0 0-1-2.93zm-6 9.18C7.08 11.89 2.8 9.61 2.8 6a2.24 2.24 0 0 1 .53-1.64 2.1 2.1 0 0 1 1.5-.61c1.13 0 1.92 1.07 2.38 2a.9.9 0 0 0 .8.49H8a.9.9 0 0 0 .8-.48c.47-.9 1.26-2 2.38-2a2.1 2.1 0 0 1 1.5.61c.382.453.57 1.04.52 1.63 0 3.61-4.28 5.89-5.2 6.25z"></path><title id="tg-5eb456dc-783c-fbd6-f600-cb0e8a98a070"></title></svg>
                             <a class="m-affiliates__sat-nav-link" aria-current="page" href="/">favourites</a>
                         </li>
-                        <li class="nav-item --none-sm">
-                            <i class="fa fa-heart-o"></i>
+                        <li class="nav-item --none-sm _grey">
+                            <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMinYMid meet" focusable="false" role="img" aria-labelledby="tg-4dadb80e-d772-2126-d6f0-b5d4ac4f45c3"><path d="M14.33 4a2.31 2.31 0 0 0-.7-1.62A2.31 2.31 0 0 0 12 1.67a2.31 2.31 0 0 0-1.63.7l-8 8a.89.89 0 0 0-.09.14.88.88 0 0 0-.09.16l-1 3a.9.9 0 0 0 1.14 1.14l3-1a.89.89 0 0 0 .16-.09.9.9 0 0 0 .14-.09l8-8a2.3 2.3 0 0 0 .7-1.63zm-2.69-.34a.51.51 0 0 1 .36-.19.59.59 0 0 1 .53.53.51.51 0 0 1-.17.37L5 11.73 4.27 11l7.37-7.34z"></path><title id="tg-4dadb80e-d772-2126-d6f0-b5d4ac4f45c3"></title></svg>
                             <a class="m-affiliates__sat-nav-link" aria-current="page" href="/">start a listing</a>
                         </li>
-                        <li class="nav-item">
-                            <i class="fa fs-5 fa-user-circle"></i>
+                        <li class="nav-item _grey">
+                            <svg width="20" height="20" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMinYMid meet" focusable="false" role="img" aria-labelledby="tg-433b6f17-b793-d6ee-de30-958f7ac43e41"><path d="M8 .1a8 8 0 1 0 0 16 8 8 0 0 0 0-16zM4.8 13.4a8.12 8.12 0 0 1 3.2-.6 8.12 8.12 0 0 1 3.2.6 6.14 6.14 0 0 1-6.4 0zm7.9-1.27A9.39 9.39 0 0 0 8 11a9.39 9.39 0 0 0-4.7 1.13 6.2 6.2 0 1 1 9.4 0z"></path><path d="M8 3.1a3.5 3.5 0 1 0 0 7 3.5 3.5 0 0 0 0-7zm0 5.2a1.7 1.7 0 1 1 0-3.4 1.7 1.7 0 0 1 0 3.4z"></path><title id="tg-433b6f17-b793-d6ee-de30-958f7ac43e41">Profile image for not logged in member</title></svg>
                             <a class="m-affiliates__sat-nav-link" aria-current="page" href="/">my trade me</a>
                         </li>
                     </ul>
                 </div>
             </div>
+            <div class="ext-dropdown d-none">
+                <div class="container-fluid">
+                    <div class="dropdown-menu2 _white_BG" aria-labelledby="dropdownMenuButton">
+                        <div class="ext-dropdown-header d-block">
+                            <h2 class="my-2">Browse Marketplace</h2>
+                        </div>
+                        <ul class="nav navbar">
+                            <li class="nav-item"><a class="nav-link" href="/a/marketplace/antiques-collectables">
+                                    Antiques &amp; collectables </a></li>
+                            <li class="nav-item"><a class="nav-link" href="/a/marketplace/art"> Art
+                                </a></li>
+                            <li class="nav-item"><a class="nav-link" href="/a/marketplace/baby-gear"> Baby gear </a>
+                            </li>
+                            <li class="nav-item"><a class="nav-link" href="/a/marketplace/books">
+                                    Books </a></li>
+                            <li class="nav-item"><a class="nav-link" href="/a/marketplace/building-renovation"> Building
+                                    &amp; renovation </a></li>
+                            <li class="nav-item"><a class="nav-link" href="/a/marketplace/business-farming-industry">
+                                    Business, farming &amp; industry </a></li>
+                            <li class="nav-item"><a class="nav-link" href="/a/marketplace/clothing-fashion"> Clothing
+                                    &amp; Fashion </a></li>
+                            <li class="nav-item"><a class="nav-link" href="/a/marketplace/computers"> Computers </a>
+                            </li>
+                            <li class="nav-item"><a class="nav-link" href="/a/marketplace/crafts">
+                                    Crafts </a></li>
+                            <li class="nav-item"><a class="nav-link" href="/a/marketplace/electronics-photography">
+                                    Electronics &amp; photography </a></li>
+                            <li class="nav-item"><a class="nav-link" href="/a/marketplace/gaming">
+                                    Gaming </a></li>
+                            <li class="nav-item"><a class="nav-link" href="/a/marketplace/health-beauty"> Health &amp;
+                                    beauty </a></li>
+                            <li class="nav-item"><a class="nav-link" href="/a/marketplace/home-living"> Home &amp;
+                                    living </a></li>
+                            <li class="nav-item"><a class="nav-link" href="/a/marketplace/jewellery-watches"> Jewellery
+                                    &amp; watches </a></li>
+                            <li class="nav-item"><a class="nav-link" href="/a/marketplace/mobile-phones"> Mobile phones
+                                </a></li>
+                            <li class="nav-item"><a class="nav-link" href="/a/marketplace/movies-tv"> Movies &amp; TV
+                                </a></li>
+                            <li class="nav-item"><a class="nav-link" href="/a/marketplace/music-instruments"> Music
+                                    &amp; instruments </a></li>
+                            <li class="nav-item"><a class="nav-link" href="/a/marketplace/pets-animals"> Pets &amp;
+                                    animals </a></li>
+                            <li class="nav-item"><a class="nav-link" href="/a/marketplace/pottery-glass"> Pottery &amp;
+                                    glass </a></li>
+                            <li class="nav-item"><a class="nav-link" href="/a/marketplace/sports">
+                                    Sports </a></li>
+                            <li class="nav-item"><a class="nav-link" href="/a/marketplace/toys-models"> Toys &amp;
+                                    models </a></li>
+                            <li class="nav-item"><a class="nav-link" href="/a/marketplace/travel-events-activities">
+                                    Travel, events &amp; activities </a></li>
+                            <li class="nav-item"><a classiclink="stores" frendlink="/marketplace/stores"
+                                    tmfrendclassicredirectoptimizedlink="static" class="nav-link"
+                                    href="https://www.trademe.co.nz/stores?bof=VnmYQMuD"> Trade Me Stores </a></li>
+                        </ul>
+                        <div class="ext-dropdown-footer py-4" style="border-top: 1px solid lightgrey;">
+                            <a href="" class="nav-link f-16 _orange">Marketplace</a>
+                            <a href="" class="nav-link f-16 _gray">Jobs</a>
+                            <a href="" class="nav-link f-16 _red">Property</a>
+                            <a href="" class="nav-link f-16 _f_green">Services</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </nav>
         <!--* END NAV -->
+
 
         <!--* SEARCH BOX -->
         <div class="search_box d-none">
@@ -267,47 +334,63 @@
                                 tm-homepage-search-header__vertical-links-list
                             ">
                         <li class="
+                        d-flex justify-content-between
                                     tm-homepage-search-header__vertical-links-list-item
                                 ">
-                            <a class="
+                                <span class="d-mt-none _white _orange_BG d-flex justify-content-center align-items-center" style="border-radius: 50%; height: 25px; width: 25px; display: none;">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMinYMid meet" focusable="false" role="img" aria-labelledby="tg-07a073d7-d472-b59c-fc74-dd4cd44b5622"><path d="M7.063 22H17a4 4 0 0 0 4-4V5h-4.1a5 5 0 0 0-9.8 0H3.063v13a4 4 0 0 0 4 4zM12 3a3 3 0 0 1 2.816 2H9.184A3 3 0 0 1 12 3zM5.063 7H7v4a1 1 0 0 0 2 0V7h6v4a1 1 0 0 0 2 0V7h2v11a2 2 0 0 1-2 2H7.063a2 2 0 0 1-2-2V7z"></path><title id="tg-07a073d7-d472-b59c-fc74-dd4cd44b5622"></title></svg>
+                                   </span>
+                            <a class="  px-2
                                         tm-homepage-search-header__vertical-links-link
                                         tm-homepage-search-header__vertical-links-link--marketplace
                                     " href="./marketplace.html">
-                                <i class="fa fa-home"></i>
+                                   
                                 Marketplace
                             </a>
                         </li>
                         <li class="
+                        d-flex justify-content-between
                                     tm-homepage-search-header__vertical-links-list-item
                                 ">
-                            <a class="
+                                <span class="d-mt-none _white _gray_BG d-flex justify-content-center align-items-center" style="border-radius: 50%; height: 25px; width: 25px; display: none;">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMinYMid meet" focusable="false" role="img" aria-labelledby="tg-68227f11-89a8-f2fb-ac59-fc7b79e9262e"><path d="M4 22h16a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3h-3a3 3 0 0 0-3-3h-4a3 3 0 0 0-3 3H4a3 3 0 0 0-3 3v12a3 3 0 0 0 3 3zm16-2H4a1 1 0 0 1-1-1v-9h18v9a1 1 0 0 1-1 1zM10 3h4a1 1 0 0 1 1 1H9a1 1 0 0 1 1-1zM4 6h16a1 1 0 0 1 1 1v1H3V7a1 1 0 0 1 1-1zm10 5a1 1 0 0 1 0 2h-4a1 1 0 0 1 0-2h4z"></path><title id="tg-68227f11-89a8-f2fb-ac59-fc7b79e9262e"></title></svg>
+                                   </span>
+                            <a class="  px-2
                                         tm-homepage-search-header__vertical-links-link
                                         tm-homepage-search-header__vertical-links-link--marketplace
                                     " href="./marketplace.html">
-                                <i class="fa fa-home"></i>
+                                   
                                 Jobs
                             </a>
                         </li>
                         <li class="
+                        d-flex justify-content-between
                                     tm-homepage-search-header__vertical-links-list-item
                                 ">
-                            <a class="
+                                <span class="d-mt-none _white _red_BG d-flex justify-content-center align-items-center" style="border-radius: 50%; height: 25px; width: 25px; display: none;">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" preserveAspectRatio="xMinYMid meet" focusable="false" role="img" aria-labelledby="tg-3dffa735-be58-1370-d7be-c751e1aade21"><path d="M21.62,9.58,13.16,2.83a2,2,0,0,0-2.51,0L2.37,9.58a1,1,0,0,0,1.26,1.56l.37-.3V21a1,1,0,0,0,1,1H19a1,1,0,0,0,1-1V10.84l.38.3a1,1,0,0,0,.62.22,1,1,0,0,0,.78-.38A1,1,0,0,0,21.62,9.58ZM10.9,20V15a1.1,1.1,0,0,1,2.2,0v5ZM18,20H14.9V15a2.9,2.9,0,0,0-5.8,0v5H6V9.21L11.28,4.9a1,1,0,0,1,1.26,0L18,9.25Z"></path><title id="tg-3dffa735-be58-1370-d7be-c751e1aade21"></title></svg>
+                                   </span>
+                            <a class="  px-2
                                         tm-homepage-search-header__vertical-links-link
                                         tm-homepage-search-header__vertical-links-link--marketplace
-                                    " href="./property.html">
-                                <i class="fa fa-home"></i>
-                                Property
+                                    " href="./marketplace.html">
+                                   
+                                    Property
                             </a>
                         </li>
                         <li class="
+                        d-flex justify-content-between
                                     tm-homepage-search-header__vertical-links-list-item
                                 ">
-                            <a class="
+                                <span class="d-mt-none _white _f_green_BG d-flex justify-content-center align-items-center" style="border-radius: 50%; height: 25px; width: 25px; display: none;">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMinYMid meet" focusable="false" role="img" aria-labelledby="tg-776e72d2-e6d4-42f2-7dac-9f0f95197777"><path d="M4.121 22.122a3.1 3.1 0 0 0 2.207-.915l8.381-8.381a6.022 6.022 0 0 0 2.164.128 6.08 6.08 0 0 0 4.982-4.217 5.8 5.8 0 0 0 .2-2.6 1.973 1.973 0 0 0-1.344-1.577 2 2 0 0 0-2.05.486L16.411 7.3a.346.346 0 0 1-.579 0l-.006-.006a.411.411 0 0 1 0-.58l2.25-2.25a2 2 0 0 0 .486-2.049 1.974 1.974 0 0 0-1.582-1.35 5.8 5.8 0 0 0-2.6.2 6.08 6.08 0 0 0-4.213 4.985 6.075 6.075 0 0 0 .127 2.163l-8.381 8.38a3.122 3.122 0 0 0 2.208 5.329zM12.1 6.492a4.111 4.111 0 0 1 2.87-3.314A3.874 3.874 0 0 1 16.108 3c.185 0 .37.014.553.044L14.411 5.3a2.422 2.422 0 0 0 .007 3.414c.954.91 2.454.91 3.408 0l2.253-2.267a3.815 3.815 0 0 1-.135 1.708 4.051 4.051 0 0 1-3.313 2.818 4 4 0 0 1-3.337-1.14A4.1 4.1 0 0 1 12.1 6.492zM3.328 18.207l7.838-7.838a5.749 5.749 0 0 0 1.581 1.59l-7.833 7.834a1.147 1.147 0 0 1-1.585 0 1.123 1.123 0 0 1-.001-1.586z"></path><title id="tg-776e72d2-e6d4-42f2-7dac-9f0f95197777"></title></svg>
+                                   </span>
+                            <a class="  px-2
                                         tm-homepage-search-header__vertical-links-link
                                         tm-homepage-search-header__vertical-links-link--marketplace
-                                    " href="./services.html">
-                                <i class="fa fa-home"></i>
-                                Services
+                                    " href="./marketplace.html">
+                                   
+                                    Services
                             </a>
                         </li>
                         <li class="
@@ -323,6 +406,34 @@
                         </li>
                     </ul>
                 </div>
+            </div>
+        </div>
+
+        <div class="fixed-search d-mt-none justify-content-center align-items-center w-100">
+            <div class="form-div _blue_BG _white_BG d-flex justify-content-center align-items-center flex-column pt-2 pb-4 px-3"
+                style="z-index: 20000; position: relative; margin-top: 155px; box-shadow: 0 4px 4px 0 rgb(0 0 0 / 10%); ">
+                <div class="d-flex justify-content-between w-100 mb-3 pb-2">
+                    <span class="f-12 _grey">Search all of Trade Mw</span>
+                    <span class="f-12 _grey " id="closeFixedSearch">Cancel</span>
+                </div>
+                <form action="" class=" d-flex align-items-end w-100" style="position: relative;">
+                    <input type="text" class="o-input__body h-100 pb-2 w-100" name=""
+                        style="padding-left: 20px; padding-right: 38px; border: none; border-bottom: 1px solid rgb(120, 120, 120);">
+                    <button type="button" id="clearText" class="p-0 m-0 _gray"
+                        style="display: none; background-color: transparent !important; height: 100%; position: absolute; right: 70px; place-items: center;">
+                        <i class="fa fa-times"></i>
+                    </button>
+                    <button class="btn _blue_BG _white" type="button">
+                        <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
+                            preserveAspectRatio="xMinYMid meet" focusable="false" role="img"
+                            aria-labelledby="tg-43b9ebc1-d5f0-5025-febd-53ca23f22b27">
+                            <path
+                                d="M9.5 18a8.461 8.461 0 0 0 4.057-1.029l5.736 5.736a2.623 2.623 0 0 0 1.867.828 2.38 2.38 0 0 0 1.675-.688 2.46 2.46 0 0 0-.128-3.554l-5.736-5.736A8.5 8.5 0 1 0 9.5 18zm11.793 2.707c.135.117.221.28.242.458a.38.38 0 0 1-.114.267c-.183.182-.443.132-.714-.14l-5.5-5.5c.205-.186.4-.381.586-.586l5.5 5.501zM9.5 3A6.5 6.5 0 1 1 3 9.5 6.507 6.507 0 0 1 9.5 3z">
+                            </path>
+                            <title id="tg-43b9ebc1-d5f0-5025-febd-53ca23f22b27">search</title>
+                        </svg>
+                    </button>
+                </form>
             </div>
         </div>
     </section>
@@ -344,8 +455,8 @@
                 <h2 class="fw-bold mb-3">Cool auctions</h2>
                 <h2 class="_blue fw-normal">View all (10)</h2>
             </a>
-            <div class="product-cardlist">
-                <div class="product-card d-inline-block">
+            <div class="product-cardlist multiple-items">
+                <div class="product-card d-inline-block product-card-border">
                     <a href="" class="nav-link">
                         <div class="product-card-header">
                             <div class="product-card-discount">
@@ -357,13 +468,19 @@
                                     > -->
                             </div>
                             <div class="product-card-watchlist">
-                                <i class="fa fa-binoculars"></i>
+                                <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
+                                    preserveAspectRatio="xMinYMid meet" focusable="false" role="img"
+                                    aria-labelledby="tg-9e48f4ba-3091-9fde-d72e-d77a591c23c7">
+                                    <path
+                                        d="M1.088 4v3.539A9.99 9.99 0 0 0 1.6 10.7l1.626 4.879A4.994 4.994 0 0 0 7.971 19H11a1 1 0 0 0 0-2H7.971a3 3 0 0 1-2.846-2.052L3.5 10.069A7.96 7.96 0 0 1 3.125 8h4.963v2a4.054 4.054 0 0 0 4 4 4 4 0 0 0 4-4V8h4.963a8.109 8.109 0 0 1-.384 2.106l-.179.614a1 1 0 1 0 1.92.559l.167-.577a10 10 0 0 0 .513-3.163V4a2 2 0 0 0-2-2h-5a2 2 0 0 0-2 2v6a2.029 2.029 0 0 1-2 2 2.08 2.08 0 0 1-2-2V4a2 2 0 0 0-2-2h-5a2 2 0 0 0-2 2zm20 0v2h-5V4h5zm-13 0v2h-5V4h5zm3 17a1 1 0 0 1-1 1h-4a1 1 0 0 1 0-2h4a1 1 0 0 1 1 1zM23 18.044a1 1 0 0 1 0 2h-3.044V23a1 1 0 0 1-2 0v-2.956H15a1 1 0 0 1 0-2h2.956V15a1 1 0 0 1 2 0v3.044H23z">
+                                    </path>
+                                    <title id="tg-9e48f4ba-3091-9fde-d72e-d77a591c23c7"></title>
+                                </svg>
                             </div>
                         </div>
 
-                        <div class="product-card-img">
-                            <img class="" src="https://trademe.tmcdn.co.nz/photoserver/352x264p/1599692961.jpg"
-                                alt="" />
+                        <div class="product-card-img"
+                            style="background-image: url(https://trademe.tmcdn.co.nz/photoserver/352x264p/1599692961.jpg);">
                         </div>
 
                         <div class="product-card-detail">
@@ -401,76 +518,31 @@
                         </div>
                     </a>
                 </div>
-                <div class="product-card d-inline-block">
+                <div class="product-card d-inline-block product-card-border">
                     <a href="" class="nav-link">
                         <div class="product-card-header">
                             <div class="product-card-discount">
                                 <!-- <span class="product-card-shipping-class"
                                         >free shipping</span
-                                    > -->
-                            </div>
-                            <div class="product-card-watchlist">
-                                <i class="fa fa-binoculars"></i>
-                            </div>
-                        </div>
-
-                        <div class="product-card-img">
-                            <img class="" src="https://trademe.tmcdn.co.nz/photoserver/580x435c/1621578109.jpg"
-                                alt="" />
-                        </div>
-
-                        <div class="product-card-detail">
-                            <div class="product-card-body">
-                                <div class="product-card-location-and-time">
-                                    <span>Auckland</span>
-                                    <span>Closes: Thu, 14 oct</span>
-                                </div>
-                                <div class="product-card-title">
-                                    Segway Ninebot Kickscooter Max G30P
-                                </div>
-                                <div class="product-card-subtitle">
-                                    SUPER DEAL WHILE STOCK LAST!
-                                </div>
-                            </div>
-                            <div class="product-card-footer">
-                                <div class="product-card-price-div">
-                                    <div class="price-card">
-                                        <!-- <h5 class="text-capitalize">
-                                                no reserve
-                                            </h5>
-                                            <span class="fw-bold">
-                                                $150.00</span
-                                            > -->
-                                    </div>
-                                    <div class="price-card">
-                                        <h5 class="text-capitalize">
-                                            buy now
-                                        </h5>
-                                        <span class="fw-bold">
-                                            $150.00</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-
-                <div class="product-card d-inline-block">
-                    <a href="" class="nav-link">
-                        <div class="product-card-header">
-                            <div class="product-card-discount">
-                                <!-- <span class="product-card-discount-class"
+                                    >
+                                    <span class="product-card-discount-class"
                                         >save 20%</span
                                     > -->
                             </div>
                             <div class="product-card-watchlist">
-                                <i class="fa fa-binoculars"></i>
+                                <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
+                                    preserveAspectRatio="xMinYMid meet" focusable="false" role="img"
+                                    aria-labelledby="tg-9e48f4ba-3091-9fde-d72e-d77a591c23c7">
+                                    <path
+                                        d="M1.088 4v3.539A9.99 9.99 0 0 0 1.6 10.7l1.626 4.879A4.994 4.994 0 0 0 7.971 19H11a1 1 0 0 0 0-2H7.971a3 3 0 0 1-2.846-2.052L3.5 10.069A7.96 7.96 0 0 1 3.125 8h4.963v2a4.054 4.054 0 0 0 4 4 4 4 0 0 0 4-4V8h4.963a8.109 8.109 0 0 1-.384 2.106l-.179.614a1 1 0 1 0 1.92.559l.167-.577a10 10 0 0 0 .513-3.163V4a2 2 0 0 0-2-2h-5a2 2 0 0 0-2 2v6a2.029 2.029 0 0 1-2 2 2.08 2.08 0 0 1-2-2V4a2 2 0 0 0-2-2h-5a2 2 0 0 0-2 2zm20 0v2h-5V4h5zm-13 0v2h-5V4h5zm3 17a1 1 0 0 1-1 1h-4a1 1 0 0 1 0-2h4a1 1 0 0 1 1 1zM23 18.044a1 1 0 0 1 0 2h-3.044V23a1 1 0 0 1-2 0v-2.956H15a1 1 0 0 1 0-2h2.956V15a1 1 0 0 1 2 0v3.044H23z">
+                                    </path>
+                                    <title id="tg-9e48f4ba-3091-9fde-d72e-d77a591c23c7"></title>
+                                </svg>
                             </div>
                         </div>
 
-                        <div class="product-card-img">
-                            <img class="" src="https://trademe.tmcdn.co.nz/photoserver/352x264p/1615655188.jpg"
-                                alt="" />
+                        <div class="product-card-img"
+                            style="background-image: url(https://trademe.tmcdn.co.nz/photoserver/352x264p/1599692961.jpg);">
                         </div>
 
                         <div class="product-card-detail">
@@ -508,21 +580,279 @@
                         </div>
                     </a>
                 </div>
-                <div class="product-card d-inline-block">
+                <div class="product-card d-inline-block product-card-border">
                     <a href="" class="nav-link">
                         <div class="product-card-header">
                             <div class="product-card-discount">
-                                <!-- <span class="product-card-discount-class"
+                                <!-- <span class="product-card-shipping-class"
+                                        >free shipping</span
+                                    >
+                                    <span class="product-card-discount-class"
                                         >save 20%</span
                                     > -->
                             </div>
                             <div class="product-card-watchlist">
-                                <i class="fa fa-binoculars"></i>
+                                <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
+                                    preserveAspectRatio="xMinYMid meet" focusable="false" role="img"
+                                    aria-labelledby="tg-9e48f4ba-3091-9fde-d72e-d77a591c23c7">
+                                    <path
+                                        d="M1.088 4v3.539A9.99 9.99 0 0 0 1.6 10.7l1.626 4.879A4.994 4.994 0 0 0 7.971 19H11a1 1 0 0 0 0-2H7.971a3 3 0 0 1-2.846-2.052L3.5 10.069A7.96 7.96 0 0 1 3.125 8h4.963v2a4.054 4.054 0 0 0 4 4 4 4 0 0 0 4-4V8h4.963a8.109 8.109 0 0 1-.384 2.106l-.179.614a1 1 0 1 0 1.92.559l.167-.577a10 10 0 0 0 .513-3.163V4a2 2 0 0 0-2-2h-5a2 2 0 0 0-2 2v6a2.029 2.029 0 0 1-2 2 2.08 2.08 0 0 1-2-2V4a2 2 0 0 0-2-2h-5a2 2 0 0 0-2 2zm20 0v2h-5V4h5zm-13 0v2h-5V4h5zm3 17a1 1 0 0 1-1 1h-4a1 1 0 0 1 0-2h4a1 1 0 0 1 1 1zM23 18.044a1 1 0 0 1 0 2h-3.044V23a1 1 0 0 1-2 0v-2.956H15a1 1 0 0 1 0-2h2.956V15a1 1 0 0 1 2 0v3.044H23z">
+                                    </path>
+                                    <title id="tg-9e48f4ba-3091-9fde-d72e-d77a591c23c7"></title>
+                                </svg>
                             </div>
                         </div>
-                        <div class="product-card-img">
-                            <img class="" src="https://trademe.tmcdn.co.nz/photoserver/352x264p/1619858512.jpg"
-                                alt="" />
+
+                        <div class="product-card-img"
+                            style="background-image: url(https://trademe.tmcdn.co.nz/photoserver/352x264p/1599692961.jpg);">
+                        </div>
+
+                        <div class="product-card-detail">
+                            <div class="product-card-body">
+                                <div class="product-card-location-and-time">
+                                    <span>Auckland</span>
+                                    <span>Closes: Thu, 14 oct</span>
+                                </div>
+                                <div class="product-card-title">
+                                    Segway Ninebot Kickscooter Max G30P
+                                </div>
+                                <div class="product-card-subtitle">
+                                    SUPER DEAL WHILE STOCK LAST!
+                                </div>
+                            </div>
+                            <div class="product-card-footer">
+                                <div class="product-card-price-div">
+                                    <div class="price-card">
+                                        <h5 class="text-capitalize">
+                                            no reserve
+                                        </h5>
+                                        <span class="fw-bold">
+                                            $150.00</span>
+                                    </div>
+                                    <div class="price-card">
+                                        <h5 class="text-capitalize">
+                                            buy now
+                                        </h5>
+                                        <del class="discount_price">$250.00</del>
+                                        <span class="fw-bold">
+                                            $150.00</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="product-card d-inline-block product-card-border">
+                    <a href="" class="nav-link">
+                        <div class="product-card-header">
+                            <div class="product-card-discount">
+                                <!-- <span class="product-card-shipping-class"
+                                        >free shipping</span
+                                    >
+                                    <span class="product-card-discount-class"
+                                        >save 20%</span
+                                    > -->
+                            </div>
+                            <div class="product-card-watchlist">
+                                <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
+                                    preserveAspectRatio="xMinYMid meet" focusable="false" role="img"
+                                    aria-labelledby="tg-9e48f4ba-3091-9fde-d72e-d77a591c23c7">
+                                    <path
+                                        d="M1.088 4v3.539A9.99 9.99 0 0 0 1.6 10.7l1.626 4.879A4.994 4.994 0 0 0 7.971 19H11a1 1 0 0 0 0-2H7.971a3 3 0 0 1-2.846-2.052L3.5 10.069A7.96 7.96 0 0 1 3.125 8h4.963v2a4.054 4.054 0 0 0 4 4 4 4 0 0 0 4-4V8h4.963a8.109 8.109 0 0 1-.384 2.106l-.179.614a1 1 0 1 0 1.92.559l.167-.577a10 10 0 0 0 .513-3.163V4a2 2 0 0 0-2-2h-5a2 2 0 0 0-2 2v6a2.029 2.029 0 0 1-2 2 2.08 2.08 0 0 1-2-2V4a2 2 0 0 0-2-2h-5a2 2 0 0 0-2 2zm20 0v2h-5V4h5zm-13 0v2h-5V4h5zm3 17a1 1 0 0 1-1 1h-4a1 1 0 0 1 0-2h4a1 1 0 0 1 1 1zM23 18.044a1 1 0 0 1 0 2h-3.044V23a1 1 0 0 1-2 0v-2.956H15a1 1 0 0 1 0-2h2.956V15a1 1 0 0 1 2 0v3.044H23z">
+                                    </path>
+                                    <title id="tg-9e48f4ba-3091-9fde-d72e-d77a591c23c7"></title>
+                                </svg>
+                            </div>
+                        </div>
+
+                        <div class="product-card-img"
+                            style="background-image: url(https://trademe.tmcdn.co.nz/photoserver/352x264p/1599692961.jpg);">
+                        </div>
+
+                        <div class="product-card-detail">
+                            <div class="product-card-body">
+                                <div class="product-card-location-and-time">
+                                    <span>Auckland</span>
+                                    <span>Closes: Thu, 14 oct</span>
+                                </div>
+                                <div class="product-card-title">
+                                    Segway Ninebot Kickscooter Max G30P
+                                </div>
+                                <div class="product-card-subtitle">
+                                    SUPER DEAL WHILE STOCK LAST!
+                                </div>
+                            </div>
+                            <div class="product-card-footer">
+                                <div class="product-card-price-div">
+                                    <div class="price-card">
+                                        <h5 class="text-capitalize">
+                                            no reserve
+                                        </h5>
+                                        <span class="fw-bold">
+                                            $150.00</span>
+                                    </div>
+                                    <div class="price-card">
+                                        <h5 class="text-capitalize">
+                                            buy now
+                                        </h5>
+                                        <del class="discount_price">$250.00</del>
+                                        <span class="fw-bold">
+                                            $150.00</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="product-card d-inline-block product-card-border">
+                    <a href="" class="nav-link">
+                        <div class="product-card-header">
+                            <div class="product-card-discount">
+                                <!-- <span class="product-card-shipping-class"
+                                        >free shipping</span
+                                    >
+                                    <span class="product-card-discount-class"
+                                        >save 20%</span
+                                    > -->
+                            </div>
+                            <div class="product-card-watchlist">
+                                <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
+                                    preserveAspectRatio="xMinYMid meet" focusable="false" role="img"
+                                    aria-labelledby="tg-9e48f4ba-3091-9fde-d72e-d77a591c23c7">
+                                    <path
+                                        d="M1.088 4v3.539A9.99 9.99 0 0 0 1.6 10.7l1.626 4.879A4.994 4.994 0 0 0 7.971 19H11a1 1 0 0 0 0-2H7.971a3 3 0 0 1-2.846-2.052L3.5 10.069A7.96 7.96 0 0 1 3.125 8h4.963v2a4.054 4.054 0 0 0 4 4 4 4 0 0 0 4-4V8h4.963a8.109 8.109 0 0 1-.384 2.106l-.179.614a1 1 0 1 0 1.92.559l.167-.577a10 10 0 0 0 .513-3.163V4a2 2 0 0 0-2-2h-5a2 2 0 0 0-2 2v6a2.029 2.029 0 0 1-2 2 2.08 2.08 0 0 1-2-2V4a2 2 0 0 0-2-2h-5a2 2 0 0 0-2 2zm20 0v2h-5V4h5zm-13 0v2h-5V4h5zm3 17a1 1 0 0 1-1 1h-4a1 1 0 0 1 0-2h4a1 1 0 0 1 1 1zM23 18.044a1 1 0 0 1 0 2h-3.044V23a1 1 0 0 1-2 0v-2.956H15a1 1 0 0 1 0-2h2.956V15a1 1 0 0 1 2 0v3.044H23z">
+                                    </path>
+                                    <title id="tg-9e48f4ba-3091-9fde-d72e-d77a591c23c7"></title>
+                                </svg>
+                            </div>
+                        </div>
+
+                        <div class="product-card-img"
+                            style="background-image: url(https://trademe.tmcdn.co.nz/photoserver/352x264p/1599692961.jpg);">
+                        </div>
+
+                        <div class="product-card-detail">
+                            <div class="product-card-body">
+                                <div class="product-card-location-and-time">
+                                    <span>Auckland</span>
+                                    <span>Closes: Thu, 14 oct</span>
+                                </div>
+                                <div class="product-card-title">
+                                    Segway Ninebot Kickscooter Max G30P
+                                </div>
+                                <div class="product-card-subtitle">
+                                    SUPER DEAL WHILE STOCK LAST!
+                                </div>
+                            </div>
+                            <div class="product-card-footer">
+                                <div class="product-card-price-div">
+                                    <div class="price-card">
+                                        <h5 class="text-capitalize">
+                                            no reserve
+                                        </h5>
+                                        <span class="fw-bold">
+                                            $150.00</span>
+                                    </div>
+                                    <div class="price-card">
+                                        <h5 class="text-capitalize">
+                                            buy now
+                                        </h5>
+                                        <del class="discount_price">$250.00</del>
+                                        <span class="fw-bold">
+                                            $150.00</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="product-card d-inline-block product-card-border">
+                    <a href="" class="nav-link">
+                        <div class="product-card-header">
+                            <div class="product-card-discount">
+                                <!-- <span class="product-card-shipping-class"
+                                        >free shipping</span
+                                    >
+                                    <span class="product-card-discount-class"
+                                        >save 20%</span
+                                    > -->
+                            </div>
+                            <div class="product-card-watchlist">
+                                <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
+                                    preserveAspectRatio="xMinYMid meet" focusable="false" role="img"
+                                    aria-labelledby="tg-9e48f4ba-3091-9fde-d72e-d77a591c23c7">
+                                    <path
+                                        d="M1.088 4v3.539A9.99 9.99 0 0 0 1.6 10.7l1.626 4.879A4.994 4.994 0 0 0 7.971 19H11a1 1 0 0 0 0-2H7.971a3 3 0 0 1-2.846-2.052L3.5 10.069A7.96 7.96 0 0 1 3.125 8h4.963v2a4.054 4.054 0 0 0 4 4 4 4 0 0 0 4-4V8h4.963a8.109 8.109 0 0 1-.384 2.106l-.179.614a1 1 0 1 0 1.92.559l.167-.577a10 10 0 0 0 .513-3.163V4a2 2 0 0 0-2-2h-5a2 2 0 0 0-2 2v6a2.029 2.029 0 0 1-2 2 2.08 2.08 0 0 1-2-2V4a2 2 0 0 0-2-2h-5a2 2 0 0 0-2 2zm20 0v2h-5V4h5zm-13 0v2h-5V4h5zm3 17a1 1 0 0 1-1 1h-4a1 1 0 0 1 0-2h4a1 1 0 0 1 1 1zM23 18.044a1 1 0 0 1 0 2h-3.044V23a1 1 0 0 1-2 0v-2.956H15a1 1 0 0 1 0-2h2.956V15a1 1 0 0 1 2 0v3.044H23z">
+                                    </path>
+                                    <title id="tg-9e48f4ba-3091-9fde-d72e-d77a591c23c7"></title>
+                                </svg>
+                            </div>
+                        </div>
+
+                        <div class="product-card-img"
+                            style="background-image: url(https://trademe.tmcdn.co.nz/photoserver/352x264p/1599692961.jpg);">
+                        </div>
+
+                        <div class="product-card-detail">
+                            <div class="product-card-body">
+                                <div class="product-card-location-and-time">
+                                    <span>Auckland</span>
+                                    <span>Closes: Thu, 14 oct</span>
+                                </div>
+                                <div class="product-card-title">
+                                    Segway Ninebot Kickscooter Max G30P
+                                </div>
+                                <div class="product-card-subtitle">
+                                    SUPER DEAL WHILE STOCK LAST!
+                                </div>
+                            </div>
+                            <div class="product-card-footer">
+                                <div class="product-card-price-div">
+                                    <div class="price-card">
+                                        <h5 class="text-capitalize">
+                                            no reserve
+                                        </h5>
+                                        <span class="fw-bold">
+                                            $150.00</span>
+                                    </div>
+                                    <div class="price-card">
+                                        <h5 class="text-capitalize">
+                                            buy now
+                                        </h5>
+                                        <del class="discount_price">$250.00</del>
+                                        <span class="fw-bold">
+                                            $150.00</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="product-card d-inline-block product-card-border">
+                    <a href="" class="nav-link">
+                        <div class="product-card-header">
+                            <div class="product-card-discount">
+                                <!-- <span class="product-card-shipping-class"
+                                        >free shipping</span
+                                    >
+                                    <span class="product-card-discount-class"
+                                        >save 20%</span
+                                    > -->
+                            </div>
+                            <div class="product-card-watchlist">
+                                <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
+                                    preserveAspectRatio="xMinYMid meet" focusable="false" role="img"
+                                    aria-labelledby="tg-9e48f4ba-3091-9fde-d72e-d77a591c23c7">
+                                    <path
+                                        d="M1.088 4v3.539A9.99 9.99 0 0 0 1.6 10.7l1.626 4.879A4.994 4.994 0 0 0 7.971 19H11a1 1 0 0 0 0-2H7.971a3 3 0 0 1-2.846-2.052L3.5 10.069A7.96 7.96 0 0 1 3.125 8h4.963v2a4.054 4.054 0 0 0 4 4 4 4 0 0 0 4-4V8h4.963a8.109 8.109 0 0 1-.384 2.106l-.179.614a1 1 0 1 0 1.92.559l.167-.577a10 10 0 0 0 .513-3.163V4a2 2 0 0 0-2-2h-5a2 2 0 0 0-2 2v6a2.029 2.029 0 0 1-2 2 2.08 2.08 0 0 1-2-2V4a2 2 0 0 0-2-2h-5a2 2 0 0 0-2 2zm20 0v2h-5V4h5zm-13 0v2h-5V4h5zm3 17a1 1 0 0 1-1 1h-4a1 1 0 0 1 0-2h4a1 1 0 0 1 1 1zM23 18.044a1 1 0 0 1 0 2h-3.044V23a1 1 0 0 1-2 0v-2.956H15a1 1 0 0 1 0-2h2.956V15a1 1 0 0 1 2 0v3.044H23z">
+                                    </path>
+                                    <title id="tg-9e48f4ba-3091-9fde-d72e-d77a591c23c7"></title>
+                                </svg>
+                            </div>
+                        </div>
+
+                        <div class="product-card-img"
+                            style="background-image: url(https://trademe.tmcdn.co.nz/photoserver/352x264p/1599692961.jpg);">
                         </div>
 
                         <div class="product-card-detail">
@@ -655,10 +985,7 @@
                 <h2 class="fw-bold mb-3">$1 reserve</h2>
                 <h2 class="_blue fw-normal">View all (1011)</h2>
             </a>
-            <div class="product-cardlist">
-                <button class="card_arrow-btn" id="chevron-left" type="button" disabled>
-                    <i class="fa fa-chevron-left"></i>
-                </button>
+            <div class="product-cardlist multiple-items">
                 <div class="product-card d-inline-block product-card-border">
                     <a href="" class="nav-link">
                         <div class="product-card-header">
@@ -671,13 +998,19 @@
                                     > -->
                             </div>
                             <div class="product-card-watchlist">
-                                <i class="fa fa-binoculars"></i>
+                                <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
+                                    preserveAspectRatio="xMinYMid meet" focusable="false" role="img"
+                                    aria-labelledby="tg-9e48f4ba-3091-9fde-d72e-d77a591c23c7">
+                                    <path
+                                        d="M1.088 4v3.539A9.99 9.99 0 0 0 1.6 10.7l1.626 4.879A4.994 4.994 0 0 0 7.971 19H11a1 1 0 0 0 0-2H7.971a3 3 0 0 1-2.846-2.052L3.5 10.069A7.96 7.96 0 0 1 3.125 8h4.963v2a4.054 4.054 0 0 0 4 4 4 4 0 0 0 4-4V8h4.963a8.109 8.109 0 0 1-.384 2.106l-.179.614a1 1 0 1 0 1.92.559l.167-.577a10 10 0 0 0 .513-3.163V4a2 2 0 0 0-2-2h-5a2 2 0 0 0-2 2v6a2.029 2.029 0 0 1-2 2 2.08 2.08 0 0 1-2-2V4a2 2 0 0 0-2-2h-5a2 2 0 0 0-2 2zm20 0v2h-5V4h5zm-13 0v2h-5V4h5zm3 17a1 1 0 0 1-1 1h-4a1 1 0 0 1 0-2h4a1 1 0 0 1 1 1zM23 18.044a1 1 0 0 1 0 2h-3.044V23a1 1 0 0 1-2 0v-2.956H15a1 1 0 0 1 0-2h2.956V15a1 1 0 0 1 2 0v3.044H23z">
+                                    </path>
+                                    <title id="tg-9e48f4ba-3091-9fde-d72e-d77a591c23c7"></title>
+                                </svg>
                             </div>
                         </div>
 
-                        <div class="product-card-img">
-                            <img class="" src="https://trademe.tmcdn.co.nz/photoserver/352x264p/1615017066.jpg"
-                                alt="" />
+                        <div class="product-card-img"
+                            style="background-image: url(https://trademe.tmcdn.co.nz/photoserver/352x264p/1599692961.jpg);">
                         </div>
 
                         <div class="product-card-detail">
@@ -715,23 +1048,32 @@
                         </div>
                     </a>
                 </div>
-                <div class="product-card d-inline-block">
+                <div class="product-card d-inline-block product-card-border">
                     <a href="" class="nav-link">
                         <div class="product-card-header">
                             <div class="product-card-discount">
                                 <!-- <span class="product-card-shipping-class"
                                         >free shipping</span
+                                    >
+                                    <span class="product-card-discount-class"
+                                        >save 20%</span
                                     > -->
                             </div>
                             <div class="product-card-watchlist">
-                                <i class="fa fa-binoculars"></i>
+                                <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
+                                    preserveAspectRatio="xMinYMid meet" focusable="false" role="img"
+                                    aria-labelledby="tg-9e48f4ba-3091-9fde-d72e-d77a591c23c7">
+                                    <path
+                                        d="M1.088 4v3.539A9.99 9.99 0 0 0 1.6 10.7l1.626 4.879A4.994 4.994 0 0 0 7.971 19H11a1 1 0 0 0 0-2H7.971a3 3 0 0 1-2.846-2.052L3.5 10.069A7.96 7.96 0 0 1 3.125 8h4.963v2a4.054 4.054 0 0 0 4 4 4 4 0 0 0 4-4V8h4.963a8.109 8.109 0 0 1-.384 2.106l-.179.614a1 1 0 1 0 1.92.559l.167-.577a10 10 0 0 0 .513-3.163V4a2 2 0 0 0-2-2h-5a2 2 0 0 0-2 2v6a2.029 2.029 0 0 1-2 2 2.08 2.08 0 0 1-2-2V4a2 2 0 0 0-2-2h-5a2 2 0 0 0-2 2zm20 0v2h-5V4h5zm-13 0v2h-5V4h5zm3 17a1 1 0 0 1-1 1h-4a1 1 0 0 1 0-2h4a1 1 0 0 1 1 1zM23 18.044a1 1 0 0 1 0 2h-3.044V23a1 1 0 0 1-2 0v-2.956H15a1 1 0 0 1 0-2h2.956V15a1 1 0 0 1 2 0v3.044H23z">
+                                    </path>
+                                    <title id="tg-9e48f4ba-3091-9fde-d72e-d77a591c23c7"></title>
+                                </svg>
                             </div>
                         </div>
 
-                        <div class="product-card-img" style="
-                                    background-image: url(https://trademe.tmcdn.co.nz/photoserver/580x435c/1621578109.jpg);
-                                    background-color: rgb(176, 176, 176);
-                                "></div>
+                        <div class="product-card-img"
+                            style="background-image: url(https://trademe.tmcdn.co.nz/photoserver/352x264p/1599692961.jpg);">
+                        </div>
 
                         <div class="product-card-detail">
                             <div class="product-card-body">
@@ -749,17 +1091,17 @@
                             <div class="product-card-footer">
                                 <div class="product-card-price-div">
                                     <div class="price-card">
-                                        <!-- <h5 class="text-capitalize">
-                                                no reserve
-                                            </h5>
-                                            <span class="fw-bold">
-                                                $150.00</span
-                                            > -->
+                                        <h5 class="text-capitalize">
+                                            no reserve
+                                        </h5>
+                                        <span class="fw-bold">
+                                            $150.00</span>
                                     </div>
                                     <div class="price-card">
                                         <h5 class="text-capitalize">
                                             buy now
                                         </h5>
+                                        <del class="discount_price">$250.00</del>
                                         <span class="fw-bold">
                                             $150.00</span>
                                     </div>
@@ -768,24 +1110,32 @@
                         </div>
                     </a>
                 </div>
-
                 <div class="product-card d-inline-block product-card-border">
                     <a href="" class="nav-link">
                         <div class="product-card-header">
                             <div class="product-card-discount">
-                                <!-- <span class="product-card-discount-class"
+                                <!-- <span class="product-card-shipping-class"
+                                        >free shipping</span
+                                    >
+                                    <span class="product-card-discount-class"
                                         >save 20%</span
                                     > -->
                             </div>
                             <div class="product-card-watchlist">
-                                <i class="fa fa-binoculars"></i>
+                                <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
+                                    preserveAspectRatio="xMinYMid meet" focusable="false" role="img"
+                                    aria-labelledby="tg-9e48f4ba-3091-9fde-d72e-d77a591c23c7">
+                                    <path
+                                        d="M1.088 4v3.539A9.99 9.99 0 0 0 1.6 10.7l1.626 4.879A4.994 4.994 0 0 0 7.971 19H11a1 1 0 0 0 0-2H7.971a3 3 0 0 1-2.846-2.052L3.5 10.069A7.96 7.96 0 0 1 3.125 8h4.963v2a4.054 4.054 0 0 0 4 4 4 4 0 0 0 4-4V8h4.963a8.109 8.109 0 0 1-.384 2.106l-.179.614a1 1 0 1 0 1.92.559l.167-.577a10 10 0 0 0 .513-3.163V4a2 2 0 0 0-2-2h-5a2 2 0 0 0-2 2v6a2.029 2.029 0 0 1-2 2 2.08 2.08 0 0 1-2-2V4a2 2 0 0 0-2-2h-5a2 2 0 0 0-2 2zm20 0v2h-5V4h5zm-13 0v2h-5V4h5zm3 17a1 1 0 0 1-1 1h-4a1 1 0 0 1 0-2h4a1 1 0 0 1 1 1zM23 18.044a1 1 0 0 1 0 2h-3.044V23a1 1 0 0 1-2 0v-2.956H15a1 1 0 0 1 0-2h2.956V15a1 1 0 0 1 2 0v3.044H23z">
+                                    </path>
+                                    <title id="tg-9e48f4ba-3091-9fde-d72e-d77a591c23c7"></title>
+                                </svg>
                             </div>
                         </div>
 
-                        <div class="product-card-img" style="
-                                    background-image: url(https://trademe.tmcdn.co.nz/photoserver/352x264p/1637335176.jpg);
-                                    background-color: rgb(176, 176, 176);
-                                "></div>
+                        <div class="product-card-img"
+                            style="background-image: url(https://trademe.tmcdn.co.nz/photoserver/352x264p/1599692961.jpg);">
+                        </div>
 
                         <div class="product-card-detail">
                             <div class="product-card-body">
@@ -822,23 +1172,32 @@
                         </div>
                     </a>
                 </div>
-                <div class="product-card d-inline-block">
+                <div class="product-card d-inline-block product-card-border">
                     <a href="" class="nav-link">
                         <div class="product-card-header">
                             <div class="product-card-discount">
-                                <!-- <span class="product-card-discount-class"
+                                <!-- <span class="product-card-shipping-class"
+                                        >free shipping</span
+                                    >
+                                    <span class="product-card-discount-class"
                                         >save 20%</span
                                     > -->
                             </div>
                             <div class="product-card-watchlist">
-                                <i class="fa fa-binoculars"></i>
+                                <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
+                                    preserveAspectRatio="xMinYMid meet" focusable="false" role="img"
+                                    aria-labelledby="tg-9e48f4ba-3091-9fde-d72e-d77a591c23c7">
+                                    <path
+                                        d="M1.088 4v3.539A9.99 9.99 0 0 0 1.6 10.7l1.626 4.879A4.994 4.994 0 0 0 7.971 19H11a1 1 0 0 0 0-2H7.971a3 3 0 0 1-2.846-2.052L3.5 10.069A7.96 7.96 0 0 1 3.125 8h4.963v2a4.054 4.054 0 0 0 4 4 4 4 0 0 0 4-4V8h4.963a8.109 8.109 0 0 1-.384 2.106l-.179.614a1 1 0 1 0 1.92.559l.167-.577a10 10 0 0 0 .513-3.163V4a2 2 0 0 0-2-2h-5a2 2 0 0 0-2 2v6a2.029 2.029 0 0 1-2 2 2.08 2.08 0 0 1-2-2V4a2 2 0 0 0-2-2h-5a2 2 0 0 0-2 2zm20 0v2h-5V4h5zm-13 0v2h-5V4h5zm3 17a1 1 0 0 1-1 1h-4a1 1 0 0 1 0-2h4a1 1 0 0 1 1 1zM23 18.044a1 1 0 0 1 0 2h-3.044V23a1 1 0 0 1-2 0v-2.956H15a1 1 0 0 1 0-2h2.956V15a1 1 0 0 1 2 0v3.044H23z">
+                                    </path>
+                                    <title id="tg-9e48f4ba-3091-9fde-d72e-d77a591c23c7"></title>
+                                </svg>
                             </div>
                         </div>
 
-                        <div class="product-card-img" style="
-                                    background-image: url(https://trademe.tmcdn.co.nz/photoserver/352x264p/1599692961.jpg);
-                                    background-color: rgb(176, 176, 176);
-                                "></div>
+                        <div class="product-card-img"
+                            style="background-image: url(https://trademe.tmcdn.co.nz/photoserver/352x264p/1599692961.jpg);">
+                        </div>
 
                         <div class="product-card-detail">
                             <div class="product-card-body">
@@ -875,9 +1234,184 @@
                         </div>
                     </a>
                 </div>
-                <button class="card_arrow-btn" id="chevron-right" type="button" disabled>
-                    <i class="fa fa-chevron-right"></i>
-                </button>
+                <div class="product-card d-inline-block product-card-border">
+                    <a href="" class="nav-link">
+                        <div class="product-card-header">
+                            <div class="product-card-discount">
+                                <!-- <span class="product-card-shipping-class"
+                                        >free shipping</span
+                                    >
+                                    <span class="product-card-discount-class"
+                                        >save 20%</span
+                                    > -->
+                            </div>
+                            <div class="product-card-watchlist">
+                                <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
+                                    preserveAspectRatio="xMinYMid meet" focusable="false" role="img"
+                                    aria-labelledby="tg-9e48f4ba-3091-9fde-d72e-d77a591c23c7">
+                                    <path
+                                        d="M1.088 4v3.539A9.99 9.99 0 0 0 1.6 10.7l1.626 4.879A4.994 4.994 0 0 0 7.971 19H11a1 1 0 0 0 0-2H7.971a3 3 0 0 1-2.846-2.052L3.5 10.069A7.96 7.96 0 0 1 3.125 8h4.963v2a4.054 4.054 0 0 0 4 4 4 4 0 0 0 4-4V8h4.963a8.109 8.109 0 0 1-.384 2.106l-.179.614a1 1 0 1 0 1.92.559l.167-.577a10 10 0 0 0 .513-3.163V4a2 2 0 0 0-2-2h-5a2 2 0 0 0-2 2v6a2.029 2.029 0 0 1-2 2 2.08 2.08 0 0 1-2-2V4a2 2 0 0 0-2-2h-5a2 2 0 0 0-2 2zm20 0v2h-5V4h5zm-13 0v2h-5V4h5zm3 17a1 1 0 0 1-1 1h-4a1 1 0 0 1 0-2h4a1 1 0 0 1 1 1zM23 18.044a1 1 0 0 1 0 2h-3.044V23a1 1 0 0 1-2 0v-2.956H15a1 1 0 0 1 0-2h2.956V15a1 1 0 0 1 2 0v3.044H23z">
+                                    </path>
+                                    <title id="tg-9e48f4ba-3091-9fde-d72e-d77a591c23c7"></title>
+                                </svg>
+                            </div>
+                        </div>
+
+                        <div class="product-card-img"
+                            style="background-image: url(https://trademe.tmcdn.co.nz/photoserver/352x264p/1599692961.jpg);">
+                        </div>
+
+                        <div class="product-card-detail">
+                            <div class="product-card-body">
+                                <div class="product-card-location-and-time">
+                                    <span>Auckland</span>
+                                    <span>Closes: Thu, 14 oct</span>
+                                </div>
+                                <div class="product-card-title">
+                                    Segway Ninebot Kickscooter Max G30P
+                                </div>
+                                <div class="product-card-subtitle">
+                                    SUPER DEAL WHILE STOCK LAST!
+                                </div>
+                            </div>
+                            <div class="product-card-footer">
+                                <div class="product-card-price-div">
+                                    <div class="price-card">
+                                        <h5 class="text-capitalize">
+                                            no reserve
+                                        </h5>
+                                        <span class="fw-bold">
+                                            $150.00</span>
+                                    </div>
+                                    <div class="price-card">
+                                        <h5 class="text-capitalize">
+                                            buy now
+                                        </h5>
+                                        <del class="discount_price">$250.00</del>
+                                        <span class="fw-bold">
+                                            $150.00</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="product-card d-inline-block product-card-border">
+                    <a href="" class="nav-link">
+                        <div class="product-card-header">
+                            <div class="product-card-discount">
+                                <span class="product-card-shipping-class d-none">free shipping</span>
+                                <span class="product-card-discount-class">save 20%</span>
+                            </div>
+                            <div class="product-card-watchlist">
+                                <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
+                                    preserveAspectRatio="xMinYMid meet" focusable="false" role="img"
+                                    aria-labelledby="tg-9e48f4ba-3091-9fde-d72e-d77a591c23c7">
+                                    <path
+                                        d="M1.088 4v3.539A9.99 9.99 0 0 0 1.6 10.7l1.626 4.879A4.994 4.994 0 0 0 7.971 19H11a1 1 0 0 0 0-2H7.971a3 3 0 0 1-2.846-2.052L3.5 10.069A7.96 7.96 0 0 1 3.125 8h4.963v2a4.054 4.054 0 0 0 4 4 4 4 0 0 0 4-4V8h4.963a8.109 8.109 0 0 1-.384 2.106l-.179.614a1 1 0 1 0 1.92.559l.167-.577a10 10 0 0 0 .513-3.163V4a2 2 0 0 0-2-2h-5a2 2 0 0 0-2 2v6a2.029 2.029 0 0 1-2 2 2.08 2.08 0 0 1-2-2V4a2 2 0 0 0-2-2h-5a2 2 0 0 0-2 2zm20 0v2h-5V4h5zm-13 0v2h-5V4h5zm3 17a1 1 0 0 1-1 1h-4a1 1 0 0 1 0-2h4a1 1 0 0 1 1 1zM23 18.044a1 1 0 0 1 0 2h-3.044V23a1 1 0 0 1-2 0v-2.956H15a1 1 0 0 1 0-2h2.956V15a1 1 0 0 1 2 0v3.044H23z">
+                                    </path>
+                                    <title id="tg-9e48f4ba-3091-9fde-d72e-d77a591c23c7"></title>
+                                </svg>
+                            </div>
+                        </div>
+
+                        <div class="product-card-img"
+                            style="background-image: url(https://trademe.tmcdn.co.nz/photoserver/352x264p/1599692961.jpg);">
+                        </div>
+
+                        <div class="product-card-detail">
+                            <div class="product-card-body">
+                                <div class="product-card-location-and-time">
+                                    <span>Auckland</span>
+                                    <span>Closes: Thu, 14 oct</span>
+                                </div>
+                                <div class="product-card-title">
+                                    Segway Ninebot Kickscooter Max G30P
+                                </div>
+                                <div class="product-card-subtitle">
+                                    SUPER DEAL WHILE STOCK LAST!
+                                </div>
+                            </div>
+                            <div class="product-card-footer">
+                                <div class="product-card-price-div">
+                                    <div class="price-card">
+                                        <h5 class="text-capitalize">
+                                            no reserve
+                                        </h5>
+                                        <span class="fw-bold">
+                                            $150.00</span>
+                                    </div>
+                                    <div class="price-card">
+                                        <h5 class="text-capitalize">
+                                            buy now
+                                        </h5>
+                                        <del class="discount_price">$250.00</del>
+                                        <span class="fw-bold">
+                                            $150.00</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="product-card d-inline-block product-card-border">
+                    <a href="" class="nav-link">
+                        <div class="product-card-header">
+                            <div class="product-card-discount">
+                                <span class="product-card-shipping-class">free shipping</span>
+                                <span class="product-card-discount-class d-none">save 20%</span>
+                            </div>
+                            <div class="product-card-watchlist">
+                                <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
+                                    preserveAspectRatio="xMinYMid meet" focusable="false" role="img"
+                                    aria-labelledby="tg-9e48f4ba-3091-9fde-d72e-d77a591c23c7">
+                                    <path
+                                        d="M1.088 4v3.539A9.99 9.99 0 0 0 1.6 10.7l1.626 4.879A4.994 4.994 0 0 0 7.971 19H11a1 1 0 0 0 0-2H7.971a3 3 0 0 1-2.846-2.052L3.5 10.069A7.96 7.96 0 0 1 3.125 8h4.963v2a4.054 4.054 0 0 0 4 4 4 4 0 0 0 4-4V8h4.963a8.109 8.109 0 0 1-.384 2.106l-.179.614a1 1 0 1 0 1.92.559l.167-.577a10 10 0 0 0 .513-3.163V4a2 2 0 0 0-2-2h-5a2 2 0 0 0-2 2v6a2.029 2.029 0 0 1-2 2 2.08 2.08 0 0 1-2-2V4a2 2 0 0 0-2-2h-5a2 2 0 0 0-2 2zm20 0v2h-5V4h5zm-13 0v2h-5V4h5zm3 17a1 1 0 0 1-1 1h-4a1 1 0 0 1 0-2h4a1 1 0 0 1 1 1zM23 18.044a1 1 0 0 1 0 2h-3.044V23a1 1 0 0 1-2 0v-2.956H15a1 1 0 0 1 0-2h2.956V15a1 1 0 0 1 2 0v3.044H23z">
+                                    </path>
+                                    <title id="tg-9e48f4ba-3091-9fde-d72e-d77a591c23c7"></title>
+                                </svg>
+                            </div>
+                        </div>
+
+                        <div class="product-card-img"
+                            style="background-image: url(https://trademe.tmcdn.co.nz/photoserver/352x264p/1599692961.jpg);">
+                        </div>
+
+                        <div class="product-card-detail">
+                            <div class="product-card-body">
+                                <div class="product-card-location-and-time">
+                                    <span>Auckland</span>
+                                    <span>Closes: Thu, 14 oct</span>
+                                </div>
+                                <div class="product-card-title">
+                                    Segway Ninebot Kickscooter Max G30P
+                                </div>
+                                <div class="product-card-subtitle">
+                                    SUPER DEAL WHILE STOCK LAST!
+                                </div>
+                            </div>
+                            <div class="product-card-footer">
+                                <div class="product-card-price-div">
+                                    <div class="price-card">
+                                        <h5 class="text-capitalize">
+                                            no reserve
+                                        </h5>
+                                        <span class="fw-bold">
+                                            $150.00</span>
+                                    </div>
+                                    <div class="price-card">
+                                        <h5 class="text-capitalize">
+                                            buy now
+                                        </h5>
+                                        <del class="discount_price">$250.00</del>
+                                        <span class="fw-bold">
+                                            $150.00</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
             </div>
         </div>
     </section>
@@ -1201,6 +1735,49 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
             integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
             crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+        <script title="slick config">
+            const swipe = window.innerWidth > 768 ? false : true;
+
+            $('.multiple-items').slick({
+                infinite: true,
+                slidesToShow: 4,
+                slidesToScroll: 4,
+                variableWidth: true,
+                swipe
+            });
+        </script>
+
+        <script title="header search">
+            const toggleFixedSearch = function () {
+                $(".fixed-search").toggleClass("d-block");
+            }
+
+            $(".ext-dropdown-btn").click(function () {
+                $(".ext-dropdown").toggleClass("d-none");
+            })
+
+            $(".tm-homepage-search-header__header form input[type=text]").focus(function () {
+                toggleFixedSearch();
+            })
+
+            $(".form-div input[type=text]").on("keypress keyup", function () {
+                const textInput = $(this);
+                textInput.parent().find("#clearText").addClass("d-grid");
+                $(".tm-homepage-search-header__header input[type=text]").val(textInput.val());
+            })
+
+            $("#clearText").click(function () {
+                $(this).removeClass("d-grid").siblings("input[type=text]").val("");
+                $(".tm-homepage-search-header__header input[type=text]").val("");
+            })
+
+            $("#closeFixedSearch").click(function () {
+                toggleFixedSearch();
+            })
+
+
+        </script>
 </body>
 
 </html>

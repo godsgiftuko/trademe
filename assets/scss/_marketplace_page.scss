@@ -61,22 +61,42 @@
 
     .product-cardlist {
         display: flex;
-        max-width: 1981px;
-        width: 100%;
+        // max-width: 1981px;
+        // width: 100%;
 
         @include mobile-max(1024px) {
             overflow-x: scroll;
         }
 
+        //         .slick-prev:before,
+        //         .slick-next:before {
+        //             font-family: 'Font Awesome 5 ';
+        //             font-weight: 900;
+        //             font-size: 40px;
+        //             font-style: normal;
+        //   font-variant: normal;
+        //   text-rendering: auto;
+        //             background-color: transparent !important;
+        //         }
+
+        //         .slick-prev:before {
+        //             content: '\f053';
+        //         }
+        //         .slick-next:before {
+        //             content: '\f054';
+        //         }
+
+        // b_grey
+
         .product-card {
             margin: 0 20px 20px 0;
             border-radius: 8px;
             display: inline-block;
-            // align-items: flex-end;
+            overflow: hidden;
             background-color: #fff;
             position: relative;
             font-size: 0.75rem !important;
-
+            width: 274px !important;
             .product-card-border {
                 border: 3px solid #ffd972;
             }
@@ -87,7 +107,6 @@
                 height: 100%;
                 top: 0;
                 display: flex;
-                border-radius: 8px 8px;
                 overflow: hidden;
                 // z-index: 30;
                 justify-content: space-between;
@@ -122,14 +141,14 @@
             }
 
             .product-card-img {
-                border-radius: 8px 8px 0 0 !important;
                 display: flex;
                 justify-content: center;
                 height: 200px;
                 /* background-attachment: fixed; */
                 background-repeat: no-repeat;
-                background-size: contain;
+                background-size: cover;
                 background-position: center;
+                background-color: rgb(176, 176, 176);
 
                 img {
                     border-radius: 8px 8px 0 0 !important;

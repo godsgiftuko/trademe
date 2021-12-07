@@ -1,4 +1,4 @@
-@mixin d-flex-row-center($direction: row, $justify-content: center){
+@mixin d-flex-row-center($direction: row, $justify-content: center) {
     display: flex;
     justify-content: $justify-content;
     flex-direction: $direction;
@@ -6,7 +6,11 @@
     align-content: center;
 }
 
-@mixin d-flex($direction: row, $justify-content: space-between, $align-items: normal){
+@mixin d-flex(
+    $direction: row,
+    $justify-content: space-between,
+    $align-items: normal
+) {
     display: flex;
     justify-content: $justify-content;
     flex-direction: $direction;
@@ -19,9 +23,12 @@
     // align-items: center;
 }
 
-
 // DISPLAY
 @include mobile-min(768px) {
+    .d-mt-block {
+        display: block !important;
+    }
+
     .d-mt-none {
         display: none !important;
     }
@@ -44,6 +51,20 @@
     }
 
     .flex-md-row {
+        flex-direction: row !important;
+    }
+}
+
+@include mobile-min(425px) {
+    .d-st-none {
+        display: none !important;
+    }
+
+    .flex-st-col {
+        flex-direction: column !important;
+    }
+
+    .flex-st-row {
         flex-direction: row !important;
     }
 }

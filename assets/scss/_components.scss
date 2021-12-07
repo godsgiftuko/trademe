@@ -10,14 +10,15 @@
     border-width: 0 56px 56px 0;
     cursor: pointer;
 
-    .fa , svg{
+    .fa,
+    svg {
         color: #943900;
         fill: #943900;
         position: absolute;
         // transform: translate(250%, 100%);
     }
     svg {
-        transform: translate(140%, 10px);
+        transform: translate(110%, 6px);
     }
 
     &:hover {
