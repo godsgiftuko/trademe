@@ -4310,6 +4310,9 @@
   flex-flow: column nowrap;
   padding: 24px 12px 0 12px;
 }
+.auth-form-section .auth-form-area .form-card .toStep1 {
+  cursor: pointer;
+}
 .auth-form-section .auth-form-area .form-card h1,
 .auth-form-section .auth-form-area .form-card p,
 .auth-form-section .auth-form-area .form-card .form-group,

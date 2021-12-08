@@ -69,10 +69,12 @@
                     'product-listing',
                     'reg-membership',
                     'user-dashboard',
+                    'settings',
+                    'merchant-reg',
                 ]
 
                 pages.forEach((page) => {
-                    const rawText = page.replace(/_/g, ' ');
+                    const rawText = page.replace(/_/g, ' ')
 
                     main.append(`
                     <div
