@@ -2435,6 +2435,50 @@
   }
 }
 
+.standalone-radio-btn {
+  padding: 15px 0;
+}
+.standalone-radio-btn input[type=checkbox] {
+  height: 0;
+  width: 0;
+  visibility: hidden;
+}
+.standalone-radio-btn label {
+  cursor: pointer;
+  text-indent: -9999px;
+  width: 200px;
+  height: 100px;
+  background: grey;
+  display: inline-block;
+  border-radius: 100px;
+  position: relative;
+  zoom: 0.2 !important;
+}
+.standalone-radio-btn label:after {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 90px;
+  height: 90px;
+  background: #fff;
+  border-radius: 90px;
+  transition: 0.3s;
+}
+.standalone-radio-btn input:checked + label {
+  background: #007acd;
+}
+.standalone-radio-btn input:checked + label:after {
+  left: calc(100% - 5px);
+  transform: translateX(-100%);
+}
+.standalone-radio-btn label:active:after {
+  width: 130px;
+}
+.standalone-radio-btn .mut-label {
+  cursor: pointer;
+}
+
 .hero_div {
   position: relative;
   display: block;
@@ -5351,10 +5395,15 @@
   background-color: #fff;
   border-radius: 2px;
   width: 100%;
-  padding: 3rem 1rem 0.5rem;
+  padding: 15px;
   margin-top: 2rem;
   margin-bottom: 1rem;
   box-shadow: 0px 1px 3px 0px #c8c6c6;
+}
+@media screen and (min-width: 768px) {
+  .user_dashboard .user_dashboard-card .user_dashboard-card-content {
+    padding: 3rem 1rem 1.5rem;
+  }
 }
 .user_dashboard .user_dashboard-card .user_dashboard-card-content svg {
   width: 200px;
@@ -5979,8 +6028,8 @@ button:disabled {
   height: 100%;
 }
 .btn--grey:hover {
-  color: #006ebd;
-  background-color: #fff !important;
+  color: #00558f;
+  background-color: #f6f5f4 !important;
 }
 
 .coofee-btn {
